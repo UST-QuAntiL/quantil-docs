@@ -1,0 +1,16 @@
+site_name: QC Atlas
+nav:
+    - Home: index.md
+    - Getting Started:
+        - 'Setup': 'getting-started/getting-started.md'
+    - User Guide:
+        - 'Algorithm': 'user-guide/algorithm.md'
+        - 'Implementation': 'user-guide/implementation.md'
+        - 'Publication': 'user-guide/publication.md'
+        - Compute Ressources:
+            - 'Cloud Service': 'user-guide/execution-environments/cloud-service.md'
+            - 'Compute Ressource': 'user-guide/execution-environments/compute-ressource.md'
+            - 'Software Platforms': 'user-guide/execution-environments/software-platform.md'
+    - Developer Guide:
+        - 'OpenAPI': 'developer-guide/openapi.md'
+theme: readthedocs
