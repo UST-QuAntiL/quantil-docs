@@ -4,6 +4,7 @@ nav:
     - Getting Started:
         - 'Setup': 'getting-started/getting-started.md'
     - User Guide:
+        - 'Overview': 'user-guide/overview.md'
         - 'Algorithm': 'user-guide/algorithm.md'
         - 'Implementation': 'user-guide/implementation.md'
         - 'Publication': 'user-guide/publication.md'
@@ -13,5 +14,8 @@ nav:
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
 theme: readthedocs
+extra_css:
+    - css/extra.css
 markdown_extensions:
-  - admonition
+    - admonition
+    - attr_list 
