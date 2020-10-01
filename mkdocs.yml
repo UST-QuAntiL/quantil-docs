@@ -14,3 +14,5 @@ nav:
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
 theme: readthedocs
+markdown_extensions:
+  - admonition
