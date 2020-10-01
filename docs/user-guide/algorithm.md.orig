@@ -36,6 +36,13 @@ To delete single algorithms, the user can just press the ``Delete Button`` in th
 
 ![alt text](./images/Delete_Algorithm_-_Step_1.1.png "Delete algorithm")
 
+<<<<<<< HEAD
+It is also possible to delete mulitple algorithms at once by selecting them one by one using the checkboxes within the table. When at least one algorithm is selected, a ``Mater Delete Button`` will show up above the table. To delete the selected algorithms at once, this button must be pressed.
+
+![alt text](./images/Delete_Algorithm_-_Step_2.png "Delete algorithm")
+
+Both ways of deleting algorithm will lead to a confirmation dialog. This dialog will list all the previously selected algorthims that will be deleted. To finally confirm the deletion, the ``OK Button`` at the bottom of the dialog has to be pressed. After a successfull deletion the deleted algorithms will disappear from the table.
+=======
 It is also possible to delete multiple algorithms at once by selecting them one by one using the check-boxes within the table. When at least one algorithm is selected, a master delete button will show up above the table. To delete the selected algorithms at once, this button must be pressed.
 
 ![alt text](./images/Delete_Algorithm_-_Step_2.png "Delete algorithm")
@@ -204,3 +211,4 @@ Alternatively, the users can use the check-boxes of the first column of the tabl
 If a ``Delete`` button is pressed, a confirmation dialog will appear listing all relations that will be deleted. To confirm the deletion of the relationship to all displayed algorithms, the user has to click on the ``YES`` button.
 
 ![alt text](./images/Unlink_Other_Algorithm_-_Step_2.PNG "Unlink of other Algorithm")
+>>>>>>> 8665111a11c18477bed43508e3866b9297e5cb32
