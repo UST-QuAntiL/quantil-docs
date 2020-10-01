@@ -1,6 +1,5 @@
 site_name: QC Atlas
 nav:
-    - Home: index.md
     - Getting Started:
         - 'Setup': 'getting-started/getting-started.md'
     - User Guide:

@@ -204,110 +204,110 @@ Alternatively, the users can use the check-boxes of the first column of the tabl
 
 If a ``Delete`` button is pressed, a confirmation dialog will appear listing all relations that will be deleted. To confirm the deletion of the relationship to all displayed algorithms, the user has to click on the ``YES`` button.
 
-![alt text](./images/Unlink_Other_Algorithm_-_Step_2.PNG "Unlink of other Algorithm")
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG "Unlink of other Algorithm")
 
 ## Reference Publications
 
 To reference publications in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference publications with.
 
-![alt text](./images/Open_Algorithm_View.PNG "Link Publication")
+![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Publication")
 
 In the general view of the algorithm, the user has to switch to the tab ``Publications``.
 
-![alt text](./images/Open_Publications_View.PNG "Link Publication")
+![alt text](./images/algorithm/Open_Publications_View.PNG "Link Publication")
 
 To link some publication with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
 
-![alt text](./images/Link_Publication_-_Step_1.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_1.PNG "Link Publication")
 
 This will open a dialog with a separate data list of existing publications.
 
-![alt text](./images/Link_Publication_-_Step_2.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_2.PNG "Link Publication")
 
 For referencing publications the user can now search the table and click on the ``Link`` button of a publication he wants to reference.
 
-![alt text](./images/Link_Publication_-_Step_3.1.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_3.1.PNG "Link Publication")
 
 Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want reference. After at least one check-box is checked, a ``Master-Link`` button will appear at the top of the table which can be used to link all selected publications with the algorithm.
 
-![alt text](./images/Link_Publication_-_Step_3.2.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_3.2.PNG "Link Publication")
 
 If the linking was successful, the referenced publication(s) will appear in the publications list of the ``Publications`` tab of the algorithm view.
 
-![alt text](./images/Link_Publication_-_Step_4.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_4.PNG "Link Publication")
 
 The user can also remove existing references. This is also done in the ``Publications`` tab. To remove the reference, the user has to click on the ``Delete`` button of a publication reference.
 
-![alt text](./images/Unlink_Publication_-_Step_1.1.PNG "Unlink Publication")
+![alt text](./images/algorithm/Unlink_Publication_-_Step_1.1.PNG "Unlink Publication")
 
 Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to unlink all selected publications from the algorithm.
 
-![alt text](./images/Unlink_Publication_-_Step_1.2.PNG "Unlink Publication")
+![alt text](./images/algorithm/Unlink_Publication_-_Step_1.2.PNG "Unlink Publication")
 
 ## Manage Tags
 
 To add a tag to an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to add tags to.
 
-![alt text](./images/Open_Algorithm_View.PNG "Add Tag")
+![alt text](./images/algorithm/Open_Algorithm_View.PNG "Add Tag")
 
 In the header of the general view of the algorithm, the user has to click on the ``Plus Button`` which is used to add tags.
 
-![alt text](./images/Add_Tag_-_Step_1.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_1.PNG "Add Tag")
 
 This will open a new dialog. In this dialog the user has to fill in the required data like ``Tag Category`` and ``Tag Value`` to describe the Tag that will be added to the algorithm.
 
-![alt text](./images/Add_Tag_-_Step_2.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_2.PNG "Add Tag")
 
 The ``Tag Value`` field is equipped auto-complete functionalities. While writing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it or by using the arrow keys on the keyboard and confirming the selection with the ``Enter Button`` on the keyboard. Alternatively the user can ignore the recommendations and fill the input field with a new tag value.
 
-![alt text](./images/Add_Tag_-_Step_3.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_3.PNG "Add Tag")
 
 The ``Tag Category`` field is also equipped auto-complete functionalities which works the same way as the ``Tag Value`` field from the previous step.
 
-![alt text](./images/Add_Tag_-_Step_4.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_4.PNG "Add Tag")
 
 To finally add a new tag to the algorithm, the user has to confirm his selection by clicking on the ``OK button``. 
 
-![alt text](./images/Add_Tag_-_Step_5.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_5.PNG "Add Tag")
 
 If the addition of the tag was successful, the tag will appear in the header of the algorithm view.
 
-![alt text](./images/Add_Tag_-_Step_6.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_6.PNG "Add Tag")
 
 To remove a tag from the algorithm, the user can click on the ``X`` button of an existing tag.
 
-![alt text](./images/Remove_Tag.PNG "Remove Tag")
+![alt text](./images/algorithm/Remove_Tag.PNG "Remove Tag")
 
 ## Manage Implementations
 
 To create a new implementation for an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to create implementations for.
 
-![alt text](./images/Open_Algorithm_View.PNG "Create Implementation")
+![alt text](./images/algorithm//Open_Algorithm_View.PNG "Create Implementation")
 
 In the general view of the algorithm, the user has to switch to the tab ``Implementations``.
 
-![alt text](./images/Open_Implementations_View.PNG "Create Implementation")
+![alt text](./images/algorithm//Open_Implementations_View.PNG "Create Implementation")
 
 To add a implementation, click on the ``Add button`` located above the data table.
 
-![alt text](./images/Create_Implementation_-_Step_1.PNG "Create Implementation")
+![alt text](./images/algorithm//Create_Implementation_-_Step_1.PNG "Create Implementation")
 
 This will open a dialog where the user can enter information that is required for creating a new implementation.
 
-![alt text](./images/Create_Implementation_-_Step_2.PNG "Create Implementation")
+![alt text](./images/algorithm//Create_Implementation_-_Step_2.PNG "Create Implementation")
 
 Enter the name of the new implementation and then click on the ``OK button`` to confirm the creation of the implementation. If the creation of the implementation was successful, the user will be redirected to the ``Implementation View`` of the created implementation where he can define further properties.
 
-![alt text](./images/Create_Implementation_-_Step_3.PNG "Create Implementation")
+![alt text](./images/algorithm//Create_Implementation_-_Step_3.PNG "Create Implementation")
 
 The user can also remove existing implementations. This is also done in the ``Implementations`` tab. To remove a implementation, the user has to click on the ``Delete`` button of a implementation.
 
-![alt text](./images/Delete_Implementation_-_Step_1.1.png "Delete Implementation")
+![alt text](./images/algorithm//Delete_Implementation_-_Step_1.1.png "Delete Implementation")
 
 Alternatively, the user can use the check-boxes of the first column of the table to select all implementations they want remove. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to delete all selected implementations of the algorithm.
 
-![alt text](./images/Delete_Implementation_-_Step_1.2.png "Delete Implementation")
+![alt text](./images/algorithm//Delete_Implementation_-_Step_1.2.png "Delete Implementation")
 
 If a ``Delete`` button is pressed, a confirmation dialog will appear listing all implementations that will be deleted. To confirm the deletion of the displayed implementations, the user has to click on the ``YES`` button.
 
-![alt text](./images/Delete_Implementation_-_Step_2.png "Delete Implementation")
+![alt text](./images/algorithm/Delete_Implementation_-_Step_2.png "Delete Implementation")
