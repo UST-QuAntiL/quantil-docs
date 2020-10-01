@@ -26,7 +26,7 @@ To delete a publication the user has to navigate to the ``Publication List View`
 
 It is also possible to delete mulitple algorithms at once by selecting them one by one using the checkboxes within the table. When at least one algorithm is selected, a ``Master Delete Button`` will show up above the table. To delete the selected algorithms at once, this button must be pressed.
 
-![alt text](./images/Delete_Publication_-_Step_1.1.png "Delete publication")
+![alt text](./images/publication/Delete_Publication_-_Step_1.1.png "Delete publication")
 
 Both ways of deleting algorithm will lead to a confirmation dialog. This dialog will list all the previously selected algorthims that will be deleted. To finally confirm the deletion, the ``OK Button`` at the bottom of the dialog has to be pressed. After a successfull deletion the deleted algorithms will disappear from the table.
 
@@ -56,3 +56,30 @@ A new author is assigned by typing the name into the input field and pressing th
 ![alt text](./images/publication/Update_Publication_Properties_-_Step_2.png "Update Publication Properties")
 
 ## Reference Algorithms
+
+!!! info
+    To reference algorithms in an existing publication, the user has to navigate to the ``General View``
+
+In the ``General View`` of the publication, the user as to switch to the tab ``Algorithms``, which is dedicated to referencing algorithms.
+To link algorithms with the currently selected publication, the user has to click on the ``Plus Button`` at the top of the data table.
+
+![alt text](./images/publication/Link_Algorithm_-_Step_1.png "Link Algorithm")
+
+This will open a dialog with a separate data list of existing algorithms.
+For referencing publications the user can now search the table and click on the ``Link`` button of an algorithm he wants to reference.
+
+![alt text](./images/publication/Link_Algorithm_-_Step_2.1.png "Link Algorithm")
+
+Alternatively, the users can use the check-boxes of the first column of the table to select all algorithms to reference. 
+After at least one check-box is checked, a ``Master-Link`` button will appear at the top of the table which can be used to link all selected algorithms with the publication.
+
+![alt text](./images/publication/Link_Algorithm_-_Step_2.2.png "Link Algorithm")
+
+
+## Reference Implementations
+
+!!! info
+    Implementations can not be referenced from within the ``Publication View``.
+    To reference implementations in an existing publication, the user has to navigate to the ``General View`` of the ``Implementation View`` of an algorithm.
+
+
