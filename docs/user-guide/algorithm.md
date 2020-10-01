@@ -149,7 +149,7 @@ To remove the reference from a problem type, the user simply has to click on the
 
 ## Reference other Algorithms
 
-To reference other algorithms in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference problem types with.
+To reference other algorithms in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference other algorithms with.
 
 ![alt text](./images/Open_Algorithm_View.PNG "Link other Algorithm")
 
@@ -204,3 +204,41 @@ Alternatively, the users can use the check-boxes of the first column of the tabl
 If a ``Delete`` button is pressed, a confirmation dialog will appear listing all relations that will be deleted. To confirm the deletion of the relationship to all displayed algorithms, the user has to click on the ``YES`` button.
 
 ![alt text](./images/Unlink_Other_Algorithm_-_Step_2.PNG "Unlink of other Algorithm")
+
+## Reference Publications
+
+To reference publications in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference publications with.
+
+![alt text](./images/Open_Algorithm_View.PNG "Link Publication")
+
+In the general view of the algorithm, the user has to switch to the tab ``Publications``.
+
+![alt text](./images/Open_Publications_View.PNG "Link Publication")
+
+To link some publication with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
+
+![alt text](./images/Link_Publication_-_Step_1.PNG "Link Publication")
+
+This will open a dialog with a separate data list of existing publications.
+
+![alt text](./images/Link_Publication_-_Step_2.PNG "Link Publication")
+
+For referencing publications the user can now search the table and click on the ``Link`` button of a publication he wants to reference.
+
+![alt text](./images/Link_Publication_-_Step_3.1.PNG "Link Publication")
+
+Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want reference. After at least one check-box is checked, a ``Master-Link`` button will appear at the top of the table which can be used to link all selected publications with the algorithm.
+
+![alt text](./images/Link_Publication_-_Step_3.2.PNG "Link Publication")
+
+If the linking was successful, the referenced publication(s) will appear in the publications list of the ``Publications`` tab of the algorithm view.
+
+![alt text](./images/Link_Publication_-_Step_4.PNG "Link Publication")
+
+The user can also remove existing references. This is also done in the ``Publications`` tab. To remove the reference, the user has to click on the ``Delete`` button of a publication reference.
+
+![alt text](./images/Unlink_Publication_-_Step_1.1.PNG "Unlink Publication")
+
+Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to unlink all selected publications from the algorithm.
+
+![alt text](./images/Unlink_Publication_-_Step_1.2.PNG "Unlink Publication")
