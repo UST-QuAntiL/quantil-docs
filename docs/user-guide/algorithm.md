@@ -242,3 +242,37 @@ The user can also remove existing references. This is also done in the ``Publica
 Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to unlink all selected publications from the algorithm.
 
 ![alt text](./images/Unlink_Publication_-_Step_1.2.PNG "Unlink Publication")
+
+## Manage Tags
+
+To add a tag to an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to add tags to.
+
+![alt text](./images/Open_Algorithm_View.PNG "Add Tag")
+
+In the header of the general view of the algorithm, the user has to click on the ``Plus Button`` which is used to add tags.
+
+![alt text](./images/Add_Tag_-_Step_1.PNG "Add Tag")
+
+This will open a new dialog. In this dialog the user has to fill in the required data like ``Tag Category`` and ``Tag Value`` to describe the Tag that will be added to the algorithm.
+
+![alt text](./images/Add_Tag_-_Step_2.PNG "Add Tag")
+
+The ``Tag Value`` field is equipped auto-complete functionalities. While writing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it or by using the arrow keys on the keyboard and confirming the selection with the ``Enter Button`` on the keyboard. Alternatively the user can ignore the recommendations and fill the input field with a new tag value.
+
+![alt text](./images/Add_Tag_-_Step_3.PNG "Add Tag")
+
+The ``Tag Category`` field is also equipped auto-complete functionalities which works the same way as the ``Tag Value`` field from the previous step.
+
+![alt text](./images/Add_Tag_-_Step_4.PNG "Add Tag")
+
+To finally add a new tag to the algorithm, the user has to confirm his selection by clicking on the ``OK button``. 
+
+![alt text](./images/Add_Tag_-_Step_5.PNG "Add Tag")
+
+If the addition of the tag was successful, the tag will appear in the header of the algorithm view.
+
+![alt text](./images/Add_Tag_-_Step_6.PNG "Add Tag")
+
+To remove a tag from the algorithm, the user can click on the ``X`` button of an existing tag.
+
+![alt text](./images/Remove_Tag.PNG "Remove Tag")
