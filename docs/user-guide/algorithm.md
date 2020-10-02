@@ -311,3 +311,93 @@ Alternatively, the user can use the check-boxes of the first column of the table
 If a ``Delete`` button is pressed, a confirmation dialog will appear listing all implementations that will be deleted. To confirm the deletion of the displayed implementations, the user has to click on the ``YES`` button.
 
 ![alt text](./images/algorithm/Delete_Implementation_-_Step_2.png "Delete Implementation")
+
+## Reference Patterns
+
+To reference pattern in an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, , the user has to click on the algorithm he wants to reference patterns with.
+
+![alt text](./images/algorithm//Open_Algorithm_View.PNG "Link Pattern")
+
+In the general view of the algorithm, the user has to switch to the tab ``Related Patterns``.
+
+![alt text](./images/algorithm//Open_Patterns_View.PNG "Link Pattern")
+
+To link a new pattern with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_1.PNG "Link Pattern")
+
+This will open a new dialog containing multiple steps that need to be performed.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_2.PNG "Link Pattern")
+
+In the first step, a pattern language needs to be selected by simply clicking on it. To filter specific pattern languages, the user can use the input field to filter them by their name.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_3.PNG "Link Pattern")
+
+After a specific pattern language has been selected, the user has to move the the next step by either clicking on the ``Next`` button or by clicking on the second step.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_4.PNG "Link Pattern")
+
+In the second step the user has to pick the pattern of the selected pattern language he wants to link with the algorithm. To do that, he again only has to click on that specific pattern. Like in the first step, he can use the input field to filter the patterns by their names and he also can use the scrollbar to scroll through all patterns.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_5.PNG "Link Pattern")
+
+After a specific pattern has been selected, the user has to move the the next step by either clicking on the ``Next`` button or by clicking on the second step.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_6.PNG "Link Pattern")
+
+In the third step the user has to describe the relation between the selected pattern and the algorithm. To do that, he has to specify a ``Relation Type`` and add a ``Description``.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_7.PNG "Link Pattern")
+
+To specify the relation type, the user simply has to use the existing input field. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. Alternatively the arrow keys of the keyboard can be used to navigate through all the options and confirm the selection with the press on the "Enter" button.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_8.PNG "Link Pattern")
+
+At last the user has to add a description by using the existing input field. After that, the user can proceed to the last step by clicking on the ``Next`` button or by clicking directly on the step itself.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_9.PNG "Link Pattern")
+
+The last step is used for verifying all the important selections from the previous steps. To finally link the pattern with the algorithm, the user can press the ``Confirm`` button.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_10.PNG "Link Pattern")
+
+If the linking was successful, the referenced pattern will appear in the data list.
+
+![alt text](./images/algorithm/Link_Pattern_-_Step_11.PNG "Link Pattern")
+
+The reference to a pattern can also be edited. For this, the user has to click on the ``Edit Button`` of a related pattern. This is also located in the ``Related Patterns`` tab of the ``Algorithm View``.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_1.PNG "Update Pattern Link")
+
+This will open a dialog containing two steps that need to be performed to successfully update the reference.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_2.PNG "Update Pattern Link")
+
+In the first step, the user can adjust the ```Relation Type`` and the ``Description``.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_3.PNG "Update Pattern Link")
+
+To adjust the ``Relation Type``, the user simply has to use the existing input field to change the current type. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. Alternatively the arrow keys of the keyboard can be used to navigate through all the options and confirm the selection with the press on the "Enter" button.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_4.PNG "Update Pattern Link")
+
+To adjust the ``Description``, the user can existing input field. After that, the user can proceed to the second step by clicking on the ``Next`` button or by clicking directly on the step itself.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_5.PNG "Update Pattern Link")
+
+The second and last step is used for verifying all the important selections from the first step. To finally adjust the reference between the pattern and the algorithm, the user has to press the ``Confirm`` button.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_6.PNG "Update Pattern Link")
+
+At last, the user can also remove existing references to patterns. For this, the user has to click on the ``Delete Button`` of a related pattern. This is also located in the ``Related Patterns`` tab of the ``Algorithm View``.
+
+![alt text](./images/algorithm/Unlink_Pattern_-_Step_1.1.PNG "Unlink Pattern")
+
+Alternatively, the user can use the check-boxes of the first column of the table to select all pattern relation he wants to remove. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to delete all selected pattern relations from the algorithm.
+
+![alt text](./images/algorithm/Unlink_Pattern_-_Step_1.2.PNG "Unlink Pattern")
+
+If a ``Delete`` button is pressed, a confirmation dialog will appear listing all patterns that will be removed from the algorithm. To confirm the deletion of the displayed patterns, the user has to click on the ``YES`` button.
+
+![alt text](./images/algorithm/Unlink_Pattern_-_Step_2.PNG "Unlink Pattern")
