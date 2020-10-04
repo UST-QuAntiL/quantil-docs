@@ -1,17 +1,70 @@
-# Welcome to MkDocs
+#
+## Create Software Platform
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+To create a software platform the user has to navigate to the ``Execution Environment List View`` by using the navigation sidebar.
 
-## Commands
+![alt text](./../images/software_platform/Create_Software_Platform_-_Step_1.PNG "Navigate to execution environments list view")
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+While in the ``Execution Environment List View``, the navigation sidebar will display sub menus for different kinds of execution environments. To create a software platform, the user has to navigate to the ``Software Platform List View``.
 
-## Project layout
+![alt text](./../images/software_platform/Create_Software_Platform_-_Step_2.PNG "Navigate to software platform list view")
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Inside the ``Software Platform List View``, the user can click on the ``Plus Button`` to initiate the creation of a new software platform inside a separate ``Creation Dialog``.
+
+![alt text](./../images/software_platform/Create_Software_Platform_-_Step_3.PNG "Open creation dialog")
+
+Within the ``Creation Dialog``, the user will have to enter all important information of the software platform he wants to create.
+
+!!! note 
+    Currently the only required information is the **name** of the software platform.
+	
+![alt text](./../images/software_platform/Create_Software_Platform_-_Step_4.PNG "Structure of creation dialog")
+
+After entering the name of the software platform, the user has to confirm the creation by clicking on the ``OK Button``.
+
+![alt text](./../images/software_platform/Create_Software_Platform_-_Step_5.PNG "Confirm creation")
+
+In case the creation was successful, the user will be redirected to the ``Software Platform View`` of the newly created software platform.
+
+![alt text](./../images/software_platform/Create_Software_Platform_-_Step_6.PNG "General View")
+
+## Delete Software Platform
+
+!!! info 
+    To perform the deletion of a software platform, the user has to be in the ``Software Platform List View``.
+	
+To remove a specific software platform, the user has to simply click on the ``Delete Button`` in the ``Action Column`` of the data table.
+
+![alt text](./../images/software_platform/Delete_Software_Platform_-_Step_1.1.PNG "Delete single platform")
+
+The user can also remove multiple software platforms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the ```Master Delete Button`` at the top of the data table.
+
+!!! note 
+    The delete button will only appear after at least one software platform has been selected by the user.
+
+![alt text](./../images/software_platform/Delete_Software_Platform_-_Step_1.2.PNG "Delete multiple platforms")
+
+To confirm the deletion of the selected software platform(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.
+
+!!! note 
+    **Names** of the software platforms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.
+
+![alt text](./../images/software_platform/Delete_Software_Platform_-_Step_2.PNG "Confirm deletion of selected software platform(s)")
+
+
+## Update Software Platform Properties
+
+!!! info 
+    To update the properties of a software platform, the user has to be in the ``Software Platform View`` which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+Updating basic software platform properties is done in the ``General Tab`` of the ``Software Platform View``. To update a property, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new property values or adjust existing ones.
+
+![alt text](./../images/software_platform/Update_Software_Platform_-_Step_1.PNG "General Tab of Software Platform View")
+
+If a value of a property is changed, a ``Save button`` will be displayed next that specific input field. Also, a ``Master Save button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save button`` next to any updated input field. Alternatively the user can save all changes by clicking the ```Master Save button``.
+
+!!! note 
+    * The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
+    * Some fields are links to other sites. Those can easily be detected by their ``Open button``. On click or on ``Enter``, it will open the link in a new tab.
+	
+![alt text](./../images/software_platform/Update_Software_Platform_-_Step_2.PNG "Saving the changes")
