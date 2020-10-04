@@ -33,7 +33,7 @@ In case the creation was successful, the user will be redirected to the ``Softwa
 !!! info 
     To perform the deletion of a software platform, the user has to be in the ``Software Platform List View``.
 	
-To remove a specific software platform, the user has to simply click on the ``Delete Button`` in the ``Action Column`` of the data table.
+To remove a specific software platform, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
 
 ![alt text](./../images/software_platform/Delete_Software_Platform_-_Step_1.1.PNG "Delete single platform")
 
@@ -68,3 +68,132 @@ If a value of a property is changed, a ``Save button`` will be displayed next th
     * Some fields are links to other sites. Those can easily be detected by their ``Open button``. On click or on ``Enter``, it will open the link in a new tab.
 	
 ![alt text](./../images/software_platform/Update_Software_Platform_-_Step_2.PNG "Saving the changes")
+
+## Reference Implementations
+
+!!! info 
+    To reference implementations in a software platform, the user has to be in the ``Implementations Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+To initiate the linking of an implementation, the user has to click on the ``Plus button`` in the ``Implementation Tab``.
+
+![alt text](./../images/software_platform/Reference_Implementation_-_Step_1.PNG "Click on '+' in 'Implementation'-Tab")
+
+This will open a new dialog containing a page-able table of available implementations. This table can be searched or sorted using the given input fields and buttons.
+
+![alt text](./../images/software_platform/Reference_Implementation_-_Step_2.PNG "Filter existing Implementations using table controls")
+
+To reference a implementation simply click on the ``Link button`` in the ``Action-Column`` of the implementation.
+
+![alt text](./../images/software_platform/Reference_Implementation_-_Step_3.1.PNG "Reference single implementation")
+
+Alternatively use the check-boxes to select multiple implementations and then click on the ``Master Link button`` to link multiple implementations.
+
+!!! note 
+    ``Master Link button`` will only appear if at least one implementation has been selected.
+	
+![alt text](./../images/software_platform/Reference_Implementation_-_Step_3.2.PNG "Reference multiple implementations")
+
+!!! info 
+    Successfully referenced implementations will now be visible in the ``Implementations Tab`` of the ```Software Platform View``.
+	
+## Dereference Implementations
+
+!!! info 
+    To dereference implementations, the user has to be in the ``Implementations Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+To remove a reference from a implementation, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
+
+![alt text](./../images/software_platform/Dereference_Implementation_-_Step_1.1.PNG "Dereference single implementation")
+
+Alternatively use the check-boxes to select multiple implementations and then click on the ``Master Delete button`` to unlink multiple implementations.
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one implementation has been selected.
+	
+![alt text](./../images/software_platform/Dereference_Implementation_-_Step_1.2.PNG "Dereference multiple implementation")
+
+## Reference Cloud Services
+
+!!! info 
+    To reference cloud services in a software platform, the user has to be in the ``Cloud Services Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+To initiate the linking of a cloud service, the user has to click on the ``Plus button`` in the ``Cloud Services Tab``.
+
+![alt text](./../images/software_platform/Reference_Cloud_Service_-_Step_1.PNG "Click on '+' in 'Cloud Services'-Tab")
+
+This will open a new dialog containing a page-able table of available cloud services. This table can be searched or sorted using the given input fields and buttons.
+
+![alt text](./../images/software_platform/Reference_Cloud_Service_-_Step_2.PNG "Filter existing Cloud Services using table controls")
+
+To reference a cloud service simply click on the ``Link button`` in the ``Action-Column`` of the cloud service.
+
+![alt text](./../images/software_platform/Reference_Cloud_Service_-_Step_3.1.PNG "Reference single cloud service")
+
+Alternatively, use the check-boxes to select multiple cloud services and then click on the ``Master Link button`` to link all selected cloud services.
+
+!!! note 
+    ``Master Link button`` will only appear if at least one cloud service has been selected.
+	
+![alt text](./../images/software_platform/Reference_Cloud_Service_-_Step_3.2.PNG "Reference multiple cloud services")
+
+!!! info 
+    Successfully referenced cloud service(s) will now be visible in the ``Cloud Services Tab`` of the ``Software Platform View``.
+	
+## Dereference Cloud Services
+
+!!! info 
+    To dereference cloud services, the user has to be in the ``Cloud Services Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+To remove a reference from a cloud service, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
+
+![alt text](./../images/software_platform/Dereference_Cloud_Service_-_Step_1.1.PNG "Dereference single cloud service")
+
+Alternatively, use the check-boxes to select multiple cloud services and then click on the ``Master Delete button`` to unlink all selected cloud services.
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one cloud service has been selected.
+	
+![alt text](./../images/software_platform/Dereference_Cloud_Service_-_Step_1.2.PNG "Dereference multiple cloud services")
+
+## Reference Compute Resources
+
+!!! info 
+    To reference compute resources in a software platform, the user has to be in the ``Compute Resources Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+To initiate the linking of a compute resource, the user has to click on the ``Plus button`` in the ``Compute Resources Tab``.
+
+![alt text](./../images/software_platform/Reference_Compute_Resource_-_Step_1.PNG "Click on '+' in 'Compute Resources'-Tab")
+
+This will open a new dialog containing a page-able table of available compute resources. This table can be searched or sorted using the given input fields and buttons.
+
+![alt text](./../images/software_platform/Reference_Compute_Resource_-_Step_2.PNG "Filter existing Compute Resources using table controls")
+
+To reference a compute resource simply click on the ``Link button`` in the ``Action-Column`` of the compute resource.
+
+![alt text](./../images/software_platform/Reference_Compute_Resource_-_Step_3.1.PNG "Reference single compute resource")
+
+Alternatively, use the check-boxes to select multiple compute resources and then click on the ``Master Link button`` to link all selected compute resources.
+
+!!! note 
+    ``Master Link button`` will only appear if at least one compute resource has been selected.
+	
+![alt text](./../images/software_platform/Reference_Compute_Resource_-_Step_3.2.PNG "Reference multiple compute resources")
+
+!!! info 
+    Successfully referenced compute resource(s) will now be visible in the ``Compute Resources Tab`` of the ``Software Platform View``.
+	
+## Dereference Compute Resources
+
+!!! info 
+    To dereference compute resources, the user has to be in the ``Compute Resources Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
+	
+To remove a reference from a compute resource, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
+
+![alt text](./../images/software_platform/Dereference_Compute_Resource_-_Step_1.1.PNG "Dereference single compute resource")
+
+Alternatively, use the check-boxes to select multiple compute resources and then click on the ``Master Delete button`` to unlink all selected compute resources.
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one compute resource has been selected.
+	
+![alt text](./../images/software_platform/Dereference_Compute_Resource_-_Step_1.2.PNG "Dereference multiple compute resources")
