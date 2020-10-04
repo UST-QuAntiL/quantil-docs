@@ -58,7 +58,7 @@ A new author is assigned by typing the name into the input field and pressing th
 ## Reference Algorithms
 
 !!! info
-    To reference algorithms in an existing publication, the user has to navigate to the ``General View``
+    To reference algorithms in an existing publication, the user has to be in the ``General View``
 
 In the ``General View`` of the publication, the user as to switch to the tab ``Algorithms``, which is dedicated to referencing algorithms.
 To link algorithms with the currently selected publication, the user has to click on the ``Plus Button`` at the top of the data table.
