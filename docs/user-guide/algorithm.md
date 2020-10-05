@@ -187,98 +187,120 @@ To dereference a problem type, the user has to scroll to the ``Problem Types`` f
 
 ## Reference other Algorithms
 
-To reference other algorithms in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference other algorithms with.
+!!! info 
+    To reference other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.
+	
+To reference some other algorithm with the current one, the user has to click on the ``Plus button`` in the ``Related Algorithms Tab``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_1.PNG "Click on '+' in 'Related Algorithms'-Tab")
 
-In the general view of the algorithm, the user has to switch to the tab ``Related Algorithms``.
+A dialog will open that contains multiple fields that need to be filled by the user to create a relation to some algorithm.
 
-![alt text](./images/algorithm/Open_Related_Algorithms_View.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_2.PNG "Structure of dialog")
 
-To link some other algorithm with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
+In the first step, the user has to describe the relation by entering a description of the relation.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_1.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_3.PNG "Enter description of relation")
 
-This will open a new dialog which is responsible for linking algorithms.
+Then, the other algorithm that should be referenced needs to be selected. For that he can use the input field to find available algorithms by name. The auto-complete of the system will filter available algorithms and display them in a drop-down. The user can pick an algorithm by clicking on it.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_2.PNG "Link other Algorithm")
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select an algorithm and then confirm it by hitting ``Enter``.
 
-Within the dialog, the user has to enter the necessary data to create the relation between two algorithms. For that he needs to describe the relation by entering a description of the relationship between the two algorithms.
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_4.PNG "Choose algorithm to link")
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_3.PNG "Link other Algorithm")
+At last, the type of the relation of the two algorithms needs to be selected. While typing in a relation type, the auto-complete of the system will filter existing relation types while giving the user to ability to create a new one. The user can again select an existing relation type or creating a new by just by clicking on it.
 
-Also, the user has to select the other algorithm he wants to reference. For that he can use the input field to find algorithms by name. The auto-complete of the system will filter available algorithms and display them in a drop-down. The user can pick an algorithm by clicking on it or by using the arrow keys on the keyboard and confirming his selection with the "Enter" button.
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select a relation type and then confirm it by hitting ``Enter``.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_4.PNG "Link other Algorithm")
-
-At last, the user needs to define the type of relation the two algorithms will have. For that he can use the given ``Relation`` input field. While typing, the auto-complete of the system will filter existing relation types while giving the user to ability to create a new one. The user can again select the relation type by clicking on it or by using the keyboard.
-
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_5.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_5.PNG "Select relation type")
 
 After all input data has been filled, the user can confirm the creation of a reference between the two algorithms by clicking on the ``OK`` button.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_6.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_6.PNG "Confirm the reference to the selected algorithm")
 
-If the linking of the two algorithms was successful, the referenced algorithm will appear in the related algorithms list in the ``Related Algorithms`` tab of the algorithm view.
+After the other algorithm was successfully referenced, it will appear in the ``Related Algorithms`` tab of the ``Algorithm View``.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_7.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_7.PNG "Verify reference to other algorithm")
 
-To update a algorithm relation, the user has to press the "Edit" button of the related algorithm in the ``Related Algorithms`` tab.
+## Update reference to other Algorithms
 
-![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_1.PNG "Edit link of other Algorithm")
+!!! info 
+    To update a reference to some other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.
 
-This will open a dialog where the used can adjust the relation information. Here the user can change the description and the type of the relation, before confirming the changes by clicking the "OK" button.
+Updating an algorithm relation is done by clicking on the "Edit" button of a related algorithm in the ``Related Algorithms`` tab.
 
-![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_2.PNG "Edit link of other Algorithm")
+![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_1.PNG "Open update relation dialog")
 
-At last the users can also remove existing relations. This is also done in the ``Related Algorithms`` tab. To remove the relation, the user has to click on the ``Delete`` button of a relation.
+This will open a dialog where the user can adjust the information of the relation. Here, the user can change the description and the type of the relation, before confirming the changes by clicking the ``OK Button``.
 
-![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.1.PNG "Unlink of other Algorithm")
+!!! note
+    Same as with the ``Creation Dialog``, the ``Relation Type`` field has auto-complete functionality. The system will filter existing relation types while giving the user the ability to create a new one. The user can select an existing relation type or creating a new by just by clicking on it or by using the arrow keys on the keyboard in combination with the ``Enter`` key.
 
-Alternatively, the users can use the check-boxes of the first column of the table to select all related algorithms they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear on top of the table which can be used to delete all selected relations.
+![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_2.PNG "Adjust algorithm relation in dialog and confirm")
 
-![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.2.PNG "Unlink of other Algorithm")
+## Dereference other Algorithms
 
-If a ``Delete`` button is pressed, a confirmation dialog will appear listing all relations that will be deleted. To confirm the deletion of the relationship to all displayed algorithms, the user has to click on the ``YES`` button.
+!!! info 
+    To delete existing references to other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.´
 
-![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG "Unlink of other Algorithm")
+To remove a reference, the user can to simply click on the ``Delete Button`` of a related algorithm in the ``Actions Column``.
+
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.1.PNG "Dereference single algorithm")
+
+Alternatively, use the check-boxes to select multiple algorithms and then click on the ``Master Delete button`` to unlink all of them at once.
+
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.2.PNG "Dereference multiple algorithms")
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one related algorithm has been selected.
+
+If a ``Delete`` button is pressed, a confirmation dialog will appear listing all related algorithms that will be unlinked. To confirm the deletion of the relations to all displayed algorithms, the user has to click on the ``YES`` button.
+
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG "Confirm deletion of the references")
 
 ## Reference Publications
 
-To reference publications in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference publications with.
+!!! info 
+    To reference publications in an algorithm, the user has to be in the ``Publications Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+	
+To initiate the linking of a publication, the user has to click on the ``Plus button`` in the ``Publications Tab``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_1.PNG "Click on '+' in 'Publications'-Tab")
 
-In the general view of the algorithm, the user has to switch to the tab ``Publications``.
-
-![alt text](./images/algorithm/Open_Publications_View.PNG "Link Publication")
-
-To link some publication with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
-
-![alt text](./images/algorithm/Link_Publication_-_Step_1.PNG "Link Publication")
-
-This will open a dialog with a separate data list of existing publications.
+This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
 
 ![alt text](./images/algorithm/Link_Publication_-_Step_2.PNG "Link Publication")
 
-For referencing publications the user can now search the table and click on the ``Link`` button of a publication he wants to reference.
+To reference a publication simply click on the ``Link button`` in the ``Actions Column``.
 
 ![alt text](./images/algorithm/Link_Publication_-_Step_3.1.PNG "Link Publication")
 
-Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want reference. After at least one check-box is checked, a ``Master-Link`` button will appear at the top of the table which can be used to link all selected publications with the algorithm.
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link button`` to link all of them at once.
 
+!!! note 
+    ``Master Link button`` will only appear if at least one publication has been selected.
+	
 ![alt text](./images/algorithm/Link_Publication_-_Step_3.2.PNG "Link Publication")
 
-If the linking was successful, the referenced publication(s) will appear in the publications list of the ``Publications`` tab of the algorithm view.
+!!! info 
+    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Algorithm View``.
 
-![alt text](./images/algorithm/Link_Publication_-_Step_4.PNG "Link Publication")
+## Dereference Publications
 
-The user can also remove existing references. This is also done in the ``Publications`` tab. To remove the reference, the user has to click on the ``Delete`` button of a publication reference.
+!!! info 
+    To dereference publications, the user has to be in the ``Publications Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+	
+To remove a reference from a publication, the user has to simply click on the ``Delete Button`` of a publication in the ``Actions Column``.
 
 ![alt text](./images/algorithm/Unlink_Publication_-_Step_1.1.PNG "Unlink Publication")
 
-Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to unlink all selected publications from the algorithm.
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Delete button`` to unlink all of them at once.
 
+!!! note 
+    ``Master Delete button`` will only appear if at least one publication has been selected.
+	
 ![alt text](./images/algorithm/Unlink_Publication_-_Step_1.2.PNG "Unlink Publication")
 
 ## Manage Tags
