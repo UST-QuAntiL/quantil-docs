@@ -347,40 +347,6 @@ Removing tags is done by clicking on their ``'X' buttons``, which are located in
 
 ![alt text](./images/algorithm/Remove_Tag.PNG "Remove Tag")
 
-## Manage Implementations
-
-To create a new implementation for an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to create implementations for.
-
-![alt text](./images/algorithm//Open_Algorithm_View.PNG "Create Implementation")
-
-In the general view of the algorithm, the user has to switch to the tab ``Implementations``.
-
-![alt text](./images/algorithm//Open_Implementations_View.PNG "Create Implementation")
-
-To add a implementation, click on the ``Add button`` located above the data table.
-
-![alt text](./images/algorithm//Create_Implementation_-_Step_1.PNG "Create Implementation")
-
-This will open a dialog where the user can enter information that is required for creating a new implementation.
-
-![alt text](./images/algorithm//Create_Implementation_-_Step_2.PNG "Create Implementation")
-
-Enter the name of the new implementation and then click on the ``OK button`` to confirm the creation of the implementation. If the creation of the implementation was successful, the user will be redirected to the ``Implementation View`` of the created implementation where he can define further properties.
-
-![alt text](./images/algorithm//Create_Implementation_-_Step_3.PNG "Create Implementation")
-
-The user can also remove existing implementations. This is also done in the ``Implementations`` tab. To remove a implementation, the user has to click on the ``Delete`` button of a implementation.
-
-![alt text](./images/algorithm//Delete_Implementation_-_Step_1.1.png "Delete Implementation")
-
-Alternatively, the user can use the check-boxes of the first column of the table to select all implementations they want remove. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to delete all selected implementations of the algorithm.
-
-![alt text](./images/algorithm//Delete_Implementation_-_Step_1.2.png "Delete Implementation")
-
-If a ``Delete`` button is pressed, a confirmation dialog will appear listing all implementations that will be deleted. To confirm the deletion of the displayed implementations, the user has to click on the ``YES`` button.
-
-![alt text](./images/algorithm/Delete_Implementation_-_Step_2.png "Delete Implementation")
-
 ## Reference Patterns
 
 To reference pattern in an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, , the user has to click on the algorithm he wants to reference patterns with.

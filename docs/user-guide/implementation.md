@@ -1,43 +1,47 @@
-# In ubi corde iam maesto texerat
+#
+## Create Implementation
 
-## Animum est Minos dea est respondere auctor
+!!! info 
+    To create a new implementation, the user has to be in the ``Implementations Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-Lorem markdownum clipeum pennae imagine comitant de solacia credant, *potuisse*
-neganda. Ad hoc agros est dolor iam paterque mea tenebras sine dextera dictis
-sumptoque nunc: fuit [admonuisse mihi](http://duplicataquecava.org/). Victoria
-ter aquis et et genae tibi cornus; [non pars
-primum](http://clivoque-suisque.net/rorant.html) tenuit sanguine, orbe.
+Creating a new implementation is done by clicking on the ``Plus Button`` located above the data table.
 
-Fuit lecto contrarius aequoris arsuris
-[litora](http://maliporrigit.com/excinyran.html) turbine noctes habuere, obnoxia
-ablata: furto! Fractae prima cape hic iram si ostendens vicinum!
+![alt text](./images/implementation/Create_Implementation_-_Step_1.PNG "Click '+' Button in Implementation-Tab")
 
-## Reservant negate quot Mavortius auras
+This will open the following ``Creation Dialog``, where the user has to type in all required information for creating a new implementation.
 
-Meliora stantemque caput, mitescere. Fugatis et certos *flammasque meum qui*
-interdum solacia dum haustos haec fluidos nigris luctatur ad habet nec.
+!!! note 
+    Currently, only the ``name`` is required to create a new implementation.
 
-[Nec hoc](http://www.tum.net/velatussuccedere.html) e quoque etiam, tamen non
-tamen germanae, flexo discedens nequiquam voluit voluptas Lycabas locus. Terris
-*tum* cogitur, trepident per; scitabere nisi. Imago orgia nubila *instructo* de
-inquit ipso intra, aut per dixit.
+![alt text](./images/implementation/Create_Implementation_-_Step_2.PNG "Structure of 'Create Dialog'")
 
-## Sardibus Cadmeida
+After entering all required information, the user has to confirm the creation of the implementation by clicking on the ``OK Button``.
 
-Ter teneri tepebat, sincerae foedera. Sonum abiit plangi poteram et quae quot
-Eurydicen hic sinit, est. Honorum mortis? Locis deo Iovi loris contra placuisse
-potiere auxiliumque iuris negare melioris te vicit repetoque prior deploravit
-Burin, quid.
+![alt text](./images/implementation/Create_Implementation_-_Step_3.PNG "Confirm creation")
 
-Ira a cutis putetis, Dulichius collesque nuper inveniesque tuae Deucalioneas!
-Posset sive quaecumque te *pelle enim*: nec saecula per celeberrima dictis
-citharae infraque discedens nescio. Triumpha candida spectata cetera
-[exstantibus](http://invenit.org/faciem), ego Medon dabat, simulacraque acres
-dumque? Secum gravibus Ciconum, erat arte positoque messis frondes tutum; est
-vetui; auctore quae.
+If the creation of the implementation was successful, the user will be redirected to the detailed ``Implementation view`` of the new implementation.
 
-Casa videri et flos, hoc potes exemplis superem postera, arma ex nec pedes
-utilis: monuere loquatur. Fregit regna quam metus pondere centum rerum monet
-manebo [est illos](http://contra.net/salutant.aspx) iram tum coepto. Neve
-anhelitus alumnus et coniunx tegi laniger stagna vocat supremumque Tritona
-fessas rorantia, **permittat**.
+![alt text](./images/implementation/Create_Implementation_-_Step_4.PNG "Implementation View of created implementation")
+
+## Delete Implementation
+
+!!! info 
+    To delete a implementation, the user has to be in the ``Implementations Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+
+To remove a specific implementation, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
+
+![alt text](./images/implementation/Delete_Implementation_-_Step_1.1.png "Delete single implementation")
+
+The user can also remove multiple implementations at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the ``Master Delete Button`` at the top of the data table.
+
+!!! note 
+    The delete button will only appear after at least one implementations has been selected by the user.
+	
+![alt text](./images/implementation//Delete_Implementation_-_Step_1.2.png "Delete multiple implementations")
+
+To confirm the deletion of the selected implementation(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.
+
+!!! note 
+    **Names** of implementations that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.
+	
+![alt text](./images/implementation/Delete_Implementation_-_Step_2.png "Delete Implementation")
