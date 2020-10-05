@@ -2,105 +2,128 @@
 ## Create Algorithm
 
 To create an algorithm the user has to navigate to the ``Algorithm List View`` by using the navigation sidebar.
-This view displays a list of all available algorithms. Creating a new algorithm is done via the ``Plus Button`` which is located above the list.
+This view displays all available algorithms in a table. Creating a new algorithm is done via the ``Plus Button`` which is located above the table.
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_1.png "Create algorithm")
+![alt text](./images/algorithm/Create_Algorithm_-_Step_1.png "Open creation dialog")
 
-Clicking on the ``Plus Button`` will open the following dialog.
+Clicking on the ``Plus Button`` will open the following ``Creation Dialog``, where the user has to type in all required information for creating a new algorithm.
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_2.1.png "Create algorithm")
+!!! note 
+    Depending on the selected ``Computational Model``, a third input field might show up, allowing the user to define the ``Quantum Computation Model``.
 
-In the dialog it is possible to give the new algotihm a name.
+![alt text](./images/algorithm/Create_Algorithm_-_Step_2.PNG "Structure of creation dialog")
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_2.2.png "Create algorithm")
+After entering all required information, the user has to confirm the creation of the algorithm by clicking on the ``OK Button``.
 
-Besides the name it is also necessary to assign a type to the new algorithm. 
-There are three types to choose from: ``Classic``, ``Quantum`` and ``Hybrid``.
+![alt text](./images/algorithm/Create_Algorithm_-_Step_3.png "Confirm creation")
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_2.3.png "Create algorithm")
+If the creation of the algorithm was successful, the user will be redirected to the detailed ``Algorithm view`` of the new algorithm.
 
-If a quantum algorithm has been selected, a suitable quantum computation model must also be selected.
-Again there are three types to choose from: ``Gate Based``,  ``Measurement Based`` and``Quantum Annealing``.
-
-![alt text](./images/algorithm/Create_Algorithm_-_Step_3.png "Create algorithm")
-
-After all necessary fields have been filled in, the creation of the algorithm can be confirmed by clicking on the ``OK Button``. After a successfull creation, the user will be navigated to the detailed view of the new algorithm.
+![alt text](./images/algorithm/Create_Algorithm_-_Step_4.PNG "Algorithm view of created algorithm")
 
 ## Delete Algorithm
 
-To delete an algorithm the user has to navigate to the ``Algorithm List View`` list view by using the navigation sidebar.
+!!! info 
+    To perform the deletion of an algorithm, the user has to be in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.png "Delete algorithm")
+To remove a specific algorithm, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
 
-To delete single algorithms, the user can just press the ``Delete Button`` in the actions column of the table.
+![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.1.png "Delete single algorithm")
 
-![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.1.png "Delete algorithm")
-
-It is also possible to delete multiple algorithms at once by selecting them one by one using the check-boxes within the table. When at least one algorithm is selected, a master delete button will show up above the table. To delete the selected algorithms at once, this button must be pressed.
-
-![alt text](./images/algorithm/Delete_Algorithm_-_Step_2.png "Delete algorithm")
-
-Both ways of deleting algorithm will lead to a confirmation dialog. This dialog will list all the previously selected algorithms that will be deleted. To finally confirm the deletion, the "OK" button at the bottom of the dialog has to be pressed. After a successful deletion the deleted algorithms will disappear from the table.
-
-## Update Algorithm Properties
-
-To update basic properties of an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to simply click on the algorithm he wants to update.
-
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Update Algorithm Properties")
-
-After the user selects an algorithm from the list, he will be navigated to the general view of the selected algorithm. In the "General" tab of the view, the user can adjust all basic properties of the algorithm.
-
-![alt text](./images/algorithm/Update_Algorithm_Properties-_Step_2.PNG "Update Algorithm Properties")
-
-To adjust these properties the user has to simply click on the properties input field, check box or selection drop down and adjust the current value by selecting or typing.
-
-![alt text](./images/algorithm/Update_Algorithm_Properties-_Step_3.PNG "Update Algorithm Properties")
+The user can also remove multiple algorithms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the ``Master Delete Button`` at the top of the data table.
 
 !!! note 
-    To save any changes to the properties of an algorithm there are two options:
+    The delete button will only appear after at least one algorithm has been selected by the user.
 
-    * Save the changes on a field by field basis. For that the user has to click on the ``Save Button`` located next to the field that was edited. Alternatively the user can confirm the changes by pressing ``Enter`` on the keyboard. 
+![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.2.png "Delete multiple algorithms")
 
-    * Save all changes at once by clicking on the round  ``Save Button`` button which appears at the right side of the screen.
+To confirm the deletion of the selected algorithm(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.
 
-## Manage Compute Resource Properties
+!!! note 
+    **Names** of algorithms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.
 
-To manage computing resource properties of an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to simply click on the algorithm for which he wants for manage the compute resources for.
+![alt text](./images/algorithm/Delete_Algorithm_-_Step_2.png "Confirm deletion")
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Add Compute Resource")
+## Update Algorithm Information
 
-In the general view of the algorithm, the user can also manage the compute resource of the selected algorithm. For that the user has to go to the "Required Compute Resource Properties" field and click on the "Plus" button, which will open up a new dialog for the creation of a new compute resource property.
+!!! info 
+    To update the information of an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+	
+Updating basic information is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new values or adjust existing ones.
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_1.PNG "Add Compute Resource")
+![alt text](./images/algorithm/Update_Algorithm_Properties_-_Step_1.PNG "A small part of the 'General Tab' of the 'Algorithm View'")
 
-In the creation dialog, the user has to fill in all necessary data for the new property. Here it is important that the "Property Value" matches the given "Data Type".
+If information is changed, a ``Save button`` will be displayed next that specific input field. Also, a ``Master Save button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save button``.
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_2.PNG "Add Compute Resource")
+!!! note 
+    The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
+	
+![alt text](./../images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG "Saving the changes")
 
-After all data has been provided by the user, the new property can finally be created using the "OK".
+!!! info 
+	**Required Compute Resource Properties**, **Problem Types** and **Application Areas** are stored separately and therefor do not belong to the basic information of the algorithm. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
+	
+## Create Compute Resource Properties
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_3.PNG "Add Compute Resource")
+!!! info 
+    To create a compute resource property for the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-In case of a successful creation, the created compute resource property will be directly visible in the general view of the selected algorithm. 
-NOTE: Compared to the basic properties of the algorithm, the management of the compute resource properties will be performed directly and does not have to be confirmed by clicking on a save button.
+Creating properties for a compute resource is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Required Compute Resource Property Field``.
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_4.PNG "Add Compute Resource")
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_1.PNG "Open Property Dialog")
 
-Updating an existing property is initiated by hovering over it in the general view of the algorithm. Then the "Edit" button will appear. By pressing the "Edit" button, a dialog will be opened for updating the selected property.
+This will open a separate ``Creation Dialog`` where the user will have to enter all important information of about the property he wants to create.
 
-![alt text](./images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Update Compute Resource")
+!!! note 
+	The **Type Name** field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.
 
-In the dialog, the user can adjust the data of the selected compute resource property.
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_2.PNG "Dialog structure")
 
-![alt text](./images/algorithm/Update_Compute_Resource_-_Step_2.PNG "Update Compute Resource")
+After all fields have been filled, the user can finally add the property by confirming the creation via the existing ``OK button``.
 
-After the user is happy with the changes, he has to confirm them using the "OK" button which is located at the bottom of the dialog.
+!!! note 
+	The **Property Value** needs to match the selected **Data Type**.
 
-![alt text](./images/algorithm/Update_Compute_Resource_-_Step_3.PNG "Update Compute Resource")
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_3.PNG "Confirm creation")
 
-Finally, the user can also delete a compute resource property. This can also be done by hovering over the property in the general view of the algorithm and then pressing on the "Delete" button which will show up when the property is hovered.
+After the property has been successfully created, it will appear in the the dedicated ``Required Compute Resource Property Field`` of the ``Algorithm View``.
+
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_4.PNG "Verify creation")
+
+## Update Compute Resource Properties
+
+!!! info 
+    To update a compute resource property of the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+
+Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
+	
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
+
+This will open a separate ``Update Dialog`` where the information of the property can be adjusted.
+
+!!! note 
+	The **Type Name** field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.
+
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_2.PNG "Dialog structure")
+
+After all fields have been adjusted, the user can finally update the property by confirming the update via the existing ``OK button``.
+
+!!! note 
+	The **Property Value** needs to match the selected **Data Type**.
+
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_3.PNG "Confirm update")
+
+## Delete Compute Resource Properties
+
+!!! info 
+    To delete a property for an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a compute resource in the ``Algorithm List View``.
+	
+Deleting properties for a compute resource is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
 
 ![alt text](./images/algorithm/Delete_Compute_Resource.PNG "Delete Compute Resource")
+
+!!! info 
+	A successfully deleted property should disappear from the dedicated ``Required Compute Resource Property Field`` after deletion.
 
 ## Reference Application Areas
 

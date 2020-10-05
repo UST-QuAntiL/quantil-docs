@@ -51,7 +51,6 @@ To confirm the deletion of the selected compute resource(s), the user has to cli
 
 ![alt text](./../images/compute_resource/Delete_Compute_Resource_-_Step_2.PNG "Confirm deletion of selected compute resource(s)")
 
-
 ## Update Compute Resource Information
 
 !!! info 
@@ -69,7 +68,7 @@ If information is changed, a ``Save button`` will be displayed next that specifi
 ![alt text](./../images/compute_resource/Update_Compute_Resource_-_Step_2.PNG "Saving the changes")
 
 !!! info 
-	**Compute Resource Properties** of are stored separately and therefor do not belong to the basic properties. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
+	**Compute Resource Properties** of are stored separately and therefor do not belong to the basic information of a resource. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
 	
 ## Create Compute Resource Property
 
