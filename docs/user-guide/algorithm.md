@@ -127,39 +127,48 @@ Deleting properties for a compute resource is done in the ``General Tab`` of the
 
 ## Reference Application Areas
 
-To reference application areas in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference application areas with.
+!!! info 
+    To reference application areas in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Application Area")
+Referencing problem types is done via the dedicated ``Application Areas`` field.
 
-In the general view of the algorithm, there is a specific ``Application Areas`` field which is dedicated to referencing application areas.
-
-![alt text](./images/algorithm/Link_Application_Area_-_Step_1.PNG "Link Application Area")
+![alt text](./images/algorithm/Link_Application_Area_-_Step_1.PNG "Go to dedicated application area field in algorithm view")
 
 To link a application area to the algorithm, the user has to use the input field to search for an application area by typing it's name. While typing, the system's auto-complete feature will display available application areas in a drop-down.
-To finally link a application area, the user has to click on one of the available areas from the drop-down. Alternatively, the user can use the arrow buttons on the keyboard to select a application area and confirm the link with the "Enter" button on the keyboard.
+To finally link a application area, the user has to click on one of the available areas from the drop-down. 
 
-![alt text](./images/algorithm/Link_Application_Area_-_Step_2.PNG "Link Application Area")
+!!! note
+    Alternatively, the user can use the arrow keys of the keyboard to select an application area and confirm by hitting ``Enter``.
 
-After the linking process has been successfully completed, the freshly linked application area will be displayed beneath the input field.
+![alt text](./images/algorithm/Link_Application_Area_-_Step_2.PNG "Search for application area by name")
 
-![alt text](./images/algorithm/Link_Application_Area_-_Step_3.PNG "Link Application Area")
+After successfully referencing the application area, it will be displayed in the ``Application Areas`` field.
 
-To remove the reference from a application area, the user simply has to click on the "X" button of the displayed application area.
+![alt text](./images/algorithm/Link_Application_Area_-_Step_3.PNG "Verify reference")
+
+## Dereference Application Areas
+
+!!! info 
+    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+
+To dereference an application area, the user has to scroll to the ``Application Areas`` field and simply click on the ``Delete button`` of the application area he wants to remove from the algorithm.
 
 ![alt text](./images/algorithm/Unlink_Application_Area.PNG "Unlink Application Area")
 
 ## Reference Problem Types
 
-To reference problem types in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference problem types with.
+!!! info 
+    To reference problem types in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Problem Type")
+Referencing problem types is done via the dedicated ``Problem Types`` field.
 
-In the general view of the algorithm, there is a specific ``Problem types`` field which is dedicated to referencing problem types.
-
-![alt text](./images/algorithm/Link_Problem_Type_-_Step_1.PNG "Link Problem Type")
+![alt text](./images/algorithm/Link_Problem_Type_-_Step_1.PNG "Go to dedicated problem types field in algorithm view")
 
 To link a problem type to the algorithm, the user has to use the input field to search for a problem type by typing it's name. While typing, the system's auto-complete feature will display available problem types in a drop-down.
-To finally link a problem type, the user has to click on one of the problem types from the drop-down. Alternatively, the user can use the arrow buttons on the keyboard to select a problem type and confirm the link with the "Enter" button on the keyboard.
+To finally link a problem type, the user has to click on one of the problem types from the drop-down. 
+
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select a problem type and confirm the link with the "Enter" button on the keyboard.
 
 ![alt text](./images/algorithm/Link_Problem_Type_-_Step_2.PNG "Link Problem Type")
 
@@ -167,7 +176,12 @@ After the linking process has been successfully completed, the freshly linked pr
 
 ![alt text](./images/algorithm/Link_Problem_Type_-_Step_3.PNG "Link Problem Type")
 
-To remove the reference from a problem type, the user simply has to click on the "Delete" button which is located next to the displayed problem type.
+## Dereference Problem Types
+
+!!! info 
+    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+
+To dereference a problem type, the user has to scroll to the ``Problem Types`` field and simply click on the ``Delete button`` of the problem type he wants to remove from the algorithm.
 
 ![alt text](./images/algorithm/Unlink_Problem_Type.PNG "Unlink Problem Type")
 
