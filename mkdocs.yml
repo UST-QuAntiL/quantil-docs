@@ -13,4 +13,5 @@ nav:
             - 'Software Platforms': 'user-guide/execution-environments/software-platform.md'
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
+        - 'IntelliJ Setup': 'developer-guide/intellij.md'
 theme: readthedocs
