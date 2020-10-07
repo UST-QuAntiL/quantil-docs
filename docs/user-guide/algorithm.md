@@ -2,141 +2,173 @@
 ## Create Algorithm
 
 To create an algorithm the user has to navigate to the ``Algorithm List View`` by using the navigation sidebar.
-This view displays a list of all available algorithms. Creating a new algorithm is done via the ``Plus Button`` which is located above the list.
+This view displays all available algorithms in a table. Creating a new algorithm is done via the ``Plus Button`` which is located above the table.
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_1.png "Create algorithm")
+![alt text](./images/algorithm/Create_Algorithm_-_Step_1.png "Open creation dialog")
 
-Clicking on the ``Plus Button`` will open the following dialog.
+Clicking on the ``Plus Button`` will open the following ``Creation Dialog``, where the user has to type in all required information for creating a new algorithm.
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_2.1.png "Create algorithm")
+!!! note 
+    Depending on the selected ``Computational Model``, a third input field might show up, allowing the user to define the ``Quantum Computation Model``.
 
-In the dialog it is possible to give the new algotihm a name.
+![alt text](./images/algorithm/Create_Algorithm_-_Step_2.PNG "Structure of creation dialog")
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_2.2.png "Create algorithm")
+After entering all required information, the user has to confirm the creation of the algorithm by clicking on the ``OK Button``.
 
-Besides the name it is also necessary to assign a type to the new algorithm. 
-There are three types to choose from: ``Classic``, ``Quantum`` and ``Hybrid``.
+![alt text](./images/algorithm/Create_Algorithm_-_Step_3.png "Confirm creation")
 
-![alt text](./images/algorithm/Create_Algorithm_-_Step_2.3.png "Create algorithm")
+If the creation of the algorithm was successful, the user will be redirected to the detailed ``Algorithm view`` of the new algorithm.
 
-If a quantum algorithm has been selected, a suitable quantum computation model must also be selected.
-Again there are three types to choose from: ``Gate Based``,  ``Measurement Based`` and``Quantum Annealing``.
-
-![alt text](./images/algorithm/Create_Algorithm_-_Step_3.png "Create algorithm")
-
-After all necessary fields have been filled in, the creation of the algorithm can be confirmed by clicking on the ``OK Button``. After a successfull creation, the user will be navigated to the detailed view of the new algorithm.
+![alt text](./images/algorithm/Create_Algorithm_-_Step_4.PNG "Algorithm view of created algorithm")
 
 ## Delete Algorithm
 
-To delete an algorithm the user has to navigate to the ``Algorithm List View`` list view by using the navigation sidebar.
+!!! info 
+    To perform the deletion of an algorithm, the user has to be in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.png "Delete algorithm")
+To remove a specific algorithm, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
 
-To delete single algorithms, the user can just press the ``Delete Button`` in the actions column of the table.
+![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.1.png "Delete single algorithm")
 
-![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.1.png "Delete algorithm")
-
-It is also possible to delete multiple algorithms at once by selecting them one by one using the check-boxes within the table. When at least one algorithm is selected, a master delete button will show up above the table. To delete the selected algorithms at once, this button must be pressed.
-
-![alt text](./images/algorithm/Delete_Algorithm_-_Step_2.png "Delete algorithm")
-
-Both ways of deleting algorithm will lead to a confirmation dialog. This dialog will list all the previously selected algorithms that will be deleted. To finally confirm the deletion, the "OK" button at the bottom of the dialog has to be pressed. After a successful deletion the deleted algorithms will disappear from the table.
-
-## Update Algorithm Properties
-
-To update basic properties of an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to simply click on the algorithm he wants to update.
-
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Update Algorithm Properties")
-
-After the user selects an algorithm from the list, he will be navigated to the general view of the selected algorithm. In the "General" tab of the view, the user can adjust all basic properties of the algorithm.
-
-![alt text](./images/algorithm/Update_Algorithm_Properties-_Step_2.PNG "Update Algorithm Properties")
-
-To adjust these properties the user has to simply click on the properties input field, check box or selection drop down and adjust the current value by selecting or typing.
-
-![alt text](./images/algorithm/Update_Algorithm_Properties-_Step_3.PNG "Update Algorithm Properties")
+The user can also remove multiple algorithms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the ``Master Delete Button`` at the top of the data table.
 
 !!! note 
-    To save any changes to the properties of an algorithm there are two options:
+    The delete button will only appear after at least one algorithm has been selected by the user.
 
-    * Save the changes on a field by field basis. For that the user has to click on the ``Save Button`` located next to the field that was edited. Alternatively the user can confirm the changes by pressing ``Enter`` on the keyboard. 
+![alt text](./images/algorithm/Delete_Algorithm_-_Step_1.2.png "Delete multiple algorithms")
 
-    * Save all changes at once by clicking on the round  ``Save Button`` button which appears at the right side of the screen.
+To confirm the deletion of the selected algorithm(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.
 
-## Manage Compute Resource Properties
+!!! note 
+    **Names** of algorithms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.
 
-To manage computing resource properties of an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to simply click on the algorithm for which he wants for manage the compute resources for.
+![alt text](./images/algorithm/Delete_Algorithm_-_Step_2.png "Confirm deletion")
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Add Compute Resource")
+## Update Algorithm Information
 
-In the general view of the algorithm, the user can also manage the compute resource of the selected algorithm. For that the user has to go to the "Required Compute Resource Properties" field and click on the "Plus" button, which will open up a new dialog for the creation of a new compute resource property.
+!!! info 
+    To update the information of an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+	
+Updating basic information is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new values or adjust existing ones.
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_1.PNG "Add Compute Resource")
+![alt text](./images/algorithm/Update_Algorithm_Properties_-_Step_1.PNG "A small part of the 'General Tab' of the 'Algorithm View'")
 
-In the creation dialog, the user has to fill in all necessary data for the new property. Here it is important that the "Property Value" matches the given "Data Type".
+If information is changed, a ``Save button`` will be displayed next that specific input field. Also, a ``Master Save button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save button``.
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_2.PNG "Add Compute Resource")
+!!! note 
+    The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
+	
+![alt text](./../images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG "Saving the changes")
 
-After all data has been provided by the user, the new property can finally be created using the "OK".
+!!! info 
+	**Required Compute Resource Properties**, **Problem Types** and **Application Areas** are stored separately and therefor do not belong to the basic information of the algorithm. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
+	
+## Create Compute Resource Properties
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_3.PNG "Add Compute Resource")
+!!! info 
+    To create a compute resource property for the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-In case of a successful creation, the created compute resource property will be directly visible in the general view of the selected algorithm. 
-NOTE: Compared to the basic properties of the algorithm, the management of the compute resource properties will be performed directly and does not have to be confirmed by clicking on a save button.
+Creating properties for a compute resource is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Required Compute Resource Property Field``.
 
-![alt text](./images/algorithm/Add_Compute_Resource_-_Step_4.PNG "Add Compute Resource")
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_1.PNG "Open Property Dialog")
 
-Updating an existing property is initiated by hovering over it in the general view of the algorithm. Then the "Edit" button will appear. By pressing the "Edit" button, a dialog will be opened for updating the selected property.
+This will open a separate ``Creation Dialog`` where the user will have to enter all important information of about the property he wants to create.
 
-![alt text](./images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Update Compute Resource")
+!!! note 
+	The **Type Name** field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.
 
-In the dialog, the user can adjust the data of the selected compute resource property.
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_2.PNG "Dialog structure")
 
-![alt text](./images/algorithm/Update_Compute_Resource_-_Step_2.PNG "Update Compute Resource")
+After all fields have been filled, the user can finally add the property by confirming the creation via the existing ``OK button``.
 
-After the user is happy with the changes, he has to confirm them using the "OK" button which is located at the bottom of the dialog.
+!!! note 
+	The **Property Value** needs to match the selected **Data Type**.
 
-![alt text](./images/algorithm/Update_Compute_Resource_-_Step_3.PNG "Update Compute Resource")
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_3.PNG "Confirm creation")
 
-Finally, the user can also delete a compute resource property. This can also be done by hovering over the property in the general view of the algorithm and then pressing on the "Delete" button which will show up when the property is hovered.
+After the property has been successfully created, it will appear in the the dedicated ``Required Compute Resource Property Field`` of the ``Algorithm View``.
+
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_4.PNG "Verify creation")
+
+## Update Compute Resource Properties
+
+!!! info 
+    To update a compute resource property of the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+
+Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
+	
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
+
+This will open a separate ``Update Dialog`` where the information of the property can be adjusted.
+
+!!! note 
+	The **Type Name** field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.
+
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_2.PNG "Dialog structure")
+
+After all fields have been adjusted, the user can finally update the property by confirming the update via the existing ``OK button``.
+
+!!! note 
+	The **Property Value** needs to match the selected **Data Type**.
+
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_3.PNG "Confirm update")
+
+## Delete Compute Resource Properties
+
+!!! info 
+    To delete a property for an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a compute resource in the ``Algorithm List View``.
+	
+Deleting properties for a compute resource is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
 
 ![alt text](./images/algorithm/Delete_Compute_Resource.PNG "Delete Compute Resource")
 
+!!! info 
+	A successfully deleted property should disappear from the dedicated ``Required Compute Resource Property Field`` after deletion.
+
 ## Reference Application Areas
 
-To reference application areas in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference application areas with.
+!!! info 
+    To reference application areas in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Application Area")
+Referencing problem types is done via the dedicated ``Application Areas`` field.
 
-In the general view of the algorithm, there is a specific ``Application Areas`` field which is dedicated to referencing application areas.
-
-![alt text](./images/algorithm/Link_Application_Area_-_Step_1.PNG "Link Application Area")
+![alt text](./images/algorithm/Link_Application_Area_-_Step_1.PNG "Go to dedicated application area field in algorithm view")
 
 To link a application area to the algorithm, the user has to use the input field to search for an application area by typing it's name. While typing, the system's auto-complete feature will display available application areas in a drop-down.
-To finally link a application area, the user has to click on one of the available areas from the drop-down. Alternatively, the user can use the arrow buttons on the keyboard to select a application area and confirm the link with the "Enter" button on the keyboard.
+To finally link a application area, the user has to click on one of the available areas from the drop-down. 
 
-![alt text](./images/algorithm/Link_Application_Area_-_Step_2.PNG "Link Application Area")
+!!! note
+    Alternatively, the user can use the arrow keys of the keyboard to select an application area and confirm by hitting ``Enter``.
 
-After the linking process has been successfully completed, the freshly linked application area will be displayed beneath the input field.
+![alt text](./images/algorithm/Link_Application_Area_-_Step_2.PNG "Search for application area by name")
 
-![alt text](./images/algorithm/Link_Application_Area_-_Step_3.PNG "Link Application Area")
+After successfully referencing the application area, it will be displayed in the ``Application Areas`` field.
 
-To remove the reference from a application area, the user simply has to click on the "X" button of the displayed application area.
+![alt text](./images/algorithm/Link_Application_Area_-_Step_3.PNG "Verify reference")
+
+## Dereference Application Areas
+
+!!! info 
+    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+
+To dereference an application area, the user has to scroll to the ``Application Areas`` field and simply click on the ``Delete button`` of the application area he wants to remove from the algorithm.
 
 ![alt text](./images/algorithm/Unlink_Application_Area.PNG "Unlink Application Area")
 
 ## Reference Problem Types
 
-To reference problem types in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference problem types with.
+!!! info 
+    To reference problem types in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Problem Type")
+Referencing problem types is done via the dedicated ``Problem Types`` field.
 
-In the general view of the algorithm, there is a specific ``Problem types`` field which is dedicated to referencing problem types.
-
-![alt text](./images/algorithm/Link_Problem_Type_-_Step_1.PNG "Link Problem Type")
+![alt text](./images/algorithm/Link_Problem_Type_-_Step_1.PNG "Go to dedicated problem types field in algorithm view")
 
 To link a problem type to the algorithm, the user has to use the input field to search for a problem type by typing it's name. While typing, the system's auto-complete feature will display available problem types in a drop-down.
-To finally link a problem type, the user has to click on one of the problem types from the drop-down. Alternatively, the user can use the arrow buttons on the keyboard to select a problem type and confirm the link with the "Enter" button on the keyboard.
+To finally link a problem type, the user has to click on one of the problem types from the drop-down. 
+
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select a problem type and confirm the link with the "Enter" button on the keyboard.
 
 ![alt text](./images/algorithm/Link_Problem_Type_-_Step_2.PNG "Link Problem Type")
 
@@ -144,260 +176,277 @@ After the linking process has been successfully completed, the freshly linked pr
 
 ![alt text](./images/algorithm/Link_Problem_Type_-_Step_3.PNG "Link Problem Type")
 
-To remove the reference from a problem type, the user simply has to click on the "Delete" button which is located next to the displayed problem type.
+## Dereference Problem Types
+
+!!! info 
+    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+
+To dereference a problem type, the user has to scroll to the ``Problem Types`` field and simply click on the ``Delete button`` of the problem type he wants to remove from the algorithm.
 
 ![alt text](./images/algorithm/Unlink_Problem_Type.PNG "Unlink Problem Type")
 
 ## Reference other Algorithms
 
-To reference other algorithms in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference other algorithms with.
+!!! info 
+    To reference other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.
+	
+To reference some other algorithm with the current one, the user has to click on the ``Plus button`` in the ``Related Algorithms Tab``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_1.PNG "Click on '+' in 'Related Algorithms'-Tab")
 
-In the general view of the algorithm, the user has to switch to the tab ``Related Algorithms``.
+A dialog will open that contains multiple fields that need to be filled by the user to create a relation to some algorithm.
 
-![alt text](./images/algorithm/Open_Related_Algorithms_View.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_2.PNG "Structure of dialog")
 
-To link some other algorithm with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
+In the first step, the user has to describe the relation by entering a description of the relation.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_1.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_3.PNG "Enter description of relation")
 
-This will open a new dialog which is responsible for linking algorithms.
+Then, the other algorithm that should be referenced needs to be selected. For that he can use the input field to find available algorithms by name. The auto-complete of the system will filter available algorithms and display them in a drop-down. The user can pick an algorithm by clicking on it.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_2.PNG "Link other Algorithm")
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select an algorithm and then confirm it by hitting ``Enter``.
 
-Within the dialog, the user has to enter the necessary data to create the relation between two algorithms. For that he needs to describe the relation by entering a description of the relationship between the two algorithms.
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_4.PNG "Choose algorithm to link")
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_3.PNG "Link other Algorithm")
+At last, the type of the relation of the two algorithms needs to be selected. While typing in a relation type, the auto-complete of the system will filter existing relation types while giving the user to ability to create a new one. The user can again select an existing relation type or creating a new by just by clicking on it.
 
-Also, the user has to select the other algorithm he wants to reference. For that he can use the input field to find algorithms by name. The auto-complete of the system will filter available algorithms and display them in a drop-down. The user can pick an algorithm by clicking on it or by using the arrow keys on the keyboard and confirming his selection with the "Enter" button.
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select a relation type and then confirm it by hitting ``Enter``.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_4.PNG "Link other Algorithm")
-
-At last, the user needs to define the type of relation the two algorithms will have. For that he can use the given ``Relation`` input field. While typing, the auto-complete of the system will filter existing relation types while giving the user to ability to create a new one. The user can again select the relation type by clicking on it or by using the keyboard.
-
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_5.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_5.PNG "Select relation type")
 
 After all input data has been filled, the user can confirm the creation of a reference between the two algorithms by clicking on the ``OK`` button.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_6.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_6.PNG "Confirm the reference to the selected algorithm")
 
-If the linking of the two algorithms was successful, the referenced algorithm will appear in the related algorithms list in the ``Related Algorithms`` tab of the algorithm view.
+After the other algorithm was successfully referenced, it will appear in the ``Related Algorithms`` tab of the ``Algorithm View``.
 
-![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_7.PNG "Link other Algorithm")
+![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_7.PNG "Verify reference to other algorithm")
 
-To update a algorithm relation, the user has to press the "Edit" button of the related algorithm in the ``Related Algorithms`` tab.
+## Update reference to other Algorithms
 
-![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_1.PNG "Edit link of other Algorithm")
+!!! info 
+    To update a reference to some other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.
 
-This will open a dialog where the used can adjust the relation information. Here the user can change the description and the type of the relation, before confirming the changes by clicking the "OK" button.
+Updating an algorithm relation is done by clicking on the "Edit" button of a related algorithm in the ``Related Algorithms`` tab.
 
-![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_2.PNG "Edit link of other Algorithm")
+![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_1.PNG "Open update relation dialog")
 
-At last the users can also remove existing relations. This is also done in the ``Related Algorithms`` tab. To remove the relation, the user has to click on the ``Delete`` button of a relation.
+This will open a dialog where the user can adjust the information of the relation. Here, the user can change the description and the type of the relation, before confirming the changes by clicking the ``OK Button``.
 
-![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.1.PNG "Unlink of other Algorithm")
+!!! note
+    Same as with the ``Creation Dialog``, the ``Relation Type`` field has auto-complete functionality. The system will filter existing relation types while giving the user the ability to create a new one. The user can select an existing relation type or creating a new by just by clicking on it or by using the arrow keys on the keyboard in combination with the ``Enter`` key.
 
-Alternatively, the users can use the check-boxes of the first column of the table to select all related algorithms they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear on top of the table which can be used to delete all selected relations.
+![alt text](./images/algorithm/Update_Link_Other_Algorithm_-_Step_2.PNG "Adjust algorithm relation in dialog and confirm")
 
-![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.2.PNG "Unlink of other Algorithm")
+## Dereference other Algorithms
 
-If a ``Delete`` button is pressed, a confirmation dialog will appear listing all relations that will be deleted. To confirm the deletion of the relationship to all displayed algorithms, the user has to click on the ``YES`` button.
+!!! info 
+    To delete existing references to other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.´
 
-![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG "Unlink of other Algorithm")
+To remove a reference, the user can to simply click on the ``Delete Button`` of a related algorithm in the ``Actions Column``.
+
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.1.PNG "Dereference single algorithm")
+
+Alternatively, use the check-boxes to select multiple algorithms and then click on the ``Master Delete button`` to unlink all of them at once.
+
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_1.2.PNG "Dereference multiple algorithms")
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one related algorithm has been selected.
+
+If a ``Delete`` button is pressed, a confirmation dialog will appear listing all related algorithms that will be unlinked. To confirm the deletion of the relations to all displayed algorithms, the user has to click on the ``YES`` button.
+
+![alt text](./images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG "Confirm deletion of the references")
 
 ## Reference Publications
 
-To reference publications in an existing algorithm, the user has to navigate to the general view of the algorithm he wants to update. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to reference publications with.
+!!! info 
+    To reference publications in an algorithm, the user has to be in the ``Publications Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+	
+To initiate the linking of a publication, the user has to click on the ``Plus button`` in the ``Publications Tab``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Link Publication")
+![alt text](./images/algorithm/Link_Publication_-_Step_1.PNG "Click on '+' in 'Publications'-Tab")
 
-In the general view of the algorithm, the user has to switch to the tab ``Publications``.
-
-![alt text](./images/algorithm/Open_Publications_View.PNG "Link Publication")
-
-To link some publication with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
-
-![alt text](./images/algorithm/Link_Publication_-_Step_1.PNG "Link Publication")
-
-This will open a dialog with a separate data list of existing publications.
+This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
 
 ![alt text](./images/algorithm/Link_Publication_-_Step_2.PNG "Link Publication")
 
-For referencing publications the user can now search the table and click on the ``Link`` button of a publication he wants to reference.
+To reference a publication simply click on the ``Link button`` in the ``Actions Column``.
 
 ![alt text](./images/algorithm/Link_Publication_-_Step_3.1.PNG "Link Publication")
 
-Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want reference. After at least one check-box is checked, a ``Master-Link`` button will appear at the top of the table which can be used to link all selected publications with the algorithm.
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link button`` to link all of them at once.
 
+!!! note 
+    ``Master Link button`` will only appear if at least one publication has been selected.
+	
 ![alt text](./images/algorithm/Link_Publication_-_Step_3.2.PNG "Link Publication")
 
-If the linking was successful, the referenced publication(s) will appear in the publications list of the ``Publications`` tab of the algorithm view.
+!!! info 
+    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Algorithm View``.
 
-![alt text](./images/algorithm/Link_Publication_-_Step_4.PNG "Link Publication")
+## Dereference Publications
 
-The user can also remove existing references. This is also done in the ``Publications`` tab. To remove the reference, the user has to click on the ``Delete`` button of a publication reference.
+!!! info 
+    To dereference publications, the user has to be in the ``Publications Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+	
+To remove a reference from a publication, the user has to simply click on the ``Delete Button`` of a publication in the ``Actions Column``.
 
-![alt text](./images/algorithm/Unlink_Publication_-_Step_1.1.PNG "Unlink Publication")
+![alt text](./images/algorithm/Unlink_Publication_-_Step_1.1.PNG "Dereference single publication")
 
-Alternatively, the users can use the check-boxes of the first column of the table to select all publications they want dereference. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to unlink all selected publications from the algorithm.
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Delete button`` to unlink all of them at once.
 
-![alt text](./images/algorithm/Unlink_Publication_-_Step_1.2.PNG "Unlink Publication")
+!!! note 
+    ``Master Delete button`` will only appear if at least one publication has been selected.
+	
+![alt text](./images/algorithm/Unlink_Publication_-_Step_1.2.PNG "Dereference multiple publications")
 
-## Manage Tags
+## Add Tags
 
-To add a tag to an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to add tags to.
+!!! info 
+    To add tags to an algorithm, the user has to be in the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Open_Algorithm_View.PNG "Add Tag")
+In the ``header`` of the ``Algorithm View``, the user has to click on the ``Plus Button`` which is used to add tags.
 
-In the header of the general view of the algorithm, the user has to click on the ``Plus Button`` which is used to add tags.
+![alt text](./images/algorithm/Add_Tag_-_Step_1.PNG "Click '+' button in 'Algorithm View' header")
 
-![alt text](./images/algorithm/Add_Tag_-_Step_1.PNG "Add Tag")
+A ``Add Tag Dialog`` will open that contains fields for ``Tag Category`` and ``Tag Value`` that need to be defined for creating a new tag.
 
-This will open a new dialog. In this dialog the user has to fill in the required data like ``Tag Category`` and ``Tag Value`` to describe the Tag that will be added to the algorithm.
+![alt text](./images/algorithm/Add_Tag_-_Step_2.PNG "Structure of 'Add Tag Dialog'")
 
-![alt text](./images/algorithm/Add_Tag_-_Step_2.PNG "Add Tag")
+The ``Tag Value`` field is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.
 
-The ``Tag Value`` field is equipped auto-complete functionalities. While writing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it or by using the arrow keys on the keyboard and confirming the selection with the ``Enter Button`` on the keyboard. Alternatively the user can ignore the recommendations and fill the input field with a new tag value.
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag value and then confirm it by hitting ``Enter``.
 
-![alt text](./images/algorithm/Add_Tag_-_Step_3.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_3.PNG "Enter Tag Value")
 
-The ``Tag Category`` field is also equipped auto-complete functionalities which works the same way as the ``Tag Value`` field from the previous step.
+The ``Tag Category`` field is equipped auto-complete functionalities. While typing, it will recommend existing categories to the user. The user can then either pick one of the existing categories by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag category.
 
-![alt text](./images/algorithm/Add_Tag_-_Step_4.PNG "Add Tag")
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag category and then confirm it by hitting ``Enter``.
+
+![alt text](./images/algorithm/Add_Tag_-_Step_4.PNG "Enter Tag Category")
 
 To finally add a new tag to the algorithm, the user has to confirm his selection by clicking on the ``OK button``. 
 
-![alt text](./images/algorithm/Add_Tag_-_Step_5.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_5.PNG "Confirm addition of a new tag")
 
-If the addition of the tag was successful, the tag will appear in the header of the algorithm view.
+If the tag was added successfully, it will appear in the header of the algorithm view.
 
-![alt text](./images/algorithm/Add_Tag_-_Step_6.PNG "Add Tag")
+![alt text](./images/algorithm/Add_Tag_-_Step_6.PNG "Verify if tag was created")
 
-To remove a tag from the algorithm, the user can click on the ``X`` button of an existing tag.
+## Remove Tags
+
+!!! info 
+    To remove tags from an algorithm, the user has to be in the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+
+Removing tags is done by clicking on their ``'X' buttons``, which are located in the header of the ``Algorithm View``.
 
 ![alt text](./images/algorithm/Remove_Tag.PNG "Remove Tag")
 
-## Manage Implementations
-
-To create a new implementation for an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, the user has to click on the algorithm he wants to create implementations for.
-
-![alt text](./images/algorithm//Open_Algorithm_View.PNG "Create Implementation")
-
-In the general view of the algorithm, the user has to switch to the tab ``Implementations``.
-
-![alt text](./images/algorithm//Open_Implementations_View.PNG "Create Implementation")
-
-To add a implementation, click on the ``Add button`` located above the data table.
-
-![alt text](./images/algorithm//Create_Implementation_-_Step_1.PNG "Create Implementation")
-
-This will open a dialog where the user can enter information that is required for creating a new implementation.
-
-![alt text](./images/algorithm//Create_Implementation_-_Step_2.PNG "Create Implementation")
-
-Enter the name of the new implementation and then click on the ``OK button`` to confirm the creation of the implementation. If the creation of the implementation was successful, the user will be redirected to the ``Implementation View`` of the created implementation where he can define further properties.
-
-![alt text](./images/algorithm//Create_Implementation_-_Step_3.PNG "Create Implementation")
-
-The user can also remove existing implementations. This is also done in the ``Implementations`` tab. To remove a implementation, the user has to click on the ``Delete`` button of a implementation.
-
-![alt text](./images/algorithm//Delete_Implementation_-_Step_1.1.png "Delete Implementation")
-
-Alternatively, the user can use the check-boxes of the first column of the table to select all implementations they want remove. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to delete all selected implementations of the algorithm.
-
-![alt text](./images/algorithm//Delete_Implementation_-_Step_1.2.png "Delete Implementation")
-
-If a ``Delete`` button is pressed, a confirmation dialog will appear listing all implementations that will be deleted. To confirm the deletion of the displayed implementations, the user has to click on the ``YES`` button.
-
-![alt text](./images/algorithm/Delete_Implementation_-_Step_2.png "Delete Implementation")
-
 ## Reference Patterns
 
-To reference pattern in an existing algorithm, the user has to navigate to that algorithms general view. To do that, the user has to navigate to the "Algorithm" list view by using the navigation sidebar. In the list view, , the user has to click on the algorithm he wants to reference patterns with.
+!!! info 
+    To reference patterns in an algorithm, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+	
+To initiate the linking of a pattern, the user has to click on the ``Plus button`` in the ``Related Patterns Tab``.
 
-![alt text](./images/algorithm//Open_Algorithm_View.PNG "Link Pattern")
-
-In the general view of the algorithm, the user has to switch to the tab ``Related Patterns``.
-
-![alt text](./images/algorithm//Open_Patterns_View.PNG "Link Pattern")
-
-To link a new pattern with the currently selected algorithm, the user has to click on the "Plus" button at the top of the data table.
-
-![alt text](./images/algorithm/Link_Pattern_-_Step_1.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_1.PNG "Click on '+' button")
 
 This will open a new dialog containing multiple steps that need to be performed.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_2.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_2.PNG "Structure of dialog for referencing patterns")
 
 In the first step, a pattern language needs to be selected by simply clicking on it. To filter specific pattern languages, the user can use the input field to filter them by their name.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_3.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_3.PNG "Select Pattern Language")
 
-After a specific pattern language has been selected, the user has to move the the next step by either clicking on the ``Next`` button or by clicking on the second step.
+After a specific pattern language has been selected, the user can move the the next step by either clicking on the ``Next`` button or by clicking on the second step.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_4.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_4.PNG "Move to second step")
 
-In the second step the user has to pick the pattern of the selected pattern language he wants to link with the algorithm. To do that, he again only has to click on that specific pattern. Like in the first step, he can use the input field to filter the patterns by their names and he also can use the scrollbar to scroll through all patterns.
+In the second step the user has to pick a pattern he wants to reference by clicking on it. Like in the first step, he can use the input field to filter the patterns by their names and he also can use the scrollbar to scroll through all patterns.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_5.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_5.PNG "Select Pattern")
 
-After a specific pattern has been selected, the user has to move the the next step by either clicking on the ``Next`` button or by clicking on the second step.
+After a specific pattern has been selected, the user can move to the next step by either clicking on the ``Next`` button or by clicking on the third step.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_6.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_6.PNG "Move to third step")
 
 In the third step the user has to describe the relation between the selected pattern and the algorithm. To do that, he has to specify a ``Relation Type`` and add a ``Description``.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_7.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_7.PNG "Structure of dialog's third step")
 
-To specify the relation type, the user simply has to use the existing input field. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. Alternatively the arrow keys of the keyboard can be used to navigate through all the options and confirm the selection with the press on the "Enter" button.
+The input field for the relation type has auto-complete functionality. It will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. 
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_8.PNG "Link Pattern")
+!!! note
+    Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting ``Enter``. 
+	
+![alt text](./images/algorithm/Link_Pattern_-_Step_8.PNG "Select Relation Type")
 
 At last the user has to add a description by using the existing input field. After that, the user can proceed to the last step by clicking on the ``Next`` button or by clicking directly on the step itself.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_9.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_9.PNG "Add Description and move to last step")
 
-The last step is used for verifying all the important selections from the previous steps. To finally link the pattern with the algorithm, the user can press the ``Confirm`` button.
+The last step is used for verifying all the important selections from the previous steps. To finally reference the pattern in the algorithm, the user can press the ``Confirm`` button.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_10.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_10.PNG "Verify all inputs")
 
-If the linking was successful, the referenced pattern will appear in the data list.
+After the pattern was successfully references, it will appear in the ``Related Patterns Tab`` of the ``Algorithm View``.
 
-![alt text](./images/algorithm/Link_Pattern_-_Step_11.PNG "Link Pattern")
+![alt text](./images/algorithm/Link_Pattern_-_Step_11.PNG "Verify if reference was successful")
 
-The reference to a pattern can also be edited. For this, the user has to click on the ``Edit Button`` of a related pattern. This is also located in the ``Related Patterns`` tab of the ``Algorithm View``.
+## Update reference of Patterns
 
-![alt text](./images/algorithm/Update_Pattern_Link_-_Step_1.PNG "Update Pattern Link")
+!!! info 
+    To update a reference to a pattern, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+
+Updating a reference to a pattern is done by clicking on it's ``Edit Button``.
+
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_1.PNG "Click 'Edit' button")
 
 This will open a dialog containing two steps that need to be performed to successfully update the reference.
 
-![alt text](./images/algorithm/Update_Pattern_Link_-_Step_2.PNG "Update Pattern Link")
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_2.PNG "Structure of update dialog")
 
-In the first step, the user can adjust the ```Relation Type`` and the ``Description``.
+In the first step, the user can adjust the ``Relation Type`` and the ``Description``.
 
-![alt text](./images/algorithm/Update_Pattern_Link_-_Step_3.PNG "Update Pattern Link")
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_3.PNG "Structure of first step")
 
-To adjust the ``Relation Type``, the user simply has to use the existing input field to change the current type. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. Alternatively the arrow keys of the keyboard can be used to navigate through all the options and confirm the selection with the press on the "Enter" button.
+To adjust the ``Relation Type``, the user simply has to use the existing input field to change the current type. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. 
 
-![alt text](./images/algorithm/Update_Pattern_Link_-_Step_4.PNG "Update Pattern Link")
+!!! note
+    Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting ``Enter``.
 
-To adjust the ``Description``, the user can existing input field. After that, the user can proceed to the second step by clicking on the ``Next`` button or by clicking directly on the step itself.
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_4.PNG "Update Relation Type")
 
-![alt text](./images/algorithm/Update_Pattern_Link_-_Step_5.PNG "Update Pattern Link")
+To adjust the ``Description``, the user can use the existing input field. After that, the user can proceed to the second step by clicking on the ``Next`` button or by clicking directly on the step itself.
 
-The second and last step is used for verifying all the important selections from the first step. To finally adjust the reference between the pattern and the algorithm, the user has to press the ``Confirm`` button.
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_5.PNG "Update Description and move to last step")
 
-![alt text](./images/algorithm/Update_Pattern_Link_-_Step_6.PNG "Update Pattern Link")
+The second and last step is used for verifying all the important selections from the first step. To finally adjust the reference between the pattern and the algorithm, the user has to click on the ``Confirm`` button.
 
-At last, the user can also remove existing references to patterns. For this, the user has to click on the ``Delete Button`` of a related pattern. This is also located in the ``Related Patterns`` tab of the ``Algorithm View``.
+![alt text](./images/algorithm/Update_Pattern_Link_-_Step_6.PNG "Confirm update of reference")
 
-![alt text](./images/algorithm/Unlink_Pattern_-_Step_1.1.PNG "Unlink Pattern")
+## Dereference Patterns
 
-Alternatively, the user can use the check-boxes of the first column of the table to select all pattern relation he wants to remove. After at least one check-box is checked, a ``Master-Delete`` button will appear at the top of the table which can be used to delete all selected pattern relations from the algorithm.
+!!! info 
+    To remove a reference to a pattern, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-![alt text](./images/algorithm/Unlink_Pattern_-_Step_1.2.PNG "Unlink Pattern")
+Dereferencing a pattern is done by clicking on it's ``Delete Button``.
 
-If a ``Delete`` button is pressed, a confirmation dialog will appear listing all patterns that will be removed from the algorithm. To confirm the deletion of the displayed patterns, the user has to click on the ``YES`` button.
+![alt text](./images/algorithm/Unlink_Pattern_-_Step_1.1.PNG "Dereference single pattern")
 
-![alt text](./images/algorithm/Unlink_Pattern_-_Step_2.PNG "Unlink Pattern")
+Alternatively, the user can use the check-boxes of the first column of the table to select all pattern relation he wants to remove. 
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one pattern has been selected.
+	
+![alt text](./images/algorithm/Unlink_Pattern_-_Step_1.2.PNG "Dereference multiple patterns")
+
+If a ``Delete`` button is pressed, a confirmation dialog will appear listing all pattern references that will be removed. To confirm their deletion, the user has to click on the ``YES`` button.
+
+![alt text](./images/algorithm/Unlink_Pattern_-_Step_2.PNG "Confirm the removal of the references")
