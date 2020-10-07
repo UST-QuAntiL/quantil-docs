@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 
 ## Create Implementation
 
@@ -56,70 +55,66 @@ The ``General`` tab of the view, allows to adjust all basic properties of the im
 
 ![alt text](./../images/implementation/Update_Implementation_Properties_-_Step_2.png  "Delete implementation")
 
-## Manage Compute Resource Properties
+## Create Compute Resource Properties
 
 !!! info 
-    To manage computing resource properties of an existing implementation, the user has to be in the ``General`` tab within the``General View`` of the implementation, which can be reached by clicking on an implementation in the ``Implementation List View``.
+    To create a compute resource property for the implementation, the user has to be in the ``Implementation Object View`` which can be reached by clicking on an implementation in the ``Implementation List View``.
 
-In the general view of the implementation, the user can also manage the compute resource of the selected implementation. For that the user has to go to the ``Required Compute Resource Properties`` field and click on the ``Plus Button``, which will open up a new dialog for the creation of a new compute resource property.
+Creating properties for a compute resource is done in the ``General Tab`` of the ``Implementation Object View``.
+To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Required Compute Resource Property Field``.
 
-![alt text](./../images/implementation/Open_Implementation_View.png "Add Compute Resource")
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_1.PNG "Open Property Dialog")
 
-In the creation dialog, the user has to fill in all necessary data for the new property. Here it is important that the "Property Value" matches the given "Data Type". After all data has been provided by the user, the new property can finally be created using the "OK".
-
-![alt text](./../images/implementation/Add_Compute_Resource_-_Step_1.png "Add Compute Resource")
-
-
-In case of a successful creation, the created compute resource property will be directly visible in the general view of the selected implementation. 
+This will open a separate ``Creation Dialog`` where the user will have to enter all important information of about the property he wants to create.
 
 !!! note 
-    Compared to the basic properties of the algorithm, the management of the compute resource properties will be performed directly and does not have to be confirmed by clicking on a save button.
-=======
-#
-## Create Implementation
+	The **Type Name** field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.
+
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_2.PNG "Dialog structure")
+
+After all fields have been filled, the user can finally add the property by confirming the creation via the existing ``OK button``.
+
+!!! note 
+	The **Property Value** needs to match the selected **Data Type**.
+
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_3.PNG "Confirm creation")
+
+After the property has been successfully created, it will appear in the the dedicated ``Required Compute Resource Property Field`` within the``General Tab``.
+
+![alt text](./images/algorithm/Add_Compute_Resource_-_Step_4.PNG "Verify creation")
+
+## Update Compute Resource Properties
 
 !!! info 
-    To create a new implementation, the user has to be in the ``Implementations Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To update a compute resource property of the implementation, the user has to be in the ``Implementation Object View``, which can be reached by clicking on a algorithm in the ``Implementation List View``.
 
-Creating a new implementation is done by clicking on the ``Plus Button`` located above the data table.
-
-![alt text](./images/implementation/Create_Implementation_-_Step_1.PNG "Click '+' Button in Implementation-Tab")
-
-This will open the following ``Creation Dialog``, where the user has to type in all required information for creating a new implementation.
-
-!!! note 
-    Currently, only the ``name`` is required to create a new implementation.
-
-![alt text](./images/implementation/Create_Implementation_-_Step_2.PNG "Structure of 'Create Dialog'")
-
-After entering all required information, the user has to confirm the creation of the implementation by clicking on the ``OK Button``.
-
-![alt text](./images/implementation/Create_Implementation_-_Step_3.PNG "Confirm creation")
-
-If the creation of the implementation was successful, the user will be redirected to the detailed ``Implementation view`` of the new implementation.
-
-![alt text](./images/implementation/Create_Implementation_-_Step_4.PNG "Implementation View of created implementation")
-
-## Delete Implementation
-
-!!! info 
-    To delete a implementation, the user has to be in the ``Implementations Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
-
-To remove a specific implementation, the user has to simply click on the ``Delete Button`` in the ``Actions Column`` of the data table.
-
-![alt text](./images/implementation/Delete_Implementation_-_Step_1.1.png "Delete single implementation")
-
-The user can also remove multiple implementations at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the ``Master Delete Button`` at the top of the data table.
-
-!!! note 
-    The delete button will only appear after at least one implementations has been selected by the user.
+Updating properties of an implementation is done in the ``General Tab`` of the ``Implementation Object View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
 	
-![alt text](./images/implementation//Delete_Implementation_-_Step_1.2.png "Delete multiple implementations")
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
 
-To confirm the deletion of the selected implementation(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.
+This will open a separate ``Update Dialog`` where the information of the property can be adjusted.
 
 !!! note 
-    **Names** of implementations that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.
+	The **Type Name** field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.
+
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_2.PNG "Dialog structure")
+
+After all fields have been adjusted, the user can finally update the property by confirming the update via the existing ``OK button``.
+
+!!! note 
+	The **Property Value** needs to match the selected **Data Type**.
+
+![alt text](./images/algorithm/Update_Compute_Resource_-_Step_3.PNG "Confirm update")
+
+## Delete Compute Resource Properties
+
+!!! info 
+    To delete a property for an implementation, the user has to be in the ``Implementation Object View`` which can be reached by clicking on a compute resource in the ``Implementation List View``.
 	
-![alt text](./images/implementation/Delete_Implementation_-_Step_2.png "Delete Implementation")
->>>>>>> b5f5a6a48108aba61399fe3d4a25eb1dbe2ed301
+Deleting properties for a compute resource is done in the ``General Tab`` of the ``Implementation Object View``.
+To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
+
+![alt text](./images/algorithm/Delete_Compute_Resource.PNG "Delete Compute Resource")
+
+!!! info 
+	A successfully deleted property should disappear from the dedicated ``Required Compute Resource Property Field`` after deletion.
