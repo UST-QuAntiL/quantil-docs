@@ -170,18 +170,18 @@ To initiate the linking of a software platform, the user has to click on the ``P
 
 This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
 
-![alt text](./../images/implementation/Link_Software_Platforms_-_Step_2.png "Link Publication")
+![alt text](./../images/implementation/Link_Software_Platforms_-_Step_2.png "ReferencePublication")
 
 To reference a software platform simply click on the ``Link button`` in the ``Actions Column``.
 
-![alt text](./../images/implementation/Link_Software_Platforms_-_Step_3.1.png "Link Publication")
+![alt text](./../images/implementation/Link_Software_Platforms_-_Step_3.1.png "Reference Publication")
 
 Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link button`` to link all of them at once.
 
 !!! note 
     ``Master Link button`` will only appear if at least one software platform has been selected.
 	
-![alt text](./images/implementation/Link_Software_Platforms_-_Step_3.2.png "Link Publication")
+![alt text](./images/implementation/Link_Software_Platforms_-_Step_3.2.png "Reference Publication")
 
 !!! info 
     Successfully referenced software platform(s) will now be visible in the ``Software Platforms Tab`` of the ``Implementation Object View``.
@@ -193,11 +193,55 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 	
 To remove a reference from a software platform, the user has to simply click on the ``Delete Button`` of a publication in the ``Actions Column``.
 
-![alt text](./../images/implementation/Unlink_Software_Platform_-_Step_1.1.png "Dereference single publication")
+![alt text](./../images/implementation/Unlink_Software_Platform_-_Step_1.1.png "Dereference single software platform")
 
 Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Delete button`` to unlink all of them at once.
 
 !!! note 
     ``Master Delete button`` will only appear if at least one publication has been selected.
 	
-![alt text](./../images/implementation/Unlink_Software_Platform_-_Step_1.2.png "Dereference multiple publications")
+![alt text](./../images/implementation/Unlink_Software_Platform_-_Step_1.2.png "Dereference multiple software platforms")
+
+## Add Tags
+
+!!! info 
+    To add tags to an implementation, the user has to be in the ``Implementation Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+
+In the ``header`` of the ``Implementation Object View``, the user has to click on the ``Plus Button`` which is used to add tags.
+
+![alt text](./../images/implementation/Add_Tag_-_Step_1.png "Click '+' button in 'Implementation Object View' header")
+
+A ``Add Tag Dialog`` will open that contains fields for ``Tag Category`` and ``Tag Value`` that need to be defined for creating a new tag.
+
+![alt text](./../images/algorithm/Add_Tag_-_Step_2.PNG "Structure of 'Add Tag Dialog'")
+
+The ``Tag Value`` field is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.
+
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag value and then confirm it by hitting ``Enter``.
+
+![alt text](./images/algorithm/Add_Tag_-_Step_3.PNG "Enter Tag Value")
+
+The ``Tag Category`` field is equipped auto-complete functionalities. While typing, it will recommend existing categories to the user. The user can then either pick one of the existing categories by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag category.
+
+!!! note
+    Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag category and then confirm it by hitting ``Enter``.
+
+![alt text](./images/algorithm/Add_Tag_-_Step_4.PNG "Enter Tag Category")
+
+To finally add a new tag to the algorithm, the user has to confirm his selection by clicking on the ``OK button``. 
+
+![alt text](./images/algorithm/Add_Tag_-_Step_5.PNG "Confirm addition of a new tag")
+
+If the tag was added successfully, it will appear in the header of the algorithm view.
+
+![alt text](./../images/implementation/Add_Tag_-_Step_6.png "Verify if tag was created")
+
+## Remove Tags
+
+!!! info 
+    To remove tags from an algorithm, the user has to be in the ``Implementation Object View``, which can be reached by clicking on an algorithm in the ``Implementation List View``.
+
+Removing tags is done by clicking on their ``'X' buttons``, which are located in the header of the ``Implementation Object View``.
+
+![alt text](./images/implementation/Remove_Tag.png "Remove Tag")
