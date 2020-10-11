@@ -37,24 +37,21 @@ Both ways of deleting cloud services will lead to a confirmation dialog. This di
 
 ![alt text](./../images/cloud_service/Delete_Publication_-_Step_3.png "Delete cloud service")
 
-## Update Cloud Service Properties
+## Update Cloud Service Information
 
 !!! info 
-    To update the properties of a software platform, the user has to be in the ``Cloud Service View`` which can be reached by clicking on a cloud service in the ``Cloud Service List View``.
+    To update the information of a cloud service, the user has to be in the ``Cloud Service View`` which can be reached by clicking on a publication in the ``Cloud Service List View``.
 
-The ``General`` tab of the view, allows to adjust all basic properties of the cloud service.
+Updating basic information is done in the ``General Tab`` of the ``Cloud Service View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new values or adjust existing ones.
 
-![alt text](./../images/cloud_service/Update_Cloud_Service_Properties_-_Step_1.png "Update cloud service properties")
+![alt text](./../images/cloud_service/Update_Cloud_Service_Properties_-_Step_1.png "'General Tab' of the 'Cloud Service View'")
 
+If information is changed, a ``Save button`` will be displayed next that specific input field. Also, a ``Master Save button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save button``.
 
 !!! note 
-    To save any changes to the properties of a cloud service there are two options:
+    The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
 
-    * Save the changes on a field by field basis. For that the user has to click on the ``Save Button`` located next to the field that was edited. Alternatively the user can confirm the changes by pressing ``Enter`` on the keyboard. 
-
-    * Save all changes at once by clicking on the round  ``Save Button`` button which appears at the right side of the screen.
-
-![alt text](./../images/cloud_service/Update_Cloud_Service_Properties_-_Step_2.png "Update cloud service properties")
+![alt text](./../images/cloud_service/Update_Cloud_Service_Properties_-_Step_2.png "Saving the changes")
 
 ## Reference Software Platform
 
@@ -98,7 +95,7 @@ Alternatively use the check-boxes to select multiple software platforms and then
 !!! info
     To reference compute resources in an existing cloud service, the user has to be in the ``General View``
 
-In the ``General View`` of the cloud service, the user as to switch to the tab ``Compute Resource``, which is dedicated to referencing software platforms.
+In the ``General View`` of the cloud service, the user as to switch to the ``Compute Resource Tab``, which is dedicated to referencing software platforms.
 To link compute resource with the currently selected cloud service, the user has to click on the ``Plus Button`` at the top of the data table.
 
 ![alt text](./../images/cloud_service/Link_Compute_Rescource_-_Step_1.png "Link compute resource")

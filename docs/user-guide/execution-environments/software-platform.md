@@ -52,12 +52,12 @@ To confirm the deletion of the selected software platform(s), the user has to cl
 ![alt text](./../images/software_platform/Delete_Software_Platform_-_Step_2.PNG "Confirm deletion of selected software platform(s)")
 
 
-## Update Software Platform Properties
+## Update Software Platform Information
 
 !!! info 
-    To update the properties of a software platform, the user has to be in the ``Software Platform View`` which can be reached by clicking on a software platform in the ``Software Platform List View``.
+    To update the basic information of a software platform, the user has to be in the ``Software Platform View`` which can be reached by clicking on a software platform in the ``Software Platform List View``.
 	
-Updating basic software platform properties is done in the ``General Tab`` of the ``Software Platform View``. To update a property, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new property values or adjust existing ones.
+Updating basic software platform information is done in the ``General Tab`` of the ``Software Platform View``. To update a property, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new property values or adjust existing ones.
 
 ![alt text](./../images/software_platform/Update_Software_Platform_-_Step_1.PNG "General Tab of Software Platform View")
 

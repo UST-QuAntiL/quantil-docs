@@ -32,35 +32,28 @@ Both ways of deleting algorithm will lead to a confirmation dialog. This dialog 
 
 ![alt text](./images/publication/Delete_Publication_-_Step_2.png "Delete publication")
 
-## Update Publication Properties
+## Update Publication Information
 
-Updating the basic properties of an existing publication is achieved by navigating to the ``General Publication View``. 
-To do this, you have to navigate to the ``Publication List View`` using the sidebar and click on the specific publication in the table.
+!!! info 
+    To update the information of a publication, the user has to be in the ``Publication View`` which can be reached by clicking on a publication in the ``Publication List View``.
 
-![alt text](./images/publication/Open_Publication_View.png "Update Publication Properties")
+Updating basic information is done in the ``General Tab`` of the ``Publication View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new values or adjust existing ones.
 
-After clicking the specific algorithm from the list, the ``General View``of the selected publication will be opened.
-The ``General`` tab of the view, allows to adjust all basic properties of the publication.
-A new author is assigned by typing the name into the input field and pressing the plus sign.
+![alt text](./images/publication/Update_Publication_Properties_-_Step_1.png "'General Tab' of the 'Publication View'")
 
-![alt text](./images/publication/Update_Publication_Properties_-_Step_1.png "Update Publication Properties")
-
+If information is changed, a ``Save button`` will be displayed next that specific input field. Also, a ``Master Save button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save button``.
 
 !!! note 
-    To save any changes to the properties of a publication there are two options:
-
-    * Save the changes on a field by field basis. For that the user has to click on the ``Save Button`` located next to the field that was edited. Alternatively the user can confirm the changes by pressing ``Enter`` on the keyboard. 
-
-    * Save all changes at once by clicking on the round  ``Save Button`` button which appears at the right side of the screen.
+    The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
 
 ![alt text](./images/publication/Update_Publication_Properties_-_Step_2.png "Update Publication Properties")
 
 ## Reference Algorithms
 
 !!! info
-    To reference algorithms in an existing publication, the user has to be in the ``General View``
+    To reference algorithms in an existing publication, the user has to be in the ``Publication View``
 
-In the ``General View`` of the publication, the user as to switch to the tab ``Algorithms``, which is dedicated to referencing algorithms.
+In the ``Publication View`` of the publication, the user as to switch to the ``Algorithms Tab``, which is dedicated to referencing algorithms.
 To link algorithms with the currently selected publication, the user has to click on the ``Plus Button`` at the top of the data table.
 
 ![alt text](./images/publication/Link_Algorithm_-_Step_1.png "Link Algorithm")
