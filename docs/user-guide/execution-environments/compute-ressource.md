@@ -40,7 +40,7 @@ To remove a specific compute resource, the user has to simply click on the ``Del
 The user can also remove multiple compute resources at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the ``Master Delete Button`` at the top of the data table.
 
 !!! note 
-    The delete button will only appear after at least one compute resource has been selected by the user.
+    The ``Master Delete Button`` will only appear if at least one compute resource is selected.
 
 ![alt text](./../images/compute_resource/Delete_Compute_Resource_-_Step_1.2.PNG "Delete multiple resources")
 
@@ -56,26 +56,26 @@ To confirm the deletion of the selected compute resource(s), the user has to cli
 !!! info 
     To update the information of a compute resource, the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
 	
-Updating basic information is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new values or adjust existing ones.
+Updating basic information is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply use the ``Input Fields``, ``Check-Boxes`` or ``Selection Drop-Downs`` to add new values or adjust existing ones.
 
 ![alt text](./../images/compute_resource/Update_Compute_Resource_-_Step_1.PNG "General Tab of Compute Resource View")
 
-If information is changed, a ``Save button`` will be displayed next that specific input field. Also, a ``Master Save button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save button``.
+If information is changed, a ``Save Button`` will be displayed next that specific input field. Also, a ``Master Save Button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save Button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save Button``.
 
 !!! note 
-    The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
+    The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save Button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
 	
 ![alt text](./../images/compute_resource/Update_Compute_Resource_-_Step_2.PNG "Saving the changes")
 
 !!! info 
-	**Compute Resource Properties** of are stored separately and therefor do not belong to the basic information of a resource. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
+	**Compute Resource Properties** of are stored separately and therefor do not belong to the basic information of a resource. They are saved, deleted or updated instantly without the use of the mentioned ``Save Buttons``.
 	
 ## Create Compute Resource Property
 
 !!! info 
     To create a property for a compute resource,  the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
 	
-Creating properties for a compute resource is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Compute Resource Property Field``.
+Creating properties for a compute resource is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply click on the ``Plus Button`` of the dedicated ``Compute Resource Property Field``.
 
 ![alt text](./../images/compute_resource/Add_Compute_Resource_Property_-_Step_1.PNG "Open Property Dialog")
 
@@ -86,7 +86,7 @@ This will open a separate ``Creation Dialog`` where the user will have to enter 
 
 ![alt text](./../images/compute_resource/Add_Compute_Resource_Property_-_Step_2.PNG "Dialog structure")
 
-After all fields have been filled, the user can finally add the property by confirming the creation via the existing ``OK button``.
+After all fields have been filled, the user can finally add the property by confirming the creation via the existing ``OK Button``.
 
 !!! note 
 	The **Property Value** needs to match the selected **Data Type**.
@@ -102,7 +102,7 @@ After the property has been successfully created, it will appear in the the dedi
 !!! info 
     To update a property for a compute resource,  the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
 	
-Updating properties for a compute resource is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply hover over a existing property in the dedicated ``Compute Resource Property Field`` and then click on the ``Edit button``.
+Updating properties for a compute resource is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply hover over a existing property in the dedicated ``Compute Resource Property Field`` and then click on the ``Edit Button``.
 
 ![alt text](./../images/compute_resource/Update_Compute_Resource_Property_-_Step_1.PNG "Open Property Dialog")
 
@@ -113,7 +113,7 @@ This will open a separate ``Update Dialog`` where the information of the propert
 
 ![alt text](./../images/compute_resource/Update_Compute_Resource_Property_-_Step_2.PNG "Dialog structure")
 
-After all fields have been adjusted, the user can finally update the property by confirming the update via the existing ``OK button``.
+After all fields have been adjusted, the user can finally update the property by confirming the update via the existing ``OK Button``.
 
 !!! note 
 	The **Property Value** needs to match the selected **Data Type**.
@@ -125,7 +125,7 @@ After all fields have been adjusted, the user can finally update the property by
 !!! info 
     To delete a property for a compute resource,  the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
 	
-Deleting properties for a compute resource is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply hover over a existing property in the dedicated ``Compute Resource Property Field`` and then click on the ``Delete button``.
+Deleting properties for a compute resource is done in the ``General Tab`` of the ``Compute Resource View``. To do that, the user has to simply hover over a existing property in the dedicated ``Compute Resource Property Field`` and then click on the ``Delete Button``.
 
 ![alt text](./../images/compute_resource/Delete_Compute_Resource_Property_-_Step_1.PNG "Delete property")
 
@@ -137,7 +137,7 @@ Deleting properties for a compute resource is done in the ``General Tab`` of the
 !!! info 
     To reference software platforms in a compute resource, the user has to be in the ``Software Platforms Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
 	
-To initiate the linking of a software platform, the user has to click on the ``Plus button`` in the ``Software Platforms Tab``.
+To initiate the linking of a software platform, the user has to click on the ``Plus Button`` in the ``Software Platforms Tab``.
 
 ![alt text](./../images/compute_resource/Reference_Software_Platform_-_Step_1.PNG "Click on '+' in 'Software Platforms'-Tab")
 
@@ -145,21 +145,21 @@ This will open a new dialog containing a page-able table of available software p
 
 ![alt text](./../images/compute_resource/Reference_Software_Platform_-_Step_2.PNG "Filter existing software platforms using table controls")
 
-To reference a software platform simply click on the ``Link button`` in the ``Action-Column``.
+To reference a software platform simply click on the ``Link Button`` in the ``Action-Column``.
 
 ![alt text](./../images/compute_resource/Reference_Software_Platform_-_Step_3.1.PNG "Reference single software platform")
 
-Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Link button`` to link all of them at once.
+Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Link Button`` to link all of them at once.
 
 !!! note 
-    ``Master Link button`` will only appear if at least one software platform has been selected.
+    The ``Master Link Button`` will only appear if at least one software platform is selected.
 	
 ![alt text](./../images/compute_resource/Reference_Software_Platform_-_Step_3.2.PNG "Reference multiple software platforms")
 
 !!! info 
     Successfully referenced software platforms(s) will now be visible in the ``Software Platforms Tab`` of the ``Compute Resource View``.
 	
-## Dereference Compute Resources
+## Dereference Software Platforms
 
 !!! info 
     To dereference software platforms, the user has to be in the ``Software Platforms Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -168,10 +168,10 @@ To remove a reference from a software platform, the user has to simply click on 
 
 ![alt text](./../images/compute_resource/Dereference_Software_Platform_-_Step_1.1.PNG "Dereference single software platform")
 
-Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Delete button`` to unlink all of them at once.
+Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Delete Button`` to unlink all of them at once.
 
 !!! note 
-    ``Master Delete button`` will only appear if at least one software platform has been selected.
+    The ``Master Delete Button`` will only appear if at least one software platform is selected.
 	
 ![alt text](./../images/compute_resource/Dereference_Software_Platform_-_Step_1.2.PNG "Dereference multiple software platforms")
 
@@ -180,7 +180,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 !!! info 
     To reference cloud services in a compute resource, the user has to be in the ``Cloud Services Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
 	
-To initiate the linking of a cloud service, the user has to click on the ``Plus button`` in the ``Cloud Services Tab``.
+To initiate the linking of a cloud service, the user has to click on the ``Plus Button`` in the ``Cloud Services Tab``.
 
 ![alt text](./../images/compute_resource/Reference_Cloud_Service_-_Step_1.PNG "Click on '+' in 'Cloud Services'-Tab")
 
@@ -188,14 +188,14 @@ This will open a new dialog containing a page-able table of available cloud serv
 
 ![alt text](./../images/compute_resource/Reference_Cloud_Service_-_Step_2.PNG "Filter existing cloud services using table controls")
 
-To reference a cloud service simply click on the ``Link button`` in the ``Action-Column``.
+To reference a cloud service simply click on the ``Link Button`` in the ``Action-Column``.
 
 ![alt text](./../images/compute_resource/Reference_Cloud_Service_-_Step_3.1.PNG "Reference single cloud service")
 
-Alternatively, use the check-boxes to select multiple cloud services and then click on the ``Master Link button`` to link all of them at once.
+Alternatively, use the check-boxes to select multiple cloud services and then click on the ``Master Link Button`` to link all of them at once.
 
 !!! note 
-    ``Master Link button`` will only appear if at least one cloud service has been selected.
+    The ``Master Link Button`` will only appear if at least one cloud service is selected.
 	
 ![alt text](./../images/compute_resource/Reference_Cloud_Service_-_Step_3.2.PNG "Reference multiple cloud services")
 
@@ -211,9 +211,9 @@ To remove a reference from a cloud service, the user has to simply click on the 
 
 ![alt text](./../images/compute_resource/Dereference_Cloud_Service_-_Step_1.1.PNG "Dereference single cloud service")
 
-Alternatively, use the check-boxes to select multiple cloud services and then click on the ``Master Delete button`` to unlink all of them at once.
+Alternatively, use the check-boxes to select multiple cloud services and then click on the ``Master Delete Button`` to unlink all of them at once.
 
 !!! note 
-    ``Master Delete button`` will only appear if at least one cloud service has been selected.
+    The ``Master Delete Button`` will only appear if at least one cloud service is selected.
 	
 ![alt text](./../images/compute_resource/Dereference_Cloud_Service_-_Step_1.2.PNG "Dereference multiple cloud services")
