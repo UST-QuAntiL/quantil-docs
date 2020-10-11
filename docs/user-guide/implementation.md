@@ -2,12 +2,12 @@
 ## Create Implementation
 
 !!! info 
-    To create an implementation, the user has to be in the ``General View`` of a specific algorithm.
+    To create an implementation, the user has to be in the ``Algorithm View`` of a specific algorithm.
 
-In the ``General View`` the user has to click on the ``Implementation`` tab, which opens the ``Implementation List View``.
-This view contains all implementations of the algorithm. Within this view, a new implementation will be created via the ``Plus Button`` which is located above the list.
+In the ``Algorithm View`` the user has to click on the ``Implementation Tab``, which opens the ``Implementation List View``.
+This view contains all implementations of that algorithm. Within this view, a new implementation will be created via the ``Plus Button`` which is located above the list.
 
-![alt text](./../images/implementation/Create_Implementation_-_Step_1.png "Create implementation")
+![alt text](./../images/implementation/Create_Implementation_-_Step_1.png "Open 'Creation Dialog'")
 
 Clicking on the ``Plus Button`` will open the following dialog.
 In the dialog it is possible to give the new implementation a name.
@@ -15,14 +15,14 @@ In the dialog it is possible to give the new implementation a name.
 !!! note 
     To create a new implementation only a ``name`` is required.
 
-![alt text](./../images/implementation/Create_Implementation_-_Step_2.png "Create implementation")
+![alt text](./../images/implementation/Create_Implementation_-_Step_2.png "Fill input")
 
-After all necessary fields have been filled in, the creation of the implementation can be confirmed by clicking on the ``OK Button``. After a successfull creation, the user will be navigated to the detailed view of the new implementation.
+After all necessary fields have been filled in, the creation of the implementation can be confirmed by clicking on the ``OK Button``. After a successful creation, the user will be navigated to the ``Implementation View`` of the new implementation.
 
 ## Delete Implementation
 
 !!! info 
-    To create an implementation, the user has to be in the ``Implementation List View`` of a specific algorithm.
+    To create an implementation, the user has to be in the ``Implementation Tab`` of the ``Algorithm View`` of a specific algorithm.
 
 To remove a specific implementation, the user has to simply click on the ``Delete Button`` in the ``Action Column`` of the data table.
 
