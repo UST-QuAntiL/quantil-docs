@@ -118,3 +118,46 @@ To do that, the user has to simply hover over a existing property in the dedicat
 
 !!! info 
 	A successfully deleted property should disappear from the dedicated ``Required Compute Resource Property Field`` after deletion.
+
+## Reference Publications
+
+!!! info 
+    To reference publications in an implementation, the user has to be in the ``Publications Tab`` of the ``Implementation Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+	
+To initiate the linking of a publication, the user has to click on the ``Plus button`` in the ``Publications Tab``.
+
+![alt text](./images/implementation/Link_Publication_-_Step_1.png "Click on '+' in 'Publications'-Tab")
+
+This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
+
+![alt text](./../images/implementation/Link_Publication_-_Step_2.png "Link Publication")
+
+To reference a publication simply click on the ``Link button`` in the ``Actions Column``.
+
+![alt text](./../images/implementation/Link_Publication_-_Step_3.1.png "Link Publication")
+
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link button`` to link all of them at once.
+
+!!! note 
+    ``Master Link button`` will only appear if at least one publication has been selected.
+	
+![alt text](./images/implementation/Link_Publication_-_Step_3.2.png "Link Publication")
+
+!!! info 
+    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Implementation Object View``.
+
+## Dereference Publications
+
+!!! info 
+    To dereference publications, the user has to be in the ``Publications Tab`` of the ``Implementation Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+	
+To remove a reference from a publication, the user has to simply click on the ``Delete Button`` of a publication in the ``Actions Column``.
+
+![alt text](./../images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single publication")
+
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Delete button`` to unlink all of them at once.
+
+!!! note 
+    ``Master Delete button`` will only appear if at least one publication has been selected.
+	
+![alt text](./../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple publications")
