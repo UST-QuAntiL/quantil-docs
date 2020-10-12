@@ -16,4 +16,5 @@ nav:
         - QC-Atlas Backend:
             - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
             - 'Testing': developer-guide/qc-atlas/testing.md
+        - 'IntelliJ Setup': 'developer-guide/intellij.md'
 theme: readthedocs
