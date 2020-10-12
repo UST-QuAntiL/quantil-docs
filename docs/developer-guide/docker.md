@@ -40,7 +40,7 @@ The logs of each individual container can be viewed by executing `docker logs <c
 To stop every service simply execute `docker-compose down`.
 
 ## Running only selected services
-Sometimes only a subset of the provided images is needed to save computing resources or for development purposes. E.g. the database is running inside the container but IntelliJ is executing qc-atlas-ui.
+Sometimes only a subset of the provided images is needed to save computing resources or for development purposes. E.g. the database is running inside the container but IntelliJ is executing qc-atlas.
 This is achieved by following the steps above, but instead of executing the command in step 3, use the command 
 `docker-compose up -d <serviceName1> <serviceName2> ... <serviceNameN>` 
 where each `<serviceNameX>` is replaced by the desired service names. 
