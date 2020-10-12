@@ -74,10 +74,41 @@ After at least one algorithm is selected, a ``Master Link Button`` will appear a
 
 ![alt text](./images/publication/Link_Algorithm_-_Step_2.2.png "Link multiple algorithms")
 
+## Dereference Algorithms
+
+!!! info 
+    To dereference algorithms, the user has to be in the ``Algorithms Tab`` of the ``Publication Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+	
+To remove a reference to a publication, the user has to simply click on the ``Delete Button`` of a algorithm in the ``Actions Column``.
+
+![alt text](./../images/publication/Unlink_Algorithm_-_Step_1.1.png "Dereference single algorithm")
+
+Alternatively, use the check-boxes to select multiple implementations and then click on the ``Master Delete Button`` to unlink all of them at once.
+
+!!! note 
+    ``Master Delete Button`` will only appear if at least one implementation is selected.
+	
+![alt text](./../images/publication/Unlink_Algorithm_-_Step_1.2.png "Dereference multiple implementations")
+
 ## Reference Implementations
 
 !!! info
     Implementations can not be referenced from within the ``Publication View``.
     To reference implementations in an existing publication, the user has to navigate to the ``Publications Tab`` of the ``Implementation View`` of an algorithm.
 
+## Dereference Implementations
+
+!!! info 
+    To dereference implementations, the user has to be in the ``Implementations Tab`` of the ``Publication Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+	
+To remove a reference to a publication, the user has to simply click on the ``Delete Button`` of an implementation in the ``Actions Column``.
+
+![alt text](./../images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single implementation")
+
+Alternatively, use the check-boxes to select multiple implementations and then click on the ``Master Delete Button`` to unlink all of them at once.
+
+!!! note 
+    ``Master Delete Button`` will only appear if at least one implementation is selected.
+	
+![alt text](./../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple implementations")
 
