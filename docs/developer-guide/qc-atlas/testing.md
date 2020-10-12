@@ -1,6 +1,5 @@
 # Testing qc-atlas
 
-
 This document gives an overview on what has been tested in the `qc-atlas` and how the tests in the project may be executed.
 
 ## Service (and Repository) Tests
