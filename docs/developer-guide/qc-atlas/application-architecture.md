@@ -24,6 +24,7 @@ Some of the criterea listed below are used to build tests, e.g. throwing an Exce
 - If an object cannot be deleted, e.g. if it is still referenced somewhere, HTTP 404 is returned, usualy by the services throwing an EntityReferenceViolationException.
 - Exposed Controller methods should have a meaningful name, to prevent collisions in OpenAPI.
     - For example: `getImplementationsOfAlgorithm` instead of `getImplementations` or `getPublicationsOfImplementation` instead of `getPublications`
+- Try/catch in controller methods shall be avoided, instead either generic exception handlers in the `AtlasExceptionHandler` or controller specific exception handles shall be used.
 
 
 #### DTO Validation
@@ -63,6 +64,7 @@ Service methods / classes should follow the following guidelines:
 - If an object cannot be deleted, e.g. because it is still referenced by another object a EntityReferenceViolationException should be thrown.
 - Exposed methods should have a meaningful name
 - Linking two objects like, Implementation and SoftwarePlatform shall be done in the LinkingService
+- JEE Objects, e.g. `HttpServletRequest` or `MultipartFile` shall not be passed into the Services, instead the controllers must pre- or postprocess the data into or from Generic data types, like `byte[]`, `InputStream` or `OutputStream`.
 - To reduce duplicates and circular dependencies, generic methods from the `ServiceUtils` class shall be used.
     - If it is possible to derive a new Method for this class, because something is used in multiple serivies such a method shall be externailzed.
 
