@@ -1,4 +1,4 @@
-site_name: QC Atlas
+site_name: QuAntiL
 nav:
     - Getting Started:
         - 'Setup': 'getting-started/getting-started.md'
@@ -12,6 +12,10 @@ nav:
         - 'Software Platform': 'user-guide/execution-environments/software-platform.md'
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
+        - QC-Atlas Backend:
+            - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
+            - 'Testing': developer-guide/qc-atlas/testing.md
+        - 'IntelliJ Setup': 'developer-guide/intellij.md'
 theme: readthedocs
 extra_css:
     - css/extra.css
