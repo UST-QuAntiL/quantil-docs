@@ -1,4 +1,4 @@
-site_name: QC Atlas
+site_name: QuAntiL
 nav:
     - Home: index.md
     - Getting Started:
@@ -12,6 +12,10 @@ nav:
             - 'Compute Ressource': 'user-guide/execution-environments/compute-ressource.md'
             - 'Software Platforms': 'user-guide/execution-environments/software-platform.md'
     - Developer Guide:
-        - 'OpenAPI': 'developer-guide/openapi.md'
         - 'Docker': 'developer-guide/docker.md'
+        - 'IntelliJ Setup': 'developer-guide/intellij.md'
+        - 'OpenAPI': 'developer-guide/openapi.md'
+        - QC-Atlas Backend:
+            - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
+            - 'Testing': developer-guide/qc-atlas/testing.md
 theme: readthedocs
