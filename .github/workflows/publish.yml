@@ -1,0 +1,17 @@
+name: GitHub Pages
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v
+      - name: Run a multi-line script
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+          mkdocs build
