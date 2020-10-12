@@ -8,8 +8,8 @@ Some of the criterea listed below are used to build tests, e.g. throwing an Exce
 ### General
 
 - Loggers shall be retrieved using the `@Slf4j` class annotation from lombok
-- Contructors shall be created using the `@AllArgsConstructor` class annoation
-- Attributes of a class shall be final
+- Contructors of Components (Services, Repositories, Controllers...) shall be created using the `@AllArgsConstructor` class annoation
+- Attributes of a Component class shall be final
 
 
 ### Controllers
@@ -20,10 +20,10 @@ Some of the criterea listed below are used to build tests, e.g. throwing an Exce
     - `Create`: Used for requirements in a Dto that must be valid during object creation
     - `Update`: Used for requirements in a Dto that must be valid during object Update
     - `IDOnly`: Used for parts where only an id is needed, like creating a reference, In the commented Dto Class below, one can observe the use of these three classes.
-- If the validation fails HTTP 400 is returned including a detailed error message, whe the validation failed
-- If an object cannot be deleted, e.g. if it is still referenced somewhere, HTTP 400 is returned, usualy by the services throwing an EntityReferenceViolationException.
+- If the validation fails HTTP 400 is returned including a detailed error message, why the validation failed
+- If an object cannot be deleted, e.g. if it is still referenced somewhere, HTTP 404 is returned, usualy by the services throwing an EntityReferenceViolationException.
 - Exposed Controller methods should have a meaningful name, to prevent collisions in OpenAPI.
-    - For example: `listImplementationsOfAlgorithm` instead of `listImplementations` or `listPublicationsOfImplementation` instead of `listPublications`
+    - For example: `getImplementationsOfAlgorithm` instead of `getImplementations` or `getPublicationsOfImplementation` instead of `getPublications`
 
 
 #### DTO Validation
