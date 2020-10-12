@@ -63,6 +63,8 @@ Service methods / classes should follow the following guidelines:
 - If an object cannot be deleted, e.g. because it is still referenced by another object a EntityReferenceViolationException should be thrown.
 - Exposed methods should have a meaningful name
 - Linking two objects like, Implementation and SoftwarePlatform shall be done in the LinkingService
+- To reduce duplicates and circular dependencies, generic methods from the `ServiceUtils` class shall be used.
+    - If it is possible to derive a new Method for this class, because something is used in multiple serivies such a method shall be externailzed.
 
 
 ### Repositories
