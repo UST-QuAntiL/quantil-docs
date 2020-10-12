@@ -7,6 +7,41 @@ Some of the criterea listed below are used to build tests, e.g. throwing an Exce
 
 ### Controllers
 
+- If a requested resource is not found, the application has to respond with HTTP 404
+    - This is mostly done by catching the NoSuchElementException thrown by the services
+- Validation is Done using Validation groups and the `@Validated` annotation. There are three:
+    - `Create`: Used for requirements in a Dto that must be valid during object creation
+    - `Update`: Used for requirements in a Dto that must be valid during object Update
+    - `IDOnly`: Used for parts where only an id is needed, like creating a reference, In the commented Dto Class below, one can observe the use of these three classes.
+- If the validation fails HTTP 400 is returned including a detailed error message, whe the validation failed
+- If an object cannot be deleted, e.g. if it is still referenced somewhere, HTTP 400 is returned, usualy by the services throwing an EntityReferenceViolationException
+
+#### DTO Validation
+
+```java
+@Data
+@EqualsAndHashCode
+@ToString
+@NoArgsConstructor
+@Relation(itemRelation = "computeResourceProperty", collectionRelation = "computeResourceProperties")
+public class ComputeResourcePropertyDto implements Identifyable {
+    // Ensures the ID is not null if the IDOnly class is set as a validation class
+    @NotNull(groups = {ValidationGroups.IDOnly.class}, message = "An id is required to perform an update")
+    // Ensures an id is not set when during creation
+    @Null(groups = {ValidationGroups.Create.class}, message = "The id must be null for creating a compute resource property")
+    private UUID id;
+
+    private String value;
+
+    // Naming multiple validation classes ensures these conditions are applied to all applications
+    // RequiresID is a custom validator to ensure the child type object contains an ID that is not null
+    @RequiresID(groups = {ValidationGroups.Update.class, ValidationGroups.Create.class},
+            message = "ComputeResourceProperties must have a type with an ID!")
+    @NotNull(groups = {ValidationGroups.Update.class, ValidationGroups.Create.class})
+    private ComputeResourcePropertyTypeDto type;
+}
+```
+
 ### Services
 
 Service methods should follow the following guidelines:
