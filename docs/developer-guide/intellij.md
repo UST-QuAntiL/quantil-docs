@@ -35,7 +35,7 @@
   - Go to "Editor > Copyright > Copyright Profiles"  
   - Click the "+"  
   - Name "Atlas"  
-  - Copyright text from [CodeHeaders](CodeHeaders.md)  
+  - Copyright text from [CodeHeaders](https://github.com/UST-QuAntiL/qc-atlas/blob/develop/docs/dev/config/IntelliJ%20IDEA/CodeHeaders.md)
   - Click "Apply"
   - Go to "Editor > Copyright > Formatting"
   - Adjust copyright formatting settings
