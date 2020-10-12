@@ -12,8 +12,8 @@ nav:
         - 'Software Platform': 'user-guide/execution-environments/software-platform.md'
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
-        - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
-        - 'Testing': developer-guide/qc-atlas/testing.md
+        - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
+        - 'Testing': 'developer-guide/qc-atlas/testing.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
 theme: readthedocs
 extra_css:
