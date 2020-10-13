@@ -1,20 +1,28 @@
 site_name: QuAntiL
 nav:
-    - Home: index.md
     - Getting Started:
         - 'Setup': 'getting-started/getting-started.md'
     - User Guide:
+        - 'Overview': 'user-guide/overview.md'
         - 'Algorithm': 'user-guide/algorithm.md'
         - 'Implementation': 'user-guide/implementation.md'
         - 'Publication': 'user-guide/publication.md'
-        - Compute Ressources:
-            - 'Cloud Service': 'user-guide/execution-environments/cloud-service.md'
-            - 'Compute Ressource': 'user-guide/execution-environments/compute-ressource.md'
-            - 'Software Platforms': 'user-guide/execution-environments/software-platform.md'
+        - 'Cloud Service': 'user-guide/execution-environments/cloud-service.md'
+        - 'Compute Ressource': 'user-guide/execution-environments/compute-ressource.md'
+        - 'Software Platform': 'user-guide/execution-environments/software-platform.md'
+        - 'Application Area': 'user-guide/application-area.md'
+        - 'Problem Type': 'user-guide/problem-type.md'
+        - 'Algorithm Relation Type': 'user-guide/algorithm-relation-type.md'
+        - 'Pattern Relation Type': 'user-guide/pattern-relation-type.md'
+        - 'Compute Resource Property Type': 'user-guide/compute-resource-property-type.md'
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
-        - QC-Atlas Backend:
-            - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
-            - 'Testing': developer-guide/qc-atlas/testing.md
+        - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
+        - 'Testing': 'developer-guide/qc-atlas/testing.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
 theme: readthedocs
+extra_css:
+    - css/extra.css
+markdown_extensions:
+    - admonition
+    - attr_list 
