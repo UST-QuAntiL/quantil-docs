@@ -41,7 +41,7 @@ To confirm the deletion of the selected publication(s), the user has to click on
 ## Update Publication Information
 
 !!! info 
-    To update the information of a publication, the user has to be in the ``Publication View`` which can be reached by clicking on a publication in the ``Publication List View``.
+    To update the information of a publication, the user has to be in the ``Publication Object View`` which can be reached by clicking on a publication in the ``Publication List View``.
 
 Updating basic information is done in the ``General Tab`` of the ``Publication View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection drop-downs`` to add new values or adjust existing ones.
 
@@ -57,9 +57,9 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 ## Reference Algorithms
 
 !!! info
-    To reference algorithms in an existing publication, the user has to be in the ``Publication View``.
+    To reference algorithms in an existing publication, the user has to be in the ``Publication Object View``.
 
-In the ``Publication View`` of the publication, the user as to switch to the ``Algorithms Tab``, which is dedicated to referencing algorithms.
+In the ``Publication Object View`` of the publication, the user as to switch to the ``Algorithms Tab``, which is dedicated to referencing algorithms.
 To link algorithms with the currently selected publication, the user has to click on the ``Plus Button`` at the top of the data table.
 
 ![alt text](./images/publication/Link_Algorithm_-_Step_1.png "Open dialog for referencing publications")
@@ -77,7 +77,7 @@ After at least one algorithm is selected, a ``Master Link Button`` will appear a
 ## Dereference Algorithms
 
 !!! info 
-    To dereference algorithms, the user has to be in the ``Algorithms Tab`` of the ``Publication View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+    To dereference algorithms, the user has to be in the ``Algorithms Tab`` of the ``Publication Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
 	
 To remove a reference to a algorithm, the user has to simply click on the ``Delete Button`` of a algorithm in the ``Actions Column``.
 
@@ -99,7 +99,7 @@ Alternatively, use the check-boxes to select multiple algorithms and then click 
 ## Dereference Implementations
 
 !!! info 
-    To dereference implementations, the user has to be in the ``Implementations Tab`` of the ``Publication View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
+    To dereference implementations, the user has to be in the ``Implementations Tab`` of the ``Publication Object View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
 	
 To remove a reference to a implementation, the user has to simply click on the ``Delete Button`` of an implementation in the ``Actions Column``.
 
