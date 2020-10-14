@@ -37,22 +37,28 @@ Make sure all prerequisites above are met bevorhand and that all necessary ports
 2. Execute `docker-compose pull` - pulls the most recent version of all images
 3. Execute `docker-compose up -d` - starts all services in the background
 
-To check if everything is running correctly use the command `docker ps -a` for a list of all running containers and their corresponding containerIds.\
+To check if everything is running correctly use the command `docker ps -a` for a list of all running containers and their corresponding containerIds.
+
 The logs of each individual container can be viewed by executing `docker logs <containerId>`.
 
 To stop every service simply execute `docker-compose down`.
 
 
 ## Running only selected services
-Sometimes only a subset of the provided images is needed to save computing resources or for development purposes. E.g. the database is running inside the container but IntelliJ is executing qc-atlas.\
-This is achieved by following the steps above, but instead of executing the command in step 3, use the command\
-`docker-compose up -d <serviceName1> <serviceName2> ... <serviceNameN>`\
-where each `<serviceNameX>` is replaced by the desired service names.\
+Sometimes only a subset of the provided images is needed to save computing resources or for development purposes. E.g. the database is running inside the container but IntelliJ is executing qc-atlas.
+
+This is achieved by following the steps above, but instead of executing the command in step 3, use the command
+
+`docker-compose up -d <serviceName1> <serviceName2> ... <serviceNameN>`
+
+where each `<serviceNameX>` is replaced by the desired service names.
+
 E.g. `docker-compose up -d db qc-atlas` executes the database service and the `qc-atlas` backend. However, keep in mind that some services heavily depend on each other and may not work properly if dependent services are not running.
 
 
 ## Import Example Data
-Data from the [pattern-atlas-content](https://github.com/PatternAtlas/pattern-atlas-content) repository will always be imported automatically.\
+Data from the [pattern-atlas-content](https://github.com/PatternAtlas/pattern-atlas-content) repository will always be imported automatically.
+
 However, to import example data from the [qc-atlas-content](https://github.com/UST-QuAntiL/planqk-atlas-content) and [nisq-analyzer-content](https://github.com/UST-QuAntiL/nisq-analyzer-content) repositories make sure to follow these steps:
 
 1. Rename the `docker-compose.override.yml` file inside the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker) to `docker-compose.override.yml`.
@@ -63,14 +69,17 @@ However, to import example data from the [qc-atlas-content](https://github.com/U
 ## FAQ
 
 ##### How do I make sure that all necessary ports are free?
-Windows: `netstat -anp | find ":<portNumber>"` - shows processes listening on <portNumber>\
-Linux: `sudo lsof -i -P -n | grep LISTEN` - shows all processes listening any port\
-OSX: `netstat -anp tcp | grep LISTEN` for tcp and `netstat -anp udp | grep LISTEN for udp`\
+Windows: `netstat -anp | find ":<portNumber>"` - shows processes listening on <portNumber>
+
+Linux: `sudo lsof -i -P -n | grep LISTEN` - shows all processes listening any port
+
+OSX: `netstat -anp tcp | grep LISTEN` for tcp and `netstat -anp udp | grep LISTEN for udp`
+
 
 ##### Why is the example data not imported?
 Make sure you followed the instructions above. If you still experience problems follow these steps:
 
-1. Execute `docker-compose rm -f` - **this removes all containers and volumes**
+1. Execute `docker-compose rm -vf` - **this removes all containers and volumes**
 2. Run `docker-compose pull` - pull all images
 3. Execute `docker-compose up --build -d` - this rebuilds all services and starts them
 
@@ -84,8 +93,10 @@ Depending on the service you want to build yourself from a local repository chan
   image: <imageName>
 ...
 ```
-`<serviceName>` - represents the name of the service\
-`<imageName>` - represents the new name of the image.\
+`<serviceName>` - represents the name of the service
+
+`<imageName>` - represents the new name of the image.
+
 `<repoLocation>` - represents the location of the repository relative to the directory of the `docker-compose.yml` file. The location has to contain the `Dockerfile` of the service.
 
 ##### Where do I get a ssh private key file with the correct access rights?
