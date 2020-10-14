@@ -15,6 +15,7 @@ nav:
         - 'Algorithm Relation Type': 'user-guide/algorithm-relation-type.md'
         - 'Pattern Relation Type': 'user-guide/pattern-relation-type.md'
         - 'Compute Resource Property Type': 'user-guide/compute-resource-property-type.md'
+        - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
         - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
@@ -25,4 +26,4 @@ extra_css:
     - css/extra.css
 markdown_extensions:
     - admonition
-    - attr_list 
+    - attr_list
