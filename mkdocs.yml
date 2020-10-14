@@ -18,6 +18,7 @@ nav:
     - Developer Guide:
         - 'OpenAPI': 'developer-guide/openapi.md'
         - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
+        - 'Database migrations': 'developer-guide/qc-atlas/db-migrations.md'
         - 'Testing': 'developer-guide/qc-atlas/testing.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
 theme: readthedocs
@@ -25,4 +26,4 @@ extra_css:
     - css/extra.css
 markdown_extensions:
     - admonition
-    - attr_list 
+    - attr_list
