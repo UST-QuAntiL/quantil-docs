@@ -17,7 +17,7 @@ After entering all required information, the user has to confirm the creation of
 
 ![alt text](./images/algorithm/Create_Algorithm_-_Step_3.png "Confirm creation")
 
-If the creation of the algorithm was successful, the user will be redirected to the detailed ``Algorithm View`` of the new algorithm.
+If the creation of the algorithm was successful, the user will be redirected to the detailed ``Algorithm Object View`` of the new algorithm.
 
 ![alt text](./images/algorithm/Create_Algorithm_-_Step_4.PNG "Algorithm view of created algorithm")
 
@@ -47,9 +47,9 @@ To confirm the deletion of the selected algorithm(s), the user has to click on t
 ## Update Algorithm Information
 
 !!! info 
-    To update the information of an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To update the information of an algorithm, the user has to be in the ``Algorithm Object View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 	
-Updating basic information is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection Drop-Downs`` to add new values or adjust existing ones.
+Updating basic information is done in the ``General Tab`` of the ``Algorithm Object View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection Drop-Downs`` to add new values or adjust existing ones.
 
 ![alt text](./images/algorithm/Update_Algorithm_Properties_-_Step_1.PNG "A small part of the 'General Tab' of the 'Algorithm View'")
 
@@ -66,9 +66,9 @@ If information is changed, a ``Save button`` will be displayed next that specifi
 ## Create Compute Resource Properties
 
 !!! info 
-    To create a compute resource property for the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To create a compute resource property for the algorithm, the user has to be in the ``Algorithm Object View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-Creating properties for a compute resource is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Required Compute Resource Property Field``.
+Creating properties for a compute resource is done in the ``General Tab`` of the ``Algorithm Object View``. To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Required Compute Resource Property Field``.
 
 ![alt text](./images/algorithm/Add_Compute_Resource_-_Step_1.PNG "Open Property Dialog")
 
@@ -93,9 +93,9 @@ After the property has been successfully created, it will appear in the the dedi
 ## Update Compute Resource Properties
 
 !!! info 
-    To update a compute resource property of the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To update a compute resource property of the algorithm, the user has to be in the ``Algorithm Object View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
-Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
+Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm Object View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
 	
 ![alt text](./images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
 
@@ -116,9 +116,9 @@ After all fields have been adjusted, the user can finally update the property by
 ## Delete Compute Resource Properties
 
 !!! info 
-    To delete a compute resource property of an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a compute resource in the ``Algorithm List View``.
+    To delete a compute resource property of an algorithm, the user has to be in the ``Algorithm Object View`` which can be reached by clicking on a compute resource in the ``Algorithm List View``.
 	
-Deleting compute resource properties is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
+Deleting compute resource properties is done in the ``General Tab`` of the ``Algorithm Object View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
 
 ![alt text](./images/algorithm/Delete_Compute_Resource.PNG "Delete Compute Resource")
 
@@ -128,7 +128,7 @@ Deleting compute resource properties is done in the ``General Tab`` of the ``Alg
 ## Reference Application Areas
 
 !!! info 
-    To reference application areas in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To reference application areas in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm Object View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
 Referencing problem types is done via the dedicated ``Application Areas`` field.
 
@@ -149,7 +149,7 @@ After successfully referencing the application area, it will be displayed in the
 ## Dereference Application Areas
 
 !!! info 
-    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 To dereference an application area, the user has to scroll to the ``Application Areas`` field and simply click on the ``Delete button`` of the application area he wants to remove from the algorithm.
 
@@ -158,7 +158,7 @@ To dereference an application area, the user has to scroll to the ``Application 
 ## Reference Problem Types
 
 !!! info 
-    To reference problem types in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To reference problem types in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Referencing problem types is done via the dedicated ``Problem Types`` field.
 
@@ -179,7 +179,7 @@ After the linking process has been successfully completed, the freshly linked pr
 ## Dereference Problem Types
 
 !!! info 
-    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 To dereference a problem type, the user has to scroll to the ``Problem Types`` field and simply click on the ``Delete button`` of the problem type he wants to remove from the algorithm.
 
@@ -188,7 +188,7 @@ To dereference a problem type, the user has to scroll to the ``Problem Types`` f
 ## Reference other Algorithms
 
 !!! info 
-    To reference other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To reference other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 	
 To reference some other algorithm in the current one, the user has to click on the ``Plus button`` in the ``Related Algorithms Tab``.
 
@@ -220,14 +220,14 @@ After all input data has been filled, the user can confirm the creation of a ref
 
 ![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_6.PNG "Confirm the reference to the selected algorithm")
 
-After the other algorithm was successfully referenced, it will appear in the ``Related Algorithms`` tab of the ``Algorithm View``.
+After the other algorithm was successfully referenced, it will appear in the ``Related Algorithms`` tab of the ``Algorithm Object View``.
 
 ![alt text](./images/algorithm/Link_Other_Algorithm_-_Step_7.PNG "Verify reference to other algorithm")
 
 ## Update Algorithm Relation
 
 !!! info 
-    To update an existing algorithm relation, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To update an existing algorithm relation, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm Object View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
 
 Updating an algorithm relation is done by clicking on the "Edit" button of a related algorithm in the ``Related Algorithms`` tab.
 
@@ -243,7 +243,7 @@ This will open a dialog where the user can adjust the information of the relatio
 ## Dereference other Algorithms
 
 !!! info 
-    To delete existing references to other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.
+    To delete existing references to other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm Object View``, which can be reached by clicking on a compute resource in the ``Algorithm List View``.
 
 To remove a reference, the user can to simply click on the ``Delete Button`` of a related algorithm in the ``Actions Column``.
 
@@ -263,7 +263,7 @@ If a ``Delete`` button is pressed, a confirmation dialog will appear listing all
 ## Reference Publications
 
 !!! info 
-    To reference publications in an algorithm, the user has to be in the ``Publications Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To reference publications in an algorithm, the user has to be in the ``Publications Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 	
 To initiate the linking of a publication, the user has to click on the ``Plus Button`` in the ``Publications Tab``.
 
@@ -285,7 +285,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 ![alt text](./images/algorithm/Link_Publication_-_Step_3.2.PNG "Link Publication")
 
 !!! info 
-    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Algorithm View``.
+    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Algorithm Object View``.
 
 ## Dereference Publications
 
@@ -306,9 +306,9 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 ## Add Tags
 
 !!! info 
-    To add tags to an algorithm, the user has to be in the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To add tags to an algorithm, the user has to be in the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-In the ``Header`` of the ``Algorithm View``, the user has to click on the ``Plus Button`` which is used to add tags.
+In the ``Header`` of the ``Algorithm Object View``, the user has to click on the ``Plus Button`` which is used to add tags.
 
 ![alt text](./images/algorithm/Add_Tag_-_Step_1.PNG "Click '+' button in 'Algorithm View' header")
 
@@ -334,23 +334,23 @@ To finally add a new tag to the algorithm, the user has to confirm his selection
 
 ![alt text](./images/algorithm/Add_Tag_-_Step_5.PNG "Confirm addition of a new tag")
 
-If the tag was added successfully, it will appear in the ``Header`` of the ``Algorithm View``.
+If the tag was added successfully, it will appear in the ``Header`` of the ``Algorithm Object View``.
 
 ![alt text](./images/algorithm/Add_Tag_-_Step_6.PNG "Verify if tag was created")
 
 ## Remove Tags
 
 !!! info 
-    To remove tags from an algorithm, the user has to be in the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To remove tags from an algorithm, the user has to be in the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-Removing tags is done by clicking on their ``Delete Buttons``, which are located in the ``Header`` of the ``Algorithm View``.
+Removing tags is done by clicking on their ``Delete Buttons``, which are located in the ``Header`` of the ``Algorithm Object View``.
 
 ![alt text](./images/algorithm/Remove_Tag.PNG "Remove Tag")
 
 ## Reference Patterns
 
 !!! info 
-    To reference patterns in an algorithm, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To reference patterns in an algorithm, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 	
 To initiate the linking of a pattern, the user has to click on the ``Plus Button`` in the ``Related Patterns Tab``.
 
@@ -395,14 +395,14 @@ The last step is used for verifying all the important selections from the previo
 
 ![alt text](./images/algorithm/Link_Pattern_-_Step_10.PNG "Verify all inputs")
 
-After the pattern was successfully referenced, it will appear in the ``Related Patterns Tab`` of the ``Algorithm View``.
+After the pattern was successfully referenced, it will appear in the ``Related Patterns Tab`` of the ``Algorithm Object View``.
 
 ![alt text](./images/algorithm/Link_Pattern_-_Step_11.PNG "Verify if reference was successful")
 
 ## Update Pattern Relation
 
 !!! info 
-    To update the relation to a pattern, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To update the relation to a pattern, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Updating a pattern relation is done by clicking on it's ``Edit Button``.
 
@@ -434,7 +434,7 @@ The second and last step is used for verifying all the important selections from
 ## Dereference Patterns
 
 !!! info 
-    To remove a reference to a pattern, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To remove a reference to a pattern, the user has to be in the ``Related Patterns Tab`` of the ``Algorithm Object View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Dereferencing a pattern is done by clicking on it's ``Delete Button``.
 
