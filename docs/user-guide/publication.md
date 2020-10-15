@@ -92,9 +92,31 @@ Alternatively, use the check-boxes to select multiple algorithms and then click 
 
 ## Reference Implementations
 
-!!! info
-    Implementations can not be referenced from within the ``Publication View``.
-    To reference implementations in an existing publication, the user has to navigate to the ``Publications Tab`` of the ``Implementation View`` of an algorithm.
+!!! info 
+    To reference implementations in a publication, the user has to be in the ``Implementations Tab`` of the ``Publication Object View``, which can be reached by clicking on a publication in the ``Publication List View``.
+	
+To initiate the linking of a publication, the user has to click on the ``Plus Button`` in the ``Implementations Tab``.
+
+![alt text](./../images/publication/Link_Implementation_-_Step_1.png "Click on '+' in 'Implementations'-Tab")
+
+This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
+
+![alt text](./../images/publication/Link_Implementation_-_Step_2.png "Filter existing publications using table controls")
+
+To reference a publication simply click on the ``Link Button`` in the ``Actions Column``.
+
+![alt text](./../images/publication/Link_Implementation_-_Step_3.1.png "Reference single publication")
+
+Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link Button`` to link all of them at once.
+
+!!! note 
+    ``Master Link Button`` will only appear if at least one publication is selected.
+	
+![alt text](./../images/publication/Link_Implementation_-_Step_3.2.png "Reference multiple publications")
+
+!!! info 
+    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Implementation View``.
+
 
 ## Dereference Implementations
 
