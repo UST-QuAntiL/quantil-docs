@@ -105,17 +105,17 @@ This will open a new dialog containing a page-able table of available publicatio
 
 To reference a publication simply click on the ``Link Button`` in the ``Actions Column``.
 
-![alt text](./../images/publication/Link_Implementation_-_Step_3.1.png "Reference single publication")
+![alt text](./../images/publication/Link_Implementation_-_Step_3.1.png "Reference single implementation")
 
 Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link Button`` to link all of them at once.
 
 !!! note 
     ``Master Link Button`` will only appear if at least one publication is selected.
 	
-![alt text](./../images/publication/Link_Implementation_-_Step_3.2.png "Reference multiple publications")
+![alt text](./../images/publication/Link_Implementation_-_Step_3.2.png "Reference multiple implementations")
 
 !!! info 
-    Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Implementation View``.
+    Successfully referenced implementation(s) will now be visible in the ``Implementations Tab`` of the ``Publication Object View``.
 
 
 ## Dereference Implementations
