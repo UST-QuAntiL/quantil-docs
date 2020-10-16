@@ -15,6 +15,7 @@ nav:
         - 'Algorithm Relation Type': 'user-guide/algorithm-relation-type.md'
         - 'Pattern Relation Type': 'user-guide/pattern-relation-type.md'
         - 'Compute Resource Property Type': 'user-guide/compute-resource-property-type.md'
+        - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
     - Developer Guide:
         - 'Docker': 'developer-guide/docker.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
