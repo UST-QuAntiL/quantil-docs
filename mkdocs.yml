@@ -22,11 +22,10 @@ nav:
         - QC-Atlas Backend:
             - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
             - 'Testing': developer-guide/qc-atlas/testing.md
-        - 'Testing': 'developer-guide/qc-atlas/testing.md'
-        - 'IntelliJ Setup': 'developer-guide/intellij.md'
+            - 'Database migrations': 'developer-guide/qc-atlas/db-migrations.md'
 theme: readthedocs
 extra_css:
     - css/extra.css
 markdown_extensions:
     - admonition
-    - attr_list 
+    - attr_list

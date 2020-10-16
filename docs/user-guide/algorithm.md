@@ -149,7 +149,7 @@ After successfully referencing the application area, it will be displayed in the
 ## Dereference Application Areas
 
 !!! info 
-    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 To dereference an application area, the user has to scroll to the ``Application Areas`` field and simply click on the ``Delete button`` of the application area he wants to remove from the algorithm.
 
@@ -158,7 +158,7 @@ To dereference an application area, the user has to scroll to the ``Application 
 ## Reference Problem Types
 
 !!! info 
-    To reference problem types in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To reference problem types in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Referencing problem types is done via the dedicated ``Problem Types`` field.
 
@@ -179,7 +179,7 @@ After the linking process has been successfully completed, the freshly linked pr
 ## Dereference Problem Types
 
 !!! info 
-    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 To dereference a problem type, the user has to scroll to the ``Problem Types`` field and simply click on the ``Delete button`` of the problem type he wants to remove from the algorithm.
 
@@ -188,7 +188,7 @@ To dereference a problem type, the user has to scroll to the ``Problem Types`` f
 ## Reference other Algorithms
 
 !!! info 
-    To reference other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To reference other algorithms, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 	
 To reference some other algorithm in the current one, the user has to click on the ``Plus button`` in the ``Related Algorithms Tab``.
 

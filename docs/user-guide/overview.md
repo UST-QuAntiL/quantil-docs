@@ -2,8 +2,16 @@
 ## Content
 * [Overview](../user-guide/overview.md)
 * [Algorithm](../user-guide/algorithm.md)
-* [Publication](../user-guide/publication.md)
 * [Implementation](../user-guide/implementation.md)
+* [Publication](../user-guide/publication.md)
+* [Cloud Service](../user-guide/execution-environments/cloud-service.md)
+* [Compute Ressource](../user-guide/execution-environments/compute-ressource.md)
+* [Software Platform](../user-guide/execution-environments/software-platform.md)
+* [Application Area](../user-guide/application-area.md)
+* [Problem Type](../user-guide/problem-type.md)
+* [Algorithm Relation Type](../user-guide/algorithm-relation-type.md)
+* [Pattern Relation Type](../user-guide/pattern-relation-type.md)
+* [Compute Resource Property Type](../user-guide/compute-resource-property-type.md)
 
 ## UI-Components
 The UI of the ``Pattern-Atlas`` is built using ``List Views`` and ``Object Views``.
