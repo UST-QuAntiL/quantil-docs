@@ -16,11 +16,13 @@ nav:
         - 'Pattern Relation Type': 'user-guide/pattern-relation-type.md'
         - 'Compute Resource Property Type': 'user-guide/compute-resource-property-type.md'
     - Developer Guide:
-        - 'OpenAPI': 'developer-guide/openapi.md'
-        - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
-        - 'Database migrations': 'developer-guide/qc-atlas/db-migrations.md'
-        - 'Testing': 'developer-guide/qc-atlas/testing.md'
+        - 'Docker': 'developer-guide/docker.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
+        - 'OpenAPI': 'developer-guide/openapi.md'
+        - QC-Atlas Backend:
+            - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
+            - 'Testing': developer-guide/qc-atlas/testing.md
+            - 'Database migrations': 'developer-guide/qc-atlas/db-migrations.md'
 theme: readthedocs
 extra_css:
     - css/extra.css
