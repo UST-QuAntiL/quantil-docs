@@ -1,4 +1,4 @@
-# Welcome to The QC Atlas Documentation
+# Welcome to The QuAntiL Documentation
 ![alt text](./images/combo.png){: style="height:100px" .center}
 
 ## QC Atlas
