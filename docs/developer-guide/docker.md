@@ -35,7 +35,9 @@ Make sure all prerequisites above are met bevorhand and that all necessary ports
 
 1. Navigate inside the root directory of the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker)
 2. Execute `docker-compose pull` - pulls the most recent version of all images
-3. Execute `docker-compose up -d` - starts all services in the background
+3. Execute `docker-compose build db`
+4. Starting the DB first: `docker-compose up -d db`
+5. Execute `docker-compose up -d` - starts all remaining services in the background
 
 To check if everything is running correctly use the command `docker ps -a` for a list of all running containers and their corresponding containerIds.
 
@@ -77,7 +79,11 @@ OSX: `netstat -anp tcp | grep LISTEN` for tcp and `netstat -anp udp | grep LISTE
 
 
 ##### Why is the example data not imported?
-Make sure you followed the instructions above. If you still experience problems follow these steps:
+
+- Are the line-endings configured correctly? 
+`/docker-entrypoint-initdb.d/setup-atlas.sh: line 2: cd: $'/var/qc-atlas/testdata\r': No such file or directory` in the db logs indicates that LF is not used as line-endings. In IntelliJ, you can override this setting via choosing File > File Properties > Line Separators > LF 
+
+- Make sure you followed the instructions above. If you still experience problems follow these steps:
 
 1. Execute `docker-compose rm -vf` - **this removes all containers and volumes**
 2. Run `docker-compose pull` - pull all images
