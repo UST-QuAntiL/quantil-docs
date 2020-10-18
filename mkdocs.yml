@@ -19,6 +19,7 @@ nav:
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
         - 'OpenAPI': 'developer-guide/openapi.md'
         - 'Application Architecture': developer-guide/qc-atlas/application-architecture.md
+        - 'Latex Renderer': developer-guide/qc-atlas/latex-renderer.md
         - 'Testing': developer-guide/qc-atlas/testing.md
         - 'Database migrations': 'developer-guide/qc-atlas/db-migrations.md'
 theme: readthedocs
