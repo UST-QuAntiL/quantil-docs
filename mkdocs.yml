@@ -1,7 +1,5 @@
 site_name: QuAntiL
 nav:
-    - Getting Started:
-        - 'Setup': 'getting-started/getting-started.md'
     - User Guide:
         - 'Overview': 'user-guide/overview.md'
         - 'Algorithm': 'user-guide/algorithm.md'
