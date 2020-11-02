@@ -43,8 +43,10 @@ To check if everything is running correctly use the command `docker ps -a` for a
 
 The logs of each individual container can be viewed by executing `docker logs <containerId>`.
 
+
 To stop every service simply execute `docker-compose down -v`. 
 `-v` ensures that all volumes are removed (if example data is imported - see next section - this can be crucial)
+
 
 
 ## Running only selected services
