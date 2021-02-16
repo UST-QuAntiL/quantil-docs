@@ -1,16 +1,15 @@
 
 # NISQ Analyzer User Guide
-The NISQ Analyzer is a research prototype based on the work by [Salm et. al](https://arxiv.org/abs/2003.13409). It automatically analyzes implementations of quantum algorithms. The results indicate if a quantum algorithm can be exectuted on a Quantum Computing Unit (QPU) or simulator.
+The NISQ Analyzer is a research prototype based on the work by [Salm et. al](https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5). It automatically analyzes implementations of quantum algorithms. The results indicate if a quantum algorithm can be executed on a Quantum Computing Unit (QPU) or simulator.
 
-## Adding selection criteria
+### SDKs, QPUs, and Cloud Services
 
-### QPUs and SDKs
+Atlas' `Software Platforms` get mapped to SDKs. This mapping happens automatically when opening a Software Platform in the UI.   
 
-Atlas' `Compute Resources` are mapped to NISQ Analyzer QPUs, while `Software Platforms` get mapped to SDKs. This mapping happens automatically when opening a Compute Resource in the UI.
-
-The NISQ Analyzer-specific properties can be found inside the `Selection Criteria` tab.
-
-![Selection Criteria UI](./images/nisq_analyzer/qpu_selectionCriteria.png)
+QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov) a provenance system for quantum computing.   
+ 
+`Cloud Services are required to run the *Implementation & QPU Selection*.  
+Currently, only real quantum computers of the cloud service `IBMQ` are supported.
 
 ### Implementations
 
@@ -21,6 +20,10 @@ Implementation properties specific to the NISQ Analyzer are inside the `Selectio
 
 ![Selection Criteria UI](./images/nisq_analyzer/implementation_selectionCriteria.png)
 
+Define the `File Location` as URL where the raw implementation is placed.
+
+Select the previously added `Software Platform` and select the `Language` of the implementation. 
+
 To add new input parameters press the `+` button on the right side of `Input Parameters`. Afterwards, insert the necessary data into the fields of the created Input Parameter.
 
 To delete an Input Parameter, select the card on the left side and press the `-` button on the right, next to the heading `Input Parameters`.
@@ -29,27 +32,24 @@ Prolog Rules, e.g. `Selection Rule` can be changed as well. Make sure that the r
 
 To save all changes press the round button on the right side.
 
-### Cloud Services
-
-Cloud Services are not directly mapped to NISQ Analyzer objects but are required to run the selection process.
-
-Currently, only the cloud service `IBMQ` is supported.
-
-## Running the NISQ Analyzer
-
-The UI can be found at the `NISQ Analyzer` tab in the algorithm page.
+!!! note 
+    `Input Parameters` and `Selection Rule` are only required for the *Implementation & QPU Selection*.
 
 ### Prerequisites
 
 * The cloud service `IBMQ` exists
-* The algorithm contains at least one Implementation
-* At least one Compute Resource supporting an Implementation's SDK/Software Platform exists.
+* The software platform of the implementation exists
+* The algorithm contains at least one implementation
+
+## Running the NISQ Analyzer for Implementation & QPU Selection
+
+The UI can be found at the `NISQ Analyzer` tab in the algorithm page.
 
 ### Step 1: Input
 
 ![Input UI](./images/nisq_analyzer/step1.png)
 
-Specify the input values below the heading. Afterwards, select `IBMQ` in the dropdown menu and insert your Qiskit token for authentification purposes of the IBMQ service.
+Specify the input values below the heading. Afterwards, select `IBMQ` in the dropdown menu and insert your Qiskit token for authentication purposes of the IBMQ service.
 
 ### Step 2: Analyzer Results
 
@@ -63,10 +63,10 @@ All analysis results are stored and can be viewed on the `NISQ Results` tab.
 
 ![Analysis results UI](./images/nisq_analyzer/step3.png)
 
-This step shows the outcome and result of the executed input/QPU/implementation tuple.
-Keep in mind that the execution itself can take q long time during which the UI only shows a progress spinner.
+This step shows the result of the executed input/QPU/implementation tuple.
+Keep in mind that the execution itself can take quite long time during in which the UI only shows a progress spinner.
 
-All execution results are stored and can be viewed on the `NISQ Results` tab.
+All execution results are stored and can be reviewed on the `NISQ Results` tab.
 
 ## Historical data
 
