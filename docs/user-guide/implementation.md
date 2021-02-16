@@ -7,7 +7,7 @@
 In the ``Algorithm View`` the user has to click on the ``Implementation Tab``, which opens the ``Implementation List View``.
 This view contains all implementations of that algorithm. Within this view, a new implementation will be created via the ``Plus Button`` which is located above the list.
 
-![alt text](./../images/implementation/Create_Implementation_-_Step_1.png "Open 'Creation Dialog'")
+![alt text](./images/implementation/Create_Implementation_-_Step_1.png "Open 'Creation Dialog'")
 
 Clicking on the ``Plus Button`` will open the following dialog.
 In the dialog it is possible to give the new implementation a name.
@@ -15,7 +15,7 @@ In the dialog it is possible to give the new implementation a name.
 !!! note 
     To create a new implementation only a ``name`` is required.
 
-![alt text](./../images/implementation/Create_Implementation_-_Step_2.png "Fill input")
+![alt text](./images/implementation/Create_Implementation_-_Step_2.png "Fill input")
 
 After all necessary fields have been filled in, the creation of the implementation can be confirmed by clicking on the ``OK Button``. After a successful creation, the user will be navigated to the ``Implementation View`` of the new implementation.
 
@@ -26,15 +26,15 @@ After all necessary fields have been filled in, the creation of the implementati
 
 To delete a specific implementation, the user has to simply click on the ``Delete Button`` in the ``Action Column`` of the data table.
 
-![alt text](./../images/implementation/Delete_Implementation_-_Step_1.png "Delete single implementation")
+![alt text](./images/implementation/Delete_Implementation_-_Step_1.png "Delete single implementation")
 
 It is also possible to delete multiple implementations at once by selecting them one by one using the check-boxes within the table. When at least one implementation is selected, a ``Master Delete Button`` will show up above the table. To delete the selected implementations at once, this button must be pressed.
 
-![alt text](./../images/implementation/Delete_Implementation_-_Step_2.png "Delete multiple implementation")
+![alt text](./images/implementation/Delete_Implementation_-_Step_2.png "Delete multiple implementation")
 
 Both ways of deleting implementations will lead to a confirmation dialog. This dialog will list all implementations that were selected to be deleted. To finally confirm the deletion, the ``OK Button`` at the bottom of the dialog has to be pressed. A successfully deleted implementation will disappear from the ``Implementation List View``.
 
-![alt text](./../images/implementation/Delete_Implementation_-_Step_3.png "Confirm deletion")
+![alt text](./images/implementation/Delete_Implementation_-_Step_3.png "Confirm deletion")
 
 ## Update Implementation Information
 
@@ -43,14 +43,14 @@ Both ways of deleting implementations will lead to a confirmation dialog. This d
 
 Updating basic information is done in the ``General Tab`` of the ``Implementation View``. To do that, the user has to simply use the ``Input fields``, ``Check-Boxes`` or ``Selection Drop-Downs`` to add new values or adjust existing ones.
 
-![alt text](./../images/implementation/Update_Implementation_Properties_-_Step_1.png "'General Tab' of the 'Implementation View'")
+![alt text](./images/implementation/Update_Implementation_Properties_-_Step_1.png "'General Tab' of the 'Implementation View'")
 
 If information is changed, a ``Save Button`` will be displayed next that specific input field. Also, a ``Master Save Button`` will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the ``Save Button`` next to any updated input field. Alternatively the user can save all changes by clicking the ``Master Save Button``.
 
 !!! note 
     The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save Button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
 
-![alt text](./../images/implementation/Update_Implementation_Properties_-_Step_2.png  "Saving the changes")
+![alt text](./images/implementation/Update_Implementation_Properties_-_Step_2.png  "Saving the changes")
 
 ## Create Compute Resource Properties
 
@@ -127,11 +127,11 @@ To initiate the linking of a publication, the user has to click on the ``Plus Bu
 
 This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
 
-![alt text](./../images/implementation/Link_Publication_-_Step_2.png "Filter existing publications using table controls")
+![alt text](./images/implementation/Link_Publication_-_Step_2.png "Filter existing publications using table controls")
 
 To reference a publication simply click on the ``Link Button`` in the ``Actions Column``.
 
-![alt text](./../images/implementation/Link_Publication_-_Step_3.1.png "Reference single publication")
+![alt text](./images/implementation/Link_Publication_-_Step_3.1.png "Reference single publication")
 
 Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link Button`` to link all of them at once.
 
@@ -150,14 +150,14 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 	
 To remove a reference to a publication, the user has to simply click on the ``Delete Button`` of a publication in the ``Actions Column``.
 
-![alt text](./../images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single publication")
+![alt text](./images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single publication")
 
 Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Delete Button`` to unlink all of them at once.
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one publication is selected.
 	
-![alt text](./../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple publications")
+![alt text](./images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple publications")
 
 ## Reference Software Platforms
 
@@ -170,11 +170,11 @@ To initiate the linking of a software platform, the user has to click on the ``P
 
 This will open a new dialog containing a page-able table of available software platforms. This table can be searched or sorted using the given input fields and buttons.
 
-![alt text](./../images/implementation/Link_Software_Platforms_-_Step_2.png "Filter existing software platforms using table controls")
+![alt text](./images/implementation/Link_Software_Platforms_-_Step_2.png "Filter existing software platforms using table controls")
 
 To reference a software platform simply click on the ``Link Button`` in the ``Actions Column``.
 
-![alt text](./../images/implementation/Link_Software_Platforms_-_Step_3.1.png "Reference single software platform")
+![alt text](./images/implementation/Link_Software_Platforms_-_Step_3.1.png "Reference single software platform")
 
 Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Link Button`` to link all of them at once.
 
@@ -193,14 +193,14 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 	
 To remove a reference from a software platform, the user has to simply click on the ``Delete Button`` of a software platform in the ``Actions Column``.
 
-![alt text](./../images/implementation/Unlink_Software_Platform_-_Step_1.1.png "Dereference single software platform")
+![alt text](./images/implementation/Unlink_Software_Platform_-_Step_1.1.png "Dereference single software platform")
 
 Alternatively, use the check-boxes to select multiple software platforms and then click on the ``Master Delete Button`` to unlink all of them at once.
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one software platform is selected.
 	
-![alt text](./../images/implementation/Unlink_Software_Platform_-_Step_1.2.png "Dereference multiple software platforms")
+![alt text](./images/implementation/Unlink_Software_Platform_-_Step_1.2.png "Dereference multiple software platforms")
 
 ## Add Tags
 
@@ -209,11 +209,11 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 
 In the ``Header`` of the ``Implementation View``, the user has to click on the ``Plus Button`` which is used to add tags.
 
-![alt text](./../images/implementation/Add_Tag_-_Step_1.png "Click '+' button in 'Implementation View' header")
+![alt text](./images/implementation/Add_Tag_-_Step_1.png "Click '+' button in 'Implementation View' header")
 
 A ``Add Tag Dialog`` will open that contains fields for ``Tag Category`` and ``Tag Value`` that need to be defined for creating a new tag.
 
-![alt text](./../images/algorithm/Add_Tag_-_Step_2.PNG "Structure of 'Add Tag Dialog'")
+![alt text](./images/algorithm/Add_Tag_-_Step_2.PNG "Structure of 'Add Tag Dialog'")
 
 The ``Tag Value Field`` is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.
 
@@ -235,7 +235,7 @@ To finally add a new tag to the implementation, the user has to confirm his sele
 
 If the tag was added successfully, it will appear in the ``Header`` of the ``Implementation View``.
 
-![alt text](./../images/implementation/Add_Tag_-_Step_6.png "Verify if tag was created")
+![alt text](./images/implementation/Add_Tag_-_Step_6.png "Verify if tag was created")
 
 ## Remove Tags
 
