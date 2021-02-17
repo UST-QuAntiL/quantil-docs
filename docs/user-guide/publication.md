@@ -81,14 +81,14 @@ After at least one algorithm is selected, a ``Master Link Button`` will appear a
 	
 To remove a reference to a algorithm, the user has to simply click on the ``Delete Button`` of a algorithm in the ``Actions Column``.
 
-![alt text](./../images/publication/Unlink_Algorithm_-_Step_1.1.png "Dereference single algorithm")
+![alt text](./images/publication/Unlink_Algorithm_-_Step_1.1.png "Dereference single algorithm")
 
 Alternatively, use the check-boxes to select multiple algorithms and then click on the ``Master Delete Button`` to unlink all of them at once.
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one algorithm is selected.
 	
-![alt text](./../images/publication/Unlink_Algorithm_-_Step_1.2.png "Dereference multiple algorithms")
+![alt text](./images/publication/Unlink_Algorithm_-_Step_1.2.png "Dereference multiple algorithms")
 
 ## Reference Implementations
 
@@ -97,22 +97,22 @@ Alternatively, use the check-boxes to select multiple algorithms and then click 
 	
 To initiate the linking of a publication, the user has to click on the ``Plus Button`` in the ``Implementations Tab``.
 
-![alt text](./../images/publication/Link_Implementation_-_Step_1.png "Click on '+' in 'Implementations'-Tab")
+![alt text](./images/publication/Link_Implementation_-_Step_1.png "Click on '+' in 'Implementations'-Tab")
 
 This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.
 
-![alt text](./../images/publication/Link_Implementation_-_Step_2.png "Filter existing publications using table controls")
+![alt text](./images/publication/Link_Implementation_-_Step_2.png "Filter existing publications using table controls")
 
 To reference a publication simply click on the ``Link Button`` in the ``Actions Column``.
 
-![alt text](./../images/publication/Link_Implementation_-_Step_3.1.png "Reference single implementation")
+![alt text](./images/publication/Link_Implementation_-_Step_3.1.png "Reference single implementation")
 
 Alternatively, use the check-boxes to select multiple publications and then click on the ``Master Link Button`` to link all of them at once.
 
 !!! note 
     ``Master Link Button`` will only appear if at least one publication is selected.
 	
-![alt text](./../images/publication/Link_Implementation_-_Step_3.2.png "Reference multiple implementations")
+![alt text](./images/publication/Link_Implementation_-_Step_3.2.png "Reference multiple implementations")
 
 !!! info 
     Successfully referenced implementation(s) will now be visible in the ``Implementations Tab`` of the ``Publication View``.
@@ -125,12 +125,12 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 	
 To remove a reference to a implementation, the user has to simply click on the ``Delete Button`` of an implementation in the ``Actions Column``.
 
-![alt text](./../images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single implementation")
+![alt text](./images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single implementation")
 
 Alternatively, use the check-boxes to select multiple implementations and then click on the ``Master Delete Button`` to unlink all of them at once.
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one implementation is selected.
 	
-![alt text](./../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple implementations")
+![alt text](./images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple implementations")
 

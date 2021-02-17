@@ -12,18 +12,20 @@
 * [Algorithm Relation Type](../user-guide/algorithm-relation-type.md)
 * [Pattern Relation Type](../user-guide/pattern-relation-type.md)
 * [Compute Resource Property Type](../user-guide/compute-resource-property-type.md)
+* [NISQ Analyzer](../user-guide/nisq-analyzer.md)
+* [QProv](../user-guide/qprov.md)
 
 ## UI-Components
-The UI of the ``Pattern-Atlas`` is built using ``List Views`` and ``Object Views``.
+The UI of the ``QC Atlas`` is built using ``List Views`` and ``Object Views``.
 
 ### List View
 ``List Views`` can be reached by using the ``Navigation Bar`` on the left side of the UI. 
 
-![alt text](./../images/overview/Navigation_Bar.PNG "Navigate between List Views")
+![alt text](./images/overview/Navigation_Bar.PNG "Navigate between List Views")
 
 Some ``List Views`` like the ``Execution Environments`` can contain more ``List Views``. ``Navigation Bar`` items that contain more ``List Views`` have a ``Arrow Symbol`` and can be extended by a simple click.
 
-![alt text](./../images/overview/Navigation_Bar_Extended.PNG "Extend navigation items")
+![alt text](./images/overview/Navigation_Bar_Extended.PNG "Extend navigation items")
 
 The ``List Views`` contain ``Data-Tables`` which are responsible for displaying all available objects of a certain type. For every different object type there is a separate ``List View``. The user can use the controls of the tables to **filter**, **sort** and **browse** existing objects of a certain type.
 
@@ -34,7 +36,7 @@ The ``List Views`` contain ``Data-Tables`` which are responsible for displaying 
 	
 	Note that all of these functionalities are optional and may not be available in every ``List View``
 
-![alt text](./../images/overview/Example_List_View.PNG "Example of a List View: Algorithm List View")
+![alt text](./images/overview/Example_List_View.PNG "Example of a List View: Algorithm List View")
 
 !!! info
     The ``Data Table`` can also contain more means to manipulate the data:
@@ -51,7 +53,7 @@ As mentioned before, any ``Object View`` can be opened by clicking on any elemen
 
 All other information about the object is located in the ``Body`` of the ``Object View``. The information is distributed across multiple ``Tabs``. The ``General Tab`` usually contains the most basic information about the object. Other information is distributed across the other ``Tabs``, which can differ from ``Object View`` to ``Object View``.
 
-![alt text](./../images/overview/Example_Object_View.PNG "Example of a Object View: Algorithm View")
+![alt text](./images/overview/Example_Object_View.PNG "Example of a Object View: Algorithm View")
 
 !!! info
     The ``Object View`` is not only used to display information about an object. It is also used to:

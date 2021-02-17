@@ -58,7 +58,7 @@ If information is changed, a ``Save button`` will be displayed next that specifi
 !!! note 
     The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
 	
-![alt text](./../images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG "Saving the changes")
+![alt text](./images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG "Saving the changes")
 
 !!! info 
 	**Required Compute Resource Properties**, **Problem Types** and **Application Areas** are stored separately and therefor do not belong to the basic information of the algorithm. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
