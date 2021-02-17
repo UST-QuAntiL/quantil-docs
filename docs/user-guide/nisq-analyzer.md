@@ -10,9 +10,10 @@ QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov
  
 `Cloud Services` are required to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
 Currently, only real quantum computers of the cloud service `IBMQ` are supported.
+
 ### Implementations
-``
-Implementations in Atlas are mapped to Implementations in the NISQ Analyzer DB.
+
+`Implementations` in Atlas are mapped to Implementations in the NISQ Analyzer DB.
 Again, this mapping happens automatically when opening an Implementation in the UI.
 
 Implementation properties specific to the NISQ Analyzer are inside the `Selection Criteria` tab.

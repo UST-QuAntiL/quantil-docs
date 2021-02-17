@@ -16,7 +16,7 @@
 * [QProv](../user-guide/qprov.md)
 
 ## UI-Components
-The UI of the ``Pattern-Atlas`` is built using ``List Views`` and ``Object Views``.
+The UI of the ``QC Atlas`` is built using ``List Views`` and ``Object Views``.
 
 ### List View
 ``List Views`` can be reached by using the ``Navigation Bar`` on the left side of the UI. 
