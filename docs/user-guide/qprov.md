@@ -20,4 +20,4 @@ A great set of provenance data about the topology, metadata, qubits, and quantum
 
 ## Calculating the Calibration matrix of a QPU
 
-For calculating the calibration matrices for given QPUs, set `QPROV_IBMQ_EXECUTE_CIRCUITS` to **true**.
+For calculating the calibration matrices for given QPUs, set `QPROV_IBMQ_EXECUTE_CIRCUITS` to **true**. Therefore, the [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service) is used.

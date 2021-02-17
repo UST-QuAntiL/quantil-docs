@@ -12,6 +12,8 @@
 * [Algorithm Relation Type](../user-guide/algorithm-relation-type.md)
 * [Pattern Relation Type](../user-guide/pattern-relation-type.md)
 * [Compute Resource Property Type](../user-guide/compute-resource-property-type.md)
+* [NISQ Analyzer](../user-guide/nisq-analyzer.md)
+* [QProv](../user-guide/qprov.md)
 
 ## UI-Components
 The UI of the ``Pattern-Atlas`` is built using ``List Views`` and ``Object Views``.
