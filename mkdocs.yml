@@ -1,4 +1,6 @@
 site_name: QuAntiL
+repo_url: https://github.com/UST-QuAntiL/quantil-docs
+edit_uri: tree/master/docs
 nav:
     - User Guide:
         - 'Overview': 'user-guide/overview.md'
