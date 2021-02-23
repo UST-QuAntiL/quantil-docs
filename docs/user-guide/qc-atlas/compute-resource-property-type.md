@@ -1,5 +1,5 @@
-#
-## Create Compute Resource Property Type
+## Compute Resource Property Type 
+### Create Compute Resource Property Type
 
 !!! info 
     To create a compute resource property type, the user has to be in the ``Compute Resource Property Type List View`` which can be found in the ``Manage Components Menu``.
@@ -23,7 +23,7 @@ After entering all required information, the user has to confirm the creation by
 !!! info 
     In case of a successful creation, the data table will switch to the last page (if not already) to show the created compute resource property type.
 	
-## Update Compute Resource Property Type
+### Update Compute Resource Property Type
 
 !!! info 
     To update a compute resource property type, the user has to be in the ``Compute Resource Property Type List View``, which can be found in the ``Manage Components Menu``.
@@ -45,7 +45,7 @@ After adjusting all information, the user has to confirm the changes by clicking
 
 ![alt text](../images/compute_resource_property_type/Update_Compute_Resource_Property_Type_-_Step_3.PNG "Confirm update")
 
-## Delete Compute Resource Property Type
+### Delete Compute Resource Property Type
 
 !!! info 
     To perform the deletion of a compute resource property type, the user has to be in the ``Compute Resource Property Type List View``, which can be found in the ``Manage Components Menu``.

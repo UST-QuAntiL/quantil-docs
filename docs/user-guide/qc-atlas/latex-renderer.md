@@ -1,13 +1,13 @@
-#
+## Latex Renderer 
 
-## Description
+### Description
 
 The generic component ``src/app/components/generics/property-input/text-input.component.ts`` contains a flag ``latexActive``, which is disabled by default.
 On activation via input properties, ``text-input`` components are extended with a toggle slider to enable or disable Latex rendering for the respective input field.
 
 ![Text Input Latex Disabled](../images/latex_renderer/text-input.PNG "Text Input Latex Disabled")
 
-## Usage
+### Usage
 
 When activated, the respective ``text-input`` field will provide a ``LaTeX`` button to open an editor with two text areas and a preview section.
 
@@ -28,7 +28,7 @@ Whenever the dialog closes with a modified text to render, the ``text-input`` co
 
 ![Text Input Latex Rendered](../images/latex_renderer/text-input-latex-rendered.PNG "Text Input Latex Rendered")
 
-## Drawbacks
+### Drawbacks
 
 The [Latex renderer service](https://github.com/UST-QuAntiL/latex-renderer) has been extended by OpenAPI's RESTful interface and has successfully been tested locally, but runs into a rendering error when executed in a docker container using the project's ``Dockerfile``.
 

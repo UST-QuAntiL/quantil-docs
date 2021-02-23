@@ -1,5 +1,6 @@
-#
-## Create Algorithm Relation Type
+## Algorithm Relation Type
+
+### Create Algorithm Relation Type
 
 !!! info 
     To create a algorithm relation type, the user has to be in the ``Algorithm Relation Type List View`` which can be found in the ``Manage Components Menu``.
@@ -22,7 +23,7 @@ After entering the name of the algorithm relation type, the user has to confirm 
 !!! info 
     In case of a successful creation, the data table will switch to the last page (if not already) to show the created algorithm relation type.
 	
-## Update Algorithm Relation Type
+### Update Algorithm Relation Type
 
 !!! info 
     To update a algorithm relation type, the user has to be in the ``Algorithm Relation Type List View``, which can be found in the ``Manage Components Menu``.
@@ -43,7 +44,7 @@ After adjusting all information, the user has to confirm the changes by clicking
 
 ![alt text](../images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_3.PNG "Confirm update")
 
-## Delete Algorithm Relation Type
+### Delete Algorithm Relation Type
 
 !!! info 
     To perform the deletion of a algorithm relation type, the user has to be in the ``Algorithm Relation Type List View``, which can be found in the ``Manage Components Menu``.

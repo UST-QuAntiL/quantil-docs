@@ -1,5 +1,5 @@
-#
-## Create Software Platform
+## Software Platform 
+### Create Software Platform
 
 To create a software platform the user has to navigate to the ``Execution Environment List View`` by using the navigation sidebar.
 
@@ -28,7 +28,7 @@ In case the creation was successful, the user will be redirected to the ``Softwa
 
 ![alt text](./../images/software_platform/Create_Software_Platform_-_Step_6.PNG "General View")
 
-## Delete Software Platform
+### Delete Software Platform
 
 !!! info 
     To perform the deletion of a software platform, the user has to be in the ``Software Platform List View``.
@@ -52,7 +52,7 @@ To confirm the deletion of the selected software platform(s), the user has to cl
 ![alt text](./../images/software_platform/Delete_Software_Platform_-_Step_2.PNG "Confirm deletion of selected software platform(s)")
 
 
-## Update Software Platform Information
+### Update Software Platform Information
 
 !!! info 
     To update the basic information of a software platform, the user has to be in the ``Software Platform View`` which can be reached by clicking on a software platform in the ``Software Platform List View``.
@@ -69,7 +69,7 @@ If a value of a property is changed, a ``Save Button`` will be displayed next th
 	
 ![alt text](./../images/software_platform/Update_Software_Platform_-_Step_2.PNG "Saving the changes")
 
-## Reference Implementations
+### Reference Implementations
 
 !!! info 
     To reference implementations in a software platform, the user has to be in the ``Implementations Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
@@ -96,7 +96,7 @@ Alternatively use the check-boxes to select multiple implementations and then cl
 !!! info 
     Successfully referenced implementations will now be visible in the ``Implementations Tab`` of the ``Software Platform View``.
 	
-## Dereference Implementations
+### Dereference Implementations
 
 !!! info 
     To dereference implementations, the user has to be in the ``Implementations Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
@@ -112,7 +112,7 @@ Alternatively use the check-boxes to select multiple implementations and then cl
 	
 ![alt text](./../images/software_platform/Dereference_Implementation_-_Step_1.2.PNG "Dereference multiple implementation")
 
-## Reference Cloud Services
+### Reference Cloud Services
 
 !!! info 
     To reference cloud services in a software platform, the user has to be in the ``Cloud Services Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
@@ -139,7 +139,7 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 !!! info 
     Successfully referenced cloud service(s) will now be visible in the ``Cloud Services Tab`` of the ``Software Platform View``.
 	
-## Dereference Cloud Services
+### Dereference Cloud Services
 
 !!! info 
     To dereference cloud services, the user has to be in the ``Cloud Services Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
@@ -155,7 +155,7 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 	
 ![alt text](./../images/software_platform/Dereference_Cloud_Service_-_Step_1.2.PNG "Dereference multiple cloud services")
 
-## Reference Compute Resources
+### Reference Compute Resources
 
 !!! info 
     To reference compute resources in a software platform, the user has to be in the ``Compute Resources Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.
@@ -182,7 +182,7 @@ Alternatively, use the check-boxes to select multiple compute resources and then
 !!! info 
     Successfully referenced compute resource(s) will now be visible in the ``Compute Resources Tab`` of the ``Software Platform View``.
 	
-## Dereference Compute Resources
+### Dereference Compute Resources
 
 !!! info 
     To dereference compute resources, the user has to be in the ``Compute Resources Tab`` of the ``Software Platform View``, which can be reached by clicking on a software platform in the ``Software Platform List View``.

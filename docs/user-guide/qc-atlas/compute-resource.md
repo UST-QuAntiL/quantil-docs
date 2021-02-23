@@ -1,5 +1,5 @@
-#
-## Create Compute Resource
+## Compute Resource 
+### Create Compute Resource
 
 To create a compute resource the user has to navigate to the ``Execution Environment List View`` by using the navigation sidebar.
 
@@ -28,7 +28,7 @@ In case the creation was successful, the user will be redirected to the ``Comput
 
 ![alt text](./../images/compute_resource/Create_Compute_Resource_-_Step_6.PNG "General View")
 
-## Delete Compute Resource
+### Delete Compute Resource
 
 !!! info 
     To perform the deletion of a compute resource, the user has to be in the ``Compute Resource List View``.
@@ -51,7 +51,7 @@ To confirm the deletion of the selected compute resource(s), the user has to cli
 
 ![alt text](./../images/compute_resource/Delete_Compute_Resource_-_Step_2.PNG "Confirm deletion of selected compute resource(s)")
 
-## Update Compute Resource Information
+### Update Compute Resource Information
 
 !!! info 
     To update the information of a compute resource, the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -70,7 +70,7 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 !!! info 
 	**Compute Resource Properties** of are stored separately and therefor do not belong to the basic information of a resource. They are saved, deleted or updated instantly without the use of the mentioned ``Save Buttons``.
 	
-## Create Compute Resource Property
+### Create Compute Resource Property
 
 !!! info 
     To create a property for a compute resource,  the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -97,7 +97,7 @@ After the property has been successfully created, it will appear in the the dedi
 
 ![alt text](./../images/compute_resource/Add_Compute_Resource_Property_-_Step_4.PNG "Verify creation")
 
-## Update Compute Resource Property
+### Update Compute Resource Property
 
 !!! info 
     To update a property for a compute resource,  the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -120,7 +120,7 @@ After all fields have been adjusted, the user can finally update the property by
 	
 ![alt text](./../images/compute_resource/Update_Compute_Resource_Property_-_Step_3.PNG "Confirm update")
 
-## Delete Compute Resource Property
+### Delete Compute Resource Property
 
 !!! info 
     To delete a property for a compute resource,  the user has to be in the ``Compute Resource View`` which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -132,7 +132,7 @@ Deleting properties for a compute resource is done in the ``General Tab`` of the
 !!! info 
 	A successfully deleted property should disappear from the dedicated ``Compute Resource Property Field`` after deletion.
 	
-## Reference Software Platforms
+### Reference Software Platforms
 
 !!! info 
     To reference software platforms in a compute resource, the user has to be in the ``Software Platforms Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -159,7 +159,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 !!! info 
     Successfully referenced software platforms(s) will now be visible in the ``Software Platforms Tab`` of the ``Compute Resource View``.
 	
-## Dereference Software Platforms
+### Dereference Software Platforms
 
 !!! info 
     To dereference software platforms, the user has to be in the ``Software Platforms Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -175,7 +175,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 	
 ![alt text](./../images/compute_resource/Dereference_Software_Platform_-_Step_1.2.PNG "Dereference multiple software platforms")
 
-## Reference Cloud Services
+### Reference Cloud Services
 
 !!! info 
     To reference cloud services in a compute resource, the user has to be in the ``Cloud Services Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.
@@ -202,7 +202,7 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 !!! info 
     Successfully referenced cloud service(s) will now be visible in the ``Cloud Services Tab`` of the ``Compute Resource View``.
 	
-## Dereference Cloud Services
+### Dereference Cloud Services
 
 !!! info 
     To dereference cloud services, the user has to be in the ``Cloud Services Tab`` of the ``Compute Resource View``, which can be reached by clicking on a compute resource in the ``Compute Resource List View``.

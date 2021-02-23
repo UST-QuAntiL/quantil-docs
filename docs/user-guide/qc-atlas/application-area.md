@@ -1,5 +1,5 @@
-#
-## Create Application Area
+## Application Area
+### Create Application Area
 
 !!! info 
     To create a application area, the user has to be in the ``Application Area List View`` which can be found in the ``Manage Components Menu``.
@@ -22,7 +22,7 @@ After entering the name of the application area, the user has to confirm the cre
 !!! info 
     In case of a successful creation, the data table will switch to the last page (if not already) to show the created application area.
 	
-## Update Application Area
+### Update Application Area
 
 !!! info 
     To update a application area, the user has to be in the ``Application Area List View``, which can be found in the ``Manage Components Menu``.
@@ -43,7 +43,7 @@ After adjusting all information, the user has to confirm the changes by clicking
 
 ![alt text](../images/application_area/Update_Application_Area_-_Step_3.PNG "Confirm update")
 
-## Delete Application Area
+### Delete Application Area
 
 !!! info 
     To perform the deletion of a application area, the user has to be in the ``Application Area List View``, which can be found in the ``Manage Components Menu``.

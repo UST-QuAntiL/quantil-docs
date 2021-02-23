@@ -1,5 +1,5 @@
-#
-## Create Pattern Relation Type
+## Pattern Relation Type 
+### Create Pattern Relation Type
 
 !!! info 
     To create a pattern relation type, the user has to be in the ``Pattern Relation Type List View`` which can be found in the ``Manage Components Menu``.
@@ -22,7 +22,7 @@ After entering the name of the pattern relation type, the user has to confirm th
 !!! info 
     In case of a successful creation, the data table will switch to the last page (if not already) to show the created pattern relation type.
 	
-## Update Pattern Relation Type
+### Update Pattern Relation Type
 
 !!! info 
     To update a pattern relation type, the user has to be in the ``Pattern Relation Type List View``, which can be found in the ``Manage Components Menu``.
@@ -43,7 +43,7 @@ After adjusting all information, the user has to confirm the changes by clicking
 
 ![alt text](../images/pattern_relation_type/Update_Pattern_Relation_Type_-_Step_3.PNG "Confirm update")
 
-## Delete Pattern Relation Type
+### Delete Pattern Relation Type
 
 !!! info 
     To perform the deletion of a pattern relation type, the user has to be in the ``Pattern Relation Type List View``, which can be found in the ``Manage Components Menu``.

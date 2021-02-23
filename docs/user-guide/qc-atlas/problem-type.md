@@ -1,5 +1,5 @@
-#
-## Create Problem Type
+## Problem Type 
+### Create Problem Type
 
 !!! info 
     To create a problem type, the user has to be in the ``Problem Type List View`` which can be found in the ``Manage Components Menu``.
@@ -23,7 +23,7 @@ After entering the name of the problem type, the user has to confirm the creatio
 !!! info 
     In case of a successful creation, the data table will switch to the last page (if not already) to show the created problem type.
 	
-## Update Problem Type
+### Update Problem Type
 
 !!! info 
     To update a problem type, the user has to be in the ``Problem Type List View``, which can be found in the ``Manage Components Menu``.
@@ -45,7 +45,7 @@ After adjusting all information, the user has to confirm the changes by clicking
 
 ![alt text](../images/problem_type/Update_Problem_Type_-_Step_3.PNG "Confirm update")
 
-## Delete Problem Type
+### Delete Problem Type
 
 !!! info 
     To perform the deletion of a problem type, the user has to be in the ``Problem Type List View``, which can be found in the ``Manage Components Menu``.

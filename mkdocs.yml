@@ -5,20 +5,7 @@ nav:
     - Home: 'index.md'
     - User Guide:
         - 'Overview': 'user-guide/overview.md'
-        - 'QC Atlas':
-            - 'QC Atlas Overview': 'user-guide/qc-atlas/qc-atlas-overview.md'
-            - 'Algorithm': 'user-guide/qc-atlas/algorithm.md'
-            - 'Latex Renderer': 'user-guide/qc-atlas/latex-renderer.md'
-            - 'Implementation': 'user-guide/qc-atlas/implementation.md'
-            - 'Publication': 'user-guide/qc-atlas/publication.md'
-            - 'Cloud Service': 'user-guide/qc-atlas/cloud-service.md'
-            - 'Compute Ressource': 'user-guide/qc-atlas/compute-ressource.md'
-            - 'Software Platform': 'user-guide/qc-atlas/software-platform.md'
-            - 'Application Area': 'user-guide/qc-atlas/application-area.md'
-            - 'Problem Type': 'user-guide/qc-atlas/problem-type.md'
-            - 'Algorithm Relation Type': 'user-guide/qc-atlas/algorithm-relation-type.md'
-            - 'Pattern Relation Type': 'user-guide/qc-atlas/pattern-relation-type.md'
-            - 'Compute Resource Property Type': 'user-guide/qc-atlas/compute-resource-property-type.md'
+        - 'QC Atlas': 'user-guide/qc-atlas.md'
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
         - 'QProv': 'user-guide/qprov.md'
     - Developer Guide:
@@ -28,9 +15,12 @@ nav:
         - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
         - 'Testing': 'developer-guide/qc-atlas/testing.md'
         - 'Database migrations': 'developer-guide/qc-atlas/db-migrations.md'
-theme: readthedocs
+theme:
+    name: readthedocs
 extra_css:
     - css/extra.css
 markdown_extensions:
     - admonition
     - attr_list
+plugins:
+    - include-markdown

@@ -1,5 +1,5 @@
-#
-## Create Publication
+## Publication 
+### Create Publication
 
 To create a publication, the user has to navigate to the ``Publication List View`` by using the navigation sidebar. This view contains a data table of all available publications. Creating a new publication is done via the ``Plus Button`` which is located above the table.
 
@@ -15,7 +15,7 @@ In the dialog, it is possible to give the new publication a title and assign mul
 
 After all necessary fields have been filled in, the creation of the publication can be confirmed by clicking on the ``OK Button``. After a successful creation, the user will be navigated to the ``Publication View`` of the new publication.
 
-## Delete Publication
+### Delete Publication
 
 !!! info 
     To perform the deletion of a publication, the user has to be in the ``Publication List View``.
@@ -38,7 +38,7 @@ To confirm the deletion of the selected publication(s), the user has to click on
 	
 ![alt text](../images/publication/Delete_Publication_-_Step_2.png "Confirm deletion")
 
-## Update Publication Information
+### Update Publication Information
 
 !!! info 
     To update the information of a publication, the user has to be in the ``Publication View`` which can be reached by clicking on a publication in the ``Publication List View``.
@@ -54,7 +54,7 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 
 ![alt text](../images/publication/Update_Publication_Properties_-_Step_2.png "Saving the changes")
 
-## Reference Algorithms
+### Reference Algorithms
 
 !!! info
     To reference algorithms in an existing publication, the user has to be in the ``Publication View``.
@@ -74,7 +74,7 @@ After at least one algorithm is selected, a ``Master Link Button`` will appear a
 
 ![alt text](../images/publication/Link_Algorithm_-_Step_2.2.png "Link multiple algorithms")
 
-## Dereference Algorithms
+### Dereference Algorithms
 
 !!! info 
     To dereference algorithms, the user has to be in the ``Algorithms Tab`` of the ``Publication View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -90,7 +90,7 @@ Alternatively, use the check-boxes to select multiple algorithms and then click 
 	
 ![alt text](../images/publication/Unlink_Algorithm_-_Step_1.2.png "Dereference multiple algorithms")
 
-## Reference Implementations
+### Reference Implementations
 
 !!! info 
     To reference implementations in a publication, the user has to be in the ``Implementations Tab`` of the ``Publication View``, which can be reached by clicking on a publication in the ``Publication List View``.
@@ -118,7 +118,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
     Successfully referenced implementation(s) will now be visible in the ``Implementations Tab`` of the ``Publication View``.
 
 
-## Dereference Implementations
+### Dereference Implementations
 
 !!! info 
     To dereference implementations, the user has to be in the ``Implementations Tab`` of the ``Publication View``, which can be reached by clicking on an implementation in the ``Implementation List View``.

@@ -1,5 +1,5 @@
-# 
-## Create Implementation
+## Implementation 
+### Create Implementation
 
 !!! info 
     To create an implementation, the user has to be in the ``Algorithm View`` of a specific algorithm.
@@ -19,7 +19,7 @@ In the dialog it is possible to give the new implementation a name.
 
 After all necessary fields have been filled in, the creation of the implementation can be confirmed by clicking on the ``OK Button``. After a successful creation, the user will be navigated to the ``Implementation View`` of the new implementation.
 
-## Delete Implementation
+### Delete Implementation
 
 !!! info 
     To delete an implementation, the user has to be in the ``Implementation Tab`` of the ``Algorithm View`` of a specific algorithm.
@@ -36,7 +36,7 @@ Both ways of deleting implementations will lead to a confirmation dialog. This d
 
 ![alt text](../images/implementation/Delete_Implementation_-_Step_3.png "Confirm deletion")
 
-## Update Implementation Information
+### Update Implementation Information
 
 !!! info 
     To update the information of a implementation, the user has to be in the ``Implementation View``.
@@ -52,7 +52,7 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 
 ![alt text](../images/implementation/Update_Implementation_Properties_-_Step_2.png  "Saving the changes")
 
-## Create Compute Resource Properties
+### Create Compute Resource Properties
 
 !!! info 
     To create a compute resource property for the implementation, the user has to be in the ``Implementation View`` which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -80,7 +80,7 @@ After the property has been successfully created, it will appear in the the dedi
 
 ![alt text](../images/algorithm/Add_Compute_Resource_-_Step_4.PNG "Verify creation")
 
-## Update Compute Resource Properties
+### Update Compute Resource Properties
 
 !!! info 
     To update a compute resource property of an implementation, the user has to be in the ``Implementation View``, which can be reached by clicking on a algorithm in the ``Implementation List View``.
@@ -103,7 +103,7 @@ After all fields have been adjusted, the user can finally update the property by
 
 ![alt text](../images/algorithm/Update_Compute_Resource_-_Step_3.PNG "Confirm update")
 
-## Delete Compute Resource Properties
+### Delete Compute Resource Properties
 
 !!! info 
     To delete a property for an implementation, the user has to be in the ``Implementation View`` which can be reached by clicking on a compute resource in the ``Implementation List View``.
@@ -116,7 +116,7 @@ To do that, the user has to simply hover over a existing property in the dedicat
 !!! info 
 	A successfully deleted property should disappear from the dedicated ``Required Compute Resource Property Field``.
 
-## Reference Publications
+### Reference Publications
 
 !!! info 
     To reference publications in an implementation, the user has to be in the ``Publications Tab`` of the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -143,7 +143,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 !!! info 
     Successfully referenced publications(s) will now be visible in the ``Publications Tab`` of the ``Implementation View``.
 
-## Dereference Publications
+### Dereference Publications
 
 !!! info 
     To dereference publications, the user has to be in the ``Publications Tab`` of the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -159,7 +159,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 	
 ![alt text](../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple publications")
 
-## Reference Software Platforms
+### Reference Software Platforms
 
 !!! info 
     To reference software platforms in an implementation, the user has to be in the ``Software Platforms Tab`` of the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -186,7 +186,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 !!! info 
     Successfully referenced software platform(s) will now be visible in the ``Software Platforms Tab`` of the ``Implementation View``.
 
-## Dereference Software Platforms
+### Dereference Software Platforms
 
 !!! info 
     To dereference software platforms, the user has to be in the ``Software Platforms Tab`` of the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -202,7 +202,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 	
 ![alt text](../images/implementation/Unlink_Software_Platform_-_Step_1.2.png "Dereference multiple software platforms")
 
-## Add Tags
+### Add Tags
 
 !!! info 
     To add tags to an implementation, the user has to be in the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
@@ -237,7 +237,7 @@ If the tag was added successfully, it will appear in the ``Header`` of the ``Imp
 
 ![alt text](../images/implementation/Add_Tag_-_Step_6.png "Verify if tag was created")
 
-## Remove Tags
+### Remove Tags
 
 !!! info 
     To remove tags from an implementation, the user has to be in the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
