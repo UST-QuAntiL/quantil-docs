@@ -13,3 +13,4 @@ regex==2020.10.11
 six==1.15.0
 tornado==6.0.4
 tqdm==4.50.2
+mkdocs-include-markdown-plugin==2.8.0

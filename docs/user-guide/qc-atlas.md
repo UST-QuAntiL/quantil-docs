@@ -1,6 +1,10 @@
 # QC Atlas User Guide
 
 {%
+   include-markdown "./qc-atlas/overview.md"
+%}
+
+{%
    include-markdown "./qc-atlas/algorithm.md"
 %}
 

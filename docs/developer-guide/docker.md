@@ -1,20 +1,5 @@
-# QuAntiL Docker setup
+# Quickstart with QuAntiL Docker setup
 This section explains how to execute the complete QuAntiL environment with docker-compose.
-
-## Overview
-The following components are included in the docker-compose setup
-
-| QuAntiL Component | URL | GitHub | Docker Hub |
-|:------------------- |:--- |:------ |:---------- |
-| Postgres-Multi DB | <localhost:5432> | [Link](https://github.com/lmm-git/docker-postgres-multi) | [Link](https://hub.docker.com/r/lmmdock/postgres-multi) |
-| QC-Atlas |<http://localhost:8080/atlas> | [Link](https://github.com/UST-QuAntiL/qc-atlas) | [Link](https://hub.docker.com/r/planqk/atlas) |
-| QC-Atlas-UI |<http://localhost:4200> | [Link](https://github.com/UST-QuAntiL/qc-atlas-ui) | [Link](https://hub.docker.com/r/planqk/qc-atlas-ui) |
-| Pattern-Atlas-API |<http://localhost:8082/patternpedia> | [Link](https://github.com/PatternAtlas/pattern-atlas-api) | [Link](https://hub.docker.com/r/patternpedia/patternrepo-api) |
-| NISQ-Analyzer |<http://localhost:8081/nisq-analyzer> | [Link](https://github.com/UST-QuAntiL/nisq-analyzer) | [Link](https://hub.docker.com/r/planqk/nisq-analyzer) |
-| Qiskit-Service |<http://localhost:5000> | [Link](https://github.com/UST-QuAntiL/qiskit-service) | [Link](https://hub.docker.com/r/planqk/qiskit-service) |
-| Redis |<localhost:6379> | [Link](https://github.com/redis/redis) | [Link](https://hub.docker.com/_/redis) |
-| Latex-Renderer |<http://localhost:8083> | [Link](https://github.com/UST-QuAntiL/latex-renderer) | [Link](https://hub.docker.com/r/beiselmn/latex-renderer) |
-
 
 ## Prerequisites
 - Docker Engine - [install guide](https://docs.docker.com/engine/install/)
@@ -29,6 +14,19 @@ The following components are included in the docker-compose setup
 * `4200`
 * `6379`
 
+## Overview
+The following components are included in the docker-compose setup
+
+| QuAntiL Component | URL | GitHub | Docker Hub |
+|:------------------- |:--- |:------ |:---------- |
+| Postgres-Multi DB | <localhost:5432> | [Link](https://github.com/lmm-git/docker-postgres-multi) | [Link](https://hub.docker.com/r/lmmdock/postgres-multi) |
+| QC-Atlas |<http://localhost:8080/atlas> | [Link](https://github.com/UST-QuAntiL/qc-atlas) | [Link](https://hub.docker.com/r/planqk/atlas) |
+| QC-Atlas-UI |<http://localhost:4200> | [Link](https://github.com/UST-QuAntiL/qc-atlas-ui) | [Link](https://hub.docker.com/r/planqk/qc-atlas-ui) |
+| Pattern-Atlas-API |<http://localhost:8082/patternpedia> | [Link](https://github.com/PatternAtlas/pattern-atlas-api) | [Link](https://hub.docker.com/r/patternpedia/patternrepo-api) |
+| NISQ-Analyzer |<http://localhost:8081/nisq-analyzer> | [Link](https://github.com/UST-QuAntiL/nisq-analyzer) | [Link](https://hub.docker.com/r/planqk/nisq-analyzer) |
+| Qiskit-Service |<http://localhost:5000> | [Link](https://github.com/UST-QuAntiL/qiskit-service) | [Link](https://hub.docker.com/r/planqk/qiskit-service) |
+| Redis |<localhost:6379> | [Link](https://github.com/redis/redis) | [Link](https://hub.docker.com/_/redis) |
+| Latex-Renderer |<http://localhost:8083> | [Link](https://github.com/UST-QuAntiL/latex-renderer) | [Link](https://hub.docker.com/r/beiselmn/latex-renderer) |  
 
 ## Running the complete setup
 Make sure all prerequisites above are met bevorhand and that all necessary ports are free.

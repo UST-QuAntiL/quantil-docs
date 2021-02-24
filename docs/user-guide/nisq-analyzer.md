@@ -4,7 +4,7 @@ The [NISQ Analyzer](https://github.com/UST-QuAntiL/nisq-analyzer) is a research 
 Furthermore, it enables the automated comparison of available quantum compilers to support the selection of the most suitable compiled quantum circuit, see [below](#running-the-nisq-analyzer-for-compiler-comparison).
 ### SDKs, QPUs, and Cloud Services
 
-Atlas' `Software Platforms` get mapped to SDKs. This mapping happens automatically when opening a Software Platform in the UI.   
+QC Atlas' `Software Platforms` get mapped to SDKs. This mapping happens automatically when opening a Software Platform in the UI.   
 
 QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov) a provenance system for quantum computing.   
  
@@ -13,7 +13,7 @@ Currently, only real quantum computers of the cloud service `IBMQ` are supported
 
 ### Implementations
 
-`Implementations` in Atlas are mapped to Implementations in the NISQ Analyzer DB.
+`Implementations` in QC Atlas are mapped to Implementations in the NISQ Analyzer DB.
 Again, this mapping happens automatically when opening an Implementation in the UI.
 
 Implementation properties specific to the NISQ Analyzer are inside the `Selection Criteria` tab.

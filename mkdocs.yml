@@ -4,12 +4,11 @@ edit_uri: tree/master/docs
 nav:
     - Home: 'index.md'
     - User Guide:
-        - 'Overview': 'user-guide/overview.md'
         - 'QC Atlas': 'user-guide/qc-atlas.md'
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
         - 'QProv': 'user-guide/qprov.md'
     - Developer Guide:
-        - 'Docker': 'developer-guide/docker.md'
+        - 'Quickstart': 'developer-guide/docker.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
         - 'OpenAPI': 'developer-guide/openapi.md'
         - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
