@@ -1,6 +1,8 @@
 # QProv User Guide
 
-[QProv](https://github.com/UST-QuAntiL/qprov) is a provenance system for quantum computing. It enables the collection and analysis of important provenance attributes about QPUs. It is, e.g., used by the [NISQ Analyzer](./nisq-analyzer.md) for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.
+[QProv](https://github.com/UST-QuAntiL/qprov) is a provenance system for quantum computing. 
+It enables the collection and analysis of important provenance attributes about QPUs. 
+It is, e.g., used by the [NISQ Analyzer](./nisq-analyzer.md) for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.
 
 ## Retrieve Provenance Data of a QPU
 
@@ -9,7 +11,8 @@ To retrieve provenance data of a certain QPU, first set your IBMQ token at the `
 !!! note 
     Currently, only quantum computers of `IBMQ` are supported, thus, in this case, your IBMQ token is required.
 
-Then, add the QPU to the list of `Compute Resources` under `Execution Environments`, and define the required QPU name, see [Compute Resource](./qc-atlas/compute-resource.md). Then, specify its `Vendor` under the `General` tab and click the save button.
+Then, add the QPU to the list of `Compute Resources` under `Execution Environments`, and define the required QPU name, see [Compute Resource](./qc-atlas/compute-resource.md). 
+Then, specify its `Vendor` under the `General` tab and click the save button.
 
 ![Define vendor of QPU](./images/qprov/define-vendor.png)
 
