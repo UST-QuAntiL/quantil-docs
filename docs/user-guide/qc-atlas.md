@@ -1,6 +1,8 @@
 # QC Atlas User Guide
 
 [QC Atlas](https://github.com/UST-QuAntiL/qc-atlas) is a platform for sharing quantum software as part of the [Quantum Application Lifecycle Management (QuAntiL)](https://github.com/UST-QuAntiL) and the project [PlanQK](https://planqk.de/en/).
+It enables the collection of information about quantum algorithms, available implementations, and publications.
+Also the collection of information about available software platforms, cloud services, and their offered compute resources, such as quantum computers and simulators, are enabled. 
 
 {%
    include-markdown "./qc-atlas/overview.md"

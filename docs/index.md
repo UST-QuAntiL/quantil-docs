@@ -15,7 +15,10 @@ But also the execution part is considered.
 QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.
 
 ### Analysis & Execution
-The [Circuit Transformer](./user-guide/circuit-transformer.md)
+The [Circuit Transformer](./user-guide/circuit-transformer.md) enables the translation of a given circuit into different languages.
+Furthermore, it enables the modification of the given circuit by providing a simple modelling tool representing qubits and gates and supports the simulation of the resulting measurements.
+The Circuit Transformer also supports the transpilation and export on general gate sets of Rigetti and IBMQ machines for different programming languages.
+In addition, the depth, two-qubit gate depth, and the pulses depth is analyzed for the different gate sets.
 
 
 The [NISQ Analyzer](./user-guide/nisq-analyzer.md) enables the selection of suitable implementations and quantum computers (QPUs) dependent on given input data and the selected quantum algorithm.
@@ -30,7 +33,7 @@ In addition, the NISQ Analyzer enables the comparison of the width and depth of 
 It periodically collects and analyzes important provenance attributes of accessible QPUs, such as the number of qubits, T1, T2, gate error rates, and current queue sizes.
 Furthermore, it supports the calculation of calibration matrices of QPUs.
 QProv builds the basis for, e.g., the NISQ Analyzer providing up-to-date information about accessible QPUs to support the selection of suitable QPUs.
-It is, e.g., used by the [NISQ Analyzer](./nisq-analyzer.md) for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.
+It is, e.g., used by the [NISQ Analyzer](./user-guide/nisq-analyzer.md) for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.
 
 ## Integrated components of QC Atlas and the QC Atlas UI
 The following diagram illustrates the currently integrated components of the QC Atlas platform and its UI:

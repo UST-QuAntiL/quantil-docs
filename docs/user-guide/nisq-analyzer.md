@@ -7,9 +7,7 @@ An overview about the NISQ Analyzer and its used components can be viewed in the
 ### SDKs, QPUs, and Cloud Services
 
 QC Atlas' `Software Platforms` get mapped to SDKs. This mapping happens automatically when opening a Software Platform in the UI.   
-
 QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov) a provenance system for quantum computing.   
- 
 `Cloud Services` are required to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
 Currently, only real quantum computers of the cloud service `IBMQ` are supported.
 
@@ -23,13 +21,10 @@ Implementation properties specific to the NISQ Analyzer are inside the `Selectio
 ![Selection Criteria UI](./images/nisq_analyzer/implementation_selectionCriteria.png)
 
 Define the `File Location` as URL where the raw implementation is placed.
-
 Select the previously added `Software Platform` and select the `Language` of the implementation. 
 
 To add new input parameters press the `+` button on the right side of `Input Parameters`. Afterwards, insert the necessary data into the fields of the created Input Parameter.
-
 To delete an Input Parameter, select the card on the left side and press the `-` button on the right, next to the heading `Input Parameters`.
-
 Prolog Rules, e.g. `Selection Rule` can be changed as well. Make sure that the rules follow correct Prolog Syntax.
 
 To save all changes press the round button on the right side.
