@@ -1,5 +1,5 @@
 ## General Information about UI-Components
-The UI of the ``QC Atlas`` is built using ``List Views`` and ``Object Views``.
+The [UI](https://github.com/UST-QuAntiL/qc-atlas-ui)  of the QC Atlas is built using ``List Views`` and ``Object Views``.
 
 ### List View
 ``List Views`` can be reached by using the ``Navigation Bar`` on the left side of the UI. 

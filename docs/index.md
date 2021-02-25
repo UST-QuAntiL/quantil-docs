@@ -8,10 +8,14 @@
 
 ### Information
 
-[QC Atlas](./user-guide/qc-atlas.md)
+[QC Atlas](./user-guide/qc-atlas.md) is a platform for sharing quantum software and is part of the project [PlanQK](https://planqk.de/en/).
+Thereby, it enables the collection of quantum algorithms and their specific properties, such as input and output parameters, their problem descriptions and solutions.
+Further, available implementations, related other algorithms, patterns, and publications of them can be added and linked.
+But also the execution part is considered.
+QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.
 
 ### Analysis & Execution
-The [Circuit Transformer]()
+The [Circuit Transformer](./user-guide/circuit-transformer.md)
 
 
 The [NISQ Analyzer](./user-guide/nisq-analyzer.md) enables the selection of suitable implementations and quantum computers (QPUs) dependent on given input data and the selected quantum algorithm.
@@ -28,20 +32,6 @@ Furthermore, it supports the calculation of calibration matrices of QPUs.
 QProv builds the basis for, e.g., the NISQ Analyzer providing up-to-date information about accessible QPUs to support the selection of suitable QPUs.
 It is, e.g., used by the [NISQ Analyzer](./nisq-analyzer.md) for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.
 
-The source code for the components can be found at the following locations:  
-- [qc-atlas-ui](https://github.com/UST-QuAntiL/qc-atlas-ui)  
-- [qc-atlas](https://github.com/UST-QuAntiL/qc-atlas)  
-- [nisq-analyzer](https://github.com/UST-QuAntiL/nisq-analyzer)  
-- [qprov](https://github.com/UST-QuAntiL/qprov)  
-- [pattern-atlas](https://github.com/PatternAtlas/pattern-atlas-api)  
-- [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service)  
-- [pytket-service](https://github.com/UST-QuAntiL/pytket-service)  
-- [forest-service](https://github.com/UST-QuAntiL/forest-service)  
-
-
-[Quantum Application Lifecycle Management (QuAntiL)](https://github.com/UST-QuAntiL).
-
-
-## Integrated components of QC Atlas
-The following diagram illustrates the integrated components of the QC Atlas platform:
+## Integrated components of QC Atlas and the QC Atlas UI
+The following diagram illustrates the currently integrated components of the QC Atlas platform and its UI:
 ![Integrated components](images/components.png)

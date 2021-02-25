@@ -3,12 +3,13 @@ repo_url: https://github.com/UST-QuAntiL/quantil-docs
 edit_uri: tree/master/docs
 nav:
     - Home: 'index.md'
+    - Quickstart: 'developer-guide/docker.md'
     - User Guide:
         - 'QC Atlas': 'user-guide/qc-atlas.md'
+        - 'Circuit Transformer': 'user-guide/circuit-transformer.md'
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
         - 'QProv': 'user-guide/qprov.md'
     - Developer Guide:
-        - 'Quickstart': 'developer-guide/docker.md'
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
         - 'OpenAPI': 'developer-guide/openapi.md'
         - 'Application Architecture': 'developer-guide/qc-atlas/application-architecture.md'
