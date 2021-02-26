@@ -4,7 +4,7 @@
 
 ## Overview
 
-![Overview QuAntiL](./images/overview-quantil.png)
+![Overview QuAntiL](./images/overview-quantil.png){: style="width:800px" .center}
 
 ### Information
 
