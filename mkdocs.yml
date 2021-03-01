@@ -9,6 +9,7 @@ nav:
         - 'Circuit Transformer': 'user-guide/circuit-transformer.md'
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
         - 'QProv': 'user-guide/qprov.md'
+        - 'QHAna': 'user-guide/qhana.md'
     - Developer Guide:
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
         - 'OpenAPI': 'developer-guide/openapi.md'

@@ -20,7 +20,7 @@ QC Atlas enables collecting information about existing software platforms, cloud
 
 ### Application
 
-The Quantum Humanities Analyse Tool [QHANA](https://github.com/UST-QuAntiL/qhana) is a toolset of Machine Learning techniques for classical and quantum hardware.
+[QHAna](./user-guide/qhana.md) - The **Q**uantum **H**umanities **Ana**lysis Tool is a toolset of Machine Learning techniques for classical and quantum hardware, designed for the use with the [MUSE Repository](https://www.iaas.uni-stuttgart.de/publications/INBOOK-2018-05-MUSE.pdf). It comprises a rich set of techniques, mostly for categorical data. The tools are split up into 4 different categories: **Data Preparation, Feature Engineering, Clustering,** and **Classification**. From each category various alternative methods can be selected to be used for the analysis.
 
 ### Analysis & Execution
 The [Circuit Transformer](./user-guide/circuit-transformer.md) enables the translation of a given circuit into different languages.
