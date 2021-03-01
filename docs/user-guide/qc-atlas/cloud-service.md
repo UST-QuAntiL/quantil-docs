@@ -1,5 +1,5 @@
-#
-## Create Cloud Service
+## Cloud Service 
+### Create Cloud Service
 
 To create a cloud service the user has to navigate to the ``Cloud Services List View`` by using the navigation sidebar. 
 This will be done by first clicking on the ``Execution Environments Menu`` in the navigation sidebar, which makes the ``Cloud Services Sub-Menu`` visible.
@@ -17,7 +17,7 @@ In the dialog it is possible to give the new cloud service a name.
 
 After all necessary fields have been filled in, the creation of the cloud service can be confirmed by clicking on the ``OK Button``. In case of a successful creation, the user will be navigated to the ``Cloud Service View`` of the new cloud service.
 
-## Delete Cloud Service
+### Delete Cloud Service
 
 !!! info 
     To perform the deletion of a cloud service, the user has to be in the ``Cloud Service List View``.
@@ -34,7 +34,7 @@ Both ways of deleting cloud services will lead to a confirmation dialog. This di
 
 ![alt text](./../images/cloud_service/Delete_Publication_-_Step_3.png "Confirm deletion")
 
-## Update Cloud Service Information
+### Update Cloud Service Information
 
 !!! info 
     To update the information of a cloud service, the user has to be in the ``Cloud Service View`` which can be reached by clicking on a cloud service in the ``Cloud Service List View``.
@@ -50,7 +50,7 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 
 ![alt text](./../images/cloud_service/Update_Cloud_Service_Properties_-_Step_2.png "Saving the changes")
 
-## Reference Software Platform
+### Reference Software Platform
 
 !!! info
     To reference software platforms in an existing cloud service, the user has to be in the ``Software Platforms Tab`` of the ``Cloud Service View``, which can be reached by clicking on a cloud service in the ``Cloud Service List View``.
@@ -71,7 +71,7 @@ If it least one software platform is selected a ``Master Link Button`` will appe
 
 ![alt text](./../images/cloud_service/Link_Software_Platform_-_Step_2.1.png  "Link multiple software platforms")
 
-## Dereference Software Platform
+### Dereference Software Platform
 
 !!! info 
     To dereference software platforms, the user has to be in the ``Software Platforms Tab`` of the ``Cloud Service View``, which can be reached by clicking on a cloud service in the ``Cloud Service List View``.
@@ -87,7 +87,7 @@ Alternatively use the check-boxes to select multiple software platforms and then
 	
 ![alt text](./../images/cloud_service/Unlink_Software_Platform_-_Step_2.png "Dereference multiple software platform")
 
-## Reference Compute Resource
+### Reference Compute Resource
 
 !!! info
     To reference compute resource in an existing cloud service, the user has to be in the ``Compute Resource Tab`` of the ``Cloud Service View``, which can be reached by clicking on a cloud service in the ``Cloud Service List View``.
@@ -108,7 +108,7 @@ It at least one compute resource is selected, a ``Master Link Button`` will appe
 
 ![alt text](./../images/cloud_service/Link_Compute_Rescource_-_Step_2.1.png  "Link multiple compute resources")
 
-## Dereference Compute Resource
+### Dereference Compute Resource
 
 !!! info 
     To dereference compute resources, the user has to be in the ``Compute Resource Tab`` of the ``Cloud Service View``, which can be reached by clicking on a cloud service in the ``Cloud Service List View``.
