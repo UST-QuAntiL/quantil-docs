@@ -1,10 +1,14 @@
 # Welcome to the QuAntiL Documentation!
 ![alt text](./images/combo.png){: style="height:100px" .center}
-[Quantum Application Lifecycle Management (QuAntiL)](https://github.com/UST-QuAntiL) offers tooling support for various aspects of the quantum application lifecycle, such as implementation, deployment, execution, and monitoring of quantum applications, see the [website](https://www.iaas.uni-stuttgart.de/forschung/projekte/quantil/).
 
-## Overview
+### Overview
+
+[Quantum Application Lifecycle Management (QuAntiL)](https://github.com/UST-QuAntiL) offers tooling support for various aspects of the quantum application lifecycle, such as implementation, deployment, execution, and monitoring of quantum applications, see the [website](https://www.iaas.uni-stuttgart.de/forschung/projekte/quantil/). Currently QuAntiL provides tooling support in the following areas:
 
 ![Overview QuAntiL](./images/overview-quantil.png){: style="width:800px" .center}
+
+The <strong>Information</strong> area contains tools that provide knowledge for quantum application developers about available technologies, patterns, and algorithms. The <strong>Application</strong> area contains tools and implementations of quantum algorithms to solve certain use cases.
+In the <strong>Analysis & Execution</strong> area tools for translating circuits between different programming languages, selecting suitable quantum hardware, and for executing and deploying the quantum application are provided. In the last area, <strong>Provenance</strong>, a tool for collecting information about different quantum providers is listed. In the following the tools of each area are shortly introduced:
 
 ### Information
 
@@ -13,6 +17,10 @@ Thereby, it enables the collection of quantum algorithms and their specific prop
 Further, available implementations, related other algorithms, patterns, and publications of them can be added and linked.
 But also the execution part is considered.
 QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.
+
+### Application
+
+The Quantum Humanities Analyse Tool [QHANA](https://github.com/UST-QuAntiL/qhana) is a toolset of Machine Learning techniques for classical and quantum hardware.
 
 ### Analysis & Execution
 The [Circuit Transformer](./user-guide/circuit-transformer.md) enables the translation of a given circuit into different languages.
