@@ -2,7 +2,7 @@
 
 [QHAna](https://github.com/UST-QuAntiL/qhana) - The **Q**uantum **H**umanities **Ana**lysis Tool is a toolset of Machine Learning techniques for classical and quantum hardware, designed for the use with the [MUSE Repository](https://www.iaas.uni-stuttgart.de/publications/INBOOK-2018-05-MUSE.pdf). It comprises a rich set of techniques, mostly for categorical data. The tools are split up into 4 different categories: **Data Preparation, Feature Engineering, Clustering,** and **Classification**.
 
-From each category various alternative methods can be selected to be used for the analysis. Currently, the toolset will assume and apply one of the following data flow depending on whether tools of the respective categories were initialized:
+From each category various alternative methods can be selected to be used for the analysis. Currently, the toolset will assume and apply one of the following data flows depending on whether tools of the respective categories were initialized:
 
 1. Data Preparation &#8594; Feature Engineering
 2. Data Preparation &#8594; Feature Engineering &#8594; Clustering
@@ -47,7 +47,7 @@ Change the parameters for the `MDS` (not shown) as desired and click `set parame
 By default `MDS` will reduce the data to two dimensions.
 
 !!! note
-	`MDS` by default is not deterministic. I.e., the `Feature Engineering` step may produce different results in each run on the same similarity matrix. Set the `Static Eulidean Coordinates` checkbox in the `MDS` parameter list if this is not desired. This will reuse previous `Euclidean Coordinates` for the same similarity matrix and thus produce the same output in each run.
+	`MDS` by default is not deterministic. I.e., the `Feature Engineering` step may produce different results in each run on the same similarity matrix. Set the `Static Eulidean Coordinates` checkbox in the `MDS` parameter list if this is not desired. This way the previous `Euclidean Coordinates` will be reused for the same similarity matrix and thus the same output will be produced in each run.
 
 ### Clustering
 
@@ -81,20 +81,20 @@ Since classification is supervised learning it requires labelled data. In the `D
 
 #### Data Splitter
 
-Typically for supervised learning one needs to assess the success of the learning to detect problems, such as overfitting. This is done by splitting the data into two parts: a training set and a test set. The classifier will be trained only on the training set. After training the test set is used to determine how accurate the classifier is.
+Typically for supervised learning one needs to assess the success of the learning to detect problems, such as overfitting. This is done by splitting the data into two parts: a training set and a test set. The classifier will be trained only on the training set. After training, the test set is used to determine how accurate the classifier is.
 `Initialize` one of the four splitting strategies in the `Data Splitter` submenu and set its parameters if applicable.
 
 ![Classification - Data Splitter](./images/qhana/classification-splitter.png)
 
 #### Classifier
 
-In the `Classifier` submenu, select and `initializa` one of the available classification algotithms and change its parameters as desired.
+In the `Classifier` submenu, select and `initialize` one of the available classification algorithms and change its parameters as desired.
 
 ![Classification - Classifier](./images/qhana/classification-classifiers.png)
 
 ## Running the Analysis
 
-In order to run the configured analysis go to `Overview` in the navigation bar and click on `Calculating`. There will be a summary of the setup. At the top click `Start calculating` to start the calculations. This may take some time depending on the selected algorithms. Once calculations are complete, the application forward to the `Result` page.
+In order to run the configured analysis go to `Overview` in the navigation bar and click on `Calculating`. There will be a summary of the setup. At the top click `Start calculating` to start the calculations. This may take some time depending on the selected algorithms. Once calculations are complete, the application forwards to the `Result` page.
 
 ![Run the Analysis - Start calculating](./images/qhana/overview-calculating.png)
 
