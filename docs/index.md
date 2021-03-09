@@ -17,6 +17,8 @@ Thereby, it enables the collection of quantum algorithms and their specific prop
 Further, available implementations, related other algorithms, patterns, and publications of them can be added and linked.
 But also the execution part is considered.
 QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.
+[Pattern Atlas](https://pattern-atlas-readthedocs.readthedocs.io/en/latest/) is a pattern repository that provides tooling support for capturing best practices in the form of patterns for various domains. 
+It already contains several patterns for quantum algorithms and allows to include domain-specific aspects for quantum computing (quantum circuits, mathematical descriptions).
 
 ### Application
 
