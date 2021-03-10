@@ -6,8 +6,11 @@ nav:
     - Quickstart: 'developer-guide/docker.md'
     - User Guide:
         - 'QC Atlas': 'user-guide/qc-atlas.md'
+        - 'Qverview': 'user-guide/qverview.md'
+        - 'QHAna': 'user-guide/qhana.md'
         - 'Circuit Transformer': 'user-guide/circuit-transformer.md'
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
+        - 'QuantME': 'user-guide/quantme.md'
         - 'QProv': 'user-guide/qprov.md'
     - Developer Guide:
         - 'IntelliJ Setup': 'developer-guide/intellij.md'

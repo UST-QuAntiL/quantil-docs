@@ -18,16 +18,21 @@ Further, available implementations, related other algorithms, patterns, and publ
 But also the execution part is considered.
 QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.
 
+[Pattern Atlas](https://pattern-atlas-readthedocs.readthedocs.io/en/latest/) is a pattern repository that provides tooling support for capturing best practices in the form of patterns for various domains.
+It already contains several patterns for quantum algorithms and allows to include domain-specific aspects for quantum computing (quantum circuits, mathematical descriptions).
+
+[Qverview](./user-guide/qverview.md) provides an overview of several technologies for quantum application development such as development kits, cloud services, programming languages, etc.
+It enables to analyze and compare different technologies and identify their interoperability.
+
 ### Application
 
-The Quantum Humanities Analyse Tool [QHANA](https://github.com/UST-QuAntiL/qhana) is a toolset of Machine Learning techniques for classical and quantum hardware.
+[QHAna](./user-guide/qhana.md) - The **Q**uantum **H**umanities **Ana**lysis Tool is a toolset of Machine Learning techniques for classical and quantum hardware, designed for the use with the [MUSE Repository](https://www.iaas.uni-stuttgart.de/publications/INBOOK-2018-05-MUSE.pdf). It comprises a rich set of techniques, mostly for categorical data. The tools are split up into 4 different categories: **Data Preparation, Feature Engineering, Clustering,** and **Classification**. From each category various alternative methods can be selected to be used for the analysis.
 
 ### Analysis & Execution
 The [Circuit Transformer](./user-guide/circuit-transformer.md) enables the translation of a given circuit into different languages.
 Furthermore, it enables the modification of the given circuit by providing a simple modelling tool representing qubits and gates and supports the simulation of the resulting measurements.
 The Circuit Transformer also supports the transpilation and export on general gate sets of Rigetti and IBMQ machines for different programming languages.
 In addition, the depth, two-qubit gate depth, and the pulses depth is analyzed for the different gate sets.
-
 
 The [NISQ Analyzer](./user-guide/nisq-analyzer.md) enables the selection of suitable implementations and quantum computers (QPUs) dependent on given input data and the selected quantum algorithm.
 Therefore, Prolog rules are defined to determine which input data can be processed by a specific implementation and to determine which QPU can successfully execute suitable implementations.
@@ -36,8 +41,16 @@ These properties are, then, compared with the number of qubits and the estimated
 To gain up-to-date information about available QPUs, the provenance system [QProv](./user-guide/qprov.md) is accessed.
 In addition, the NISQ Analyzer enables the comparison of the width and depth of compiled quantum circuits dependent on the selected quantum computer and the initially given quantum circuit.
 
+The [Quantum Modeling Extension (QuantME)](./user-guide/quantme) is a technology-independent modeling extension for imperative workflow languages to model quantum computations in workflow models.
+Thereby, it provides explicit modeling constructs for the execution of quantum circuits, as well as for different frequently occurring pre- and post-processing tasks, abstracting from the technical and mathematical details.
+Thus, it eases the modeling of workflows executing quantum algorithms and increases the reusability of implementations for the various tasks.
+To enable the practical application of QuantME, an extension of [BPMN 2.0](https://www.omg.org/spec/BPMN/2.0/PDF) that supports QuantME, called [Quantum4BPMN](https://github.com/UST-QuAntiL/QuantME-Quantum4BPMN) is available.
+Furthermore, the [QuantME Transformation Framework](https://github.com/UST-QuAntiL/QuantME-TransformationFramework) supports the graphical modeling of Quantum4BPMN workflow models and their transformation to native workflow models to retain their portability.
+
+The [OpenTOSCA Ecosystem](http://www.opentosca.org/) is an standard-based end-to-end toolchain for deploying and managing (cloud) applications. It is based on the OASIS Standard [TOSCA](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca) and provides (i) the graphical modeling tool [Winery](https://winery.readthedocs.io/en/latest/) for specifying TOSCA-compliant deployment models, (ii) the provisioning engine [OpenTOSCA Container](https://opentosca.github.io/container/) that processes the deployment models, and (iii) the [self-service portal](https://github.com/OpenTOSCA/ui) for selecting and instantiating applications. The ecosystem can be used for modeling and deploying quantum applications on different quantum cloud providers.
+
 ### Provenance
-[QProv](./user-guide/qprov.md) is a provenance system for quantum computing. 
+[QProv](./user-guide/qprov.md) is a provenance system for quantum computing.
 It periodically collects and analyzes important provenance attributes of accessible QPUs, such as the number of qubits, T1, T2, gate error rates, and current queue sizes.
 Furthermore, it supports the calculation of calibration matrices of QPUs.
 QProv builds the basis for, e.g., the NISQ Analyzer providing up-to-date information about accessible QPUs to support the selection of suitable QPUs.
