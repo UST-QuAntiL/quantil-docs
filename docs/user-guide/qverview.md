@@ -1,6 +1,8 @@
 # Qverview User Guide
-Qverview is a comparison framework for different techniques and technologies in quantum application development.
-It presents information in several tables, that can be searched and filtered.
+[Qverview](https://github.com/UST-QuAntiL/Qverview) is a comparison framework for different tools, services, and techniques for quantum application development.
+It presents information about different technologies in a table-styled manner.
+It enables searching and filtering over all tables in order to analyze and compare different technologies.
+The interoperability feature further allows to identify interoperabilities between different kinds of technologies.
 
 ## Search All
 This feature provides a central search field over all available tables.
