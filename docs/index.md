@@ -47,6 +47,8 @@ Thus, it eases the modeling of workflows executing quantum algorithms and increa
 To enable the practical application of QuantME, an extension of [BPMN 2.0](https://www.omg.org/spec/BPMN/2.0/PDF) that supports QuantME, called [Quantum4BPMN](https://github.com/UST-QuAntiL/QuantME-Quantum4BPMN) is available.
 Furthermore, the [QuantME Transformation Framework](https://github.com/UST-QuAntiL/QuantME-TransformationFramework) supports the graphical modeling of Quantum4BPMN workflow models and their transformation to native workflow models to retain their portability.
 
+The [OpenTOSCA Ecosystem](http://www.opentosca.org/) is an standard-based end-to-end toolchain for deploying and managing (cloud) applications. It is based on the OASIS Standard [TOSCA](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca) and provides (i) the graphical modeling tool [Winery](https://winery.readthedocs.io/en/latest/) for specifying TOSCA-compliant deployment models, (ii) the provisioning engine [OpenTOSCA Container](https://opentosca.github.io/container/) that processes the deployment models, and (iii) the [self-service portal](https://github.com/OpenTOSCA/ui) for selecting and instantiating applications. The ecosystem can be used for modeling and deploying quantum applications on different quantum cloud providers.
+
 ### Provenance
 [QProv](./user-guide/qprov.md) is a provenance system for quantum computing.
 It periodically collects and analyzes important provenance attributes of accessible QPUs, such as the number of qubits, T1, T2, gate error rates, and current queue sizes.
