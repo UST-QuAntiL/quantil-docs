@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Software platform - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Software platform";
+    var mkdocs_page_input_path = "user-guide/qc-atlas/software-platform.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Software platform</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/software-platform.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="software-platform">Software Platform</h2>
+<h3 id="create-software-platform">Create Software Platform</h3>
+<p>To create a software platform the user has to navigate to the <code>Execution Environment List View</code> by using the navigation sidebar.</p>
+<p><img alt="alt text" src="../../images/software_platform/Create_Software_Platform_-_Step_1.PNG" title="Navigate to execution environments list view" /></p>
+<p>While in the <code>Execution Environment List View</code>, the navigation sidebar will display sub menus for different kinds of execution environments. To create a software platform, the user has to navigate to the <code>Software Platform List View</code>.</p>
+<p><img alt="alt text" src="../../images/software_platform/Create_Software_Platform_-_Step_2.PNG" title="Navigate to software platform list view" /></p>
+<p>Inside the <code>Software Platform List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new software platform inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="../../images/software_platform/Create_Software_Platform_-_Step_3.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information of the software platform he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the software platform.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Create_Software_Platform_-_Step_4.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the software platform, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="../../images/software_platform/Create_Software_Platform_-_Step_5.PNG" title="Confirm creation" /></p>
+<p>In case the creation was successful, the user will be redirected to the <code>Software Platform View</code> of the newly created software platform.</p>
+<p><img alt="alt text" src="../../images/software_platform/Create_Software_Platform_-_Step_6.PNG" title="General View" /></p>
+<h3 id="delete-software-platform">Delete Software Platform</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a software platform, the user has to be in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a specific software platform, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/software_platform/Delete_Software_Platform_-_Step_1.1.PNG" title="Delete single platform" /></p>
+<p>The user can also remove multiple software platforms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The delete button will only appear after at least one software platform has been selected by the user.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Delete_Software_Platform_-_Step_1.2.PNG" title="Delete multiple platforms" /></p>
+<p>To confirm the deletion of the selected software platform(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the software platforms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Delete_Software_Platform_-_Step_2.PNG" title="Confirm deletion of selected software platform(s)" /></p>
+<h3 id="update-software-platform-information">Update Software Platform Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the basic information of a software platform, the user has to be in the <code>Software Platform View</code> which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>Updating basic software platform information is done in the <code>General Tab</code> of the <code>Software Platform View</code>. To update a property, the user has to simply use the <code>Input Fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new property values or adjust existing ones.</p>
+<p><img alt="alt text" src="../../images/software_platform/Update_Software_Platform_-_Step_1.PNG" title="General Tab of Software Platform View" /></p>
+<p>If a value of a property is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</li>
+<li>Some fields are links to other sites. Those can easily be detected by their <code>Open Button</code>. On click or on <code>Enter</code>, it will open the link in a new tab.</li>
+</ul>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Update_Software_Platform_-_Step_2.PNG" title="Saving the changes" /></p>
+<h3 id="reference-implementations">Reference Implementations</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference implementations in a software platform, the user has to be in the <code>Implementations Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To initiate the linking of an implementation, the user has to click on the <code>Plus Button</code> in the <code>Implementation Tab</code>.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Implementation_-_Step_1.PNG" title="Click on '+' in 'Implementation'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available implementations. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Implementation_-_Step_2.PNG" title="Filter existing Implementations using table controls" /></p>
+<p>To reference a implementation simply click on the <code>Link Button</code> in the <code>Actions Column</code> of the implementation.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Implementation_-_Step_3.1.PNG" title="Reference single implementation" /></p>
+<p>Alternatively use the check-boxes to select multiple implementations and then click on the <code>Master Link Button</code> to link multiple implementations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one implementation is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Implementation_-_Step_3.2.PNG" title="Reference multiple implementations" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced implementations will now be visible in the <code>Implementations Tab</code> of the <code>Software Platform View</code>.</p>
+</div>
+<h3 id="dereference-implementations">Dereference Implementations</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference implementations, the user has to be in the <code>Implementations Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a reference from a implementation, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/software_platform/Dereference_Implementation_-_Step_1.1.PNG" title="Dereference single implementation" /></p>
+<p>Alternatively use the check-boxes to select multiple implementations and then click on the <code>Master Delete Button</code> to unlink multiple implementations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one implementation is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Dereference_Implementation_-_Step_1.2.PNG" title="Dereference multiple implementation" /></p>
+<h3 id="reference-cloud-services">Reference Cloud Services</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference cloud services in a software platform, the user has to be in the <code>Cloud Services Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To initiate the linking of a cloud service, the user has to click on the <code>Plus Button</code> in the <code>Cloud Services Tab</code>.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Cloud_Service_-_Step_1.PNG" title="Click on '+' in 'Cloud Services'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available cloud services. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Cloud_Service_-_Step_2.PNG" title="Filter existing Cloud Services using table controls" /></p>
+<p>To reference a cloud service simply click on the <code>Link Button</code> in the <code>Actions Column</code> of the cloud service.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Cloud_Service_-_Step_3.1.PNG" title="Reference single cloud service" /></p>
+<p>Alternatively, use the check-boxes to select multiple cloud services and then click on the <code>Master Link Button</code> to link all selected cloud services.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one cloud service is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Cloud_Service_-_Step_3.2.PNG" title="Reference multiple cloud services" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced cloud service(s) will now be visible in the <code>Cloud Services Tab</code> of the <code>Software Platform View</code>.</p>
+</div>
+<h3 id="dereference-cloud-services">Dereference Cloud Services</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference cloud services, the user has to be in the <code>Cloud Services Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a reference from a cloud service, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/software_platform/Dereference_Cloud_Service_-_Step_1.1.PNG" title="Dereference single cloud service" /></p>
+<p>Alternatively, use the check-boxes to select multiple cloud services and then click on the <code>Master Delete Button</code> to unlink all selected cloud services.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one cloud service is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Dereference_Cloud_Service_-_Step_1.2.PNG" title="Dereference multiple cloud services" /></p>
+<h3 id="reference-compute-resources">Reference Compute Resources</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference compute resources in a software platform, the user has to be in the <code>Compute Resources Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To initiate the linking of a compute resource, the user has to click on the <code>Plus Button</code> in the <code>Compute Resources Tab</code>.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Compute_Resource_-_Step_1.PNG" title="Click on '+' in 'Compute Resources'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available compute resources. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Compute_Resource_-_Step_2.PNG" title="Filter existing Compute Resources using table controls" /></p>
+<p>To reference a compute resource simply click on the <code>Link Button</code> in the <code>Action Columns</code> of the compute resource.</p>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Compute_Resource_-_Step_3.1.PNG" title="Reference single compute resource" /></p>
+<p>Alternatively, use the check-boxes to select multiple compute resources and then click on the <code>Master Link Button</code> to link all selected compute resources.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one compute resource is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Reference_Compute_Resource_-_Step_3.2.PNG" title="Reference multiple compute resources" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced compute resource(s) will now be visible in the <code>Compute Resources Tab</code> of the <code>Software Platform View</code>.</p>
+</div>
+<h3 id="dereference-compute-resources">Dereference Compute Resources</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference compute resources, the user has to be in the <code>Compute Resources Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a reference from a compute resource, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/software_platform/Dereference_Compute_Resource_-_Step_1.1.PNG" title="Dereference single compute resource" /></p>
+<p>Alternatively, use the check-boxes to select multiple compute resources and then click on the <code>Master Delete Button</code> to unlink all selected compute resources.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one compute resource is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/software_platform/Dereference_Compute_Resource_-_Step_1.2.PNG" title="Dereference multiple compute resources" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

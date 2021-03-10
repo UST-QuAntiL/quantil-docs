@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Qrm repo - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Qrm repo";
+    var mkdocs_page_input_path = "user-guide/quantme/qrm-repo.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qc-atlas/">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Qrm repo</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/quantme/qrm-repo.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="qrm-repositories">QRM Repositories</h2>
+<p>In the following the structure of a QRM repository as well as its configuration and usage is shown.</p>
+<h3 id="configuration">Configuration</h3>
+<p>The QRM repository must be a publicly accessible Github repository. 
+It can be configured using the <a href="https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/app/lib/quantme/qrm-manager/RepositoryConfig.js">configuration file</a>.
+Therefore, <code>githubUsername</code> should be used to configure the username or organisation name under which the Github repository is located.
+Furthermore, <code>githubRepositoryName</code> has to specify the name of the Github repository.
+Finally, <code>githubRepositoryPath</code> can be used to specify a subfolder in the Github repository containing the QRMs.
+It not set, the root folder is used to retrieve the QRMs.</p>
+<p>Another possibility to configure the QRM repository is using environment variables (QRM_USERNAME, QRM_REPONAME, QRM_REPOPATH) when starting the framework or by updating the repository via the REST API.</p>
+<h3 id="structure">Structure</h3>
+<p>The QRM repository can contain an arbitrary number of QRMs, each of which has to be located in a separate folder in the Github repository.
+In the following, an example QRM repository containing three QRMs is shown:</p>
+<p><img alt="Repository Overview" class="center" src="../images/repository-overview.png" style="width:700px" /></p>
+<p>Each of the folders has to contain at least the two files <code>detector.bpmn</code> and <code>replacement.bpmn</code>, which represent the QRM.
+If one of the two files is missing or contains invalid content, the QRM is ignored during transformation.
+Additionally, other files can be added to the folders, e.g., a readme file describing the QRM:</p>
+<p><img alt="Repository Content" class="center" src="../images/repository-folder-content.png" style="width:900px" /></p>
+<h3 id="updating-the-qrm-repository">Updating the QRM repository</h3>
+<p>When starting the QuantME Modeling and Transformation Framework, the QRM repository is loaded once.
+However, if the repository is changed during runtime of the framework, the QRMs have to be reloaded.
+For this, use the <code>Plugins</code> menu entry, go to <code>QuantME</code>, and click on the <code>Update from QRM repository</code> button:</p>
+<p><img alt="Reload Repository" class="center" src="../images/reload-repository.png" style="width:900px" /></p>
+<p>If the defined Github username and repository name are invalid and result in an error when loading the QRMs, a notification is displayed in the modeler and the configuration should be fixed.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

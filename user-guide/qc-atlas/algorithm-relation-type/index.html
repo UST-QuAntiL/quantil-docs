@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Algorithm relation type - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Algorithm relation type";
+    var mkdocs_page_input_path = "user-guide/qc-atlas/algorithm-relation-type.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Algorithm relation type</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/algorithm-relation-type.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="algorithm-relation-type">Algorithm Relation Type</h2>
+<h3 id="create-algorithm-relation-type">Create Algorithm Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a algorithm relation type, the user has to be in the <code>Algorithm Relation Type List View</code> which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Algorithm Relation Type List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new algorithm relation type inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_1.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information about the algorithm relation type he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the algorithm relation type.</p>
+</div>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the algorithm relation type, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_3.PNG" title="Confirm creation" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In case of a successful creation, the data table will switch to the last page (if not already) to show the created algorithm relation type.</p>
+</div>
+<h3 id="update-algorithm-relation-type">Update Algorithm Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a algorithm relation type, the user has to be in the <code>Algorithm Relation Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Algorithm Relation Type List View</code>, the user can choose a algorithm relation type he wants to update by clicking on it's <code>Edit Button</code> which can be found in the <code>Actions Column</code> of the data table.
+This will open a <code>Edit Dialog</code>.</p>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_1.PNG" title="Open update dialog" /></p>
+<p>Within the <code>Update Dialog</code>, the user can adjust the information of the algorithm relation type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the algorithm relation type.</p>
+</div>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>After adjusting all information, the user has to confirm the changes by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-algorithm-relation-type">Delete Algorithm Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a algorithm relation type, the user has to be in the <code>Algorithm Relation Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>To delete a specific algorithm relation type, the user has to simply click on it's <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_1.1.PNG" title="Delete single algorithm relation type" /></p>
+<p>The user can also remove multiple algorithm relation types at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> button will only appear if at least one algorithm relation type is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_1.2.PNG" title="Delete multiple algorithm relation types" /></p>
+<p>To confirm the deletion of the selected algorithm relation type(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the algorithm relation type(s) that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="../../images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_2.PNG" title="Confirm deletion" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

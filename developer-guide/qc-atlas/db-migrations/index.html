@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Database migrations - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Database migrations";
+    var mkdocs_page_input_path = "developer-guide/qc-atlas/db-migrations.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/qc-atlas/">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../user-guide/qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Database migrations</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#workflow">Workflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changelogs">Changelogs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Developer Guide &raquo;</li>
+        
+      
+    
+    <li>Database migrations</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/developer-guide/qc-atlas/db-migrations.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="database-migrations">Database migrations</h1>
+<p>For the production version, using tools such as <code>spring.jpa.hibernate.ddl-auto=update</code>
+<a href="https://stackoverflow.com/questions/221379">is not recommended</a>.
+Instead, database migration tools such as Liquibase or Flyway should be used.
+For qc-atlas we have chosen the former.</p>
+<h3 id="workflow">Workflow</h3>
+<ul>
+<li>Edit your Hibernate mapped classes as needed (add and remove classes and attributes)</li>
+<li>Run <code>mvn compile &amp;&amp; mvn liquibase:diffChangeLog</code></li>
+<li>Manually check that the new <code>changelog/yyyy-MM-dd-hh-mm.xml</code> does what you expect, edit it if it does not
+  (for details on how to do that, see the Changelogs section)</li>
+<li>Run <code>mvn liquibase:update</code> to update your target database's schema
+  (during development, this is done automatically when starting the backend)</li>
+<li>Repeat</li>
+</ul>
+<p>The default database credentials are stored in the root <code>pom.xml</code> at <code>db.url</code> etc.
+You can override these using Maven profiles.</p>
+<h3 id="changelogs">Changelogs</h3>
+<p>Liquibase uses a changelog to list all changes, in order, made to your database.
+To implement complex changes (for example, migrating data), these changelogs need to be written/updated manually.
+The following resources help with that:</p>
+<ul>
+<li><a href="https://docs.liquibase.com/concepts/basic/changelog.html">Changelog format overview</a></li>
+<li><a href="https://docs.liquibase.com/concepts/basic/changeset.html">Grouped changes (changesets)</a></li>
+<li><a href="https://docs.liquibase.com/change-types/home.html">Change types</a></li>
+</ul>
+<p>All changelogs are stored in the <code>org.planqk.atlas.core</code> module at <code>src/main/resources/db/changes/</code>.</p>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>Right now, column type changes are ignored by the automatic diff generation tool
+  (<a href="https://github.com/liquibase/liquibase-hibernate/issues/163">see GH</a>).
+  These changes need to be recorded manually.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../testing/" class="btn btn-neutral" title="Testing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../testing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

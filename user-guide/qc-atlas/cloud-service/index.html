@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Cloud service - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Cloud service";
+    var mkdocs_page_input_path = "user-guide/qc-atlas/cloud-service.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Cloud service</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/cloud-service.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="cloud-service">Cloud Service</h2>
+<h3 id="create-cloud-service">Create Cloud Service</h3>
+<p>To create a cloud service the user has to navigate to the <code>Cloud Services List View</code> by using the navigation sidebar. 
+This will be done by first clicking on the <code>Execution Environments Menu</code> in the navigation sidebar, which makes the <code>Cloud Services Sub-Menu</code> visible.
+The <code>Cloud Service List View</code> contains a data table of all available cloud services. Creating a new cloud service is done via the <code>Plus Button</code> which is located above the table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Create_Cloud-Service_-_Step_1.png" title="Open Creation Dialog" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following dialog.
+In the dialog it is possible to give the new cloud service a name.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a new cloud service only a <code>name</code> is required.</p>
+</div>
+<p><img alt="alt text" src="../../images/cloud_service/Create_Cloud-Service_-_Step_2.png" title="Fill Creation Dialog Input" /></p>
+<p>After all necessary fields have been filled in, the creation of the cloud service can be confirmed by clicking on the <code>OK Button</code>. In case of a successful creation, the user will be navigated to the <code>Cloud Service View</code> of the new cloud service.</p>
+<h3 id="delete-cloud-service">Delete Cloud Service</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a cloud service, the user has to be in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>To remove a specific cloud service, the user has to simply click on the <code>Delete Button</code> in the <code>Action Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Delete_Cloud-Service_-_Step_1.png" title="Delete single cloud service" /></p>
+<p>It is also possible to delete multiple cloud services at once by selecting them one by one using the check-boxes within the table. When at least one cloud service is selected, a <code>Master Delete Button</code> will show up above the table, which allows the deletion of all selected cloud services.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Delete_Cloud-Service_-_Step_2.png" title="Delete multiple cloud service" /></p>
+<p>Both ways of deleting cloud services will lead to a confirmation dialog. This dialog will list all the previously selected cloud services that will be deleted. To finally confirm the deletion, the <code>OK Button</code> at the bottom of the dialog has to be pressed. In case of a successful deletion, the deleted cloud services will disappear from the table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Delete_Publication_-_Step_3.png" title="Confirm deletion" /></p>
+<h3 id="update-cloud-service-information">Update Cloud Service Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of a cloud service, the user has to be in the <code>Cloud Service View</code> which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Cloud Service View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection drop-downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Update_Cloud_Service_Properties_-_Step_1.png" title="General Tab' of the 'Cloud Service View" /></p>
+<p>If information is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="../../images/cloud_service/Update_Cloud_Service_Properties_-_Step_2.png" title="Saving the changes" /></p>
+<h3 id="reference-software-platform">Reference Software Platform</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference software platforms in an existing cloud service, the user has to be in the <code>Software Platforms Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>In the <code>Cloud Service View</code>, the user as to switch to the<code>Software Platforms Tab</code>, which is dedicated to referencing software platforms.
+To link software platform with the currently selected cloud service, the user has to click on the <code>Plus Button</code> at the top of the data table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Link_Software_Platform_-_Step_1.png" title="Open Link Dialog" /></p>
+<p>This will open a dialog with a separate data table containing existing software platforms.
+This table can be searched or sorted using the given input fields.
+For referencing software platforms the user has to click on the <code>Link Button</code> of the software platform he wants to reference.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Link_Software_Platform_-_Step_2.png" title="Link single software platform" /></p>
+<p>Alternatively, the users can use the check-boxes to select all software platforms he wants to reference. 
+If it least one software platform is selected a <code>Master Link Button</code> will appear at the top of the table, which can be used to link all selected software platforms with the cloud service.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Link_Software_Platform_-_Step_2.1.png" title="Link multiple software platforms" /></p>
+<h3 id="dereference-software-platform">Dereference Software Platform</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference software platforms, the user has to be in the <code>Software Platforms Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>To remove the reference to a software platform, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Unlink_Software_Platform_-_Step_1.png" title="Dereference single software platform" /></p>
+<p>Alternatively use the check-boxes to select multiple software platforms and then click on the <code>Master Delete Button</code> to unlink multiple software platforms at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/cloud_service/Unlink_Software_Platform_-_Step_2.png" title="Dereference multiple software platform" /></p>
+<h3 id="reference-compute-resource">Reference Compute Resource</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference compute resource in an existing cloud service, the user has to be in the <code>Compute Resource Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>In the <code>Cloud Service View</code>, the user as to switch to the <code>Compute Resource Tab</code>, which is dedicated to referencing compute resources.
+To link a compute resource with the currently selected cloud service, the user has to click on the <code>Plus Button</code> at the top of the data table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Link_Compute_Rescource_-_Step_1.png" title="Open Link Dialog" /></p>
+<p>This will open a dialog with a separate data table containing existing compute resources.
+The table can be searched or sorted using the given input fields and control buttons.
+For referencing a compute resource, the user has to click on it's <code>Link Button</code>.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Link_Compute_Rescource_-_Step_2.png" title="Link single compute resource" /></p>
+<p>Alternatively, the user can use the check-boxes to select multiple compute resources he wants to reference. 
+It at least one compute resource is selected, a <code>Master Link Button</code> will appear at the top of the table which can be used to link all selected compute resources at once.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Link_Compute_Rescource_-_Step_2.1.png" title="Link multiple compute resources" /></p>
+<h3 id="dereference-compute-resource">Dereference Compute Resource</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference compute resources, the user has to be in the <code>Compute Resource Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>To remove a existing reference to a compute resource, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="../../images/cloud_service/Unlink_Compute_Resource_-_Step_1.png" title="Dereference single compute resource" /></p>
+<p>Alternatively use the check-boxes to select multiple compute resources and then click on the <code>Master Delete Button</code> to unlink multiple compute resources at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one compute resource has been selected.</p>
+</div>
+<p><img alt="alt text" src="../../images/cloud_service/Unlink_Compute_Resource_-_Step_2.png" title="Dereference multiple compute resource" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>QProv - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "QProv";
+    var mkdocs_page_input_path = "user-guide/qprov.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../qc-atlas/">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">QProv</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#retrieve-provenance-data-of-a-qpu">Retrieve Provenance Data of a QPU</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#calculating-the-calibration-matrix-of-a-qpu">Calculating the Calibration matrix of a QPU</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>QProv</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qprov.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="qprov-user-guide">QProv User Guide</h1>
+<p><a href="https://github.com/UST-QuAntiL/qprov">QProv</a> is a provenance system for quantum computing. 
+It enables the collection and analysis of important provenance attributes about QPUs. 
+It is, e.g., used by the <a href="../nisq-analyzer/">NISQ Analyzer</a> for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.</p>
+<h2 id="retrieve-provenance-data-of-a-qpu">Retrieve Provenance Data of a QPU</h2>
+<p>To retrieve provenance data of a certain QPU, first set your IBMQ token at the <code>QPROV_IBMQ_TOKEN</code> field and check if <code>QPROV_IBMQ_AUTO_COLLECT</code> is set to <strong>true</strong> in the <a href="../../developer-guide/docker/">docker-compose</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, only quantum computers of <code>IBMQ</code> are supported, thus, in this case, your IBMQ token is required.</p>
+</div>
+<p>Then, add the QPU to the list of <code>Compute Resources</code> under <code>Execution Environments</code>, and define the required QPU name, see <a href="../qc-atlas/compute-resource/">Compute Resource</a>. 
+Then, specify its <code>Vendor</code> under the <code>General</code> tab and click the save button.</p>
+<p><img alt="Define vendor of QPU" src="../images/qprov/define-vendor.png" /></p>
+<p>Refresh the page and open the <code>Provenance</code> tab.<br />
+A great set of provenance data about the topology, metadata, qubits, and quantum gates is displayed.</p>
+<p><img alt="Provenance data of QPU" src="../images/qprov/provenance-data.png" /></p>
+<h2 id="calculating-the-calibration-matrix-of-a-qpu">Calculating the Calibration matrix of a QPU</h2>
+<p>For calculating the calibration matrices for given QPUs, set <code>QPROV_IBMQ_EXECUTE_CIRCUITS</code> to <strong>true</strong>. Therefore, the <a href="https://github.com/UST-QuAntiL/qiskit-service">qiskit-service</a> is used.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../developer-guide/intellij/" class="btn btn-neutral float-right" title="IntelliJ Setup">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../quantme/" class="btn btn-neutral" title="QuantME"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../quantme/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../developer-guide/intellij/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

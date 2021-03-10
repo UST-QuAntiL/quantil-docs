@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Qverview - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Qverview";
+    var mkdocs_page_input_path = "user-guide/qverview.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../qc-atlas/">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Qverview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#search-all">Search All</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interoperability">Interoperability</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filter">Filter</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data">Data</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#software-development-kits">Software Development Kits</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#quantum-cloud-services">Quantum Cloud Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#quantum-execution-resources">Quantum Execution Resources</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#programming-languages">Programming Languages</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compiler-transpiler">Compiler &amp; Transpiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#orchestration">Orchestration</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>Qverview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qverview.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="qverview-user-guide">Qverview User Guide</h1>
+<p><a href="https://github.com/UST-QuAntiL/Qverview">Qverview</a> is a comparison framework for different tools, services, and techniques for quantum application development.
+It presents information about different technologies in a table-styled manner.
+It enables searching and filtering over all tables in order to analyze and compare different technologies.
+The interoperability feature further allows to identify interoperabilities between different kinds of technologies.</p>
+<h2 id="search-all">Search All</h2>
+<p>This feature provides a central search field over all available tables.
+You can find it in the left sidebar.
+In order to find certain entries in any table, just start typing and they will be searched over all attributes.
+Notice that this feature is still in beta – in combination with the other filters, the search all feature sometimes does not work as expected.
+Reload the page in order to reset all filters.</p>
+<h2 id="interoperability">Interoperability</h2>
+<p>Also in the left sidebar, find the Interoperability-Feature.
+Activating this, you can identify interoperabilities between Software Development Kits (SDKs), Quantum Cloud Services (QCSs), and Quantum Execution Resources (QERs).
+This feature is turned off by default but can be switched on the 'synchronization'-buttons.
+See the following figures – in the left picture the interoperability feature is disabled and the right picture shows the interoperability feature active.</p>
+<p><img alt="Interoperability Off" src="../images/qverview/qverview-interoperability_off.png" /> <img alt="Interoperability On" src="../images/qverview/qverview-interoperability_on.png" /></p>
+<p>E.g., when filtering the quantum cloud services to just a single entry, the comparison framework automatically exposes all interoperable SDKs, when this feature is activated between SDK and QCS.
+This also works the other way around, since only such SDKs will be shown that are interoperable with the current selection of QCSs.
+This feature can be used in combination with further filters in order to find specific and compatible tools and services.</p>
+<h2 id="filter">Filter</h2>
+<p>Qverview also provides filtering over all attributes of all tables.
+For each table there is a separate filter.
+Following figure shows the filtering for certain Licenses in the SDK table.
+'Apache 2.0' and 'Eclipse Distribution License' have been selected as valid options, resulting in the SDK table filtering out all SDKs that do not support any of the two licenses.</p>
+<p><img alt="Filter" src="../images/qverview/qverview-filter.png" /></p>
+<h2 id="data">Data</h2>
+<p>Qverview provides an overview of different tools and services.
+All data is stored in the /data folder in different JSON files.
+Below is a listing of the tables and their attributes.</p>
+<h3 id="software-development-kits">Software Development Kits</h3>
+<ul>
+<li>Name</li>
+<li>License</li>
+<li>Programming Language</li>
+<li>Compiler Input Languages</li>
+<li>Compiler Output Languages</li>
+<li>Compiler Optimization Strategies</li>
+<li>Supported Quantum Cloud Services</li>
+<li>Active Development</li>
+<li>Local Simulator</li>
+</ul>
+<h3 id="quantum-cloud-services">Quantum Cloud Services</h3>
+<ul>
+<li>Name</li>
+<li>Access Methods</li>
+<li>Service Model</li>
+<li>Resources</li>
+<li>Assembly Language</li>
+</ul>
+<h3 id="quantum-execution-resources">Quantum Execution Resources</h3>
+<ul>
+<li>Name</li>
+<li>Execution Type</li>
+<li>Computation Model</li>
+<li>Vendor</li>
+</ul>
+<h3 id="programming-languages">Programming Languages</h3>
+<ul>
+<li>Name</li>
+<li>Type</li>
+<li>Syntax Implementation</li>
+<li>Standardization</li>
+</ul>
+<h3 id="compiler-transpiler">Compiler &amp; Transpiler</h3>
+<ul>
+<li>Name</li>
+<li>Input Language</li>
+<li>Output Language</li>
+<li>Optimization Strategies</li>
+</ul>
+<h3 id="orchestration">Orchestration</h3>
+<ul>
+<li>Name</li>
+<li>License</li>
+<li>Programming Languages</li>
+<li>Active Development</li>
+<li>Production Ready</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../qhana/" class="btn btn-neutral float-right" title="QHAna">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../qc-atlas/" class="btn btn-neutral" title="QC Atlas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../qc-atlas/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../qhana/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

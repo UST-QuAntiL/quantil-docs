@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Latex renderer - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Latex renderer";
+    var mkdocs_page_input_path = "user-guide/qc-atlas/latex-renderer.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Latex renderer</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/latex-renderer.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="latex-renderer">Latex Renderer</h2>
+<h3 id="description">Description</h3>
+<p>The generic component <code>src/app/components/generics/property-input/text-input.component.ts</code> contains a flag <code>latexActive</code>, which is disabled by default.
+On activation via input properties, <code>text-input</code> components are extended with a toggle slider to enable or disable Latex rendering for the respective input field.</p>
+<p><img alt="Text Input Latex Disabled" src="../../images/latex_renderer/text-input.PNG" title="Text Input Latex Disabled" /></p>
+<h3 id="usage">Usage</h3>
+<p>When activated, the respective <code>text-input</code> field will provide a <code>LaTeX</code> button to open an editor with two text areas and a preview section.</p>
+<p><img alt="Text Input Latex Enabled" src="../../images/latex_renderer/text-input-latex.PNG" title="Text Input Latex Enabled" /></p>
+<p>The <code>Additional LaTeX packages</code> field takes all statements, which have to be declared before the \begin{document} instruction in Latex.
+The <code>LaTeX content</code> field takes every input which should be rendered within the document.</p>
+<p><img alt="Preview" src="../../images/latex_renderer/preview.PNG" title="Preview" /> will send a render request to the latex-rendering service on port <code>8083</code> and display the result in the appropriate section.</p>
+<p><img alt="Latex Editor Dialog Preview" src="../../images/latex_renderer/latex-editor-dialog-preview.PNG" title="Latex Editor Dialog Preview" /></p>
+<p><img alt="Cancel" src="../../images/latex_renderer/cancel.PNG" title="Cancel" /> will close the dialog and discard any modifications made.</p>
+<p><img alt="Submit" src="../../images/latex_renderer/submit.PNG" title="Submit" /> will cache all modifications to the packages and content input fields and close the dialog.</p>
+<p>Whenever the dialog closes with a modified text to render, the <code>text-input</code> component requests a rendering and displays the response as a <code>svg</code> snippet. The <code>text-input</code> signals modified content with a displayed <code>save</code> button.</p>
+<p><img alt="Text Input Latex Rendered" src="../../images/latex_renderer/text-input-latex-rendered.PNG" title="Text Input Latex Rendered" /></p>
+<h3 id="drawbacks">Drawbacks</h3>
+<p>The <a href="https://github.com/UST-QuAntiL/latex-renderer">Latex renderer service</a> has been extended by OpenAPI's RESTful interface and has successfully been tested locally, but runs into a rendering error when executed in a docker container using the project's <code>Dockerfile</code>.</p>
+<p>Once the docker container works as intended, the <code>latex-renderer</code> feature can be enabled and leveraged for <code>text-input</code> components.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

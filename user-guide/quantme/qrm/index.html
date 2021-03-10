@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Qrm - QuAntiL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Qrm";
+    var mkdocs_page_input_path = "user-guide/quantme/qrm.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> QuAntiL</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qc-atlas/">QC Atlas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../">QuantME</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">QuAntiL</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Qrm</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/quantme/qrm.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="quantme-replacement-models-qrms">QuantME Replacement Models (QRMs)</h2>
+<p><em>QuantME Replacement Models (QRMs)</em> define workflow fragments that can be used to transform QuantME workflows to workflows using only native modeling constructs of the host workflow language.
+Therefore, they define a <em>detector</em> that defines which kind of QuantME task can be replaced by the QRM and a <em>replacement fragment</em> containing the workflow fragment to replace the matching QuantME tasks.
+In the following, both constructs are introduced and it is shown how they can be created and used with the QuantME modeling and transformation framework.</p>
+<h3 id="detector">Detector</h3>
+<p>The detector part of a QRM is a BPMN diagram, defining which QuantME tasks can be replaced by the QRM.
+Therefore, they contain exactly one QuantME task with a set of properties.
+An example detector can be found <a href="https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/docs/quantme/QRM/detector.bpmn">here</a>.</p>
+<p>The important part of the detector is listed bellow:</p>
+<pre><code class="language-xml">  &lt;bpmn:process id=&quot;Process_03e1olx&quot; isExecutable=&quot;true&quot;&gt;
+    &lt;quantme:readoutErrorMitigationTask id=&quot;Task_0z5udr0&quot; unfoldingTechnique=&quot;Correction Matrix&quot; qpu=&quot;ibmq_rome, ibmq_london&quot; maxAge=&quot;*&quot; /&gt;
+  &lt;/bpmn:process&gt;
+</code></pre>
+<p>The detector defines a <code>quantme:readoutErrorMitigationTask</code>, and thus, can be used to replace QuantME tasks of this type in QuantME workflows.
+Details about this matching process can be found in the <em>Detector Task Matching</em> section bellow.</p>
+<h4 id="alternative-properties">Alternative Properties</h4>
+<p>Alternative properties are sets of properties of QuantME tasks for which exactly one property has to be defined.
+For example, the <code>quantme:quantumCircuitLoadingTask</code> defines the two alternative properties <code>quantumCircuit</code> and <code>url</code>.
+This allows to specify alternative possibilities to load the quantum circuit into the workflow.
+However, if none of the properties is set, it is not possible to load the quantum circuit successfully.
+In the same way, if both properties are set, it is unclear which circuit to use.
+Therefore, exactly one of these alternative properties has to be set for each task in a QuantME workflow.</p>
+<p>In the detector, it is possible to set values for multiple alternative properties if the replacement fragment can handle different alternatives.
+However, in contrast to all other properties, it is also possible to leave alternative properties empty if at least one of them is set.</p>
+<p>There are currently two QuantME task types using alternative properties: </p>
+<ol>
+<li><code>quantme:quantumCircuitLoadingTask</code>: The properties <code>quantumCircuit</code> and <code>url</code> are alternatives</li>
+<li><code>quantme:oracleExpansionTask</code>: The properties <code>oracleCircuit</code> and <code>oracleURL</code> are alternatives</li>
+</ol>
+<h4 id="detector-task-matching">Detector Task Matching</h4>
+<p>A detector has to define all properties of the contained QuantME task, except for alternative properties, for which at least one property has to be set.
+Thereby, for each property there are three different ways to define a value: </p>
+<ol>
+<li>Exactly one value, which means the detector only matches QuantME tasks that define exactly the same value for this property (see <code>unfoldingTechnique</code> in the XML snipped above).</li>
+<li>A list of possible values, which means the detector matches all QuantME tasks that have one of these values defined for this property (see <code>qpu</code> in the XML snipped above).</li>
+<li>A wildcard, which means the detector matches all QuantME tasks independent of their value for this property (see <code>maxAge</code> in the XML snipped above)</li>
+</ol>
+<p>Thus, the detector matches a QuantME task, if all properties can be matched successfully, and then the replacement fragment can be used to replace the matched tasks in a QuantME workflow during transformation.</p>
+<p>Note: If a QuantME task in a QuantME workflow does not define an optional property, this matches each detector independent of its value for this property. </p>
+<h3 id="replacement-fragment">Replacement Fragment</h3>
+<p>As the detector, the replacement fragment part of a QRM is also a BPMN diagram, defining a workflow fragment implementing the functionality to replace QuantME tasks matching the detector.
+An example replacement fragment can be found <a href="https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/docs/quantme/QRM/replacement.bpmn">here</a>, which is visualized below:</p>
+<p><img alt="Example Replacement Fragment" class="center" src="../images/replacement.png" style="height:200px" /></p>
+<p>First, the required correction matrix is requested by a send task, then it is received by a receive task, and finally, the correction matrix is applied to the input data which is passed to the subprocess by a variable.</p>
+<p>Note: Currently, only one activity element is supported in replacement fragments. Therefore, if the implementation of the QuantME task from the detector requires more than one task, please use a subprocess and wrap each required task into it.</p>
+<h3 id="data-handling">Data Handling</h3>
+<p>When modeling a QRM, the data flow within the replacement fragment can be modeled arbitrarily.
+However, often the replacement fragment must be configured depending on the property values of the QuantME task that is replaced by it.
+For example, a QRM could be implemented for a <code>quantme:quantumCircuitLoadingTask</code> to enable loading circuits from arbitrary URLs.
+Therefore, the <code>url</code> property in the detector is set to a wildcard (see above).
+However, after replacing a task by this QRM, the value of the <code>url</code> property of the replaced task must be available in the replacement fragment to enable loading the correct quantum circuit.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
