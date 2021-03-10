@@ -17,8 +17,12 @@ Thereby, it enables the collection of quantum algorithms and their specific prop
 Further, available implementations, related other algorithms, patterns, and publications of them can be added and linked.
 But also the execution part is considered.
 QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.
-[Pattern Atlas](https://pattern-atlas-readthedocs.readthedocs.io/en/latest/) is a pattern repository that provides tooling support for capturing best practices in the form of patterns for various domains. 
+
+[Pattern Atlas](https://pattern-atlas-readthedocs.readthedocs.io/en/latest/) is a pattern repository that provides tooling support for capturing best practices in the form of patterns for various domains.
 It already contains several patterns for quantum algorithms and allows to include domain-specific aspects for quantum computing (quantum circuits, mathematical descriptions).
+
+[Qverview](./user-guide/qverview.md) provides an overview of several technologies for quantum application development such as development kits, cloud services, programming languages, etc.
+It enables to analyze and compare different technologies and identify their interoperability.
 
 ### Application
 
@@ -44,7 +48,7 @@ To enable the practical application of QuantME, an extension of [BPMN 2.0](https
 Furthermore, the [QuantME Transformation Framework](https://github.com/UST-QuAntiL/QuantME-TransformationFramework) supports the graphical modeling of Quantum4BPMN workflow models and their transformation to native workflow models to retain their portability.
 
 ### Provenance
-[QProv](./user-guide/qprov.md) is a provenance system for quantum computing. 
+[QProv](./user-guide/qprov.md) is a provenance system for quantum computing.
 It periodically collects and analyzes important provenance attributes of accessible QPUs, such as the number of qubits, T1, T2, gate error rates, and current queue sizes.
 Furthermore, it supports the calculation of calibration matrices of QPUs.
 QProv builds the basis for, e.g., the NISQ Analyzer providing up-to-date information about accessible QPUs to support the selection of suitable QPUs.
