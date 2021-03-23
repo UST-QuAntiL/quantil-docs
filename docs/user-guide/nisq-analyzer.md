@@ -1,12 +1,15 @@
 
 # NISQ Analyzer User Guide
-The [NISQ Analyzer](https://github.com/UST-QuAntiL/nisq-analyzer) is a research prototype based on the work by [Salm et. al](https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5). It automatically analyzes implementations of quantum algorithms. The results indicate if a quantum algorithm can be executed on a Quantum Processing Unit (QPU) or simulator, see [below](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
+The [NISQ Analyzer](https://github.com/UST-QuAntiL/nisq-analyzer) is a research prototype based on the work by [Salm et. al](https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5). 
+It automatically analyzes implementations of quantum algorithms. 
+The results indicate if a quantum algorithm can be executed on a Quantum Processing Unit (QPU) or simulator, see [below](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
 Furthermore, it enables the automated comparison of available quantum compilers to support the selection of the most suitable compiled quantum circuit, see [below](#running-the-nisq-analyzer-for-compiler-comparison).  
 An overview about the NISQ Analyzer and its used components can be viewed in the [Home Section](../index.md).
 
 ### SDKs, QPUs, and Cloud Services
 
-QC Atlas' `Software Platforms` get mapped to SDKs. This mapping happens automatically when opening a Software Platform in the UI.   
+QC Atlas' `Software Platforms` get mapped to SDKs. 
+This mapping happens automatically when opening a Software Platform in the UI.   
 QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov) a provenance system for quantum computing.   
 `Cloud Services` are required to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
 Currently, only real quantum computers of the cloud service `IBMQ` are supported.
@@ -45,28 +48,38 @@ To save all changes press the round button on the right side.
 
 The UI can be found at the `NISQ Analyzer` tab in the algorithm page.
 
-### Step 1: Input
+### Overview of Analysis Jobs
 
-![Input UI](./images/nisq_analyzer/step1.png)
+Initially, an overview about previous analysis jobs is given.
 
-Specify the input values below the heading. Afterwards, select `IBMQ` in the dropdown menu and insert your Qiskit token for authentication purposes of the IBMQ service.
+![Analysis job UI](./images/nisq_analyzer/analysis-jobs-overview.png)
 
-### Step 2: Analyzer Results
+### New Analysis
 
-![Analysis results UI](./images/nisq_analyzer/step2.png)
+To start a new analysis, click the `New Analysis` button.
+Then, specify the input values. Afterwards, select `IBMQ` in the dropdown menu and insert your Qiskit token for authentication purposes of the IBMQ service.
 
-The table shows all results of the analysis process. Press the button `Execute` to run the selected QPU/implementation combination.
+![New analysis UI](./images/nisq_analyzer/new-analysis.png)
 
-All analysis results are stored and can be viewed on the `NISQ Results` tab.
+If the analysis is finished, a `Show analysis` button appears, that can be clicked to see more details.
 
-### Step 3: Execution Results
+### Analysis Result
 
-![Analysis results UI](./images/nisq_analyzer/step3.png)
+After clicking `Show analysis`, all results of the specific analysis are shown. 
+Furthermore, the current queue sizes of the suitable simulators and QPUs are shown.
+Press the button `Execute` to run the selected QPU/implementation combination.
+All analysis results are stored and can also be viewed on the `NISQ Results` tab.
 
-This step shows the result of the executed input/QPU/implementation tuple.
-Keep in mind that the execution itself can take quite long time during in which the UI only shows a progress spinner.
+![Analysis results UI](./images/nisq_analyzer/analysis-overview.png)
 
-All execution results are stored and can be reviewed on the `NISQ Results` tab.
+### Execution Result
+
+By clicking `Show result` the result of the executed input/QPU/implementation tuple is shown.
+Keep in mind that the execution itself can take quite long time.
+
+All execution results are stored and can also be reviewed on the `NISQ Results` tab.
+
+![Analysis results UI](./images/nisq_analyzer/analysis-execution-result.png)
 
 ### Historical data about Implementation and QPU Selection
 
