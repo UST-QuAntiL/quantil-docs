@@ -59,3 +59,27 @@ It is, e.g., used by the [NISQ Analyzer](./user-guide/nisq-analyzer.md) for the 
 ## Integrated components of QC Atlas and the QC Atlas UI
 The following diagram illustrates the currently integrated components of the QC Atlas platform and its UI:
 ![Integrated components](images/components.png)
+
+## Acknowledgements
+
+Current development is supported by the [Federal Ministry for Economic Affairs and Energy] as part of the [PlanQK]
+project (01MK20005N) and the DFG’s Excellence Initiative project [SimTech] (EXC 2075 - 390740016).
+
+## Haftungsausschluss
+
+Dies ist ein Forschungsprototyp.
+Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten
+und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist, außer in Fällen von grober
+Fahrlässigkeit, Vorsatz und Personenschäden, ausgeschlossen.
+
+## Disclaimer of Warranty
+
+Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its
+Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including,
+without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks
+associated with Your exercise of permissions under this License.
+
+  [Federal Ministry for Economic Affairs and Energy]: http://www.bmwi.de/EN
+  [PlanQK]: https://planqk.de
+  [SimTech]: https://www.simtech.uni-stuttgart.de/
