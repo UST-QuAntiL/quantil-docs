@@ -1,6 +1,8 @@
 # QuAntiL Documentation
 
-The documentation can be found at: https://quantil.readthedocs.io/en/latest/
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+The documentation can be found at: <https://quantil.readthedocs.io/en/latest/>
 
 ## Setup for Changes
 To set up the documentation, first install the requirements in the ``requirements.txt`` assuming Python is already installed.  
