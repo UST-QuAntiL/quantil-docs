@@ -1,53 +1,86 @@
 # Quickstart with QuAntiL Docker setup
-This section explains how to execute the complete QuAntiL environment with docker-compose.
+This section explains how to execute the QuAntiL components supported by the QC Atlas UI with docker-compose.
 
 ## Prerequisites
 - Docker Engine - [install guide](https://docs.docker.com/engine/install/)
 - Docker Compose - [install guide](https://docs.docker.com/compose/install/)
 - The [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker)
 
-**Make sure following ports in your environment are free in order to start the QuAntiL environment properly:**
-
-* `8080`-`8083`
-* `5432`
-* `5000`
-* `4200`
-* `6379`
-
 ## Overview
 The following components are included in the docker-compose setup
 
 | QuAntiL Component | URL | GitHub | Docker Hub |
 |:------------------- |:--- |:------ |:---------- |
-| Postgres-Multi DB | <localhost:5432> | [Link](https://github.com/lmm-git/docker-postgres-multi) | [Link](https://hub.docker.com/r/lmmdock/postgres-multi) |
 | QC-Atlas |<http://localhost:8080/atlas> | [Link](https://github.com/UST-QuAntiL/qc-atlas) | [Link](https://hub.docker.com/r/planqk/atlas) |
-| QC-Atlas-UI |<http://localhost:4200> | [Link](https://github.com/UST-QuAntiL/qc-atlas-ui) | [Link](https://hub.docker.com/r/planqk/qc-atlas-ui) |
+| Postgres-Multi DB | <localhost:5432> | [Link](https://github.com/lmm-git/docker-postgres-multi) | [Link](https://hub.docker.com/r/lmmdock/postgres-multi) |
+| QC-Atlas-UI |<http://localhost:80> | [Link](https://github.com/UST-QuAntiL/qc-atlas-ui) | [Link](https://hub.docker.com/r/planqk/qc-atlas-ui) |
+| Latex-Renderer |<http://localhost:8083> | [Link](https://github.com/UST-QuAntiL/latex-renderer) | [Link](https://hub.docker.com/r/beiselmn/latex-renderer) |
 | Pattern-Atlas-API |<http://localhost:8082/patternpedia> | [Link](https://github.com/PatternAtlas/pattern-atlas-api) | [Link](https://hub.docker.com/r/patternpedia/patternrepo-api) |
 | NISQ-Analyzer |<http://localhost:8081/nisq-analyzer> | [Link](https://github.com/UST-QuAntiL/nisq-analyzer) | [Link](https://hub.docker.com/r/planqk/nisq-analyzer) |
-| Qiskit-Service |<http://localhost:5000> | [Link](https://github.com/UST-QuAntiL/qiskit-service) | [Link](https://hub.docker.com/r/planqk/qiskit-service) |
-| Redis |<localhost:6379> | [Link](https://github.com/redis/redis) | [Link](https://hub.docker.com/_/redis) |
-| Latex-Renderer |<http://localhost:8083> | [Link](https://github.com/UST-QuAntiL/latex-renderer) | [Link](https://hub.docker.com/r/beiselmn/latex-renderer) |  
+| Qiskit-Service |<http://localhost:5003> | [Link](https://github.com/UST-QuAntiL/qiskit-service) | [Link](https://hub.docker.com/r/planqk/qiskit-service) |
+| Forest-Service |<http://localhost:5002> | [Link](https://github.com/UST-QuAntiL/forest-service) | [Link](https://hub.docker.com/r/planqk/forest-service) |
+| Pytket-Service |<http://localhost:5001> | [Link](https://github.com/UST-QuAntiL/pytket-service) | [Link](https://hub.docker.com/r/planqk/pytket-service) |
+| Quantum-Transpiler-Backend |<http://localhost:5790> | [Link](https://github.com/UST-QuAntiL/QuantumTranspiler) | [Link](https://hub.docker.com/r/planqk/quantum-transpiler-backend) |
+| Quantum-Transpiler-Frontend |<http://localhost:8086> | [Link](https://github.com/UST-QuAntiL/QuantumTranspiler) | [Link](https://hub.docker.com/r/planqk/quantum-transpiler-frontend) |
+| Redis |<http://localhost:6379> | [Link](https://github.com/redis/redis) | [Link](https://hub.docker.com/_/redis) |
+| Rigetti QVM |<http://localhost:5666> | [Link](https://github.com/rigetti/qvm) | [Link](https://hub.docker.com/r/rigetti/qvm) |
+| Rigetti Quilc |<http://localhost:5667> | [Link](https://github.com/rigetti/quilc) | [Link](https://hub.docker.com/r/rigetti/quilc) |
+| QProv |<http://localhost:8084/qprov> | [Link](https://github.com/UST-QuAntiL/qprov) | [Link](https://hub.docker.com/r/planqk/qprov) |
+| QProv-Collector-IBM |<http://localhost:8085> | [Link](https://github.com/UST-QuAntiL/qprov) | [Link](https://hub.docker.com/r/planqk/qprov-collector) |
+| Config-Server |<http://localhost:2379> | [Link](https://github.com/etcd-io/etcd) | [Link](https://quay.io/repository/coreos/etcd) |
+  
 
-## Running the complete setup
-Make sure all prerequisites above are met bevorhand and that all necessary ports are free.
+**Make sure following ports in your environment are free in order to start the QuAntiL environment properly:**
 
-1. Navigate inside the root directory of the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker)
-2. Execute `docker-compose pull` - pulls the most recent version of all images
-3. Execute `docker-compose build db`
-4. Starting the DB first: `docker-compose up -d db`
-5. Execute `docker-compose up -d` - starts all remaining services in the background
+* `8080`-`8086`
+* `5432`
+* `5666`-`5667`
+* `5000`-`5003`
+* `80`
+* `6379`
+* `2379`  
+
+Thereby, [QC Atlas](../user-guide/qc-atlas.md) builds the basic knowledge base. The different additional features of [NISQ Analyzer](../user-guide/nisq-analyzer.md), [Pattern Atlas](../user-guide/qc-atlas/pattern-relation-type.md), and [QProv](../user-guide/qprov.md) are supported on top of the QC Atlas and are defined as feature sets.  
+
+##### The defined feature sets are namely:
+- `all` (runs all features)  
+- `nisqAnalyzer`  
+- `nisqAnalyzerCompilerComparison`  
+- `patternAtlas`  
+- `qprov`  
+
+## Running the QuAntiL components supported by the QC Atlas UI
+Make sure all prerequisites above are met beforehand and that all necessary ports are free.
+Then, navigate inside the root directory of the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker).
+
+### Running the base components
+The base components [QC Atlas](../user-guide/qc-atlas.md), QC Atlas UI, [LaTeX Renderer](../user-guide/qc-atlas/latex-renderer.md), Config-Server, and the databases without any of the named features run by default using:
+
+1. Execute `docker-compose pull` - pulls the most recent version of the images
+2. Execute `docker-compose build db`
+3. Starting the DB first: `docker-compose up -d db`
+4. Execute `docker-compose up -d` - starts all remaining services in the background
 
 To check if everything is running correctly use the command `docker ps -a` for a list of all running containers and their corresponding containerIds.
 
 The logs of each individual container can be viewed by executing `docker logs <containerId>`.
 
-
 To stop every service simply execute `docker-compose down -v`. 
 `-v` ensures that all volumes are removed (if example data is imported - see next section - this can be crucial)
 
+### Running certain feature sets
+For running certain [feature sets](#the-defined-feature-sets-are-namely) on top of the base components, [Profiles](https://docs.docker.com/compose/profiles/) are used.  
+To start a certain feature set run:  
+`docker-compose --profile <name-of-feature-set> pull`  
+`docker-compose --profile <name-of-feature-set> up`
 
+For running multiple feature sets, e.g. two sets, run:  
+`docker-compose --profile <name-of-feature-set-1> --profile <name-of-feature-set-2> pull`  
+`docker-compose --profile <name-of-feature-set-1> --profile <name-of-feature-set-2> up`
+  
+For running all feature sets, choose `--profile all`.
 
-## Running only selected services
+### Running only selected services
 Sometimes only a subset of the provided images is needed to save computing resources or for development purposes. E.g. the database is running inside the container but IntelliJ is executing qc-atlas.
 
 This is achieved by following the steps above, but instead of executing the command in step 3, use the command
