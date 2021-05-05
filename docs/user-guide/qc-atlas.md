@@ -55,3 +55,7 @@ Also the collection of information about available software platforms, cloud ser
 {%
    include-markdown "./qc-atlas/compute-resource-property-type.md"
 %}
+
+{%
+   include-markdown "./qc-atlas/settings.md"
+%}
