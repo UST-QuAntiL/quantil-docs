@@ -5,7 +5,7 @@
   - Install the [IntelliJ CheckStyle-IDEA Plugin](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea). It can be found via plug-in repository  
   (File > Settings > Plugins > Marketplace; **Mac**: IntelliJ IDEA > Preferences > Plugins > Marketplace).  
     ![checkstyle](graphics/checkstyle.PNG)
-    
+  - Open the Settings (by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>; **Mac**: <kbd>command</kbd> + <kbd>,</kbd>) 
   - Install the CheckStyle-IDEA Plugin, click "Apply" and restart the project upon request.
   - Repeat the previous steps for the Lombok Plugin
    
