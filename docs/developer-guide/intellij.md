@@ -8,15 +8,6 @@
     
   - Install the CheckStyle-IDEA Plugin, click "Apply" and restart the project upon request.
   - Repeat the previous steps for the Lombok Plugin
-  - Open the Settings (by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>; **Mac**: <kbd>command</kbd> + <kbd>,</kbd>)
-  - Go to "Other Settings > Checkstyle".
-  - Click on "+" under Configuration File and add `checkstyle.xml`. It can be found [here](https://github.com/UST-QuAntiL/qc-atlas/blob/develop/docs/dev/config/IntelliJ%20IDEA/checkstyle.xml). Confirm.
-  
-    ![checkstyle](graphics/checkstyle-config.PNG)
-    
-  - Activate the settings and confirm:
-  
-    ![checkstyle](graphics/checkstyle-active.PNG)  
    
 3. Configure the code style (Source: <https://youtrack.jetbrains.com/issue/IDEA-61520#comment=27-1292600>)  
   - Open the Settings (by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>; **Mac**: <kbd>command</kbd> + <kbd>,</kbd>)  
@@ -48,7 +39,7 @@
   - Set "Atlas" as Default project copyright
   - Click "Apply"
   
-6. Configure Git to handle line endings
+5. Configure Git to handle line endings
   - Insert the following commands in your console:  
   **For Windows**: `git config --global core.autocrlf true`  
   **For Mac/Linux**: `git config --global core.autocrlf input`
