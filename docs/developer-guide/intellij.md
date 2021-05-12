@@ -8,19 +8,8 @@
   - Open the Settings (by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>; **Mac**: <kbd>command</kbd> + <kbd>,</kbd>) 
   - Install the CheckStyle-IDEA Plugin, click "Apply" and restart the project upon request.
   - Repeat the previous steps for the Lombok Plugin
-   
-3. Configure the code style (Source: <https://youtrack.jetbrains.com/issue/IDEA-61520#comment=27-1292600>)  
-  - Open the Settings (by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>; **Mac**: <kbd>command</kbd> + <kbd>,</kbd>)  
-  - Go to "Editor > Code Style"  
-  - Click on the gear icon (right of "Scheme:")  
-  - Click "Import Scheme"  
-  - Choose "IntelliJ IDEA code style XML"
-  - Navigate to `intellij-idea-code-style.xml`. It is located in [here](https://github.com/UST-QuAntiL/qc-atlas/blob/develop/docs/dev/config/IntelliJ%20IDEA/intellij-idea-code-style.xml).  
-  - Click "Apply"
-  - Click "OK"  
-  - Click "Close"  
   
-4. Setup code headers to be inserted automatically  
+3. Setup code headers to be inserted automatically  
     ![copyright-profile](graphics/copyright-profile-new.png)  
   - Open the Settings (by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>; **Mac**: <kbd>command</kbd> + <kbd>,</kbd>)  
   - Go to "Editor > Copyright > Copyright Profiles"  
@@ -39,7 +28,7 @@
   - Set "Atlas" as Default project copyright
   - Click "Apply"
   
-5. Configure Git to handle line endings
+4. Configure Git to handle line endings
   - Insert the following commands in your console:  
   **For Windows**: `git config --global core.autocrlf true`  
   **For Mac/Linux**: `git config --global core.autocrlf input`
