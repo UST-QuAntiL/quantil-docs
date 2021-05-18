@@ -62,11 +62,27 @@ If information is changed, a ``Save button`` will be displayed next that specifi
 
 !!! info 
 	**Required Compute Resource Properties**, **Problem Types** and **Application Areas** are stored separately and therefor do not belong to the basic information of the algorithm. They are saved, deleted or updated instantly without the use of the mentioned ``Save buttons``.
-	
+
+### Load Algorithm Revision
+
+!!! info 
+    To load a revision of an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    Please see the [revision section](overview.md#revisions) for further details about revisions.
+    
+
+Loading a revision is done by clicking on the revision selection field in the ``Algorithm View``. 
+
+![alt text](../images/algorithm/Load_Algorithm_Revision_-_Step_1.PNG "Open Revision Selection")
+
+This will open a dropdown menu with all available revisions sorted by their date with the latest revision at the top.
+By selecting an element from the dropdown menu, the data of a revision is loaded in the ``Algorithm View`` and can be viewed and edited.
+
+![alt text](../images/algorithm/Load_Algorithm_Revision_-_Step_2.PNG "Revision Selection Menu")
+
 ### Create Compute Resource Properties
 
 !!! info 
-    To create a compute resource property for the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To create a compute resource property for the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Creating properties for a compute resource is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply click on the ``Plus button`` of the dedicated ``Required Compute Resource Property Field``.
 
@@ -93,9 +109,9 @@ After the property has been successfully created, it will appear in the the dedi
 ### Update Compute Resource Properties
 
 !!! info 
-    To update a compute resource property of the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To update a compute resource property of the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
+Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over an existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
 	
 ![alt text](../images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
 
@@ -118,7 +134,7 @@ After all fields have been adjusted, the user can finally update the property by
 !!! info 
     To delete a compute resource property of an algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on a compute resource in the ``Algorithm List View``.
 	
-Deleting compute resource properties is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
+Deleting compute resource properties is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over an existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Delete button``.
 
 ![alt text](../images/algorithm/Delete_Compute_Resource.PNG "Delete Compute Resource")
 
@@ -128,7 +144,7 @@ Deleting compute resource properties is done in the ``General Tab`` of the ``Alg
 ### Reference Application Areas
 
 !!! info 
-    To reference application areas in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To reference application areas in an algorithm, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Referencing problem types is done via the dedicated ``Application Areas`` field.
 
@@ -149,7 +165,7 @@ After successfully referencing the application area, it will be displayed in the
 ### Dereference Application Areas
 
 !!! info 
-    To remove a existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To remove an existing reference to an application area, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 To dereference an application area, the user has to scroll to the ``Application Areas`` field and simply click on the ``Delete button`` of the application area he wants to remove from the algorithm.
 
@@ -179,7 +195,7 @@ After the linking process has been successfully completed, the freshly linked pr
 ### Dereference Problem Types
 
 !!! info 
-    To remove a existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
+    To remove an existing reference to a problem type, the user has to be in the ``General Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 To dereference a problem type, the user has to scroll to the ``Problem Types`` field and simply click on the ``Delete button`` of the problem type he wants to remove from the algorithm.
 
@@ -227,7 +243,7 @@ After the other algorithm was successfully referenced, it will appear in the ``R
 ### Update Algorithm Relation
 
 !!! info 
-    To update an existing algorithm relation, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on a algorithm in the ``Algorithm List View``.
+    To update an existing algorithm relation, the user has to be in the ``Related Algorithms Tab`` of the ``Algorithm View``, which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
 Updating an algorithm relation is done by clicking on the "Edit" button of a related algorithm in the ``Related Algorithms`` tab.
 

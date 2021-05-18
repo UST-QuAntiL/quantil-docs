@@ -52,6 +52,22 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 
 ![alt text](../images/implementation/Update_Implementation_Properties_-_Step_2.png  "Saving the changes")
 
+### Load Implementation Revision
+
+!!! info 
+    To load a revision of an implementation, the user has to be in the ``Implementation View`` which can be reached by clicking on an implementation in the ``Implementation List View``.
+    Please see the [revision section](overview.md#revisions) for further details about revisions.
+    
+
+Loading a revision is done by clicking on the revision selection field in the ``Implementation View``. 
+
+![alt text](../images/implementation/Load_Implementation_Revision_-_Step_1.PNG "Open Revision Selection")
+
+This will open a dropdown menu with all available revisions sorted by their date with the latest revision at the top.
+By selecting an element from the dropdown menu, the data of a revision is loaded in the ``Implementation View`` and can be viewed and edited.
+
+![alt text](../images/implementation/Load_Implementation_Revision_-_Step_2.PNG "Revision Selection Menu")
+
 ### Create Compute Resource Properties
 
 !!! info 
@@ -83,9 +99,9 @@ After the property has been successfully created, it will appear in the the dedi
 ### Update Compute Resource Properties
 
 !!! info 
-    To update a compute resource property of an implementation, the user has to be in the ``Implementation View``, which can be reached by clicking on a algorithm in the ``Implementation List View``.
+    To update a compute resource property of an implementation, the user has to be in the ``Implementation View``, which can be reached by clicking on an algorithm in the ``Implementation List View``.
 
-Updating existing compute resource properties of an implementation is done in the ``General Tab`` of the ``Implementation View``. To do that, the user has to simply hover over a existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit Button``.	
+Updating existing compute resource properties of an implementation is done in the ``General Tab`` of the ``Implementation View``. To do that, the user has to simply hover over an existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit Button``.	
 	
 ![alt text](../images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
 
