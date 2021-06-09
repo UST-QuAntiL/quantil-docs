@@ -33,6 +33,7 @@ The ``List Views`` contain ``Data-Tables`` which are responsible for displaying 
 	
 ### Object View
 As mentioned before, any ``Object View`` can be opened by clicking on any element of a ``List View``. In the ``Header`` of any ``Object View``, it's ``Name`` is displayed, as well as it's optional ``Tags``.
+In addition, the ``Header`` may also contain information about any ``Revision``of an object.
 
 All other information about the object is located in the ``Body`` of the ``Object View``. The information is distributed across multiple ``Tabs``. The ``General Tab`` usually contains the most basic information about the object. Other information is distributed across the other ``Tabs``, which can differ from ``Object View`` to ``Object View``.
 
@@ -44,3 +45,12 @@ All other information about the object is located in the ``Body`` of the ``Objec
     * ``Update`` all kinds of information of that object
 	* ``Reference`` or ``Dereference`` other objects
 	* And more...
+
+#### Revisions
+QC Atlas supports the use of revisions which are a sort of versions or snapshots of an object.
+When an object is saved, a revision is created automatically. This allows to browse and access older object data.
+When a revision is selected, the data is automatically loaded into the property fields of the ``General Tab`` and can then be viewed or edited. 
+Saving these properties will result in creating a new revision, which will be the latest version of the object.
+Currently, the creation of revisions is supported for algorithms as well as implementations and only includes basic properties available in the ``General Tab``.
+
+
