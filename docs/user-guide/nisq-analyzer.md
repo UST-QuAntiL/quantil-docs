@@ -3,6 +3,7 @@
 The [NISQ Analyzer](https://github.com/UST-QuAntiL/nisq-analyzer) is a research prototype based on the work by [Salm et. al](https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5). 
 It automatically analyzes implementations of quantum algorithms. 
 The results indicate if a quantum algorithm can be executed on a Quantum Processing Unit (QPU) or simulator, see [below](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
+It also enables the analysis and selection of suitable QPUs based on a specific quantum algorithm implementation, see [below](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
 Furthermore, it enables the automated comparison of available quantum compilers to support the selection of the most suitable compiled quantum circuit, see [below](#running-the-nisq-analyzer-for-compiler-comparison).  
 An overview about the NISQ Analyzer and its used components can be viewed in the [Home Section](../index.md).
 
@@ -90,6 +91,37 @@ Previous analysis and execution results can be found on the `NISQ Results` tab.
 If the respective analysis result has been executed, the outcome of said execution can be viewed as well.
 
 ![Historical analysis results with open execution result](./images/nisq_analyzer/results_open.png)
+
+## Running the NISQ Analyzer for QPU Selection
+
+The UI can be found at the `NISQ Analyzer` tab in context of the implementation page.
+
+### Overview of Analysis Jobs
+
+Initially, an overview about previous analysis jobs for the specific implementation is given.
+
+![Analysis job UI](./images/nisq_analyzer/implementation-analysis-jobs-overview.png)
+
+### New Analysis
+
+To start a new analysis, click the `New Analysis` button.
+Then, select `IBMQ` and insert your Qiskit token for authentication purposes of the IBMQ service.
+You can also select if simulators should be included in the analysis.
+
+### Analysis Result
+
+The analysis job is finished if the ``Show analysis`` button occurs on the right side.
+When clicking on it, suitable QPUs (and simulators) are listed.
+
+![Analysis results UI](./images/nisq_analyzer/implementation-analysis-result.png)
+
+Press the button `Execute` to run the implementation on the selected QPU.
+
+### Execution Result
+
+By clicking `Show result` the result of the executed implementation on the selected QPU is shown.
+
+![Analysis results UI](./images/nisq_analyzer/implementation-qpu-execution-result.png)
 
 ## Running the NISQ Analyzer for Compiler Comparison
 
