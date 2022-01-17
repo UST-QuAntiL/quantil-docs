@@ -120,18 +120,18 @@ Press the button `Execute` on the right outer column to run a compiled implement
 ### Execution Result
 
 By clicking `Show result` the result of the executed implementation on the selected QPU is shown.
-If simulators were enabled for analysis, the histogram intersection of QPU result and a simulator result is presented.
+If simulators were enabled for analysis, the histogram intersection of the QPU result and a simulator result is presented.
 
 ![Analysis results UI](./images/nisq_analyzer/implementation-qpu-execution-result.png)
 
 ### Prioritization
 
 Based on available MCDA methods, the list of compiled implementations can be ranked by clicking the `Prioritize` button.
-The raised pop-up enables to select an available MCDA method and to adjust the importance of given criteria.
+The raised pop-up enables to select an available MCDA method that calculates the ranking and to adjust the importance of given metrics (e.g., width, depth, ...) used for prioritization.
 
 ![Prioritization criteria_UI](./images/nisq_analyzer/implementation-analysis-mcda-criteria.png)
 
-After the prioritization process completes, the table is sorted by the resulting rank calculated by the previously selected MCDA method.
+After the prioritization process completes, the table is sorted by the resulting rank.
 
 ![Prioritization ranked list](./images/nisq_analyzer/implementation-analysis-prioritized-list.png)
 
