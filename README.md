@@ -6,7 +6,7 @@ The documentation can be found at: <https://quantil.readthedocs.io/en/latest/>
 
 ## Setup for Changes
 To set up the documentation, first install the requirements in the ``requirements.txt`` assuming Python is already installed.  
-The Python versions 3.5, 3.6, 3.7, 3.8, and pypy3 are supported, see the [MkDocs website](https://www.mkdocs.org/#installation).
+The Python versions >= 3.7 is supported, see the [MkDocs website](https://www.mkdocs.org/#installation).
 
 NOTE: you might need to run `pip install -r requirements.txt` with root privileges.
 
