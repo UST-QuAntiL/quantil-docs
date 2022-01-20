@@ -376,7 +376,10 @@ This will open a new dialog containing multiple steps that need to be performed.
 
 ![alt text](../images/algorithm/Link_Pattern_-_Step_2.PNG "Structure of dialog for referencing patterns")
 
-In the first step, a pattern language needs to be selected by simply clicking on it. To filter specific pattern languages, the user can use the input field to filter them by their name.
+In the first step, a pattern language needs to be selected by simply clicking on it. To filter specific pattern languages, the user can use the input field to filter them by their name.  
+
+!!! info
+    By clicking on the small button at the bottom of a specific pattern language, a new browser window will open and all patterns of the selected pattern language are presented in the Pattern Atlas.
 
 ![alt text](../images/algorithm/Link_Pattern_-_Step_3.PNG "Select Pattern Language")
 
@@ -385,6 +388,10 @@ After a specific pattern language has been selected, the user can move the the n
 ![alt text](../images/algorithm/Link_Pattern_-_Step_4.PNG "Move to second step")
 
 In the second step, the user has to pick a pattern he wants to reference by clicking on it. Like in the first step, he can use the input field to filter the patterns by their names and he also can use the scrollbar to scroll through all patterns.
+
+!!! info
+    By clicking on the small button at the bottom of a specific pattern, a new browser window will open and the selected pattern with its properties is presented in the Pattern Atlas.
+
 
 ![alt text](../images/algorithm/Link_Pattern_-_Step_5.PNG "Select Pattern")
 
