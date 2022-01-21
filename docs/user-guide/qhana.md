@@ -1,4 +1,4 @@
-# QHAna User Guide
+# QHAna User Guide (for the old QHAna prototype)
 
 [QHAna](https://github.com/UST-QuAntiL/qhana) - The **Q**uantum **H**umanities **Ana**lysis Tool is a toolset of Machine Learning techniques for classical and quantum hardware, designed for the use with the [MUSE Repository](https://www.iaas.uni-stuttgart.de/publications/INBOOK-2018-05-MUSE.pdf). It comprises a rich set of techniques, mostly for categorical data. The tools are split up into 4 different categories: **Data Preparation, Feature Engineering, Clustering,** and **Classification**.
 

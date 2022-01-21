@@ -8,6 +8,7 @@ nav:
         - 'QC Atlas': 'user-guide/qc-atlas.md'
         - 'Qverview': 'user-guide/qverview.md'
         - 'QHAna': 'user-guide/qhana.md'
+        - 'QHAna (new)': 'user-guide/qhana-new.md'
         - 'Circuit Transformer': 'user-guide/circuit-transformer.md'
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
         - 'QuantME': 'user-guide/quantme.md'

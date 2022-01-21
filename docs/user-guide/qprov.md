@@ -11,12 +11,12 @@ To retrieve provenance data of a certain QPU, first set your IBMQ token at the `
 !!! note 
     Currently, only quantum computers of `IBMQ` are supported, thus, in this case, your IBMQ token is required.
 
-Then, add the QPU to the list of `Compute Resources` under `Execution Environments`, and define the required QPU name, see [Compute Resource](./qc-atlas/compute-resource.md). 
-Then, specify its `Vendor` under the `General` tab and click the save button.
+In case the QProv Collector is up and running, go to the list of `Compute Resources` under `Execution Environments` to trigger querying available QPUs. 
+The list now shows all available QPUs that can be inspected regarding their provenance data.
 
 ![Define vendor of QPU](./images/qprov/define-vendor.png)
 
-Refresh the page and open the `Provenance` tab.  
+Select a QPU and open the `Provenance` tab.  
 A great set of provenance data about the topology, metadata, qubits, and quantum gates is displayed.
 
 ![Provenance data of QPU](./images/qprov/provenance-data.png)
