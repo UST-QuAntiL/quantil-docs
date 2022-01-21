@@ -12,7 +12,7 @@ To retrieve provenance data of a certain QPU, first set your IBMQ token at the `
     Currently, only quantum computers of `IBMQ` are supported, thus, in this case, your IBMQ token is required.
 
 In case the QProv Collector is up and running, go to the list of `Compute Resources` under `Execution Environments` to trigger querying available QPUs. 
-The list, now, shows all available QPUs that can be inspected regarding their provenance data.
+The list now shows all available QPUs that can be inspected regarding their provenance data.
 
 ![Define vendor of QPU](./images/qprov/define-vendor.png)
 
