@@ -2,7 +2,7 @@
 
 To automate the deployment of required services for quantum workflows, as well as their binding, the MODULO framework utilizes the capabilities of the [OpenTOSCA ecosystem](https://github.com/OpenTOSCA).
 Thus, especially quantum experts without deployment expertise are not required to perform these time-consuming and error-prone tasks.
-For this, the QuantME transformation framework allows to attach deployment models to service tasks within a workflow model.
+For this, the QuantME transformation framework allows attaching deployment models to service tasks within a workflow model.
 These deployment models are then used to create and bind a corresponding service instance, which is invoked by the service task.
 The figure below shows how the deployment models can be attached:
 
