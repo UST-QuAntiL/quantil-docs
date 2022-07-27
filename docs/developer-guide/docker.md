@@ -29,6 +29,7 @@ The following components are included in the docker-compose setup
 | Redis |<http://localhost:5040> | [Link](https://github.com/redis/redis) | [Link](https://hub.docker.com/_/redis) |
 | Postgres-Multi DB | <tcp://localhost:5060> | [Link](https://github.com/lmm-git/docker-postgres-multi) | [Link](https://hub.docker.com/r/lmmdock/postgres-multi) |
 | Config-Server |<http://localhost:2379> | [Link](https://github.com/etcd-io/etcd) | [Link](https://quay.io/repository/coreos/etcd) |
+| PlanQK Library              |<http://localhost:2903>                | [Link](https://github.com/UST-QuAntiL/PlanQK-Library)      | [Link](https://hub.docker.com/repository/docker/planqk/planqk-library)   
 
 **Make sure following ports in your environment are free in order to start the QuAntiL environment properly:**
 
@@ -36,6 +37,7 @@ The following components are included in the docker-compose setup
 * `1977`
 * `1978`
 * `2379`
+* `2903`
 * `5010`-`5017`
 * `5020`-`5021`
 * `5030`
