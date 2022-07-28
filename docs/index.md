@@ -24,7 +24,7 @@ It already contains several patterns for quantum algorithms and allows to includ
 [Qverview](./user-guide/qverview.md) provides an overview of several technologies for quantum application development such as development kits, cloud services, programming languages, etc.
 It enables to analyze and compare different technologies and identify their interoperability.
 
-The [Library](https://github.com/UST-QuAntiL/PlanQK-Library) is a simple REST API to use [JabRef](https://github.com/JabRef/jabref) as a service in order to manage bibTex entries and conduct systematic literature reviews.
+The [PlanQK Library](https://github.com/UST-QuAntiL/PlanQK-Library) is a simple REST API to use [JabRef](https://github.com/JabRef/jabref) as a service in order to manage bibTex entries and conduct systematic literature reviews.
 
 ### Application
 
