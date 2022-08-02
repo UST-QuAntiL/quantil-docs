@@ -1,6 +1,6 @@
 ## Libraries
 
-The component `Libraries` is the UI counterpart of the [PlanQK Library](https://github.com/UST-QuAntiL/PlanQK-Library) service, and it has two main features:
+The component `Libraries` is the UI counterpart of the [PlanQK Library](../planqk-library.md) service, and it has two main features:
     
 1. the creation and management of BibTeX libraries
 2. the creation and execution of systematic literature reviews
