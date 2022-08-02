@@ -13,7 +13,7 @@ In the following, these two main features are explained.
 1. The BibTeX libraries can be found directly under the `Libraries` tab in the navigation bar
 2. The component allows to select existing libraries, create new libraries, and delete libraries
 3. New entries can be added to the selected library using the green add button
-4. Existing entries are listed in a table with the known functionality of the `Data-Tables`:
+4. Existing entries are listed in a table with the known functionality of the [Data Table](./overview.md#data-table):
     * Searching the entries 
     * Sorting the entries by clicking on a label of the table
     * Updating the BibTeX information by clicking on an entry
