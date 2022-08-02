@@ -1,13 +1,13 @@
 ## Libraries
 
-The component `Libraries` is the UI counterpart of the PlanQK Library service, and it has two main features:
+The component `Libraries` is the UI counterpart of the [PlanQK Library](https://github.com/UST-QuAntiL/PlanQK-Library) service, and it has two main features:
     
 1. the creation and management of BibTeX libraries
 2. the creation and execution of systematic literature reviews
 
 In the following, these two main features are explained.
 
-### bibTeX Libraries
+### BibTeX Libraries
 
 #### Overview
 1. The BibTeX libraries can be found directly under the `Libraries` tab in the navigation bar
@@ -54,7 +54,7 @@ A spinner on the left indicates that a crawling process is running for the selec
 ![alt text](../images/libraries/study_definiton.png "Study definition")
 
 #### Results
-After the crawling is finished, the user can see the results in the `Result` tab.
+After the crawling is finished, the user can see the results in the `Results` tab.
 The results are presented to the users in the same way as their libraries.
 Again a user can search and sort the results and manually add, update, and delete entries in the usual way.
 
