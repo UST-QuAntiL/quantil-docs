@@ -13,6 +13,7 @@ nav:
         - 'NISQ Analyzer': 'user-guide/nisq-analyzer.md'
         - 'QuantME': 'user-guide/quantme.md'
         - 'QProv': 'user-guide/qprov.md'
+        - 'PlanQK Library': 'user-guide/planqk-library.md'
     - Developer Guide:
         - 'IntelliJ Setup': 'developer-guide/intellij.md'
         - 'OpenAPI': 'developer-guide/openapi.md'

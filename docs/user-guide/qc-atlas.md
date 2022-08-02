@@ -57,6 +57,10 @@ Also the collection of information about available software platforms, cloud ser
 %}
 
 {%
+   include-markdown "./qc-atlas/libraries.md"
+%}
+
+{%
    include-markdown "./qc-atlas/settings.md"
 %}
 

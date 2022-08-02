@@ -24,6 +24,8 @@ It already contains several patterns for quantum algorithms and allows to includ
 [Qverview](./user-guide/qverview.md) provides an overview of several technologies for quantum application development such as development kits, cloud services, programming languages, etc.
 It enables to analyze and compare different technologies and identify their interoperability.
 
+The [PlanQK Library](./user-guide/planqk-library.md) is a service to collect, organize and discover literature.
+
 ### Application
 
 [QHAna](./user-guide/qhana.md) - The **Q**uantum **H**umanities **Ana**lysis Tool is a toolset of Machine Learning techniques for classical and quantum hardware, designed for the use with the [MUSE Repository](https://www.iaas.uni-stuttgart.de/publications/INBOOK-2018-05-MUSE.pdf). It comprises a rich set of techniques, mostly for categorical data. The tools are split up into 4 different categories: **Data Preparation, Feature Engineering, Clustering,** and **Classification**. From each category various alternative methods can be selected to be used for the analysis.

@@ -10,6 +10,8 @@ Some ``List Views`` like the ``Execution Environments`` can contain more ``List 
 
 ![alt text](../images/overview/Navigation_Bar_Extended.PNG "Extend navigation items")
 
+### Data Table
+
 The ``List Views`` contain ``Data-Tables`` which are responsible for displaying all available objects of a certain type. For every different object type there is a separate ``List View``. The user can use the controls of the tables to **filter**, **sort** and **browse** existing objects of a certain type.
 
 !!! note
