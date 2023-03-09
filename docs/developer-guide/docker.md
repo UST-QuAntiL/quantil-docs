@@ -23,8 +23,11 @@ The following components are included in the docker-compose setup
 | Pytket-Service |<http://localhost:5015> | [Link](https://github.com/UST-QuAntiL/pytket-service) | [Link](https://hub.docker.com/r/planqk/pytket-service) |
 | Rigetti QVM |<http://localhost:5016> | [Link](https://github.com/rigetti/qvm) | [Link](https://hub.docker.com/r/rigetti/qvm) |
 | Rigetti Quilc |<http://localhost:5017> | [Link](https://github.com/rigetti/quilc) | [Link](https://hub.docker.com/r/rigetti/quilc) |
+| Cirq-Service |<http://localhost:5018> | [Link](https://github.com/UST-QuAntiL/cirq-service) | [Link](https://hub.docker.com/r/planqk/cirq-service) |
+| Braket-Service |<http://localhost:5019> | [Link](https://github.com/UST-QuAntiL/braket-service) | [Link](https://hub.docker.com/r/planqk/braket-service) |
 | QProv |<http://localhost:5020/qprov> | [Link](https://github.com/UST-QuAntiL/qprov) | [Link](https://hub.docker.com/r/planqk/qprov) |
 | QProv-Collector-IBM |<http://localhost:5021> | [Link](https://github.com/UST-QuAntiL/qprov) | [Link](https://hub.docker.com/r/planqk/qprov-collector) |
+| QSharp-Service |<http://localhost:5022> | [Link](https://github.com/UST-QuAntiL/qsharp-service) | [Link](https://hub.docker.com/r/planqk/qsharp-service) |
 | Latex-Renderer |<http://localhost:5030> | [Link](https://github.com/UST-QuAntiL/latex-renderer) | [Link](https://hub.docker.com/repository/docker/planqk/latex-renderer) |
 | Redis |<http://localhost:5040> | [Link](https://github.com/redis/redis) | [Link](https://hub.docker.com/_/redis) |
 | Postgres-Multi DB | <tcp://localhost:5060> | [Link](https://github.com/lmm-git/docker-postgres-multi) | [Link](https://hub.docker.com/r/lmmdock/postgres-multi) |
@@ -38,8 +41,7 @@ The following components are included in the docker-compose setup
 * `1978`
 * `2379`
 * `2903`
-* `5010`-`5017`
-* `5020`-`5021`
+* `5010`-`5022`
 * `5030`
 * `5040`
 * `5060`
