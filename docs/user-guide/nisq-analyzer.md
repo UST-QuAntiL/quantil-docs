@@ -31,32 +31,36 @@ To add a new algorithm, see the [Algorithm](../user-guide/qc-atlas/algorithm.md)
 ### Implementations
 To add a new implementation, see the [Implementation](../user-guide/qc-atlas/implementation.md) section. In short, starting from the starting screen, select an algorithm and go to the `Implementations` tab. Click the green add button in the top left corner and define the name of the implementation. 
 
-Implementation properties specific to the NISQ Analyzer are inside the `Selection Criteria` tab.
+![Implementations](./images/nisq_analyzer/implementations.png)
 
-![Selection Criteria UI](./images/nisq_analyzer/implementation_selectionCriteria.png)
+### Required Implementation Properties 
+
+#### **Prerequisites of Implementations**
+To support the insertion of various input parameters for the [implementation and QPU selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection), the Python source code, i.e., Qiskit code of the defined implementation requires a `get_circuit` method, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Shor/shor-general-qiskit.py).  
+Such general implementations are currently not supported by the [automated compiler comparison](#running-the-nisq-analyzer-for-compiler-comparison) and [QPU selection](#running-the-nisq-analyzer-for-qpu-selection). Therefore, concrete circuits are required, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qasm.qasm). In case of Qiskit code, the implementation should either also define a `get_circuit` method, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Grover-SAT/grover-fix-sat-qiskit.py) or be called `qc`, as shown [here](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qiskit.py). Implementations in PyQuil for the Forest SDK should define the Program as `p`, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-pyquil.py).
+
+Implementation properties specific to the NISQ Analyzer are inside the `Selection Criteria` tab of a selected implementation.
+
+![Selection Criteria](./images/nisq_analyzer/selection-criteria.png)
 
 Define the `File Location` as URL where the raw implementation is placed.
-Select the `Software Platform` and select the `Language` of the implementation. 
-
-To add new input parameters press the `+` button on the right side of `Input Parameters`. Afterwards, insert the necessary data into the fields of the created Input Parameter.
-To delete an Input Parameter, select the card on the left side and press the `-` button on the right, next to the heading `Input Parameters`.
-Prolog Rules, e.g. `Selection Rule` can be changed as well. Make sure that the rules follow correct Prolog Syntax.
-
-To save all changes press the round button on the right side.
+Select (or add) the `SDK` and select the `Language` of the implementation. 
 
 !!! note 
-    `Input Parameters` and `Selection Rule` are only required for the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
-    
-!!! note 
-    To support the insertion of various input parameters, the source code of the defined general implementation requires a `get_circuit` method, see [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Shor/shor-general-qiskit.py). Further, such general implementations are currently not supported by the [automated compiler comparison](#running-the-nisq-analyzer-for-compiler-comparison). Therefore, concrete circuits are required, see [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qiskit.py).
+    `Input Parameters` and `Selection Rule` are only required for the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection) to define constraints about processable input values of the related implementation. Based on the [settings](../user-guide/qc-atlas/settings.md), both fields are hidden.  
+
+To add new input parameters, press the `+` button on the right side of `Input Parameters`. Afterwards, insert the necessary data into the fields of the created input parameter.
+To delete an input parameter, select the card on the left side and press the `-` button on the right, next to the heading `Input Parameters`.
+The Prolog Rule, i.e., `Selection Rule` can be changed as well. Make sure that the rules follow correct Prolog Syntax, examples can be viewed in the work of [Salm et al.](https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5).
+
+To save all changes, press the round button on the right side.
+
+## Running the NISQ Analyzer for Implementation and QPU Selection
 
 ### Prerequisites
 
 * The cloud service `IBMQ` exists
-* The software platform of the implementation exists
 * The algorithm contains at least one implementation
-
-## Running the NISQ Analyzer for Implementation and QPU Selection
 
 The UI can be found at the `NISQ Analyzer` tab in the algorithm page.
 
