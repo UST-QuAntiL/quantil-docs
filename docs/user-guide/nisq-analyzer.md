@@ -5,6 +5,7 @@ It automatically analyzes implementations of quantum algorithms and recommends c
 Thereby, the analysis and selection of suitable QPUs can be initiated for a specific implementation, see [here](#running-the-nisq-analyzer-for-qpu-selection).
 Based on the work by [Salm et al.](https://link.springer.com/chapter/10.1007/978-3-030-87568-8_4), the NISQ Analyzer also enables the automated comparison of available quantum compilers for a specific QPU to support the selection of the most suitable compilation result, see [below](#running-the-nisq-analyzer-for-compiler-comparison).
 Besides the selection of compilation results and QPUs, it also enables the selection of suitable quantum algorithm implementations based on a given problem instance, see [here](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).
+Furthermore, the content of the PlanQK platform can be accessed to apply the NISQ Analyzer, see [below](#accessing-the-planqk-platform).
   
 An overview about the NISQ Analyzer and its used components can be viewed in the [Home Section](../index.md).
 
@@ -34,6 +35,8 @@ To add a new implementation, see the [Implementation](../user-guide/qc-atlas/imp
 ![Implementations](./images/nisq_analyzer/implementations.png)
 
 ### Required Implementation Properties 
+
+In the following the required information and conditions of implementations for the recommendation via the NISQ Analyzer are presented.
 
 #### **Prerequisites of Implementations**
 To support the insertion of various input parameters for the [implementation and QPU selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection), the Python source code, i.e., Qiskit code of the defined implementation requires a `get_circuit` method, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Shor/shor-general-qiskit.py).  
@@ -189,3 +192,11 @@ Previous analysis and execution results can be found on the `NISQ Results` tab.
 ![Historical Results](./images/nisq_analyzer/historical-results.png)
 
 If the respective analysis result has been executed, the outcome of said execution can be viewed as well.
+
+## Accessing the PlanQK Platform
+
+Algorithms and implementations available via the PlanQK platform, can be accessed for the QC Atlas and NISQ Analyzer by clicking the login button in the top right corner of the UI. Insert your PlanQK platform username and password.
+
+![PlanQK Login](./images/nisq_analyzer/planqk-login.png)
+
+As soon as the platform content is available, the NISQ Analyzer can be applied to implementations fulfilling the required conditions, as described above.
