@@ -124,14 +124,10 @@ By clicking `Show result` the result of the executed compilation result on the s
 ![Execution results](./images/nisq_analyzer/execution-results.png)
 
 ## Running the NISQ Analyzer for Compiler Comparison
-To compare the compilation results of several compilers for a specific QPU, go to the `Execution` tab of a specific implementation (next to `Selection Crietia`).  
+To compare the compilation results of several compilers for a specific QPU, go to the `Execution` tab of a specific implementation (next to `Selection Crietia`). 
 A video demonstrating the compiler comparison process can be found [here](https://www.youtube.com/watch?v=I5l8vaA-zO8&feature=youtu.be).
 Currently, the quantum compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported wrapped by Compilation & Execution Services [pytket-service](https://github.com/UST-QuAntiL/pytket-service), [forest-service](https://github.com/UST-QuAntiL/forest-service), and [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service).
 To support quantum compilers not supporting the initial programming language of the given quantum circuit, the backend of the [Circuit Transformer](./circuit-transformer.md) is used to translate the circuit into the required language.
-
-The `Execution` tab shows previous compilation results and enables the further compilations and executions of the given implementation.
-
-![Execution tab enabling compiler comparison and execution](./images/nisq_analyzer/impl-execution.png)
 
 ### Start new Compilation
 
@@ -141,16 +137,16 @@ To start a new compilation, click the `New Compilation` button and insert the ve
     Currently, only real quantum computers of `IBMQ` are supported, thus, in this case, your IBMQ token is required.  
     For using the simulator of Forest (e.g. QPU = `9q-qvm`), insert anything else as token.
 
-![Start new compilation](./images/nisq_analyzer/new-compilation.png)
+![Start New Compilation](./images/nisq_analyzer/compiler-comparison-pop-up.png)
 
-Click `Refresh` a few times until the new compilation results are presented.
+As soon as the compilation processes are finished, the list of compilation results, the related QPU, and their properties are presented.
+
+![Compiler Comparison Results](./images/nisq_analyzer/compiler-comparison.png)
 
 ### Execute a Compiled Circuit
 
-Click the `Execute` button of the desired compilation result to start the execution.   
-Click the `Refresh` button to see the `Show result` button on the chosen compilation result and click on it to display the execution result.
-
-![Execution result of compilation result](./images/nisq_analyzer/impl-execution-result.png)
+Click the `Execute` button of the desired compilation result scrolling to the right side of the table to start the execution.   
+Click the `Show result` button on the chosen compilation result and click on it to display the execution result.
 
 ## Running the NISQ Analyzer for Implementation and QPU Selection
 
