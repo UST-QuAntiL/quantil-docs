@@ -55,6 +55,103 @@ The Prolog Rule, i.e., `Selection Rule` can be changed as well. Make sure that t
 
 To save all changes, press the round button on the right side.
 
+## Running the NISQ Analyzer for QPU Selection
+To receive recommendations for compilation results and related QPUs based on a specific implementation, go to the `NISQ Analyzer` tab in context of an implementation.  
+A demo video can be viewed [here](https://vimeo.com/773722924).
+
+### Overview of Analysis Jobs
+
+Initially, an overview about previous analysis jobs for the specific implementation is given.
+
+![Analysis jobs](./images/nisq_analyzer/qpu-selection-analysis-jobs.png)
+
+### New Analysis
+
+To start a new analysis, click the `New Analysis` button.
+Then, select `IBMQ` and insert your Qiskit token for authentication purposes of the IBMQ service.
+In addition, pre-defined preferences about the execution can be defined, such as short waiting times or precise/stable execution results. If stable execution results are selected, advanced settings are shown up, enabling the selection of Machine Learning methods estimating the precision of future execution results. Based on case studies, the best performing method is selected as default. If stable execution results and short waiting times are selected, the importance ratio can be defined.
+Furthermore, the maximum number of compilation results can be selected and the SDK to be considered for compilation can be chosen.
+
+![Pre-Selection](./images/nisq_analyzer/pre-selection.png)
+
+### Analysis Result
+
+The analysis job is finished if the ``Show analysis`` button occurs on the right side.
+When clicking on it, pre-selected compilation results with their related QPUs (and simulators), properties, QPU characteristics, and used compilers are listed.
+
+![Analysis Results](./images/nisq_analyzer/qpu-selection-analysis-results.png)
+
+### Prioritization
+
+The list of compilation results can be ranked, based on the work of [Salm et al.](https://ieeexplore.ieee.org/document/9825780) and [Salm et al.](https://link.springer.com/chapter/10.1007/978-3-031-18304-1_9) by clicking the `Prioritize` button.
+Again, pre-defined preferences can be selected. When selected, advanced settings are shown up, enabling the selection of a given MCDA method calculating the ranking. Additionally, when stable execution results are desired, a weight learning method, i.e., optimizer can be selected, that calculates the importance, i.e., weights of the individual compilation result and QPU properties for future precise execution results. Based on case studies, the best performing optimizer is selected as default. If both preferences are selected, the importance ratio can be defined.
+
+![Prioritization Pop-Up](./images/nisq_analyzer/prioritization-pop-up.png)
+
+Alternatively, own weights can be defined by clicking `Or define individual metric weights`.
+
+![Prioritization Own Weights](./images/nisq_analyzer/prioritization-own-weights.png)
+
+The pop-up enables to select an available MCDA method that calculates the ranking and to adjust the importance of the individual properties, i.e., metrics used for prioritization.
+
+In case, stable results are desired, after clicking `Ok`, the weights are first learned.
+
+![Prioritization Weight Learning](./images/nisq_analyzer/learning-weights.png)
+
+As soon as the learning process is completed, the weights can be viewed, adapted, and the ranking can be calculated. The weights are normalized between 0 and 1. Thus, a weight close to 1 is high, i.e., the metric has high importance, whereas a weight close to 0 is small, i.e., the metric has less importance.
+
+![Prioritization Learned Weights](./images/nisq_analyzer/learned-weights.png)
+
+After the prioritization process completes, the table is sorted by the resulting rank.
+
+![Prioritization ranked list](./images/nisq_analyzer/ranked-list.png)
+
+Furthermore, the sensitivity of the calculated ranking can be analyzed by clicking the `Analyze Rank Sensitivity` button. Thereby, the weights of the individual metrics are slightly adapted by a specified range of factors, and it is checked, if the ranking has changed.
+
+![Sensitivity Analysis Pop-Up](./images/nisq_analyzer/sens-analysis-popup.png)
+
+As soon as the sensitivity analysis is finished, a `Sensitivity Analysis Results` button occurs.
+When clicking it, a new tab opens presenting two diagrams. Points in the diagram show if for the adaption of a specific metric a change in the ranking was observed. When hovering over these points, the changed ranking can be seen. Significant changes, thus, order changes in the first half of the original ranking are marked with a star.
+
+![Sensitivity Analysis Results](./images/nisq_analyzer/sens-analysis-results.png)
+
+### Execution
+
+In the overview of analysis results, scroll to the right of the table and press the button `Execute` to run a compilation result on the selected QPU.
+
+By clicking `Show result` the result of the executed compilation result on the selected QPU is shown.
+
+![Execution results](./images/nisq_analyzer/execution-results.png)
+
+## Running the NISQ Analyzer for Compiler Comparison
+To compare the compilation results of several compilers for a specific QPU, go to the `Execution` tab of a specific implementation (next to `Selection Crietia`).  
+A video demonstrating the compiler comparison process can be found [here](https://www.youtube.com/watch?v=I5l8vaA-zO8&feature=youtu.be).
+Currently, the quantum compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported wrapped by Compilation & Execution Services [pytket-service](https://github.com/UST-QuAntiL/pytket-service), [forest-service](https://github.com/UST-QuAntiL/forest-service), and [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service).
+To support quantum compilers not supporting the initial programming language of the given quantum circuit, the backend of the [Circuit Transformer](./circuit-transformer.md) is used to translate the circuit into the required language.
+
+The `Execution` tab shows previous compilation results and enables the further compilations and executions of the given implementation.
+
+![Execution tab enabling compiler comparison and execution](./images/nisq_analyzer/impl-execution.png)
+
+### Start new Compilation
+
+To start a new compilation, click the `New Compilation` button and insert the vendor name, qpu name, and your token.
+
+!!! note 
+    Currently, only real quantum computers of `IBMQ` are supported, thus, in this case, your IBMQ token is required.  
+    For using the simulator of Forest (e.g. QPU = `9q-qvm`), insert anything else as token.
+
+![Start new compilation](./images/nisq_analyzer/new-compilation.png)
+
+Click `Refresh` a few times until the new compilation results are presented.
+
+### Execute a Compiled Circuit
+
+Click the `Execute` button of the desired compilation result to start the execution.   
+Click the `Refresh` button to see the `Show result` button on the chosen compilation result and click on it to display the execution result.
+
+![Execution result of compilation result](./images/nisq_analyzer/impl-execution-result.png)
+
 ## Running the NISQ Analyzer for Implementation and QPU Selection
 
 ### Prerequisites
@@ -106,77 +203,3 @@ Previous analysis and execution results can be found on the `NISQ Results` tab.
 If the respective analysis result has been executed, the outcome of said execution can be viewed as well.
 
 ![Historical analysis results with open execution result](./images/nisq_analyzer/results_open.png)
-
-## Running the NISQ Analyzer for QPU Selection
-
-The UI can be found at the `NISQ Analyzer` tab in context of the implementation page.
-
-### Overview of Analysis Jobs
-
-Initially, an overview about previous analysis jobs for the specific implementation is given.
-
-![Analysis job UI](./images/nisq_analyzer/implementation-analysis-jobs-overview.png)
-
-### New Analysis
-
-To start a new analysis, click the `New Analysis` button.
-Then, select `IBMQ` and insert your Qiskit token for authentication purposes of the IBMQ service.
-You can also select if simulators should be included in the analysis.
-
-### Analysis Result
-
-The analysis job is finished if the ``Show analysis`` button occurs on the right side.
-When clicking on it, suitable QPUs (and simulators) with properties about the compilation results, QPUs, and used compilers are listed.
-
-![Analysis results UI](./images/nisq_analyzer/implementation-analysis-result.png)
-
-Press the button `Execute` on the right outer column to run a compiled implementation on the selected QPU.
-
-### Execution Result
-
-By clicking `Show result` the result of the executed implementation on the selected QPU is shown.
-If simulators were enabled for analysis, the histogram intersection of the QPU result and a simulator result is presented.
-
-![Analysis results UI](./images/nisq_analyzer/implementation-qpu-execution-result.png)
-
-### Prioritization
-
-Based on available MCDA methods, the list of compiled implementations can be ranked by clicking the `Prioritize` button.
-The raised pop-up enables to select an available MCDA method that calculates the ranking and to adjust the importance of given metrics (e.g., width, depth, ...) used for prioritization.
-
-![Prioritization criteria_UI](./images/nisq_analyzer/implementation-analysis-mcda-criteria.png)
-
-After the prioritization process completes, the table is sorted by the resulting rank.
-
-![Prioritization ranked list](./images/nisq_analyzer/implementation-analysis-prioritized-list.png)
-
-## Running the NISQ Analyzer for Compiler Comparison
-
-The UI can be found at the `Execution` tab in the implementation page (next to `Selection Crietia`).  
-A video demonstrating the compiler comparison process can be found [here](https://www.youtube.com/watch?v=I5l8vaA-zO8&feature=youtu.be).
-Currently, the quantum compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported wrapped by Compilation & Execution Services [pytket-service](https://github.com/UST-QuAntiL/pytket-service), [forest-service](https://github.com/UST-QuAntiL/forest-service), and [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service).
-To support quantum compilers not supporting the initial programming language of the given quantum circuit, the backend of the [Circuit Transformer](./circuit-transformer.md) is used to translate the circuit into the required language.
-
-The `Execution` tab shows previous compilation results and enables the further compilations and executions of the given implementation.
-
-![Execution tab enabling compiler comparison and execution](./images/nisq_analyzer/impl-execution.png)
-
-### Start new Compilation
-
-To start a new compilation, click the `New Compilation` button and insert the vendor name, qpu name, and your token.
-
-!!! note 
-    Currently, only real quantum computers of `IBMQ` are supported, thus, in this case, your IBMQ token is required.  
-    For using the simulator of Forest (e.g. QPU = `9q-qvm`), insert anything else as token.
-
-![Start new compilation](./images/nisq_analyzer/new-compilation.png)
-
-Click `Refresh` a few times until the new compilation results are presented.
-
-### Execute a Compiled Circuit
-
-Click the `Execute` button of the desired compilation result to start the execution.   
-Click the `Refresh` button to see the `Show result` button on the chosen compilation result and click on it to display the execution result.
-
-![Execution result of compilation result](./images/nisq_analyzer/impl-execution-result.png)
-
