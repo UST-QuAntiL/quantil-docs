@@ -1,31 +1,42 @@
 
 # NISQ Analyzer User Guide
 The [NISQ Analyzer](https://github.com/UST-QuAntiL/nisq-analyzer) is a research prototype based on the work by [Salm et al.](https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5). 
-It automatically analyzes implementations of quantum algorithms. 
-The results indicate if a quantum algorithm can be executed on a Quantum Processing Unit (QPU) or simulator, see [below](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
-It also enables the analysis and selection of suitable QPUs based on a specific quantum algorithm implementation, see [below](#running-the-nisq-analyzer-for-qpu-selection).  
-Based on the work by [Salm et al.](https://link.springer.com/chapter/10.1007/978-3-030-87568-8_4), it enables the automated comparison of available quantum compilers to support the selection of the most suitable compiled quantum circuit, see [below](#running-the-nisq-analyzer-for-compiler-comparison).  
+It automatically analyzes implementations of quantum algorithms and recommends compilation results for suitable Quantum Processing Units (QPUs). 
+Thereby, the analysis and selection of suitable QPUs can be initiated for a specific implementation, see [here](#running-the-nisq-analyzer-for-qpu-selection).
+Based on the work by [Salm et al.](https://link.springer.com/chapter/10.1007/978-3-030-87568-8_4), the NISQ Analyzer also enables the automated comparison of available quantum compilers for a specific QPU to support the selection of the most suitable compilation result, see [below](#running-the-nisq-analyzer-for-compiler-comparison).
+Besides the selection of compilation results and QPUs, it also enables the selection of suitable quantum algorithm implementations based on a given problem instance, see [here](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).
+  
 An overview about the NISQ Analyzer and its used components can be viewed in the [Home Section](../index.md).
 
-### SDKs, QPUs, and Cloud Services
+## Starting Point and Prerequisites
 
-QC Atlas' `Software Platforms` get mapped to SDKs. 
-This mapping happens automatically when opening a Software Platform in the UI.   
-QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov) a provenance system for quantum computing.   
-`Cloud Services` are required to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection).  
-Currently, only real quantum computers of the cloud service `IBMQ` are supported.
+When the docker-compose is up and running, open a browser window under <http://localhost:80>.
+The following screen should be presented showing a sample list of quantum algorithms.
+
+![Algorithms](./images/nisq_analyzer/start-screen.png)
+
+### Execution Environments: QPUs and Cloud Services
+Available QPUs are automatically retrieved by [QProv](https://github.com/UST-QuAntiL/qprov), a provenance system for quantum computing by [Weder et al.](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/qtc2.12012). 
+A description of how to view actual QPU data is presented under the [QProv](qprov.md) section.
+Currently, only real QPUs of the cloud service `IBMQ` are supported.
+
+!!! note 
+    If available, sample data is automatically added to the environment on start-up, thus, the cloud service `IBMQ` does not need to be added, and the following information can be ignored.
+
+`Cloud Services` (under `Execution Environments` in the menu on the left side), e.g. IBMQ, are required and need to be added to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection), see the [Cloud Service](../user-guide/qc-atlas/cloud-service.md) section to add new cloud services. 
+
+### Algorithms
+To add a new algorithm, see the [Algorithm](../user-guide/qc-atlas/algorithm.md) section. In short, click on the green add button in the top left corner of the starting screen (displayed above), select the type of the algorithm, and define its name.
 
 ### Implementations
-
-`Implementations` in QC Atlas are mapped to Implementations in the NISQ Analyzer DB.
-Again, this mapping happens automatically when opening an Implementation in the UI.
+To add a new implementation, see the [Implementation](../user-guide/qc-atlas/implementation.md) section. In short, starting from the starting screen, select an algorithm and go to the `Implementations` tab. Click the green add button in the top left corner and define the name of the implementation. 
 
 Implementation properties specific to the NISQ Analyzer are inside the `Selection Criteria` tab.
 
 ![Selection Criteria UI](./images/nisq_analyzer/implementation_selectionCriteria.png)
 
 Define the `File Location` as URL where the raw implementation is placed.
-Select the previously added `Software Platform` and select the `Language` of the implementation. 
+Select the `Software Platform` and select the `Language` of the implementation. 
 
 To add new input parameters press the `+` button on the right side of `Input Parameters`. Afterwards, insert the necessary data into the fields of the created Input Parameter.
 To delete an Input Parameter, select the card on the left side and press the `-` button on the right, next to the heading `Input Parameters`.
