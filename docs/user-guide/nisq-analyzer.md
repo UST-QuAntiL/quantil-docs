@@ -155,47 +155,37 @@ Click the `Show result` button on the chosen compilation result and click on it 
 * The cloud service `IBMQ` exists
 * The algorithm contains at least one implementation
 
-The UI can be found at the `NISQ Analyzer` tab in the algorithm page.
-
-### Overview of Analysis Jobs
-
-Initially, an overview about previous analysis jobs is given.
-
-![Analysis job UI](./images/nisq_analyzer/analysis-jobs-overview.png)
+To enable the recommendation of implementations and QPUs based on given input data and a selected quantum algorithm, go to the `NISQ Analyzer` tab of an algorithm.
 
 ### New Analysis
 
-To start a new analysis, click the `New Analysis` button.
-Then, specify the input values. Afterwards, select `IBMQ` in the dropdown menu and insert your Qiskit token for authentication purposes of the IBMQ service.
+Initially, an overview about previous analysis jobs is given. Click the `New Analysis` button to start a new analysis. Define the input value to be processed, select `IBMQ` as cloud service in the dropdown menu and insert your Qiskit token for authentication purposes of the IBMQ service. 
 
-![New analysis UI](./images/nisq_analyzer/new-analysis.png)
+![New Analysis](./images/nisq_analyzer/start-impl-qpu-selection-analysis.png)
 
-If the analysis is finished, a `Show analysis` button appears, that can be clicked to see more details.
+If the analysis is finished, a `Show analysis` button appears, that can be clicked to see the analysis results.
 
 ### Analysis Result
 
 After clicking `Show analysis`, all results of the specific analysis are shown. 
-Furthermore, the current queue sizes of the suitable simulators and QPUs are shown.
+Furthermore, the compilation result and properties of the suitable simulators and QPUs are shown.
 Press the button `Execute` to run the selected QPU/implementation combination.
 All analysis results are stored and can also be viewed on the `NISQ Results` tab.
 
-![Analysis results UI](./images/nisq_analyzer/analysis-overview.png)
+![Analysis Results](./images/nisq_analyzer/impl-qpu-selection-analysis-results.png)
+
+Additionally, it is checked if the QPUs were re-calibrated after the analysis (marked as `OUTDATED`), changing their error rates and, thus, the compilation results might be outdated as well.
 
 ### Execution Result
 
-By clicking `Show result` the result of the executed input/QPU/implementation tuple is shown.
+Click the `Execute` button of the desired compilation result of a recommended implementation scrolling to the right side of the table to start the execution.   
+Click the `Show result` button on the chosen compilation result and click on it to display the execution result.
 Keep in mind that the execution itself can take quite long time.
-
-All execution results are stored and can also be reviewed on the `NISQ Results` tab.
-
-![Analysis results UI](./images/nisq_analyzer/analysis-execution-result.png)
 
 ### Historical data about Implementation and QPU Selection
 
 Previous analysis and execution results can be found on the `NISQ Results` tab.
 
-![Historical analysis results](./images/nisq_analyzer/results.png)
+![Historical Results](./images/nisq_analyzer/historical-results.png)
 
 If the respective analysis result has been executed, the outcome of said execution can be viewed as well.
-
-![Historical analysis results with open execution result](./images/nisq_analyzer/results_open.png)
