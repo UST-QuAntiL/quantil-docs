@@ -61,6 +61,9 @@ To save all changes, press the round button on the right side.
 ## Running the NISQ Analyzer for QPU Selection
 To receive recommendations for compilation results and related QPUs based on a specific implementation, go to the `NISQ Analyzer` tab in context of an implementation.  
 A demo video can be viewed [here](https://vimeo.com/773722924).
+Currently, the SDKs and compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported wrapped by Compilation & Execution Services [pytket-service](https://github.com/UST-QuAntiL/pytket-service), [forest-service](https://github.com/UST-QuAntiL/forest-service), and [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service).
+To support SDKs not supporting the initial programming language of the given quantum circuit, the backend of the [Circuit Transformer](./circuit-transformer.md) is used to translate the circuit into the required language.
+The [Predict & Prio Service](https://github.com/UST-QuAntiL/nisq-analyzer-prio-service) enables the pre-selection and prioritization of compilation results.
 
 ### Overview of Analysis Jobs
 
@@ -129,7 +132,7 @@ By clicking `Show result` the result of the executed compilation result on the s
 ## Running the NISQ Analyzer for Compiler Comparison
 To compare the compilation results of several compilers for a specific QPU, go to the `Execution` tab of a specific implementation (next to `Selection Crietia`). 
 A video demonstrating the compiler comparison process can be found [here](https://www.youtube.com/watch?v=I5l8vaA-zO8&feature=youtu.be).
-Currently, the quantum compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported wrapped by Compilation & Execution Services [pytket-service](https://github.com/UST-QuAntiL/pytket-service), [forest-service](https://github.com/UST-QuAntiL/forest-service), and [qiskit-service](https://github.com/UST-QuAntiL/qiskit-service).
+Currently, the quantum compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported.
 To support quantum compilers not supporting the initial programming language of the given quantum circuit, the backend of the [Circuit Transformer](./circuit-transformer.md) is used to translate the circuit into the required language.
 
 ### Start new Compilation
