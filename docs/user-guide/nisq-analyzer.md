@@ -13,6 +13,8 @@ An overview about the NISQ Analyzer and its used components can be viewed in the
 
 When the docker-compose is up and running, open a browser window under <http://localhost:80>.
 The following screen should be presented showing a sample list of quantum algorithms.
+A docker-compose only containing components required by the NISQ Anlyzer can be viewed [here](https://github.com/UST-QuAntiL/nisq-analyzer-content/tree/paper/pre-selection/pre-selection/Docker).
+Therefore, copy the file [`_docker-compose.override.yml`](https://github.com/UST-QuAntiL/nisq-analyzer-content/blob/paper/pre-selection/pre-selection/Docker/_docker-compose.override.yml) remove the `_` and insert you Qiskit token under `QPROV_IBMQ_TOKEN`.
 
 ![Algorithms](./images/nisq_analyzer/start-screen.png)
 
@@ -40,7 +42,7 @@ In the following the required information and conditions of implementations for 
 
 #### **Prerequisites of Implementations**
 To support the insertion of various input parameters for the [implementation and QPU selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection), the Python source code, i.e., Qiskit code of the defined implementation requires a `get_circuit` method, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Shor/shor-general-qiskit.py).  
-Such general implementations are currently not supported by the [automated compiler comparison](#running-the-nisq-analyzer-for-compiler-comparison) and [QPU selection](#running-the-nisq-analyzer-for-qpu-selection). Therefore, concrete circuits are required, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qasm.qasm). In case of Qiskit code, the implementation should either also define a `get_circuit` method, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Grover-SAT/grover-fix-sat-qiskit.py) or be called `qc`, as shown [here](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qiskit.py). Implementations in PyQuil for the Forest SDK should define the Program as `p`, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-pyquil.py).
+Such general implementations are currently not supported by the [automated compiler comparison](#running-the-nisq-analyzer-for-compiler-comparison) and [QPU selection](#running-the-nisq-analyzer-for-qpu-selection). Therefore, concrete circuits are required, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qasm.qasm). In case of Qiskit code, the implementation should either also define a `get_circuit` method, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Grover-SAT/grover-fix-sat-qiskit.py), or be called `qc`, as shown [here](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qiskit.py). Implementations in PyQuil for the Forest SDK should define the Program as `p`, see this [example](https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-pyquil.py).
 
 Implementation properties specific to the NISQ Analyzer are inside the `Selection Criteria` tab of a selected implementation.
 
@@ -130,7 +132,7 @@ By clicking `Show result` the result of the executed compilation result on the s
 ![Execution results](./images/nisq_analyzer/execution-results.png)
 
 ## Running the NISQ Analyzer for Compiler Comparison
-To compare the compilation results of several compilers for a specific QPU, go to the `Execution` tab of a specific implementation (next to `Selection Crietia`). 
+To compare the compilation results of several compilers for a specific QPU, go to the `Execution` tab of a specific implementation (next to `Selection Criteria`). 
 A video demonstrating the compiler comparison process can be found [here](https://www.youtube.com/watch?v=I5l8vaA-zO8&feature=youtu.be).
 Currently, the quantum compilers [t|ket>](https://github.com/CQCL/pytket), [Quilc](https://github.com/rigetti/quilc), and [Qiskit Transpiler](https://github.com/Qiskit) are supported.
 To support quantum compilers not supporting the initial programming language of the given quantum circuit, the backend of the [Circuit Transformer](./circuit-transformer.md) is used to translate the circuit into the required language.
@@ -180,7 +182,7 @@ All analysis results are stored and can also be viewed on the `NISQ Results` tab
 
 ![Analysis Results](./images/nisq_analyzer/impl-qpu-selection-analysis-results.png)
 
-Additionally, it is checked if the QPUs were re-calibrated after the analysis (marked as `OUTDATED`), changing their error rates and, thus, the compilation results might be outdated as well.
+Additionally, it is checked if the QPUs were re-calibrated after the analysis (marked as `OUTDATED`), changing their error rates and, thus, the compilation results might be outdated as well, such that a new analysis is recommended for execution.
 
 ### Execution Result
 
