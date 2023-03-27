@@ -57,7 +57,7 @@ If information is changed, a ``Save button`` will be displayed next that specifi
 
 !!! note 
     The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
-	
+
 ![alt text](../images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG "Saving the changes")
 
 !!! info 
@@ -111,8 +111,8 @@ After the property has been successfully created, it will appear in the the dedi
 !!! info 
     To update a compute resource property of the algorithm, the user has to be in the ``Algorithm View`` which can be reached by clicking on an algorithm in the ``Algorithm List View``.
 
-Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over an existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.	
-	
+Updating properties of an algorithm is done in the ``General Tab`` of the ``Algorithm View``. To do that, the user has to simply hover over an existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit button``.
+
 ![alt text](../images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
 
 This will open a separate ``Update Dialog`` where the information of the property can be adjusted.
@@ -297,7 +297,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 
 !!! note 
     ``Master Link button`` will only appear if at least one publication is selected.
-	
+
 ![alt text](../images/algorithm/Link_Publication_-_Step_3.2.PNG "Link Publication")
 
 !!! info 
@@ -316,7 +316,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one publication is selected.
-	
+
 ![alt text](../images/algorithm/Unlink_Publication_-_Step_1.2.PNG "Dereference multiple publications")
 
 ### Add Tags
@@ -406,8 +406,7 @@ In the third step, the user has to describe the relation between the selected pa
 The input field for the relation type has auto-complete functionality. It will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. 
 
 !!! note
-    Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting ``Enter``. 
-	
+    Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting ``Enter``. 	
 ![alt text](../images/algorithm/Link_Pattern_-_Step_8.PNG "Select Relation Type")
 
 At last, the user has to add a description by using the existing input field. After that, the user can proceed to the last step by clicking on the ``Next Button`` or by clicking directly on the step itself.
@@ -467,7 +466,7 @@ Alternatively, the user can use the check-boxes of the first column of the table
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one related pattern is selected.
-	
+
 ![alt text](../images/algorithm/Unlink_Pattern_-_Step_1.2.PNG "Dereference multiple patterns")
 
 If a ``Delete Button`` is pressed, a confirmation dialog will appear listing all pattern references that will be removed. To confirm their deletion, the user has to click on the ``YES Button``.

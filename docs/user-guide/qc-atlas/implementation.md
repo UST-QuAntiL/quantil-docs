@@ -102,7 +102,7 @@ After the property has been successfully created, it will appear in the the dedi
     To update a compute resource property of an implementation, the user has to be in the ``Implementation View``, which can be reached by clicking on an algorithm in the ``Implementation List View``.
 
 Updating existing compute resource properties of an implementation is done in the ``General Tab`` of the ``Implementation View``. To do that, the user has to simply hover over an existing property in the dedicated ``Required Compute Resource Property Field`` and then click on the ``Edit Button``.	
-	
+
 ![alt text](../images/algorithm/Update_Compute_Resource_-_Step_1.PNG "Open update property dialog")
 
 This will open a separate ``Update Dialog`` where the information of the property can be adjusted.
@@ -153,7 +153,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 
 !!! note 
     ``Master Link Button`` will only appear if at least one publication is selected.
-	
+
 ![alt text](../images/implementation/Link_Publication_-_Step_3.2.png "Reference multiple publications")
 
 !!! info 
@@ -163,7 +163,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 
 !!! info 
     To dereference publications, the user has to be in the ``Publications Tab`` of the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
-	
+    
 To remove a reference to a publication, the user has to simply click on the ``Delete Button`` of a publication in the ``Actions Column``.
 
 ![alt text](../images/implementation/Unlink_Publication_-_Step_1.1.png "Dereference single publication")
@@ -172,14 +172,15 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one publication is selected.
-	
+
 ![alt text](../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple publications")
+
 
 ### Reference Software Platforms
 
 !!! info 
     To reference software platforms in an implementation, the user has to be in the ``Software Platforms Tab`` of the ``Implementation View``, which can be reached by clicking on an implementation in the ``Implementation List View``.
-	
+
 To initiate the linking of a software platform, the user has to click on the ``Plus Button`` in the ``Software Platforms Tab``.
 
 ![alt text](../images/implementation/Link_Software_Platforms_-_Step_1.png "Click on '+' in 'Software Platforms'-Tab")
@@ -196,7 +197,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 
 !!! note 
     ``Master Link Button`` will only appear if at least one software platform is selected.
-	
+
 ![alt text](../images/implementation/Link_Software_Platforms_-_Step_3.2.png "Reference multiple software platforms")
 
 !!! info 
@@ -215,7 +216,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one software platform is selected.
-	
+
 ![alt text](../images/implementation/Unlink_Software_Platform_-_Step_1.2.png "Dereference multiple software platforms")
 
 ### Add Tags

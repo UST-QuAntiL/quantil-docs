@@ -12,7 +12,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 
 !!! note 
     Currently the only required information is the **name** of the pattern relation type.
-	
+
 ![alt text](../images/pattern_relation_type/Create_Pattern_Relation_Type_-_Step_2.PNG "Structure of creation dialog")
 	
 After entering the name of the pattern relation type, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -36,7 +36,7 @@ Within the ``Update Dialog``, the user can adjust the information of the pattern
 
 !!! note 
     Currently the only required information is the **name** of the pattern relation type.
-	
+
 ![alt text](../images/pattern_relation_type/Update_Pattern_Relation_Type_-_Step_2.PNG "Structure of update dialog")
 	
 After adjusting all information, the user has to confirm the changes by clicking on the ``OK Button``.
@@ -56,7 +56,7 @@ The user can also remove multiple pattern relation types at once by selecting th
 
 !!! note 
     The ``Master Delete Button`` button will only appear if at least one pattern relation type is selected.
-	
+
 ![alt text](../images/pattern_relation_type/Delete_Pattern_Relation_Type_-_Step_1.2.PNG "Delete multiple pattern relation types")
 	
 To confirm the deletion of the selected pattern relation type(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.

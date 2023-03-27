@@ -84,7 +84,7 @@ Alternatively use the check-boxes to select multiple software platforms and then
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one software platform is selected.
-	
+
 ![alt text](./../images/cloud_service/Unlink_Software_Platform_-_Step_2.png "Dereference multiple software platform")
 
 ### Reference Compute Resource
@@ -121,5 +121,5 @@ Alternatively use the check-boxes to select multiple compute resources and then 
 
 !!! note 
     ``Master Delete Button`` will only appear if at least one compute resource has been selected.
-	
+
 ![alt text](./../images/cloud_service/Unlink_Compute_Resource_-_Step_2.png "Dereference multiple compute resource")

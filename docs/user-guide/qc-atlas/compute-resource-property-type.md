@@ -13,7 +13,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 !!! note 
     * Currently the only required information is the **name** and the **data type** of the compute resource property type.
 	* The **Data Type Field** is a drop-down that contains all existing data types that can be set.
-	
+
 ![alt text](../images/compute_resource_property_type/Create_Compute_Resource_Property_Type_-_Step_2.PNG "Structure of creation dialog")
 	
 After entering all required information, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -38,7 +38,7 @@ Within the ``Update Dialog``, the user can adjust the information of the compute
 !!! note 
     * Currently the only required information is the **name** and the **data type** of the compute resource property type.
 	* The **Data Type Field** is a drop-down that contains all existing data types that can be set.
-	
+
 ![alt text](../images/compute_resource_property_type/Update_Compute_Resource_Property_Type_-_Step_2.PNG "Structure of update dialog")
 	
 After adjusting all information, the user has to confirm the changes by clicking on the ``OK Button``.
@@ -58,7 +58,7 @@ The user can also remove multiple compute resource property types at once by sel
 
 !!! note 
     The ``Master Delete Button`` button will only appear if at least one compute resource property type is selected.
-	
+
 ![alt text](../images/compute_resource_property_type/Delete_Compute_Resource_Property_Type_-_Step_1.2.PNG "Delete multiple compute resource property types")
 	
 To confirm the deletion of the selected compute resource property type(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.

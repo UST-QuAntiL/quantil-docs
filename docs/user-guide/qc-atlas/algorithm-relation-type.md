@@ -13,7 +13,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 
 !!! note 
     Currently the only required information is the **name** of the algorithm relation type.
-	
+
 ![alt text](../images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_2.PNG "Structure of creation dialog")
 	
 After entering the name of the algorithm relation type, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -37,7 +37,7 @@ Within the ``Update Dialog``, the user can adjust the information of the algorit
 
 !!! note 
     Currently the only required information is the **name** of the algorithm relation type.
-	
+
 ![alt text](../images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_2.PNG "Structure of update dialog")
 	
 After adjusting all information, the user has to confirm the changes by clicking on the ``OK Button``.
@@ -57,7 +57,7 @@ The user can also remove multiple algorithm relation types at once by selecting 
 
 !!! note 
     The ``Master Delete Button`` button will only appear if at least one algorithm relation type is selected.
-	
+
 ![alt text](../images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_1.2.PNG "Delete multiple algorithm relation types")
 	
 To confirm the deletion of the selected algorithm relation type(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.

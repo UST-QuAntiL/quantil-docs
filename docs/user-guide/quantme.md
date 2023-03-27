@@ -15,22 +15,22 @@ The MODULO framework currently comprises the following repositories and componen
 * [OpenTOSCA Container](https://github.com/OpenTOSCA/container): A TOSCA-compliant deployment system to deploy and manage applications or services (further [documentation](https://www.opentosca.org/)).
 * [Qiskit Runtime Handler](https://github.com/UST-QuAntiL/qiskit-runtime-handler): A service generating Qiskit Runtime programs for hybrid loops based on corresponding workflow fragments detected by the QuantME Modeling and Transformation Framework.
 
-[%
-   include-markdown "./quantme/qrm.md"
-%]
+{%
+   include-markdown './quantme/qrm.md'
+%}
 
-[%
+{%
    include-markdown "./quantme/qrm-repo.md"
-%]
+%}
 
-[%
+{%
    include-markdown "./quantme/environment.md"
-%]
+%}
 
-[%
+{%
    include-markdown "./quantme/tutorial.md"
-%]
+%}
 
-[%
+{%
    include-markdown "./quantme/service-deployment.md"
-%]
+%}

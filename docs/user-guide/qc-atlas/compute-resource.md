@@ -17,7 +17,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 
 !!! note 
     Currently the only required information is the **name** of the compute resource.
-	
+
 ![alt text](./../images/compute_resource/Create_Compute_Resource_-_Step_4.PNG "Structure of creation dialog")
 
 After entering the name of the compute resource, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -64,7 +64,7 @@ If information is changed, a ``Save Button`` will be displayed next that specifi
 
 !!! note 
     The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save Button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
-	
+
 ![alt text](./../images/compute_resource/Update_Compute_Resource_-_Step_2.PNG "Saving the changes")
 
 !!! info 
@@ -90,7 +90,7 @@ After all fields have been filled, the user can finally add the property by conf
 
 !!! note 
 	The **Property Value** needs to match the selected **Data Type**.
-	
+
 ![alt text](./../images/compute_resource/Add_Compute_Resource_Property_-_Step_3.PNG "Confirm creation")
 
 After the property has been successfully created, it will appear in the the dedicated ``Compute Resource Property Field`` of the ``Compute Resource View``.
@@ -117,7 +117,7 @@ After all fields have been adjusted, the user can finally update the property by
 
 !!! note 
 	The **Property Value** needs to match the selected **Data Type**.
-	
+
 ![alt text](./../images/compute_resource/Update_Compute_Resource_Property_-_Step_3.PNG "Confirm update")
 
 ### Delete Compute Resource Property
@@ -153,7 +153,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 
 !!! note 
     The ``Master Link Button`` will only appear if at least one software platform is selected.
-	
+
 ![alt text](./../images/compute_resource/Reference_Software_Platform_-_Step_3.2.PNG "Reference multiple software platforms")
 
 !!! info 
@@ -172,7 +172,7 @@ Alternatively, use the check-boxes to select multiple software platforms and the
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one software platform is selected.
-	
+
 ![alt text](./../images/compute_resource/Dereference_Software_Platform_-_Step_1.2.PNG "Dereference multiple software platforms")
 
 ### Reference Cloud Services
@@ -196,7 +196,7 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 
 !!! note 
     The ``Master Link Button`` will only appear if at least one cloud service is selected.
-	
+
 ![alt text](./../images/compute_resource/Reference_Cloud_Service_-_Step_3.2.PNG "Reference multiple cloud services")
 
 !!! info 
@@ -215,5 +215,5 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one cloud service is selected.
-	
+
 ![alt text](./../images/compute_resource/Dereference_Cloud_Service_-_Step_1.2.PNG "Dereference multiple cloud services")

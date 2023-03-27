@@ -13,7 +13,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 !!! note 
     * Currently the only required information is the **name** of the problem type.
 	* The **Parent Problem Type Field** is a drop-down that contains all existing problem types that can be optionally set as the parent.
-	
+
 ![alt text](../images/problem_type/Create_Problem_Type_-_Step_2.PNG "Structure of creation dialog")
 	
 After entering the name of the problem type, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -38,7 +38,7 @@ Within the ``Update Dialog``, the user can adjust the information of the problem
 !!! note 
     * Currently the only required information is the **name** of the problem type.
 	* The **Parent Problem Type Field** is a drop-down that contains all existing problem types that can be optionally set as the parent.
-	
+
 ![alt text](../images/problem_type/Update_Problem_Type_-_Step_2.PNG "Structure of update dialog")
 	
 After adjusting all information, the user has to confirm the changes by clicking on the ``OK Button``.
@@ -58,7 +58,7 @@ The user can also remove multiple problem types at once by selecting them using 
 
 !!! note 
     The ``Master Delete Button`` button will only appear if at least one problem type is selected.
-	
+
 ![alt text](../images/problem_type/Delete_Problem_Type_-_Step_1.2.PNG "Delete multiple problem types")
 	
 To confirm the deletion of the selected problem type(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.

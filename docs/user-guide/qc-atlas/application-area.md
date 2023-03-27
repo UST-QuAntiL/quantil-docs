@@ -12,7 +12,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 
 !!! note 
     Currently the only required information is the **name** of the application area.
-	
+
 ![alt text](../images/application_area/Create_Application_Area_-_Step_2.PNG "Structure of creation dialog")
 	
 After entering the name of the application area, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -36,7 +36,7 @@ Within the ``Update Dialog``, the user can adjust the information of the applica
 
 !!! note 
     Currently the only required information is the **name** of the application area.
-	
+
 ![alt text](../images/application_area/Update_Application_Area_-_Step_2.PNG "Structure of update dialog")
 	
 After adjusting all information, the user has to confirm the changes by clicking on the ``OK Button``.
@@ -56,7 +56,7 @@ The user can also remove multiple application areas at once by selecting them us
 
 !!! note 
     The ``Master Delete Button`` button will only appear if at least one application area is selected.
-	
+
 ![alt text](../images/application_area/Delete_Application_Area_-_Step_1.2.PNG "Delete multiple application areas")
 	
 To confirm the deletion of the selected application area(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.

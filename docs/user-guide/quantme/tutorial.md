@@ -3,7 +3,7 @@
 In the following, it is described how to set up the QuantME Modeling and Transformation Framework, create a QRM repository with one QRM, and use it to transform an example QuantME workflow to a workflow containing only native BPMN modeling constructs.
 
 1\. Clone the QuantME Modeling and Transformation Framework:
- 
+
 ```
 git clone https://github.com/UST-QuAntiL/QuantME-TransformationFramework.git
 ```
@@ -15,7 +15,7 @@ Please adapt these values to your setup in the following steps.
 3\. Configure the QuantME Modeling and Transformation Framework to use the created QRM repository:
 - Navigate to the configuration file that is located [here](https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/app/lib/quantme/qrm-manager/RepositoryConfig.js)
 - Insert the user/organisation name and repository name:
-    
+
 ```JS
 module.exports = {
   githubUsername: 'UST-QuAntiL',
@@ -76,7 +76,7 @@ The application is build in ```.\dist``` and can be started depending on your op
     In this example, we assume that the different tasks are implemented as [external tasks](https://docs.camunda.org/manual/7.8/user-guide/process-engine/external-tasks/).
     This means when the task is executed, the Camunda engine publishes a work item in a list, which can be polled and performed by some consumer service.
     However, the kind of implementation of tasks does not affect the transformation method and is up to the QRM modeler.
-    
+
 6\. Create the QuantME workflow:
 
   * Now a QuantME workflow can be modeled that uses a ReadoutErrorMitigationTask.
@@ -84,7 +84,7 @@ The application is build in ```.\dist``` and can be started depending on your op
     For the sake of simplicity, we use a workflow with only one ReadoutErrorMitigationTask in this example.
     Of course, the execution of just that task is not useful, but additional tasks and corresponding QRMs can be added in the same way.
     Thus, our example workflow is depicted in the following figure:
-    
+   
     ![Example Workflow](./images/tutorial-example-workflow.png){: style="width:900px" .center}
     
     Please note the defined attributes of the ReadoutErrorMitigationTask as shown in the bottom left corner of the figure.
@@ -94,7 +94,7 @@ The application is build in ```.\dist``` and can be started depending on your op
     The QRM repository is loaded into the QuantME Modeling and Transformation Framework at startup.
     Therefore, if there are updates in the repository during the runtime of the framework, the QRM repository has to be reloaded.
     This can be requested in the menu: 
-    
+   
     ![Reload QRMs](./images/tutorial-reload-qrms.gif){: style="width:900px" .center}
     
     Note: The Github API takes some time to return the updated files.

@@ -28,14 +28,14 @@ The user can also remove multiple publications at once by selecting them using t
 
 !!! note 
     The ``Master Delete Button`` will only appear after at least one publication is selected.
-	
+
 ![alt text](../images/publication/Delete_Publication_-_Step_1.1.png "Delete multiple publications")
 
 To confirm the deletion of the selected publication(s), the user has to click on the ``YES Button`` of the ``Confirmation Dialog``.
 
 !!! note 
     **Titles** of publications that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.
-	
+
 ![alt text](../images/publication/Delete_Publication_-_Step_2.png "Confirm deletion")
 
 ### Update Publication Information
@@ -87,7 +87,7 @@ Alternatively, use the check-boxes to select multiple algorithms and then click 
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one algorithm is selected.
-	
+
 ![alt text](../images/publication/Unlink_Algorithm_-_Step_1.2.png "Dereference multiple algorithms")
 
 ### Reference Implementations
@@ -111,7 +111,7 @@ Alternatively, use the check-boxes to select multiple publications and then clic
 
 !!! note 
     ``Master Link Button`` will only appear if at least one publication is selected.
-	
+
 ![alt text](../images/publication/Link_Implementation_-_Step_3.2.png "Reference multiple implementations")
 
 !!! info 
@@ -131,6 +131,6 @@ Alternatively, use the check-boxes to select multiple implementations and then c
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one implementation is selected.
-	
+
 ![alt text](../images/implementation/Unlink_Publication_-_Step_1.2.png "Dereference multiple implementations")
 

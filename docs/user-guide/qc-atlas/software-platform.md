@@ -17,7 +17,7 @@ Within the ``Creation Dialog``, the user will have to enter all important inform
 
 !!! note 
     Currently the only required information is the **name** of the software platform.
-	
+
 ![alt text](./../images/software_platform/Create_Software_Platform_-_Step_4.PNG "Structure of creation dialog")
 
 After entering the name of the software platform, the user has to confirm the creation by clicking on the ``OK Button``.
@@ -66,7 +66,7 @@ If a value of a property is changed, a ``Save Button`` will be displayed next th
 !!! note 
     * The user can also hit ``Enter`` on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the ``Save Button`` by hitting ``TAB`` on the keyboard and then confirming with ``Enter``.
     * Some fields are links to other sites. Those can easily be detected by their ``Open Button``. On click or on ``Enter``, it will open the link in a new tab.
-	
+
 ![alt text](./../images/software_platform/Update_Software_Platform_-_Step_2.PNG "Saving the changes")
 
 ### Reference Implementations
@@ -90,7 +90,7 @@ Alternatively use the check-boxes to select multiple implementations and then cl
 
 !!! note 
     The ``Master Link Button`` will only appear if at least one implementation is selected.
-	
+
 ![alt text](./../images/software_platform/Reference_Implementation_-_Step_3.2.PNG "Reference multiple implementations")
 
 !!! info 
@@ -109,7 +109,7 @@ Alternatively use the check-boxes to select multiple implementations and then cl
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one implementation is selected.
-	
+
 ![alt text](./../images/software_platform/Dereference_Implementation_-_Step_1.2.PNG "Dereference multiple implementation")
 
 ### Reference Cloud Services
@@ -133,7 +133,7 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 
 !!! note 
     The ``Master Link Button`` will only appear if at least one cloud service is selected.
-	
+
 ![alt text](./../images/software_platform/Reference_Cloud_Service_-_Step_3.2.PNG "Reference multiple cloud services")
 
 !!! info 
@@ -152,7 +152,7 @@ Alternatively, use the check-boxes to select multiple cloud services and then cl
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one cloud service is selected.
-	
+
 ![alt text](./../images/software_platform/Dereference_Cloud_Service_-_Step_1.2.PNG "Dereference multiple cloud services")
 
 ### Reference Compute Resources
@@ -176,7 +176,7 @@ Alternatively, use the check-boxes to select multiple compute resources and then
 
 !!! note 
     The ``Master Link Button`` will only appear if at least one compute resource is selected.
-	
+
 ![alt text](./../images/software_platform/Reference_Compute_Resource_-_Step_3.2.PNG "Reference multiple compute resources")
 
 !!! info 
@@ -195,5 +195,5 @@ Alternatively, use the check-boxes to select multiple compute resources and then
 
 !!! note 
     The ``Master Delete Button`` will only appear if at least one compute resource is selected.
-	
+
 ![alt text](./../images/software_platform/Dereference_Compute_Resource_-_Step_1.2.PNG "Dereference multiple compute resources")
