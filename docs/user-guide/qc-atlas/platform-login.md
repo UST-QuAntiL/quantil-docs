@@ -1,7 +1,7 @@
 ## Logging into the PlanQK Platform
 To retrieve data available on the PlanQK platform, click the login button in the top right corner of the UI.
 
-![login](../images/planqk-login/login-button.png)
+![login](/user-guide/images/planqk-login/login-button.png)
 
 You will be redirected to the login form of the official PlanQK plattform.
 Enter your credentials and you will be redirected to the QC Atlas UI.

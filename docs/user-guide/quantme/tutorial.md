@@ -38,19 +38,19 @@ The application is build in ```.\dist``` and can be started depending on your op
 
   - Open a new BPMN diagram:
 
-    ![Open Diagram](./images/tutorial-open-diagram.png){: style="width:900px" .center}
+    ![Open Diagram](/user-guide/quantme/images/tutorial-open-diagram.png){: style="width:900px" .center}
 
   - Delete the start event and add a new task:
 
-   ![Add Task](./images/tutorial-create-task.gif){: style="width:900px" .center}
+   ![Add Task](/user-guide/quantme/images/tutorial-create-task.gif){: style="width:900px" .center}
 
   - Replace the task by a task of type ```ReadoutErrorMitigationTask```
 
-   ![Replace Task](./images/tutorial-replace-task.gif){: style="width:900px" .center}
+   ![Replace Task](/user-guide/quantme/images/tutorial-replace-task.gif){: style="width:900px" .center}
 
   - Set the attributes of the detector:
   
-   ![Set Attributes](./images/tutorial-set-attributes.gif){: style="width:900px" .center}
+   ![Set Attributes](/user-guide/quantme/images/tutorial-set-attributes.gif){: style="width:900px" .center}
   
    In this example, we want to create a replacement fragment that can apply the _correction matrix_ unfolding technique to calculations performed on _ibmq_rome_ or _ibmq_london_. 
    Therefore, we define ```Correction Matrix``` for the _unfolding technique_ attribute of the task and the list ```ibmq_rome, ibmq_london``` for the _QPU_ attribute.
@@ -68,7 +68,7 @@ The application is build in ```.\dist``` and can be started depending on your op
   
   - Add a subprocess and three contained tasks as depicted below:
   
-    ![Model Replacement](./images/tutorial-replacement.png){: style="width:900px" .center}
+    ![Model Replacement](/user-guide/quantme/images/tutorial-replacement.png){: style="width:900px" .center}
     
     Store the created replacement fragment under the name ```replacement.bpmn``` in the folder of the QRM repository and commit it.
     The replacement fragment for this example in XML format can be found [here](https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/docs/quantme/QRM/replacement.bpmn).
@@ -85,7 +85,7 @@ The application is build in ```.\dist``` and can be started depending on your op
     Of course, the execution of just that task is not useful, but additional tasks and corresponding QRMs can be added in the same way.
     Thus, our example workflow is depicted in the following figure:
     
-    ![Example Workflow](./images/tutorial-example-workflow.png){: style="width:900px" .center}
+    ![Example Workflow](/user-guide/quantme/images/tutorial-example-workflow.png){: style="width:900px" .center}
     
     Please note the defined attributes of the ReadoutErrorMitigationTask as shown in the bottom left corner of the figure.
     The example workflow in XML format can be found [here](https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/docs/quantme/Tutorial/example-workflow.bpmn).
@@ -95,13 +95,13 @@ The application is build in ```.\dist``` and can be started depending on your op
     Therefore, if there are updates in the repository during the runtime of the framework, the QRM repository has to be reloaded.
     This can be requested in the menu: 
     
-    ![Reload QRMs](./images/tutorial-reload-qrms.gif){: style="width:900px" .center}
+    ![Reload QRMs](/user-guide/quantme/images/tutorial-reload-qrms.gif){: style="width:900px" .center}
     
     Note: The Github API takes some time to return the updated files.
     Thus, if you experience some issues, wait some time and then update the QRM repository again.
     
   * Then, the QuantME workflow model can be transformed to a native workflow model:
   
-    ![Transform Workflow](./images/tutorial-transform-workflow.gif){: style="width:900px" .center}
+    ![Transform Workflow](/user-guide/quantme/images/tutorial-transform-workflow.gif){: style="width:900px" .center}
     
 7\. Finally, the resulting workflow model can be manually adapted and deployed to a BPMN engine, such as the [Camunda engine](https://camunda.com/products/camunda-bpm/bpmn-engine/) to execute it.
