@@ -26,13 +26,13 @@ Currently, only real QPUs of the cloud service `IBMQ` are supported.
 !!! note 
     If available, sample data is automatically added to the environment on start-up, thus, the cloud service `IBMQ` does not need to be added, and the following information can be ignored.
 
-`Cloud Services` (under `Execution Environments` in the menu on the left side), e.g. IBMQ, are required and need to be added to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection), see the [Cloud Service](../user-guide/qc-atlas.md#cloud-service) section to add new cloud services. 
+`Cloud Services` (under `Execution Environments` in the menu on the left side), e.g. IBMQ, are required and need to be added to run the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection), see the [Cloud Service](/user-guide/qc-atlas.md#cloud-service) section to add new cloud services. 
 
 ### Algorithms
-To add a new algorithm, see the [Algorithm](../user-guide/qc-atlas.md#algorithm) section. In short, click on the green add button in the top left corner of the starting screen (displayed above), select the type of the algorithm, and define its name.
+To add a new algorithm, see the [Algorithm](/user-guide/qc-atlas.md#algorithm) section. In short, click on the green add button in the top left corner of the starting screen (displayed above), select the type of the algorithm, and define its name.
 
 ### Implementations
-To add a new implementation, see the [Implementation](../user-guide/qc-atlas.md#implementation) section. In short, starting from the starting screen, select an algorithm and go to the `Implementations` tab. Click the green add button in the top left corner and define the name of the implementation. 
+To add a new implementation, see the [Implementation](/user-guide/qc-atlas.md#implementation) section. In short, starting from the starting screen, select an algorithm and go to the `Implementations` tab. Click the green add button in the top left corner and define the name of the implementation. 
 
 ![Implementations](./images/nisq_analyzer/implementations.png)
 
@@ -52,7 +52,7 @@ Define the `File Location` as URL where the raw implementation is placed.
 Select (or add) the `SDK` and select the `Language` of the implementation. 
 
 !!! note 
-    `Input Parameters` and `Selection Rule` are only required for the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection) to define constraints about processable input values of the related implementation. Based on the [settings](../user-guide/qc-atlas.md#settings), both fields are hidden.  
+    `Input Parameters` and `Selection Rule` are only required for the [Implementation and QPU Selection](#running-the-nisq-analyzer-for-implementation-and-qpu-selection) to define constraints about processable input values of the related implementation. Based on the [settings](/user-guide/qc-atlas.md#settings), both fields are hidden.  
 
 To add new input parameters, press the `+` button on the right side of `Input Parameters`. Afterwards, insert the necessary data into the fields of the created input parameter.
 To delete an input parameter, select the card on the left side and press the `-` button on the right, next to the heading `Input Parameters`.

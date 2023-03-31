@@ -45,7 +45,7 @@ The following components are included in the docker-compose setup
 * `5060`
 * `6626`
 
-Thereby, [QC Atlas](../user-guide/qc-atlas.md) builds the basic knowledge base. The different additional features of [NISQ Analyzer](../user-guide/nisq-analyzer.md), [Pattern Atlas](../user-guide/qc-atlas/pattern-relation-type.md), and [QProv](../user-guide/qprov.md) are supported on top of the QC Atlas and are defined as feature sets.  
+Thereby, [QC Atlas](/user-guide/qc-atlas.md) builds the basic knowledge base. The different additional features of [NISQ Analyzer](/user-guide/nisq-analyzer.md), [Pattern Atlas](/user-guide/qc-atlas/pattern-relation-type.md), and [QProv](/user-guide/qprov.md) are supported on top of the QC Atlas and are defined as feature sets.  
 
 ##### The defined feature sets are namely:
 - `all` (runs all features)  
@@ -59,7 +59,7 @@ Make sure all prerequisites above are met beforehand and that all necessary port
 Then, navigate inside the root directory of the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker).
 
 ### Running the base components
-The base components [QC Atlas](../user-guide/qc-atlas.md), QC Atlas UI, [LaTeX Renderer](../user-guide/qc-atlas/latex-renderer.md), Config-Server, and the databases without any of the named features run by default using:
+The base components [QC Atlas](/user-guide/qc-atlas.md), QC Atlas UI, [LaTeX Renderer](/user-guide/qc-atlas/latex-renderer.md), Config-Server, and the databases without any of the named features run by default using:
 
 1. Execute `docker-compose pull` - pulls the most recent version of the images
 2. Execute `docker-compose build db`

@@ -56,7 +56,7 @@ Note: If a QuantME task in a QuantME workflow does not define an optional proper
 As the detector, the replacement fragment part of a QRM is also a BPMN diagram, defining a workflow fragment implementing the functionality to replace QuantME tasks matching the detector.
 An example replacement fragment can be found [here](https://github.com/UST-QuAntiL/QuantME-TransformationFramework/blob/develop/docs/quantme/QRM/replacement.bpmn), which is visualized below:
 
-![Example Replacement Fragment](./images/replacement.png){: style="height:200px" .center}
+![Example Replacement Fragment](/user-guide/quantme/images/replacement.png){: style="height:200px" .center}
 
 First, the required correction matrix is requested by a send task, then it is received by a receive task, and finally, the correction matrix is applied to the input data which is passed to the subprocess by a variable.
 
