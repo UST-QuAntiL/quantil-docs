@@ -71,7 +71,7 @@ The following diagram illustrates the currently integrated components of the QC 
 ## Acknowledgements
 
 Current development is supported by the [Federal Ministry for Economic Affairs and Energy] as part of the [PlanQK]
-project (01MK20005N) and the DFG’s Excellence Initiative project [SimTech] (EXC 2075 - 390740016).
+ (01MK20005N), [EniQmA] (01MQ22007B), and [SeQuenC] (01MQ22009B) projects, the [Baden-Wuerttemberg Ministry of Economic Affairs, Labour and Tourism] as part of [SEQUOIA], and the DFG’s Excellence Initiative project [SimTech] (EXC 2075 - 390740016).
 
 ## Haftungsausschluss
 
@@ -91,3 +91,7 @@ associated with Your exercise of permissions under this License.
   [Federal Ministry for Economic Affairs and Energy]: http://www.bmwi.de/EN
   [PlanQK]: https://planqk.de
   [SimTech]: https://www.simtech.uni-stuttgart.de/
+  [SEQUOIA]: https://websites.fraunhofer.de/sequoia/
+  [Baden-Wuerttemberg Ministry of Economic Affairs, Labour and Tourism]: https://wm.baden-wuerttemberg.de/de/startseite
+  [EniQmA]: https://www.eniqma-quantum.de/
+  [SeQuenC]: https://sequenc.de/
