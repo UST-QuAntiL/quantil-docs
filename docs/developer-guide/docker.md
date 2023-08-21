@@ -102,7 +102,7 @@ Data from the [pattern-atlas-content](https://github.com/PatternAtlas/pattern-at
 
 However, to import example data from the [qc-atlas-content](https://github.com/UST-QuAntiL/planqk-atlas-content) and [nisq-analyzer-content](https://github.com/UST-QuAntiL/nisq-analyzer-content) repositories make sure to follow these steps:
 
-1. Rename the `docker-compose.override.yml` file inside the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker) to `docker-compose.override.yml`.
+1. Rename the `_docker-compose.override.yml` file inside the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker) to `docker-compose.override.yml`.
 2. Provide a ssh private key file with correct access rights for the [qc-atlas-content](https://github.com/UST-QuAntiL/planqk-atlas-content) repository. The file has to be called `ssh_secret` and is located in the root folder of the [quantil-docker repository](https://github.com/UST-QuAntiL/quantil-docker).
 3. It is required that the data directory is empty before starting the container to prevent the deletion of data, see [postgres-docker documentation](https://github.com/docker-library/docs/tree/master/postgres#initialization-scripts).
 
