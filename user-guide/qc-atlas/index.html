@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>QC Atlas - QuAntiL</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "QC Atlas";
+        var mkdocs_page_input_path = "user-guide/qc-atlas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/docker/">Quickstart</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">QC Atlas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#general-information-about-ui-components">General Information about UI-Components</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#list-view">List View</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-table">Data Table</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#object-view">Object View</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#revisions">Revisions</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#algorithm">Algorithm</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-algorithm">Create Algorithm</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-algorithm">Delete Algorithm</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-algorithm-information">Update Algorithm Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#load-algorithm-revision">Load Algorithm Revision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-compute-resource-properties">Create Compute Resource Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-compute-resource-properties">Update Compute Resource Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-compute-resource-properties">Delete Compute Resource Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-application-areas">Reference Application Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-application-areas">Dereference Application Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-problem-types">Reference Problem Types</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-problem-types">Dereference Problem Types</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-other-algorithms">Reference other Algorithms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-algorithm-relation">Update Algorithm Relation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-other-algorithms">Dereference other Algorithms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-publications">Reference Publications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-publications">Dereference Publications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add-tags">Add Tags</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#remove-tags">Remove Tags</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-patterns">Reference Patterns</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-pattern-relation">Update Pattern Relation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-patterns">Dereference Patterns</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#latex-renderer">Latex Renderer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#drawbacks">Drawbacks</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#implementation">Implementation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-implementation">Create Implementation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-implementation">Delete Implementation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-implementation-information">Update Implementation Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#load-implementation-revision">Load Implementation Revision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-compute-resource-properties_1">Create Compute Resource Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-compute-resource-properties_1">Update Compute Resource Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-compute-resource-properties_1">Delete Compute Resource Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-publications_1">Reference Publications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-publications_1">Dereference Publications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-software-platforms">Reference Software Platforms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-software-platforms">Dereference Software Platforms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add-tags_1">Add Tags</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#remove-tags_1">Remove Tags</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#publication">Publication</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-publication">Create Publication</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-publication">Delete Publication</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-publication-information">Update Publication Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-algorithms">Reference Algorithms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-algorithms">Dereference Algorithms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-implementations">Reference Implementations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-implementations">Dereference Implementations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cloud-service">Cloud Service</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-cloud-service">Create Cloud Service</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-cloud-service">Delete Cloud Service</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-cloud-service-information">Update Cloud Service Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-software-platform">Reference Software Platform</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-software-platform">Dereference Software Platform</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-compute-resource">Reference Compute Resource</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-compute-resource">Dereference Compute Resource</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#compute-resource">Compute Resource</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-compute-resource">Create Compute Resource</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-compute-resource">Delete Compute Resource</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-compute-resource-information">Update Compute Resource Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-compute-resource-property">Create Compute Resource Property</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-compute-resource-property">Update Compute Resource Property</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-compute-resource-property">Delete Compute Resource Property</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-software-platforms_1">Reference Software Platforms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-software-platforms_1">Dereference Software Platforms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-cloud-services">Reference Cloud Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-cloud-services">Dereference Cloud Services</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#software-platform">Software Platform</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-software-platform">Create Software Platform</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-software-platform">Delete Software Platform</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-software-platform-information">Update Software Platform Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-implementations_1">Reference Implementations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-implementations_1">Dereference Implementations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-cloud-services_1">Reference Cloud Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-cloud-services_1">Dereference Cloud Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reference-compute-resources">Reference Compute Resources</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dereference-compute-resources">Dereference Compute Resources</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#application-area">Application Area</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-application-area">Create Application Area</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-application-area">Update Application Area</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-application-area">Delete Application Area</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-type">Problem Type</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-problem-type">Create Problem Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-problem-type">Update Problem Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-problem-type">Delete Problem Type</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#algorithm-relation-type">Algorithm Relation Type</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-algorithm-relation-type">Create Algorithm Relation Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-algorithm-relation-type">Update Algorithm Relation Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-algorithm-relation-type">Delete Algorithm Relation Type</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pattern-relation-type">Pattern Relation Type</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-pattern-relation-type">Create Pattern Relation Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-pattern-relation-type">Update Pattern Relation Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-pattern-relation-type">Delete Pattern Relation Type</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#compute-resource-property-type">Compute Resource Property Type</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-compute-resource-property-type">Create Compute Resource Property Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-compute-resource-property-type">Update Compute Resource Property Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-compute-resource-property-type">Delete Compute Resource Property Type</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#libraries">Libraries</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-toggling">Feature Toggling</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logging-into-the-planqk-platform">Logging into the PlanQK Platform</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../nisq-analyzer/">NISQ Analyzer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>User Guide &raquo;</li>
+      <li>QC Atlas</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="qc-atlas-user-guide">QC Atlas User Guide</h1>
+<p><a href="https://github.com/UST-QuAntiL/qc-atlas">QC Atlas</a> is a platform for sharing quantum software as part of the <a href="https://github.com/UST-QuAntiL">Quantum Application Lifecycle Management (QuAntiL)</a> and the project <a href="https://planqk.de/en/">PlanQK</a>.
+It enables the collection of information about quantum algorithms, available implementations, and publications.
+Also the collection of information about available software platforms, cloud services, and their offered compute resources, such as quantum computers and simulators, are enabled. </p>
+<!-- BEGIN INCLUDE ./qc-atlas/overview.md -->
+<h2 id="general-information-about-ui-components">General Information about UI-Components</h2>
+<p>The <a href="https://github.com/UST-QuAntiL/qc-atlas-ui">UI</a>  of the QC Atlas is built using <code>List Views</code> and <code>Object Views</code>.</p>
+<h3 id="list-view">List View</h3>
+<p><code>List Views</code> can be reached by using the <code>Navigation Bar</code> on the left side of the UI. </p>
+<p><img alt="alt text" src="/user-guide/images/overview/Navigation_Bar.PNG" title="Navigate between List Views" /></p>
+<p>Some <code>List Views</code> like the <code>Execution Environments</code> can contain more <code>List Views</code>. <code>Navigation Bar</code> items that contain more <code>List Views</code> have a <code>Arrow Symbol</code> and can be extended by a simple click.</p>
+<p><img alt="alt text" src="/user-guide/images/overview/Navigation_Bar_Extended.PNG" title="Extend navigation items" /></p>
+<h3 id="data-table">Data Table</h3>
+<p>The <code>List Views</code> contain <code>Data-Tables</code> which are responsible for displaying all available objects of a certain type. For every different object type there is a separate <code>List View</code>. The user can use the controls of the tables to <strong>filter</strong>, <strong>sort</strong> and <strong>browse</strong> existing objects of a certain type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>To filter the displayed objects, the user can use the <code>Search Field</code> to filter objects by their names, titles or other criteria.</li>
+<li>To sort the displayed objects, the user can click on the header of a certain column. A <code>Arrow Symbol</code> will appear that will indicate how the data is currently sorted (ASC/DESC).</li>
+<li>To browse the objects, the user can switch and configure the pages of the <code>Data Table</code> by using the <code>Pagination Controls</code> which are located at the footer of the table. The user can either change the amount of displayed elements per page or change pages.</li>
+</ul>
+<p>Note that all of these functionalities are optional and may not be available in every <code>List View</code></p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/overview/Example_List_View.PNG" title="Example of a List View: Algorithm List View" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The <code>Data Table</code> can also contain more means to manipulate the data:</p>
+<ul>
+<li>A <code>Create Button</code> or <code>Reference/Link Button</code> may be at the top of the <code>Data Table</code>, allowing the users to add new elements to the <code>List View</code>. </li>
+<li>In the <code>Actions Column</code> of the <code>Data Table</code> more buttons may be located allowing the user to <code>Edit</code> or <code>Delete/Dereference</code> existing objects and remove them from the <code>List View</code>.</li>
+<li>The first column of the <code>Data Table</code> may contain check-boxes which allow the user to select one or more elements of the current page of the <code>Data Table</code> to perform specific actions on multiple elements. One example would the the ability to <code>Delete</code> or <code>Dereference</code> multiple elements at once.</li>
+</ul>
+<p>In some cases, the elements of a <code>Data Table</code> are also click-able. Then, the <code>Mouse Cursor</code> will change to a <code>Pointer</code>. If some element is clicked, the user will be redirected to that element's <code>Object View</code>.</p>
+</div>
+<h3 id="object-view">Object View</h3>
+<p>As mentioned before, any <code>Object View</code> can be opened by clicking on any element of a <code>List View</code>. In the <code>Header</code> of any <code>Object View</code>, it's <code>Name</code> is displayed, as well as it's optional <code>Tags</code>.
+In addition, the <code>Header</code> may also contain information about any <code>Revision</code>of an object.</p>
+<p>All other information about the object is located in the <code>Body</code> of the <code>Object View</code>. The information is distributed across multiple <code>Tabs</code>. The <code>General Tab</code> usually contains the most basic information about the object. Other information is distributed across the other <code>Tabs</code>, which can differ from <code>Object View</code> to <code>Object View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/overview/Example_Object_View.PNG" title="Example of a Object View: Algorithm View" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The <code>Object View</code> is not only used to display information about an object. It is also used to:</p>
+<ul>
+<li><code>Update</code> all kinds of information of that object</li>
+<li><code>Reference</code> or <code>Dereference</code> other objects</li>
+<li>And more...</li>
+</ul>
+</div>
+<h4 id="revisions">Revisions</h4>
+<p>QC Atlas supports the use of revisions which are a sort of versions or snapshots of an object.
+When an object is saved, a revision is created automatically. This allows to browse and access older object data.
+When a revision is selected, the data is automatically loaded into the property fields of the <code>General Tab</code> and can then be viewed or edited. 
+Saving these properties will result in creating a new revision, which will be the latest version of the object.
+Currently, the creation of revisions is supported for algorithms as well as implementations and only includes basic properties available in the <code>General Tab</code>.</p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/algorithm.md -->
+<h2 id="algorithm">Algorithm</h2>
+<h3 id="create-algorithm">Create Algorithm</h3>
+<p>To create an algorithm the user has to navigate to the <code>Algorithm List View</code> by using the navigation sidebar.
+This view displays all available algorithms in a table. Creating a new algorithm is done via the <code>Plus Button</code> which is located above the table.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_1.png" title="Open creation dialog" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following <code>Creation Dialog</code>, where the user has to type in all required information for creating a new algorithm.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Depending on the selected <code>Computational Model</code>, a third input field might show up, allowing the user to define the <code>Quantum Computation Model</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering all required information, the user has to confirm the creation of the algorithm by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_3.png" title="Confirm creation" /></p>
+<p>If the creation of the algorithm was successful, the user will be redirected to the detailed <code>Algorithm View</code> of the new algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_4.PNG" title="Algorithm view of created algorithm" /></p>
+<h3 id="delete-algorithm">Delete Algorithm</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of an algorithm, the user has to be in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To remove a specific algorithm, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Algorithm_-_Step_1.1.png" title="Delete single algorithm" /></p>
+<p>The user can also remove multiple algorithms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The delete button will only appear if at least one algorithm is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Algorithm_-_Step_1.2.png" title="Delete multiple algorithms" /></p>
+<p>To confirm the deletion of the selected algorithm(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of algorithms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Algorithm_-_Step_2.png" title="Confirm deletion" /></p>
+<h3 id="update-algorithm-information">Update Algorithm Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of an algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on a algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Algorithm_Properties_-_Step_1.PNG" title="A small part of the 'General Tab' of the 'Algorithm View'" /></p>
+<p>If information is changed, a <code>Save button</code> will be displayed next that specific input field. Also, a <code>Master Save button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG" title="Saving the changes" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>Required Compute Resource Properties</strong>, <strong>Problem Types</strong> and <strong>Application Areas</strong> are stored separately and therefor do not belong to the basic information of the algorithm. They are saved, deleted or updated instantly without the use of the mentioned <code>Save buttons</code>.</p>
+</div>
+<h3 id="load-algorithm-revision">Load Algorithm Revision</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To load a revision of an algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.
+Please see the <a href="overview/#revisions">revision section</a> for further details about revisions.</p>
+</div>
+<p>Loading a revision is done by clicking on the revision selection field in the <code>Algorithm View</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Load_Algorithm_Revision_-_Step_1.PNG" title="Open Revision Selection" /></p>
+<p>This will open a dropdown menu with all available revisions sorted by their date with the latest revision at the top.
+By selecting an element from the dropdown menu, the data of a revision is loaded in the <code>Algorithm View</code> and can be viewed and edited.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Load_Algorithm_Revision_-_Step_2.PNG" title="Revision Selection Menu" /></p>
+<h3 id="create-compute-resource-properties">Create Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a compute resource property for the algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Creating properties for a compute resource is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply click on the <code>Plus button</code> of the dedicated <code>Required Compute Resource Property Field</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_1.PNG" title="Open Property Dialog" /></p>
+<p>This will open a separate <code>Creation Dialog</code> where the user will have to enter all important information about the property he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been filled, the user can finally add the property by confirming the creation via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_3.PNG" title="Confirm creation" /></p>
+<p>After the property has been successfully created, it will appear in the the dedicated <code>Required Compute Resource Property Field</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_4.PNG" title="Verify creation" /></p>
+<h3 id="update-compute-resource-properties">Update Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a compute resource property of the algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating properties of an algorithm is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply hover over an existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Edit button</code>.   </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_1.PNG" title="Open update property dialog" /></p>
+<p>This will open a separate <code>Update Dialog</code> where the information of the property can be adjusted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been adjusted, the user can finally update the property by confirming the update via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-compute-resource-properties">Delete Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete a compute resource property of an algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on a compute resource in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Deleting compute resource properties is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply hover over an existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Delete button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Compute_Resource.PNG" title="Delete Compute Resource" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A successfully deleted property should disappear from the dedicated <code>Required Compute Resource Property Field</code>.</p>
+</div>
+<h3 id="reference-application-areas">Reference Application Areas</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference application areas in an algorithm, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Referencing problem types is done via the dedicated <code>Application Areas</code> field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Application_Area_-_Step_1.PNG" title="Go to dedicated application area field in algorithm view" /></p>
+<p>To link a application area with the algorithm, the user has to use the input field to search for an application area by typing it's name. While typing, the system's auto-complete feature will display available application areas in a drop-down.
+To finally link a application area, the user has to click on one of the available areas from the drop-down. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow keys of the keyboard to select an application area and confirm by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Application_Area_-_Step_2.PNG" title="Search for application area by name" /></p>
+<p>After successfully referencing the application area, it will be displayed in the <code>Application Areas</code> field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Application_Area_-_Step_3.PNG" title="Verify reference" /></p>
+<h3 id="dereference-application-areas">Dereference Application Areas</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove an existing reference to an application area, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To dereference an application area, the user has to scroll to the <code>Application Areas</code> field and simply click on the <code>Delete button</code> of the application area he wants to remove from the algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Application_Area.PNG" title="Unlink Application Area" /></p>
+<h3 id="reference-problem-types">Reference Problem Types</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference problem types in an algorithm, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Referencing problem types is done via the dedicated <code>Problem Types</code> field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Problem_Type_-_Step_1.PNG" title="Go to dedicated problem types field in algorithm view" /></p>
+<p>To link a problem type to the algorithm, the user has to use the input field to search for a problem type by typing it's name. While typing, the system's auto-complete feature will display available problem types in a drop-down.
+To finally link a problem type, the user has to click on one of the problem types from the drop-down. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select a problem type and confirm the link with the "Enter" button on the keyboard.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Problem_Type_-_Step_2.PNG" title="Link Problem Type" /></p>
+<p>After the linking process has been successfully completed, the freshly linked problem type will be displayed beneath the input field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Problem_Type_-_Step_3.PNG" title="Link Problem Type" /></p>
+<h3 id="dereference-problem-types">Dereference Problem Types</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove an existing reference to a problem type, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To dereference a problem type, the user has to scroll to the <code>Problem Types</code> field and simply click on the <code>Delete button</code> of the problem type he wants to remove from the algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Problem_Type.PNG" title="Unlink Problem Type" /></p>
+<h3 id="reference-other-algorithms">Reference other Algorithms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference other algorithms, the user has to be in the <code>Related Algorithms Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To reference some other algorithm in the current one, the user has to click on the <code>Plus button</code> in the <code>Related Algorithms Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_1.PNG" title="Click on '+' in 'Related Algorithms'-Tab" /></p>
+<p>A dialog will open that contains multiple fields that need to be filled by the user to create a relation to some algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_2.PNG" title="Structure of dialog" /></p>
+<p>In the first step, the user has to describe the relation by entering a description of the relation.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_3.PNG" title="Enter description of relation" /></p>
+<p>Then, the other algorithm that should be referenced needs to be selected. For that he can use the input field to find available algorithms by name. The auto-complete of the system will filter available algorithms and display them in a drop-down. The user can pick an algorithm by clicking on it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an algorithm and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_4.PNG" title="Choose algorithm to link" /></p>
+<p>At last, the type of the relation of the two algorithms needs to be selected. While typing in a relation type, the auto-complete of the system will filter existing relation types while giving the user to ability to create a new one. The user can select an existing relation type or create a new by just by clicking on it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select a relation type and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_5.PNG" title="Select relation type" /></p>
+<p>After all input data has been filled, the user can confirm the creation of a reference between the two algorithms by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_6.PNG" title="Confirm the reference to the selected algorithm" /></p>
+<p>After the other algorithm was successfully referenced, it will appear in the <code>Related Algorithms</code> tab of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_7.PNG" title="Verify reference to other algorithm" /></p>
+<h3 id="update-algorithm-relation">Update Algorithm Relation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update an existing algorithm relation, the user has to be in the <code>Related Algorithms Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating an algorithm relation is done by clicking on the "Edit" button of a related algorithm in the <code>Related Algorithms</code> tab.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Link_Other_Algorithm_-_Step_1.PNG" title="Open update relation dialog" /></p>
+<p>This will open a dialog where the user can adjust the information of the relation. Here, the user can change the description and the type of the relation, before confirming the changes by clicking the <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Same as with the <code>Creation Dialog</code>, the <code>Relation Type</code> field has auto-complete functionality. The system will filter existing relation types while giving the user the ability to create a new one. The user can select an existing relation type or create a new by just by clicking on it or by using the arrow keys on the keyboard in combination with the <code>Enter</code> key.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Link_Other_Algorithm_-_Step_2.PNG" title="Adjust algorithm relation in dialog and confirm" /></p>
+<h3 id="dereference-other-algorithms">Dereference other Algorithms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete existing references to other algorithms, the user has to be in the <code>Related Algorithms Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on a compute resource in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To remove a reference, the user can to simply click on the <code>Delete Button</code> of a related algorithm in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Other_Algorithm_-_Step_1.1.PNG" title="Dereference single algorithm" /></p>
+<p>Alternatively, use the check-boxes to select multiple algorithms and then click on the <code>Master Delete button</code> to unlink all of them at once.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Other_Algorithm_-_Step_1.2.PNG" title="Dereference multiple algorithms" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete button</code> will only appear if at least one related algorithm is selected.</p>
+</div>
+<p>If a <code>Delete</code> button is pressed, a confirmation dialog will appear listing all related algorithms that will be unlinked. To confirm the deletion of the relations to all displayed algorithms, the user has to click on the <code>YES Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG" title="Confirm deletion of the references" /></p>
+<h3 id="reference-publications">Reference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference publications in an algorithm, the user has to be in the <code>Publications Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To initiate the linking of a publication, the user has to click on the <code>Plus Button</code> in the <code>Publications Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_1.PNG" title="Click on '+' in 'Publications'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_2.PNG" title="Link Publication" /></p>
+<p>To reference a publication simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_3.1.PNG" title="Link Publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_3.2.PNG" title="Link Publication" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced publications(s) will now be visible in the <code>Publications Tab</code> of the <code>Algorithm View</code>.</p>
+</div>
+<h3 id="dereference-publications">Dereference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference publications, the user has to be in the <code>Publications Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To remove a reference from a publication, the user has to simply click on the <code>Delete Button</code> of a publication in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Publication_-_Step_1.1.PNG" title="Dereference single publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Publication_-_Step_1.2.PNG" title="Dereference multiple publications" /></p>
+<h3 id="add-tags">Add Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To add tags to an algorithm, the user has to be in the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>In the <code>Header</code> of the <code>Algorithm View</code>, the user has to click on the <code>Plus Button</code> which is used to add tags.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_1.PNG" title="Click '+' button in 'Algorithm View' header" /></p>
+<p>A <code>Add Tag Dialog</code> will open which contains fields for <code>Tag Category</code> and <code>Tag Value</code> that need to be defined for creating a new tag.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_2.PNG" title="Structure of 'Add Tag Dialog'" /></p>
+<p>The <code>Tag Value Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag value and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_3.PNG" title="Enter Tag Value" /></p>
+<p>The <code>Tag Category Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing categories to the user. The user can then either pick one of the existing categories by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag category.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag category and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_4.PNG" title="Enter Tag Category" /></p>
+<p>To finally add a new tag to the algorithm, the user has to confirm his selection by clicking on the <code>OK Button</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_5.PNG" title="Confirm addition of a new tag" /></p>
+<p>If the tag was added successfully, it will appear in the <code>Header</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_6.PNG" title="Verify if tag was created" /></p>
+<h3 id="remove-tags">Remove Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove tags from an algorithm, the user has to be in the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Removing tags is done by clicking on their <code>Delete Buttons</code>, which are located in the <code>Header</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Remove_Tag.PNG" title="Remove Tag" /></p>
+<h3 id="reference-patterns">Reference Patterns</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference patterns in an algorithm, the user has to be in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To initiate the linking of a pattern, the user has to click on the <code>Plus Button</code> in the <code>Related Patterns Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_1.PNG" title="Click on '+' button" /></p>
+<p>This will open a new dialog containing multiple steps that need to be performed.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_2.PNG" title="Structure of dialog for referencing patterns" /></p>
+<p>In the first step, a pattern language needs to be selected by simply clicking on it. To filter specific pattern languages, the user can use the input field to filter them by their name.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>By clicking on the small button at the bottom of a specific pattern language, a new browser window will open and all patterns of the selected pattern language are presented in the Pattern Atlas.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_3.PNG" title="Select Pattern Language" /></p>
+<p>After a specific pattern language has been selected, the user can move the the next step by either clicking on the <code>Next Button</code> or by clicking on the second step.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_4.PNG" title="Move to second step" /></p>
+<p>In the second step, the user has to pick a pattern he wants to reference by clicking on it. Like in the first step, he can use the input field to filter the patterns by their names and he also can use the scrollbar to scroll through all patterns.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>By clicking on the small button at the bottom of a specific pattern, a new browser window will open and the selected pattern with its properties is presented in the Pattern Atlas.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_5.PNG" title="Select Pattern" /></p>
+<p>After a specific pattern has been selected, the user can move to the next step by either clicking on the <code>Next Button</code> or by clicking on the third step.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_6.PNG" title="Move to third step" /></p>
+<p>In the third step, the user has to describe the relation between the selected pattern and the algorithm. To do that, he has to specify a <code>Relation Type</code> and add a <code>Description</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_7.PNG" title="Structure of dialog's third step" /></p>
+<p>The input field for the relation type has auto-complete functionality. It will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting <code>Enter</code>. </p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_8.PNG" title="Select Relation Type" /></p>
+<p>At last, the user has to add a description by using the existing input field. After that, the user can proceed to the last step by clicking on the <code>Next Button</code> or by clicking directly on the step itself.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_9.PNG" title="Add Description and move to last step" /></p>
+<p>The last step is used for verifying all the important selections from the previous steps. To finally reference the pattern in the algorithm, the user can press the <code>Confirm Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_10.PNG" title="Verify all inputs" /></p>
+<p>After the pattern was successfully referenced, it will appear in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_11.PNG" title="Verify if reference was successful" /></p>
+<h3 id="update-pattern-relation">Update Pattern Relation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the relation to a pattern, the user has to be in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating a pattern relation is done by clicking on it's <code>Edit Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_1.PNG" title="Click 'Edit' button" /></p>
+<p>This will open a dialog containing two steps that need to be performed to successfully update the relation.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>In the first step, the user can adjust the <code>Relation Type</code> and the <code>Description</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_3.PNG" title="Structure of first step" /></p>
+<p>To adjust the <code>Relation Type</code>, the user simply has to use the existing input field to change the current type. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_4.PNG" title="Update Relation Type" /></p>
+<p>To adjust the <code>Description</code>, the user can use the existing input field. After that, the user can proceed to the second step by clicking on the <code>Next Button</code> or by clicking directly on the step itself.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_5.PNG" title="Update Description and move to last step" /></p>
+<p>The second and last step is used for verifying all the important selections from the first step. To finally adjust the reference between the pattern and the algorithm, the user has to click on the <code>Confirm Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_6.PNG" title="Confirm update of reference" /></p>
+<h3 id="dereference-patterns">Dereference Patterns</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove a reference to a pattern, the user has to be in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Dereferencing a pattern is done by clicking on it's <code>Delete Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Pattern_-_Step_1.1.PNG" title="Dereference single pattern" /></p>
+<p>Alternatively, the user can use the check-boxes of the first column of the table to select all pattern relation he wants to remove before clicking on the <code>Master Delete Button</code>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one related pattern is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Pattern_-_Step_1.2.PNG" title="Dereference multiple patterns" /></p>
+<p>If a <code>Delete Button</code> is pressed, a confirmation dialog will appear listing all pattern references that will be removed. To confirm their deletion, the user has to click on the <code>YES Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Pattern_-_Step_2.PNG" title="Confirm the removal of the references" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/latex-renderer.md -->
+<h2 id="latex-renderer">Latex Renderer</h2>
+<h3 id="description">Description</h3>
+<p>The generic component <code>src/app/components/generics/property-input/text-input.component.ts</code> contains a flag <code>latexActive</code>, which is disabled by default.
+On activation via input properties, <code>text-input</code> components are extended with a toggle slider to enable or disable Latex rendering for the respective input field.</p>
+<p><img alt="Text Input Latex Disabled" src="/user-guide/images/latex_renderer/text-input.PNG" title="Text Input Latex Disabled" /></p>
+<h3 id="usage">Usage</h3>
+<p>When activated, the respective <code>text-input</code> field will provide a <code>LaTeX</code> button to open an editor with two text areas and a preview section.</p>
+<p><img alt="Text Input Latex Enabled" src="/user-guide/images/latex_renderer/text-input-latex.PNG" title="Text Input Latex Enabled" /></p>
+<p>The <code>Additional LaTeX packages</code> field takes all statements, which have to be declared before the \begin{document} instruction in Latex.
+The <code>LaTeX content</code> field takes every input which should be rendered within the document.</p>
+<p><img alt="Preview" src="/user-guide/images/latex_renderer/preview.PNG" title="Preview" /> will send a render request to the latex-rendering service on port <code>8083</code> and display the result in the appropriate section.</p>
+<p><img alt="Latex Editor Dialog Preview" src="/user-guide/images/latex_renderer/latex-editor-dialog-preview.PNG" title="Latex Editor Dialog Preview" /></p>
+<p><img alt="Cancel" src="/user-guide/images/latex_renderer/cancel.PNG" title="Cancel" /> will close the dialog and discard any modifications made.</p>
+<p><img alt="Submit" src="/user-guide/images/latex_renderer/submit.PNG" title="Submit" /> will cache all modifications to the packages and content input fields and close the dialog.</p>
+<p>Whenever the dialog closes with a modified text to render, the <code>text-input</code> component requests a rendering and displays the response as a <code>svg</code> snippet. The <code>text-input</code> signals modified content with a displayed <code>save</code> button.</p>
+<p><img alt="Text Input Latex Rendered" src="/user-guide/images/latex_renderer/text-input-latex-rendered.PNG" title="Text Input Latex Rendered" /></p>
+<h3 id="drawbacks">Drawbacks</h3>
+<p>The <a href="https://github.com/UST-QuAntiL/latex-renderer">Latex renderer service</a> has been extended by OpenAPI's RESTful interface and has successfully been tested locally, but runs into a rendering error when executed in a docker container using the project's <code>Dockerfile</code>.</p>
+<p>Once the docker container works as intended, the <code>latex-renderer</code> feature can be enabled and leveraged for <code>text-input</code> components.</p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/implementation.md -->
+<h2 id="implementation">Implementation</h2>
+<h3 id="create-implementation">Create Implementation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create an implementation, the user has to be in the <code>Algorithm View</code> of a specific algorithm.</p>
+</div>
+<p>In the <code>Algorithm View</code> the user has to click on the <code>Implementation Tab</code>, which opens the <code>Implementation List View</code>.
+This view contains all implementations of that algorithm. Within this view, a new implementation will be created via the <code>Plus Button</code> which is located above the list.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Create_Implementation_-_Step_1.png" title="Open 'Creation Dialog'" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following dialog.
+In the dialog it is possible to give the new implementation a name.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a new implementation only a <code>name</code> is required.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Create_Implementation_-_Step_2.png" title="Fill input" /></p>
+<p>After all necessary fields have been filled in, the creation of the implementation can be confirmed by clicking on the <code>OK Button</code>. After a successful creation, the user will be navigated to the <code>Implementation View</code> of the new implementation.</p>
+<h3 id="delete-implementation">Delete Implementation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete an implementation, the user has to be in the <code>Implementation Tab</code> of the <code>Algorithm View</code> of a specific algorithm.</p>
+</div>
+<p>To delete a specific implementation, the user has to simply click on the <code>Delete Button</code> in the <code>Action Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Delete_Implementation_-_Step_1.png" title="Delete single implementation" /></p>
+<p>It is also possible to delete multiple implementations at once by selecting them one by one using the check-boxes within the table. When at least one implementation is selected, a <code>Master Delete Button</code> will show up above the table. To delete the selected implementations at once, this button must be pressed.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Delete_Implementation_-_Step_2.png" title="Delete multiple implementation" /></p>
+<p>Both ways of deleting implementations will lead to a confirmation dialog. This dialog will list all implementations that were selected to be deleted. To finally confirm the deletion, the <code>OK Button</code> at the bottom of the dialog has to be pressed. A successfully deleted implementation will disappear from the <code>Implementation List View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Delete_Implementation_-_Step_3.png" title="Confirm deletion" /></p>
+<h3 id="update-implementation-information">Update Implementation Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of a implementation, the user has to be in the <code>Implementation View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Implementation View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Update_Implementation_Properties_-_Step_1.png" title="General Tab' of the 'Implementation View" /></p>
+<p>If information is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Update_Implementation_Properties_-_Step_2.png" title="Saving the changes" /></p>
+<h3 id="load-implementation-revision">Load Implementation Revision</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To load a revision of an implementation, the user has to be in the <code>Implementation View</code> which can be reached by clicking on an implementation in the <code>Implementation List View</code>.
+Please see the <a href="overview/#revisions">revision section</a> for further details about revisions.</p>
+</div>
+<p>Loading a revision is done by clicking on the revision selection field in the <code>Implementation View</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Load_Implementation_Revision_-_Step_1.PNG" title="Open Revision Selection" /></p>
+<p>This will open a dropdown menu with all available revisions sorted by their date with the latest revision at the top.
+By selecting an element from the dropdown menu, the data of a revision is loaded in the <code>Implementation View</code> and can be viewed and edited.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Load_Implementation_Revision_-_Step_2.PNG" title="Revision Selection Menu" /></p>
+<h3 id="create-compute-resource-properties_1">Create Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a compute resource property for the implementation, the user has to be in the <code>Implementation View</code> which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>Creating properties for a compute resource is done in the <code>General Tab</code> of the <code>Implementation View</code>.
+To do that, the user has to simply click on the <code>Plus Button</code> of the dedicated <code>Required Compute Resource Property Field</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_1.PNG" title="Open Property Dialog" /></p>
+<p>This will open a separate <code>Creation Dialog</code> where the user will have to enter all important information of about the property he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. If the user clicks on an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been filled, the user can finally add the property by confirming the creation via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_3.PNG" title="Confirm creation" /></p>
+<p>After the property has been successfully created, it will appear in the the dedicated <code>Required Compute Resource Property Field</code> within the<code>General Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_4.PNG" title="Verify creation" /></p>
+<h3 id="update-compute-resource-properties_1">Update Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a compute resource property of an implementation, the user has to be in the <code>Implementation View</code>, which can be reached by clicking on an algorithm in the <code>Implementation List View</code>.</p>
+</div>
+<p>Updating existing compute resource properties of an implementation is done in the <code>General Tab</code> of the <code>Implementation View</code>. To do that, the user has to simply hover over an existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Edit Button</code>.   </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_1.PNG" title="Open update property dialog" /></p>
+<p>This will open a separate <code>Update Dialog</code> where the information of the property can be adjusted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been adjusted, the user can finally update the property by confirming the update via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-compute-resource-properties_1">Delete Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete a property for an implementation, the user has to be in the <code>Implementation View</code> which can be reached by clicking on a compute resource in the <code>Implementation List View</code>.</p>
+</div>
+<p>Deleting compute resource properties of an implementation is done in the <code>General Tab</code> of the <code>Implementation View</code>.
+To do that, the user has to simply hover over a existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Delete Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Compute_Resource.PNG" title="Delete Compute Resource" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A successfully deleted property should disappear from the dedicated <code>Required Compute Resource Property Field</code>.</p>
+</div>
+<h3 id="reference-publications_1">Reference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference publications in an implementation, the user has to be in the <code>Publications Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To initiate the linking of a publication, the user has to click on the <code>Plus Button</code> in the <code>Publications Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_1.png" title="Click on '+' in 'Publications'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_2.png" title="Filter existing publications using table controls" /></p>
+<p>To reference a publication simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_3.1.png" title="Reference single publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_3.2.png" title="Reference multiple publications" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced publications(s) will now be visible in the <code>Publications Tab</code> of the <code>Implementation View</code>.</p>
+</div>
+<h3 id="dereference-publications_1">Dereference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference publications, the user has to be in the <code>Publications Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To remove a reference to a publication, the user has to simply click on the <code>Delete Button</code> of a publication in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Publication_-_Step_1.1.png" title="Dereference single publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Publication_-_Step_1.2.png" title="Dereference multiple publications" /></p>
+<h3 id="reference-software-platforms">Reference Software Platforms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference software platforms in an implementation, the user has to be in the <code>Software Platforms Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To initiate the linking of a software platform, the user has to click on the <code>Plus Button</code> in the <code>Software Platforms Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_1.png" title="Click on '+' in 'Software Platforms'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available software platforms. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_2.png" title="Filter existing software platforms using table controls" /></p>
+<p>To reference a software platform simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_3.1.png" title="Reference single software platform" /></p>
+<p>Alternatively, use the check-boxes to select multiple software platforms and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_3.2.png" title="Reference multiple software platforms" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced software platform(s) will now be visible in the <code>Software Platforms Tab</code> of the <code>Implementation View</code>.</p>
+</div>
+<h3 id="dereference-software-platforms">Dereference Software Platforms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference software platforms, the user has to be in the <code>Software Platforms Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To remove a reference from a software platform, the user has to simply click on the <code>Delete Button</code> of a software platform in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Software_Platform_-_Step_1.1.png" title="Dereference single software platform" /></p>
+<p>Alternatively, use the check-boxes to select multiple software platforms and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Software_Platform_-_Step_1.2.png" title="Dereference multiple software platforms" /></p>
+<h3 id="add-tags_1">Add Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To add tags to an implementation, the user has to be in the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>In the <code>Header</code> of the <code>Implementation View</code>, the user has to click on the <code>Plus Button</code> which is used to add tags.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Add_Tag_-_Step_1.png" title="Click '+' button in 'Implementation View' header" /></p>
+<p>A <code>Add Tag Dialog</code> will open that contains fields for <code>Tag Category</code> and <code>Tag Value</code> that need to be defined for creating a new tag.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_2.PNG" title="Structure of 'Add Tag Dialog'" /></p>
+<p>The <code>Tag Value Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag value and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_3.PNG" title="Enter Tag Value" /></p>
+<p>The <code>Tag Category Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing categories to the user. The user can then either pick one of the existing categories by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag category.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag category and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_4.PNG" title="Enter Tag Category" /></p>
+<p>To finally add a new tag to the implementation, the user has to confirm his selection by clicking on the <code>OK Button</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_5.PNG" title="Confirm addition of a new tag" /></p>
+<p>If the tag was added successfully, it will appear in the <code>Header</code> of the <code>Implementation View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Add_Tag_-_Step_6.png" title="Verify if tag was created" /></p>
+<h3 id="remove-tags_1">Remove Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove tags from an implementation, the user has to be in the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>Removing tags is done by clicking on their <code>Delete Buttons</code>, which are located in the <code>Header</code> of the <code>Implementation View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Remove_Tag.png" title="Remove Tag" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/publication.md -->
+<h2 id="publication">Publication</h2>
+<h3 id="create-publication">Create Publication</h3>
+<p>To create a publication, the user has to navigate to the <code>Publication List View</code> by using the navigation sidebar. This view contains a data table of all available publications. Creating a new publication is done via the <code>Plus Button</code> which is located above the table.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Create_Publication_-_Step_1.png" title="Open Creation Dialog" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following dialog.
+In the dialog, it is possible to give the new publication a title and assign multiple authors to it. A new author will be added by using the <code>Add Author Button</code> on the right side. An existing author will be removed using the <code>Delete Author Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a new publication a <code>title</code> and at least one <code>author</code> is required.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/publication/Create_Publication_-_Step_3.png" title="Fill Creation Dialog" /></p>
+<p>After all necessary fields have been filled in, the creation of the publication can be confirmed by clicking on the <code>OK Button</code>. After a successful creation, the user will be navigated to the <code>Publication View</code> of the new publication.</p>
+<h3 id="delete-publication">Delete Publication</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a publication, the user has to be in the <code>Publication List View</code>.</p>
+</div>
+<p>To remove a specific publication, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Delete_Publication_-_Step_1.png" title="Delete single publication" /></p>
+<p>The user can also remove multiple publications at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear after at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/publication/Delete_Publication_-_Step_1.1.png" title="Delete multiple publications" /></p>
+<p>To confirm the deletion of the selected publication(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Titles</strong> of publications that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/publication/Delete_Publication_-_Step_2.png" title="Confirm deletion" /></p>
+<h3 id="update-publication-information">Update Publication Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of a publication, the user has to be in the <code>Publication View</code> which can be reached by clicking on a publication in the <code>Publication List View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Publication View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection drop-downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Update_Publication_Properties_-_Step_1.png" title="General Tab' of the 'Publication View" /></p>
+<p>If information is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/publication/Update_Publication_Properties_-_Step_2.png" title="Saving the changes" /></p>
+<h3 id="reference-algorithms">Reference Algorithms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference algorithms in an existing publication, the user has to be in the <code>Publication View</code>.</p>
+</div>
+<p>In the <code>Publication View</code> of the publication, the user as to switch to the <code>Algorithms Tab</code>, which is dedicated to referencing algorithms.
+To link algorithms with the currently selected publication, the user has to click on the <code>Plus Button</code> at the top of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Algorithm_-_Step_1.png" title="Open dialog for referencing publications" /></p>
+<p>This will open a dialog with a separate data list of existing algorithms.
+For referencing publications the user can now search the table and click on the <code>Link Button</code> of the algorithm he wants to reference.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Algorithm_-_Step_2.1.png" title="Link single algorithm" /></p>
+<p>Alternatively, the user can use the check-boxes to select multiple algorithms he wants to reference. 
+After at least one algorithm is selected, a <code>Master Link Button</code> will appear at the top of the table which can be used to link all selected algorithms with the publication.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Algorithm_-_Step_2.2.png" title="Link multiple algorithms" /></p>
+<h3 id="dereference-algorithms">Dereference Algorithms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference algorithms, the user has to be in the <code>Algorithms Tab</code> of the <code>Publication View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To remove a reference to a algorithm, the user has to simply click on the <code>Delete Button</code> of a algorithm in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Unlink_Algorithm_-_Step_1.1.png" title="Dereference single algorithm" /></p>
+<p>Alternatively, use the check-boxes to select multiple algorithms and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one algorithm is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/publication/Unlink_Algorithm_-_Step_1.2.png" title="Dereference multiple algorithms" /></p>
+<h3 id="reference-implementations">Reference Implementations</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference implementations in a publication, the user has to be in the <code>Implementations Tab</code> of the <code>Publication View</code>, which can be reached by clicking on a publication in the <code>Publication List View</code>.</p>
+</div>
+<p>To initiate the linking of a publication, the user has to click on the <code>Plus Button</code> in the <code>Implementations Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Implementation_-_Step_1.png" title="Click on '+' in 'Implementations'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Implementation_-_Step_2.png" title="Filter existing publications using table controls" /></p>
+<p>To reference a publication simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Implementation_-_Step_3.1.png" title="Reference single implementation" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/publication/Link_Implementation_-_Step_3.2.png" title="Reference multiple implementations" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced implementation(s) will now be visible in the <code>Implementations Tab</code> of the <code>Publication View</code>.</p>
+</div>
+<h3 id="dereference-implementations">Dereference Implementations</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference implementations, the user has to be in the <code>Implementations Tab</code> of the <code>Publication View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To remove a reference to a implementation, the user has to simply click on the <code>Delete Button</code> of an implementation in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Publication_-_Step_1.1.png" title="Dereference single implementation" /></p>
+<p>Alternatively, use the check-boxes to select multiple implementations and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one implementation is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Publication_-_Step_1.2.png" title="Dereference multiple implementations" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/cloud-service.md -->
+<h2 id="cloud-service">Cloud Service</h2>
+<h3 id="create-cloud-service">Create Cloud Service</h3>
+<p>To create a cloud service the user has to navigate to the <code>Cloud Services List View</code> by using the navigation sidebar. 
+This will be done by first clicking on the <code>Execution Environments Menu</code> in the navigation sidebar, which makes the <code>Cloud Services Sub-Menu</code> visible.
+The <code>Cloud Service List View</code> contains a data table of all available cloud services. Creating a new cloud service is done via the <code>Plus Button</code> which is located above the table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Create_Cloud-Service_-_Step_1.png" title="Open Creation Dialog" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following dialog.
+In the dialog it is possible to give the new cloud service a name.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a new cloud service only a <code>name</code> is required.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Create_Cloud-Service_-_Step_2.png" title="Fill Creation Dialog Input" /></p>
+<p>After all necessary fields have been filled in, the creation of the cloud service can be confirmed by clicking on the <code>OK Button</code>. In case of a successful creation, the user will be navigated to the <code>Cloud Service View</code> of the new cloud service.</p>
+<h3 id="delete-cloud-service">Delete Cloud Service</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a cloud service, the user has to be in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>To remove a specific cloud service, the user has to simply click on the <code>Delete Button</code> in the <code>Action Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Delete_Cloud-Service_-_Step_1.png" title="Delete single cloud service" /></p>
+<p>It is also possible to delete multiple cloud services at once by selecting them one by one using the check-boxes within the table. When at least one cloud service is selected, a <code>Master Delete Button</code> will show up above the table, which allows the deletion of all selected cloud services.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Delete_Cloud-Service_-_Step_2.png" title="Delete multiple cloud service" /></p>
+<p>Both ways of deleting cloud services will lead to a confirmation dialog. This dialog will list all the previously selected cloud services that will be deleted. To finally confirm the deletion, the <code>OK Button</code> at the bottom of the dialog has to be pressed. In case of a successful deletion, the deleted cloud services will disappear from the table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Delete_Publication_-_Step_3.png" title="Confirm deletion" /></p>
+<h3 id="update-cloud-service-information">Update Cloud Service Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of a cloud service, the user has to be in the <code>Cloud Service View</code> which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Cloud Service View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection drop-downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Update_Cloud_Service_Properties_-_Step_1.png" title="General Tab' of the 'Cloud Service View" /></p>
+<p>If information is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Update_Cloud_Service_Properties_-_Step_2.png" title="Saving the changes" /></p>
+<h3 id="reference-software-platform">Reference Software Platform</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference software platforms in an existing cloud service, the user has to be in the <code>Software Platforms Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>In the <code>Cloud Service View</code>, the user as to switch to the<code>Software Platforms Tab</code>, which is dedicated to referencing software platforms.
+To link software platform with the currently selected cloud service, the user has to click on the <code>Plus Button</code> at the top of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Link_Software_Platform_-_Step_1.png" title="Open Link Dialog" /></p>
+<p>This will open a dialog with a separate data table containing existing software platforms.
+This table can be searched or sorted using the given input fields.
+For referencing software platforms the user has to click on the <code>Link Button</code> of the software platform he wants to reference.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Link_Software_Platform_-_Step_2.png" title="Link single software platform" /></p>
+<p>Alternatively, the users can use the check-boxes to select all software platforms he wants to reference. 
+If it least one software platform is selected a <code>Master Link Button</code> will appear at the top of the table, which can be used to link all selected software platforms with the cloud service.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Link_Software_Platform_-_Step_2.1.png" title="Link multiple software platforms" /></p>
+<h3 id="dereference-software-platform">Dereference Software Platform</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference software platforms, the user has to be in the <code>Software Platforms Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>To remove the reference to a software platform, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Unlink_Software_Platform_-_Step_1.png" title="Dereference single software platform" /></p>
+<p>Alternatively use the check-boxes to select multiple software platforms and then click on the <code>Master Delete Button</code> to unlink multiple software platforms at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Unlink_Software_Platform_-_Step_2.png" title="Dereference multiple software platform" /></p>
+<h3 id="reference-compute-resource">Reference Compute Resource</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference compute resource in an existing cloud service, the user has to be in the <code>Compute Resource Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>In the <code>Cloud Service View</code>, the user as to switch to the <code>Compute Resource Tab</code>, which is dedicated to referencing compute resources.
+To link a compute resource with the currently selected cloud service, the user has to click on the <code>Plus Button</code> at the top of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Link_Compute_Rescource_-_Step_1.png" title="Open Link Dialog" /></p>
+<p>This will open a dialog with a separate data table containing existing compute resources.
+The table can be searched or sorted using the given input fields and control buttons.
+For referencing a compute resource, the user has to click on it's <code>Link Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Link_Compute_Rescource_-_Step_2.png" title="Link single compute resource" /></p>
+<p>Alternatively, the user can use the check-boxes to select multiple compute resources he wants to reference. 
+It at least one compute resource is selected, a <code>Master Link Button</code> will appear at the top of the table which can be used to link all selected compute resources at once.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Link_Compute_Rescource_-_Step_2.1.png" title="Link multiple compute resources" /></p>
+<h3 id="dereference-compute-resource">Dereference Compute Resource</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference compute resources, the user has to be in the <code>Compute Resource Tab</code> of the <code>Cloud Service View</code>, which can be reached by clicking on a cloud service in the <code>Cloud Service List View</code>.</p>
+</div>
+<p>To remove a existing reference to a compute resource, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Unlink_Compute_Resource_-_Step_1.png" title="Dereference single compute resource" /></p>
+<p>Alternatively use the check-boxes to select multiple compute resources and then click on the <code>Master Delete Button</code> to unlink multiple compute resources at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one compute resource has been selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/cloud_service/Unlink_Compute_Resource_-_Step_2.png" title="Dereference multiple compute resource" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/compute-resource.md -->
+<h2 id="compute-resource">Compute Resource</h2>
+<h3 id="create-compute-resource">Create Compute Resource</h3>
+<p>To create a compute resource the user has to navigate to the <code>Execution Environment List View</code> by using the navigation sidebar.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Create_Compute_Resource_-_Step_1.PNG" title="Navigate to execution environments list view" /></p>
+<p>While in the <code>Execution Environment List View</code>, the navigation sidebar will display sub menus for different kinds of execution environments. To create a compute resource, the user has to navigate to the <code>Compute Resource List View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Create_Compute_Resource_-_Step_2.PNG" title="Navigate to compute resource list view" /></p>
+<p>Inside the <code>Compute Resource List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new compute resource inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Create_Compute_Resource_-_Step_3.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information of the compute resource he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the compute resource.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Create_Compute_Resource_-_Step_4.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the compute resource, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Create_Compute_Resource_-_Step_5.PNG" title="Confirm creation" /></p>
+<p>In case the creation was successful, the user will be redirected to the <code>Compute Resource View</code> of the newly created compute resource.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Create_Compute_Resource_-_Step_6.PNG" title="General View" /></p>
+<h3 id="delete-compute-resource">Delete Compute Resource</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a compute resource, the user has to be in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>To remove a specific compute resource, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Delete_Compute_Resource_-_Step_1.1.PNG" title="Delete single resource" /></p>
+<p>The user can also remove multiple compute resources at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one compute resource is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Delete_Compute_Resource_-_Step_1.2.PNG" title="Delete multiple resources" /></p>
+<p>To confirm the deletion of the selected compute resource(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the compute resources that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Delete_Compute_Resource_-_Step_2.PNG" title="Confirm deletion of selected compute resource(s)" /></p>
+<h3 id="update-compute-resource-information">Update Compute Resource Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of a compute resource, the user has to be in the <code>Compute Resource View</code> which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Compute Resource View</code>. To do that, the user has to simply use the <code>Input Fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Update_Compute_Resource_-_Step_1.PNG" title="General Tab of Compute Resource View" /></p>
+<p>If information is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Update_Compute_Resource_-_Step_2.PNG" title="Saving the changes" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>Compute Resource Properties</strong> of are stored separately and therefor do not belong to the basic information of a resource. They are saved, deleted or updated instantly without the use of the mentioned <code>Save Buttons</code>.</p>
+</div>
+<h3 id="create-compute-resource-property">Create Compute Resource Property</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a property for a compute resource,  the user has to be in the <code>Compute Resource View</code> which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>Creating properties for a compute resource is done in the <code>General Tab</code> of the <code>Compute Resource View</code>. To do that, the user has to simply click on the <code>Plus Button</code> of the dedicated <code>Compute Resource Property Field</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Add_Compute_Resource_Property_-_Step_1.PNG" title="Open Property Dialog" /></p>
+<p>This will open a separate <code>Creation Dialog</code> where the user will have to enter all important information of about the property he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Add_Compute_Resource_Property_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been filled, the user can finally add the property by confirming the creation via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Add_Compute_Resource_Property_-_Step_3.PNG" title="Confirm creation" /></p>
+<p>After the property has been successfully created, it will appear in the the dedicated <code>Compute Resource Property Field</code> of the <code>Compute Resource View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Add_Compute_Resource_Property_-_Step_4.PNG" title="Verify creation" /></p>
+<h3 id="update-compute-resource-property">Update Compute Resource Property</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a property for a compute resource,  the user has to be in the <code>Compute Resource View</code> which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>Updating properties for a compute resource is done in the <code>General Tab</code> of the <code>Compute Resource View</code>. To do that, the user has to simply hover over a existing property in the dedicated <code>Compute Resource Property Field</code> and then click on the <code>Edit Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Update_Compute_Resource_Property_-_Step_1.PNG" title="Open Property Dialog" /></p>
+<p>This will open a separate <code>Update Dialog</code> where the information of the property can be adjusted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Update_Compute_Resource_Property_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been adjusted, the user can finally update the property by confirming the update via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Update_Compute_Resource_Property_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-compute-resource-property">Delete Compute Resource Property</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete a property for a compute resource,  the user has to be in the <code>Compute Resource View</code> which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>Deleting properties for a compute resource is done in the <code>General Tab</code> of the <code>Compute Resource View</code>. To do that, the user has to simply hover over a existing property in the dedicated <code>Compute Resource Property Field</code> and then click on the <code>Delete Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Delete_Compute_Resource_Property_-_Step_1.PNG" title="Delete property" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A successfully deleted property should disappear from the dedicated <code>Compute Resource Property Field</code> after deletion.</p>
+</div>
+<h3 id="reference-software-platforms_1">Reference Software Platforms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference software platforms in a compute resource, the user has to be in the <code>Software Platforms Tab</code> of the <code>Compute Resource View</code>, which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>To initiate the linking of a software platform, the user has to click on the <code>Plus Button</code> in the <code>Software Platforms Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Software_Platform_-_Step_1.PNG" title="Click on '+' in 'Software Platforms'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available software platforms. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Software_Platform_-_Step_2.PNG" title="Filter existing software platforms using table controls" /></p>
+<p>To reference a software platform simply click on the <code>Link Button</code> in the <code>Action-Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Software_Platform_-_Step_3.1.PNG" title="Reference single software platform" /></p>
+<p>Alternatively, use the check-boxes to select multiple software platforms and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Software_Platform_-_Step_3.2.PNG" title="Reference multiple software platforms" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced software platforms(s) will now be visible in the <code>Software Platforms Tab</code> of the <code>Compute Resource View</code>.</p>
+</div>
+<h3 id="dereference-software-platforms_1">Dereference Software Platforms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference software platforms, the user has to be in the <code>Software Platforms Tab</code> of the <code>Compute Resource View</code>, which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>To remove a reference from a software platform, the user has to simply click on the <code>Delete Button</code> of a software platform in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Dereference_Software_Platform_-_Step_1.1.PNG" title="Dereference single software platform" /></p>
+<p>Alternatively, use the check-boxes to select multiple software platforms and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Dereference_Software_Platform_-_Step_1.2.PNG" title="Dereference multiple software platforms" /></p>
+<h3 id="reference-cloud-services">Reference Cloud Services</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference cloud services in a compute resource, the user has to be in the <code>Cloud Services Tab</code> of the <code>Compute Resource View</code>, which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>To initiate the linking of a cloud service, the user has to click on the <code>Plus Button</code> in the <code>Cloud Services Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Cloud_Service_-_Step_1.PNG" title="Click on '+' in 'Cloud Services'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available cloud services. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Cloud_Service_-_Step_2.PNG" title="Filter existing cloud services using table controls" /></p>
+<p>To reference a cloud service simply click on the <code>Link Button</code> in the <code>Action-Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Cloud_Service_-_Step_3.1.PNG" title="Reference single cloud service" /></p>
+<p>Alternatively, use the check-boxes to select multiple cloud services and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one cloud service is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Reference_Cloud_Service_-_Step_3.2.PNG" title="Reference multiple cloud services" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced cloud service(s) will now be visible in the <code>Cloud Services Tab</code> of the <code>Compute Resource View</code>.</p>
+</div>
+<h3 id="dereference-cloud-services">Dereference Cloud Services</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference cloud services, the user has to be in the <code>Cloud Services Tab</code> of the <code>Compute Resource View</code>, which can be reached by clicking on a compute resource in the <code>Compute Resource List View</code>.</p>
+</div>
+<p>To remove a reference from a cloud service, the user has to simply click on the <code>Delete Button</code> of a cloud service in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Dereference_Cloud_Service_-_Step_1.1.PNG" title="Dereference single cloud service" /></p>
+<p>Alternatively, use the check-boxes to select multiple cloud services and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one cloud service is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource/Dereference_Cloud_Service_-_Step_1.2.PNG" title="Dereference multiple cloud services" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/software-platform.md -->
+<h2 id="software-platform">Software Platform</h2>
+<h3 id="create-software-platform">Create Software Platform</h3>
+<p>To create a software platform the user has to navigate to the <code>Execution Environment List View</code> by using the navigation sidebar.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Create_Software_Platform_-_Step_1.PNG" title="Navigate to execution environments list view" /></p>
+<p>While in the <code>Execution Environment List View</code>, the navigation sidebar will display sub menus for different kinds of execution environments. To create a software platform, the user has to navigate to the <code>Software Platform List View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Create_Software_Platform_-_Step_2.PNG" title="Navigate to software platform list view" /></p>
+<p>Inside the <code>Software Platform List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new software platform inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Create_Software_Platform_-_Step_3.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information of the software platform he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the software platform.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Create_Software_Platform_-_Step_4.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the software platform, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Create_Software_Platform_-_Step_5.PNG" title="Confirm creation" /></p>
+<p>In case the creation was successful, the user will be redirected to the <code>Software Platform View</code> of the newly created software platform.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Create_Software_Platform_-_Step_6.PNG" title="General View" /></p>
+<h3 id="delete-software-platform">Delete Software Platform</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a software platform, the user has to be in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a specific software platform, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Delete_Software_Platform_-_Step_1.1.PNG" title="Delete single platform" /></p>
+<p>The user can also remove multiple software platforms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The delete button will only appear after at least one software platform has been selected by the user.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Delete_Software_Platform_-_Step_1.2.PNG" title="Delete multiple platforms" /></p>
+<p>To confirm the deletion of the selected software platform(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the software platforms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Delete_Software_Platform_-_Step_2.PNG" title="Confirm deletion of selected software platform(s)" /></p>
+<h3 id="update-software-platform-information">Update Software Platform Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the basic information of a software platform, the user has to be in the <code>Software Platform View</code> which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>Updating basic software platform information is done in the <code>General Tab</code> of the <code>Software Platform View</code>. To update a property, the user has to simply use the <code>Input Fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new property values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Update_Software_Platform_-_Step_1.PNG" title="General Tab of Software Platform View" /></p>
+<p>If a value of a property is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</li>
+<li>Some fields are links to other sites. Those can easily be detected by their <code>Open Button</code>. On click or on <code>Enter</code>, it will open the link in a new tab.</li>
+</ul>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Update_Software_Platform_-_Step_2.PNG" title="Saving the changes" /></p>
+<h3 id="reference-implementations_1">Reference Implementations</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference implementations in a software platform, the user has to be in the <code>Implementations Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To initiate the linking of an implementation, the user has to click on the <code>Plus Button</code> in the <code>Implementation Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Implementation_-_Step_1.PNG" title="Click on '+' in 'Implementation'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available implementations. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Implementation_-_Step_2.PNG" title="Filter existing Implementations using table controls" /></p>
+<p>To reference a implementation simply click on the <code>Link Button</code> in the <code>Actions Column</code> of the implementation.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Implementation_-_Step_3.1.PNG" title="Reference single implementation" /></p>
+<p>Alternatively use the check-boxes to select multiple implementations and then click on the <code>Master Link Button</code> to link multiple implementations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one implementation is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Implementation_-_Step_3.2.PNG" title="Reference multiple implementations" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced implementations will now be visible in the <code>Implementations Tab</code> of the <code>Software Platform View</code>.</p>
+</div>
+<h3 id="dereference-implementations_1">Dereference Implementations</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference implementations, the user has to be in the <code>Implementations Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a reference from a implementation, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Dereference_Implementation_-_Step_1.1.PNG" title="Dereference single implementation" /></p>
+<p>Alternatively use the check-boxes to select multiple implementations and then click on the <code>Master Delete Button</code> to unlink multiple implementations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one implementation is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Dereference_Implementation_-_Step_1.2.PNG" title="Dereference multiple implementation" /></p>
+<h3 id="reference-cloud-services_1">Reference Cloud Services</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference cloud services in a software platform, the user has to be in the <code>Cloud Services Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To initiate the linking of a cloud service, the user has to click on the <code>Plus Button</code> in the <code>Cloud Services Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Cloud_Service_-_Step_1.PNG" title="Click on '+' in 'Cloud Services'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available cloud services. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Cloud_Service_-_Step_2.PNG" title="Filter existing Cloud Services using table controls" /></p>
+<p>To reference a cloud service simply click on the <code>Link Button</code> in the <code>Actions Column</code> of the cloud service.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Cloud_Service_-_Step_3.1.PNG" title="Reference single cloud service" /></p>
+<p>Alternatively, use the check-boxes to select multiple cloud services and then click on the <code>Master Link Button</code> to link all selected cloud services.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one cloud service is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Cloud_Service_-_Step_3.2.PNG" title="Reference multiple cloud services" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced cloud service(s) will now be visible in the <code>Cloud Services Tab</code> of the <code>Software Platform View</code>.</p>
+</div>
+<h3 id="dereference-cloud-services_1">Dereference Cloud Services</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference cloud services, the user has to be in the <code>Cloud Services Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a reference from a cloud service, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Dereference_Cloud_Service_-_Step_1.1.PNG" title="Dereference single cloud service" /></p>
+<p>Alternatively, use the check-boxes to select multiple cloud services and then click on the <code>Master Delete Button</code> to unlink all selected cloud services.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one cloud service is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Dereference_Cloud_Service_-_Step_1.2.PNG" title="Dereference multiple cloud services" /></p>
+<h3 id="reference-compute-resources">Reference Compute Resources</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference compute resources in a software platform, the user has to be in the <code>Compute Resources Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To initiate the linking of a compute resource, the user has to click on the <code>Plus Button</code> in the <code>Compute Resources Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Compute_Resource_-_Step_1.PNG" title="Click on '+' in 'Compute Resources'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available compute resources. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Compute_Resource_-_Step_2.PNG" title="Filter existing Compute Resources using table controls" /></p>
+<p>To reference a compute resource simply click on the <code>Link Button</code> in the <code>Action Columns</code> of the compute resource.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Compute_Resource_-_Step_3.1.PNG" title="Reference single compute resource" /></p>
+<p>Alternatively, use the check-boxes to select multiple compute resources and then click on the <code>Master Link Button</code> to link all selected compute resources.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Link Button</code> will only appear if at least one compute resource is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Reference_Compute_Resource_-_Step_3.2.PNG" title="Reference multiple compute resources" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced compute resource(s) will now be visible in the <code>Compute Resources Tab</code> of the <code>Software Platform View</code>.</p>
+</div>
+<h3 id="dereference-compute-resources">Dereference Compute Resources</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference compute resources, the user has to be in the <code>Compute Resources Tab</code> of the <code>Software Platform View</code>, which can be reached by clicking on a software platform in the <code>Software Platform List View</code>.</p>
+</div>
+<p>To remove a reference from a compute resource, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Dereference_Compute_Resource_-_Step_1.1.PNG" title="Dereference single compute resource" /></p>
+<p>Alternatively, use the check-boxes to select multiple compute resources and then click on the <code>Master Delete Button</code> to unlink all selected compute resources.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> will only appear if at least one compute resource is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/software_platform/Dereference_Compute_Resource_-_Step_1.2.PNG" title="Dereference multiple compute resources" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/application-area.md -->
+<h2 id="application-area">Application Area</h2>
+<h3 id="create-application-area">Create Application Area</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a application area, the user has to be in the <code>Application Area List View</code> which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Application Area List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new application area inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/application_area/Create_Application_Area_-_Step_1.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information about the application area he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the application area.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/application_area/Create_Application_Area_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the application area, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/application_area/Create_Application_Area_-_Step_3.PNG" title="Confirm creation" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In case of a successful creation, the data table will switch to the last page (if not already) to show the created application area.</p>
+</div>
+<h3 id="update-application-area">Update Application Area</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a application area, the user has to be in the <code>Application Area List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Application Area List View</code>, the user can choose a application area he wants to update by clicking on it's <code>Edit Button</code> which can be found in the <code>Actions Column</code> of the data table.
+This will open a <code>Edit Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/application_area/Update_Application_Area_-_Step_1.PNG" title="Open update dialog" /></p>
+<p>Within the <code>Update Dialog</code>, the user can adjust the information of the application area.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the application area.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/application_area/Update_Application_Area_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>After adjusting all information, the user has to confirm the changes by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/application_area/Update_Application_Area_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-application-area">Delete Application Area</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a application area, the user has to be in the <code>Application Area List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>To delete a specific application area, the user has to simply click on it's <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/application_area/Delete_Application_Area_-_Step_1.1.PNG" title="Delete single application area" /></p>
+<p>The user can also remove multiple application areas at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> button will only appear if at least one application area is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/application_area/Delete_Application_Area_-_Step_1.2.PNG" title="Delete multiple application areas" /></p>
+<p>To confirm the deletion of the selected application area(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the application area(s) that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/application_area/Delete_Application_Area_-_Step_2.PNG" title="Confirm deletion" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/problem-type.md -->
+<h2 id="problem-type">Problem Type</h2>
+<h3 id="create-problem-type">Create Problem Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a problem type, the user has to be in the <code>Problem Type List View</code> which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Problem Type List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new problem type inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Create_Problem_Type_-_Step_1.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information about the problem type he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Currently the only required information is the <strong>name</strong> of the problem type.</li>
+<li>The <strong>Parent Problem Type Field</strong> is a drop-down that contains all existing problem types that can be optionally set as the parent.</li>
+</ul>
+</div>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Create_Problem_Type_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the problem type, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Create_Problem_Type_-_Step_3.PNG" title="Confirm creation" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In case of a successful creation, the data table will switch to the last page (if not already) to show the created problem type.</p>
+</div>
+<h3 id="update-problem-type">Update Problem Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a problem type, the user has to be in the <code>Problem Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Problem Type List View</code>, the user can choose a problem type he wants to update by clicking on it's <code>Edit Button</code> which can be found in the <code>Actions Column</code> of the data table.
+This will open a <code>Edit Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Update_Problem_Type_-_Step_1.PNG" title="Open update dialog" /></p>
+<p>Within the <code>Update Dialog</code>, the user can adjust the information of the problem type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Currently the only required information is the <strong>name</strong> of the problem type.</li>
+<li>The <strong>Parent Problem Type Field</strong> is a drop-down that contains all existing problem types that can be optionally set as the parent.</li>
+</ul>
+</div>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Update_Problem_Type_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>After adjusting all information, the user has to confirm the changes by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Update_Problem_Type_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-problem-type">Delete Problem Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a problem type, the user has to be in the <code>Problem Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>To delete a specific problem type, the user has to simply click on it's <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Delete_Problem_Type_-_Step_1.1.PNG" title="Delete single problem type" /></p>
+<p>The user can also remove multiple problem types at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> button will only appear if at least one problem type is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Delete_Problem_Type_-_Step_1.2.PNG" title="Delete multiple problem types" /></p>
+<p>To confirm the deletion of the selected problem type(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the problem type(s) that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/problem_type/Delete_Problem_Type_-_Step_2.PNG" title="Confirm deletion" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/algorithm-relation-type.md -->
+<h2 id="algorithm-relation-type">Algorithm Relation Type</h2>
+<h3 id="create-algorithm-relation-type">Create Algorithm Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a algorithm relation type, the user has to be in the <code>Algorithm Relation Type List View</code> which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Algorithm Relation Type List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new algorithm relation type inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_1.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information about the algorithm relation type he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the algorithm relation type.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the algorithm relation type, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Create_Algorithm_Relation_Type_-_Step_3.PNG" title="Confirm creation" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In case of a successful creation, the data table will switch to the last page (if not already) to show the created algorithm relation type.</p>
+</div>
+<h3 id="update-algorithm-relation-type">Update Algorithm Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a algorithm relation type, the user has to be in the <code>Algorithm Relation Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Algorithm Relation Type List View</code>, the user can choose a algorithm relation type he wants to update by clicking on it's <code>Edit Button</code> which can be found in the <code>Actions Column</code> of the data table.
+This will open a <code>Edit Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_1.PNG" title="Open update dialog" /></p>
+<p>Within the <code>Update Dialog</code>, the user can adjust the information of the algorithm relation type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the algorithm relation type.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>After adjusting all information, the user has to confirm the changes by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Update_Algorithm_Relation_Type_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-algorithm-relation-type">Delete Algorithm Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a algorithm relation type, the user has to be in the <code>Algorithm Relation Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>To delete a specific algorithm relation type, the user has to simply click on it's <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_1.1.PNG" title="Delete single algorithm relation type" /></p>
+<p>The user can also remove multiple algorithm relation types at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> button will only appear if at least one algorithm relation type is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_1.2.PNG" title="Delete multiple algorithm relation types" /></p>
+<p>To confirm the deletion of the selected algorithm relation type(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the algorithm relation type(s) that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm_relation_type/Delete_Algorithm_Relation_Type_-_Step_2.PNG" title="Confirm deletion" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/pattern-relation-type.md -->
+<h2 id="pattern-relation-type">Pattern Relation Type</h2>
+<h3 id="create-pattern-relation-type">Create Pattern Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a pattern relation type, the user has to be in the <code>Pattern Relation Type List View</code> which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Pattern Relation Type List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new pattern relation type inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Create_Pattern_Relation_Type_-_Step_1.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information about the pattern relation type he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the pattern relation type.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Create_Pattern_Relation_Type_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering the name of the pattern relation type, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Create_Pattern_Relation_Type_-_Step_3.PNG" title="Confirm creation" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In case of a successful creation, the data table will switch to the last page (if not already) to show the created pattern relation type.</p>
+</div>
+<h3 id="update-pattern-relation-type">Update Pattern Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a pattern relation type, the user has to be in the <code>Pattern Relation Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Pattern Relation Type List View</code>, the user can choose a pattern relation type he wants to update by clicking on it's <code>Edit Button</code> which can be found in the <code>Actions Column</code> of the data table.
+This will open a <code>Edit Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Update_Pattern_Relation_Type_-_Step_1.PNG" title="Open update dialog" /></p>
+<p>Within the <code>Update Dialog</code>, the user can adjust the information of the pattern relation type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently the only required information is the <strong>name</strong> of the pattern relation type.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Update_Pattern_Relation_Type_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>After adjusting all information, the user has to confirm the changes by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Update_Pattern_Relation_Type_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-pattern-relation-type">Delete Pattern Relation Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a pattern relation type, the user has to be in the <code>Pattern Relation Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>To delete a specific pattern relation type, the user has to simply click on it's <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Delete_Pattern_Relation_Type_-_Step_1.1.PNG" title="Delete single pattern relation type" /></p>
+<p>The user can also remove multiple pattern relation types at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> button will only appear if at least one pattern relation type is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Delete_Pattern_Relation_Type_-_Step_1.2.PNG" title="Delete multiple pattern relation types" /></p>
+<p>To confirm the deletion of the selected pattern relation type(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the pattern relation type(s) that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/pattern_relation_type/Delete_Pattern_Relation_Type_-_Step_2.PNG" title="Confirm deletion" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/compute-resource-property-type.md -->
+<h2 id="compute-resource-property-type">Compute Resource Property Type</h2>
+<h3 id="create-compute-resource-property-type">Create Compute Resource Property Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a compute resource property type, the user has to be in the <code>Compute Resource Property Type List View</code> which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Compute Resource Property Type List View</code>, the user can click on the <code>Plus Button</code> to initiate the creation of a new compute resource property type inside a separate <code>Creation Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Create_Compute_Resource_Property_Type_-_Step_1.PNG" title="Open creation dialog" /></p>
+<p>Within the <code>Creation Dialog</code>, the user will have to enter all important information about the compute resource property he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Currently the only required information is the <strong>name</strong> and the <strong>data type</strong> of the compute resource property type.</li>
+<li>The <strong>Data Type Field</strong> is a drop-down that contains all existing data types that can be set.</li>
+</ul>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Create_Compute_Resource_Property_Type_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering all required information, the user has to confirm the creation by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Create_Compute_Resource_Property_Type_-_Step_3.PNG" title="Confirm creation" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In case of a successful creation, the data table will switch to the last page (if not already) to show the created compute resource property type.</p>
+</div>
+<h3 id="update-compute-resource-property-type">Update Compute Resource Property Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a compute resource property type, the user has to be in the <code>Compute Resource Property Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>Inside the <code>Compute Resource Property Type List View</code>, the user can choose a compute resource property type he wants to update by clicking on it's <code>Edit Button</code> which can be found in the <code>Actions Column</code> of the data table.
+This will open a <code>Edit Dialog</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Update_Compute_Resource_Property_Type_-_Step_1.PNG" title="Open update dialog" /></p>
+<p>Within the <code>Update Dialog</code>, the user can adjust the information of the compute resource property type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Currently the only required information is the <strong>name</strong> and the <strong>data type</strong> of the compute resource property type.</li>
+<li>The <strong>Data Type Field</strong> is a drop-down that contains all existing data types that can be set.</li>
+</ul>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Update_Compute_Resource_Property_Type_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>After adjusting all information, the user has to confirm the changes by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Update_Compute_Resource_Property_Type_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-compute-resource-property-type">Delete Compute Resource Property Type</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of a compute resource property type, the user has to be in the <code>Compute Resource Property Type List View</code>, which can be found in the <code>Manage Components Menu</code>.</p>
+</div>
+<p>To delete a specific compute resource property type, the user has to simply click on it's <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Delete_Compute_Resource_Property_Type_-_Step_1.1.PNG" title="Delete single compute resource property type" /></p>
+<p>The user can also remove multiple compute resource property types at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Master Delete Button</code> button will only appear if at least one compute resource property type is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Delete_Compute_Resource_Property_Type_-_Step_1.2.PNG" title="Delete multiple compute resource property types" /></p>
+<p>To confirm the deletion of the selected compute resource property type(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of the compute resource property type(s) that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/compute_resource_property_type/Delete_Compute_Resource_Property_Type_-_Step_2.PNG" title="Confirm deletion" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/libraries.md -->
+<h2 id="libraries">Libraries</h2>
+<p>The component <code>Libraries</code> is the UI counterpart of the <a href="../planqk-library/">PlanQK Library</a> service.</p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/settings.md -->
+<h2 id="settings">Settings</h2>
+<p>Settings can be found by navigating to <code>Settings</code> in the navigation sidebar.</p>
+<p><img alt="settings_in_nav_bar" src="/user-guide/images/settings/settings-nav.png" style="width:300px" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The visibility of <code>Settings</code> and related functionalities can be en-/disabled by adapting <code>showSettings</code> under <code>config/default-config.json</code> in the cloned <a href="https://github.com/UST-QuAntiL/quantil-docker">quantil-docker repository</a> before running the docker-compose.</p>
+</div>
+<h3 id="feature-toggling">Feature Toggling</h3>
+<p>To enable/disable editing and hide/show the UI components offering the different features of <a href="/user-guide/nisq-analyzer/">NISQ Analyzer</a>, <a href="/user-guide/qc-atlas/pattern-relation-type/">Pattern Atlas</a>, and <a href="/user-guide/qprov/">QProv</a>, click the related checkboxes.</p>
+<p><img alt="settings_feature_toggling" src="/user-guide/images/settings/feature-toggling.png" style="width:600px" /></p>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ./qc-atlas/platform-login.md -->
+<h2 id="logging-into-the-planqk-platform">Logging into the PlanQK Platform</h2>
+<p>To retrieve data available on the PlanQK platform, click the login button in the top right corner of the UI.</p>
+<p><img alt="login" src="/user-guide/images/planqk-login/login-button.png" /></p>
+<p>You will be redirected to the login form of the official PlanQK plattform.
+Enter your credentials and you will be redirected to the QC Atlas UI.
+In case the login was successful, available algorithms, implementations, etc. are presented in the lists and can be viewed in detail.</p>
+<!-- END INCLUDE -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../developer-guide/docker/" class="btn btn-neutral float-left" title="Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../qverview/" class="btn btn-neutral float-right" title="Qverview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../developer-guide/docker/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../qverview/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

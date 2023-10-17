@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>QuAntiL</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#information">Information</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#application">Application</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#analysis-execution">Analysis &amp; Execution</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#provenance">Provenance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#integrated-components-of-qc-atlas-and-the-qc-atlas-ui">Integrated components of QC Atlas and the QC Atlas UI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#haftungsausschluss">Haftungsausschluss</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#disclaimer-of-warranty">Disclaimer of Warranty</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="developer-guide/docker/">Quickstart</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/qc-atlas/">QC Atlas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/nisq-analyzer/">NISQ Analyzer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="user-guide/planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="developer-guide/intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="developer-guide/openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="developer-guide/qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="welcome-to-the-quantil-documentation">Welcome to the QuAntiL Documentation!</h1>
+<p><img alt="alt text" class="center" src="images/combo.png" style="height:100px" /></p>
+<h3 id="overview">Overview</h3>
+<p><a href="https://github.com/UST-QuAntiL">Quantum Application Lifecycle Management (QuAntiL)</a> offers tooling support for various aspects of the quantum application lifecycle, such as implementation, deployment, execution, and monitoring of quantum applications, see the <a href="https://www.iaas.uni-stuttgart.de/forschung/projekte/quantil/">website</a>. Currently QuAntiL provides tooling support in the following areas:</p>
+<p><img alt="Overview QuAntiL" class="center" src="images/overview-quantil.png" style="width:800px" /></p>
+<p>The <strong>Information</strong> area contains tools that provide knowledge for quantum application developers about available technologies, patterns, and algorithms. The <strong>Application</strong> area contains tools and implementations of quantum algorithms to solve certain use cases.
+In the <strong>Analysis &amp; Execution</strong> area tools for translating circuits between different programming languages, selecting suitable quantum hardware, and for executing and deploying the quantum application are provided. In the last area, <strong>Provenance</strong>, a tool for collecting information about different quantum providers is listed. In the following the tools of each area are shortly introduced:</p>
+<h3 id="information">Information</h3>
+<p><a href="user-guide/qc-atlas/">QC Atlas</a> is a platform for sharing quantum software and is part of the project <a href="https://planqk.de/en/">PlanQK</a>.
+Thereby, it enables the collection of quantum algorithms and their specific properties, such as input and output parameters, their problem descriptions and solutions.
+Further, available implementations, related other algorithms, patterns, and publications of them can be added and linked.
+But also the execution part is considered.
+QC Atlas enables collecting information about existing software platforms, cloud services, and their offered compute resources, such as quantum computers or quantum simulators.</p>
+<p><a href="https://pattern-atlas-readthedocs.readthedocs.io/en/latest/">Pattern Atlas</a> is a pattern repository that provides tooling support for capturing best practices in the form of patterns for various domains.
+It already contains several patterns for quantum algorithms and allows to include domain-specific aspects for quantum computing (quantum circuits, mathematical descriptions).</p>
+<p><a href="user-guide/qverview/">Qverview</a> provides an overview of several technologies for quantum application development such as development kits, cloud services, programming languages, etc.
+It enables to analyze and compare different technologies and identify their interoperability.</p>
+<p>The <a href="user-guide/planqk-library/">PlanQK Library</a> is a service to collect, organize and discover literature.</p>
+<h3 id="application">Application</h3>
+<p><a href="user-guide/qhana/">QHAna</a> - The <strong>Q</strong>uantum <strong>H</strong>umanities <strong>Ana</strong>lysis Tool is a toolset of Machine Learning techniques for classical and quantum hardware, designed for the use with the <a href="https://www.iaas.uni-stuttgart.de/publications/INBOOK-2018-05-MUSE.pdf">MUSE Repository</a>. It comprises a rich set of techniques, mostly for categorical data. The tools are split up into 4 different categories: <strong>Data Preparation, Feature Engineering, Clustering,</strong> and <strong>Classification</strong>. From each category various alternative methods can be selected to be used for the analysis.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>QHAna is getting a new plugin based architecture.
+Individual algorithms will be available as microservices with their own API and can be used in workflows and by other projects.
+The user documentation for the new QHAna implementation will be updated soon.
+More information can be found <a href="user-guide/qhana-new/">here</a>.</p>
+</div>
+<h3 id="analysis-execution">Analysis &amp; Execution</h3>
+<p>The <a href="user-guide/circuit-transformer/">Circuit Transformer</a> enables the translation of a given circuit into different languages.
+Furthermore, it enables the modification of the given circuit by providing a simple modelling tool representing qubits and gates and supports the simulation of the resulting measurements.
+The Circuit Transformer also supports the transpilation and export on general gate sets of Rigetti and IBMQ machines for different programming languages.
+In addition, the depth, two-qubit gate depth, and the pulses depth is analyzed for the different gate sets.</p>
+<p>The <a href="user-guide/nisq-analyzer/">NISQ Analyzer</a> enables the selection of suitable implementations and quantum computers (QPUs) dependent on given input data and the selected quantum algorithm.
+Therefore, Prolog rules are defined to determine which input data can be processed by a specific implementation and to determine which QPU can successfully execute suitable implementations.
+Thereby, quantum compilers are used to determine the width and depth of a compiled circuit on a specific QPU.
+These properties are, then, compared with the number of qubits and the estimated maximum depth of the QPU to determine the executability.
+To gain up-to-date information about available QPUs, the provenance system <a href="user-guide/qprov/">QProv</a> is accessed.
+In addition, the NISQ Analyzer enables the comparison of the width and depth of compiled quantum circuits dependent on the selected quantum computer and the initially given quantum circuit.</p>
+<p>The <a href="./user-guide/quantme">Quantum Modeling Extension (QuantME)</a> is a technology-independent modeling extension for imperative workflow languages to model quantum computations in workflow models.
+Thereby, it provides explicit modeling constructs for the execution of quantum circuits, as well as for different frequently occurring pre- and post-processing tasks, abstracting from the technical and mathematical details.
+Thus, it eases the modeling of workflows executing quantum algorithms and increases the reusability of implementations for the various tasks.
+To enable the practical application of QuantME, an extension of <a href="https://www.omg.org/spec/BPMN/2.0/PDF">BPMN 2.0</a> that supports QuantME, called <a href="https://github.com/UST-QuAntiL/QuantME-Quantum4BPMN">Quantum4BPMN</a> is available.
+Furthermore, the <a href="https://github.com/UST-QuAntiL/QuantME-TransformationFramework">QuantME Transformation Framework</a> supports the graphical modeling of Quantum4BPMN workflow models and their transformation to native workflow models to retain their portability.</p>
+<p>The <a href="http://www.opentosca.org/">OpenTOSCA Ecosystem</a> is an standard-based end-to-end toolchain for deploying and managing (cloud) applications. It is based on the OASIS Standard <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca">TOSCA</a> and provides (i) the graphical modeling tool <a href="https://winery.readthedocs.io/en/latest/">Winery</a> for specifying TOSCA-compliant deployment models, (ii) the provisioning engine <a href="https://opentosca.github.io/container/">OpenTOSCA Container</a> that processes the deployment models, and (iii) the <a href="https://github.com/OpenTOSCA/ui">self-service portal</a> for selecting and instantiating applications. The ecosystem can be used for modeling and deploying quantum applications on different quantum cloud providers.</p>
+<h3 id="provenance">Provenance</h3>
+<p><a href="user-guide/qprov/">QProv</a> is a provenance system for quantum computing.
+It periodically collects and analyzes important provenance attributes of accessible QPUs, such as the number of qubits, T1, T2, gate error rates, and current queue sizes.
+Furthermore, it supports the calculation of calibration matrices of QPUs.
+QProv builds the basis for, e.g., the NISQ Analyzer providing up-to-date information about accessible QPUs to support the selection of suitable QPUs.
+It is, e.g., used by the <a href="user-guide/nisq-analyzer/">NISQ Analyzer</a> for the selection of suitable quantum implementations and QPUs and for the comparison of available quantum compilers.</p>
+<h2 id="integrated-components-of-qc-atlas-and-the-qc-atlas-ui">Integrated components of QC Atlas and the QC Atlas UI</h2>
+<p>The following diagram illustrates the currently integrated components of the QC Atlas platform and its UI:
+<img alt="Integrated components" src="images/components.png" /></p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Current development is supported by the <a href="http://www.bmwi.de/EN">Federal Ministry for Economic Affairs and Energy</a> as part of the <a href="https://planqk.de">PlanQK</a>
+ (01MK20005N), <a href="https://www.eniqma-quantum.de/">EniQmA</a> (01MQ22007B), and <a href="https://sequenc.de/">SeQuenC</a> (01MQ22009B) projects, the <a href="https://wm.baden-wuerttemberg.de/de/startseite">Baden-Wuerttemberg Ministry of Economic Affairs, Labour and Tourism</a> as part of <a href="https://websites.fraunhofer.de/sequoia/">SEQUOIA</a>, and the DFG’s Excellence Initiative project <a href="https://www.simtech.uni-stuttgart.de/">SimTech</a> (EXC 2075 - 390740016).</p>
+<h2 id="haftungsausschluss">Haftungsausschluss</h2>
+<p>Dies ist ein Forschungsprototyp.
+Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten
+und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist, außer in Fällen von grober
+Fahrlässigkeit, Vorsatz und Personenschäden, ausgeschlossen.</p>
+<h2 id="disclaimer-of-warranty">Disclaimer of Warranty</h2>
+<p>Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its
+Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including,
+without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks
+associated with Your exercise of permissions under this License.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="developer-guide/docker/" class="btn btn-neutral float-right" title="Quickstart">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="developer-guide/docker/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-10-17 07:36:25.353736+00:00
+-->

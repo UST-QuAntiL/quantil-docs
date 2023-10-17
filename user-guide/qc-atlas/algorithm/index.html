@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Algorithm - QuAntiL</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Algorithm";
+        var mkdocs_page_input_path = "user-guide/qc-atlas/algorithm.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Algorithm</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/algorithm.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="algorithm">Algorithm</h2>
+<h3 id="create-algorithm">Create Algorithm</h3>
+<p>To create an algorithm the user has to navigate to the <code>Algorithm List View</code> by using the navigation sidebar.
+This view displays all available algorithms in a table. Creating a new algorithm is done via the <code>Plus Button</code> which is located above the table.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_1.png" title="Open creation dialog" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following <code>Creation Dialog</code>, where the user has to type in all required information for creating a new algorithm.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Depending on the selected <code>Computational Model</code>, a third input field might show up, allowing the user to define the <code>Quantum Computation Model</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_2.PNG" title="Structure of creation dialog" /></p>
+<p>After entering all required information, the user has to confirm the creation of the algorithm by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_3.png" title="Confirm creation" /></p>
+<p>If the creation of the algorithm was successful, the user will be redirected to the detailed <code>Algorithm View</code> of the new algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Create_Algorithm_-_Step_4.PNG" title="Algorithm view of created algorithm" /></p>
+<h3 id="delete-algorithm">Delete Algorithm</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To perform the deletion of an algorithm, the user has to be in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To remove a specific algorithm, the user has to simply click on the <code>Delete Button</code> in the <code>Actions Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Algorithm_-_Step_1.1.png" title="Delete single algorithm" /></p>
+<p>The user can also remove multiple algorithms at once by selecting them using the check-boxes of the data table. After the user has made his selection he can press the <code>Master Delete Button</code> at the top of the data table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The delete button will only appear if at least one algorithm is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Algorithm_-_Step_1.2.png" title="Delete multiple algorithms" /></p>
+<p>To confirm the deletion of the selected algorithm(s), the user has to click on the <code>YES Button</code> of the <code>Confirmation Dialog</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Names</strong> of algorithms that will be deleted are displayed in the body of the dialog and should be checked before confirming the deletion.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Algorithm_-_Step_2.png" title="Confirm deletion" /></p>
+<h3 id="update-algorithm-information">Update Algorithm Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of an algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on a algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Algorithm_Properties_-_Step_1.PNG" title="A small part of the 'General Tab' of the 'Algorithm View'" /></p>
+<p>If information is changed, a <code>Save button</code> will be displayed next that specific input field. Also, a <code>Master Save button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Algorithm_Properties_-_Step_2.PNG" title="Saving the changes" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>Required Compute Resource Properties</strong>, <strong>Problem Types</strong> and <strong>Application Areas</strong> are stored separately and therefor do not belong to the basic information of the algorithm. They are saved, deleted or updated instantly without the use of the mentioned <code>Save buttons</code>.</p>
+</div>
+<h3 id="load-algorithm-revision">Load Algorithm Revision</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To load a revision of an algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.
+Please see the <a href="../overview/#revisions">revision section</a> for further details about revisions.</p>
+</div>
+<p>Loading a revision is done by clicking on the revision selection field in the <code>Algorithm View</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Load_Algorithm_Revision_-_Step_1.PNG" title="Open Revision Selection" /></p>
+<p>This will open a dropdown menu with all available revisions sorted by their date with the latest revision at the top.
+By selecting an element from the dropdown menu, the data of a revision is loaded in the <code>Algorithm View</code> and can be viewed and edited.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Load_Algorithm_Revision_-_Step_2.PNG" title="Revision Selection Menu" /></p>
+<h3 id="create-compute-resource-properties">Create Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a compute resource property for the algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Creating properties for a compute resource is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply click on the <code>Plus button</code> of the dedicated <code>Required Compute Resource Property Field</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_1.PNG" title="Open Property Dialog" /></p>
+<p>This will open a separate <code>Creation Dialog</code> where the user will have to enter all important information about the property he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been filled, the user can finally add the property by confirming the creation via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_3.PNG" title="Confirm creation" /></p>
+<p>After the property has been successfully created, it will appear in the the dedicated <code>Required Compute Resource Property Field</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_4.PNG" title="Verify creation" /></p>
+<h3 id="update-compute-resource-properties">Update Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a compute resource property of the algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating properties of an algorithm is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply hover over an existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Edit button</code>.   </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_1.PNG" title="Open update property dialog" /></p>
+<p>This will open a separate <code>Update Dialog</code> where the information of the property can be adjusted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been adjusted, the user can finally update the property by confirming the update via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-compute-resource-properties">Delete Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete a compute resource property of an algorithm, the user has to be in the <code>Algorithm View</code> which can be reached by clicking on a compute resource in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Deleting compute resource properties is done in the <code>General Tab</code> of the <code>Algorithm View</code>. To do that, the user has to simply hover over an existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Delete button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Compute_Resource.PNG" title="Delete Compute Resource" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A successfully deleted property should disappear from the dedicated <code>Required Compute Resource Property Field</code>.</p>
+</div>
+<h3 id="reference-application-areas">Reference Application Areas</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference application areas in an algorithm, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Referencing problem types is done via the dedicated <code>Application Areas</code> field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Application_Area_-_Step_1.PNG" title="Go to dedicated application area field in algorithm view" /></p>
+<p>To link a application area with the algorithm, the user has to use the input field to search for an application area by typing it's name. While typing, the system's auto-complete feature will display available application areas in a drop-down.
+To finally link a application area, the user has to click on one of the available areas from the drop-down. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow keys of the keyboard to select an application area and confirm by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Application_Area_-_Step_2.PNG" title="Search for application area by name" /></p>
+<p>After successfully referencing the application area, it will be displayed in the <code>Application Areas</code> field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Application_Area_-_Step_3.PNG" title="Verify reference" /></p>
+<h3 id="dereference-application-areas">Dereference Application Areas</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove an existing reference to an application area, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To dereference an application area, the user has to scroll to the <code>Application Areas</code> field and simply click on the <code>Delete button</code> of the application area he wants to remove from the algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Application_Area.PNG" title="Unlink Application Area" /></p>
+<h3 id="reference-problem-types">Reference Problem Types</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference problem types in an algorithm, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Referencing problem types is done via the dedicated <code>Problem Types</code> field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Problem_Type_-_Step_1.PNG" title="Go to dedicated problem types field in algorithm view" /></p>
+<p>To link a problem type to the algorithm, the user has to use the input field to search for a problem type by typing it's name. While typing, the system's auto-complete feature will display available problem types in a drop-down.
+To finally link a problem type, the user has to click on one of the problem types from the drop-down. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select a problem type and confirm the link with the "Enter" button on the keyboard.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Problem_Type_-_Step_2.PNG" title="Link Problem Type" /></p>
+<p>After the linking process has been successfully completed, the freshly linked problem type will be displayed beneath the input field.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Problem_Type_-_Step_3.PNG" title="Link Problem Type" /></p>
+<h3 id="dereference-problem-types">Dereference Problem Types</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove an existing reference to a problem type, the user has to be in the <code>General Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To dereference a problem type, the user has to scroll to the <code>Problem Types</code> field and simply click on the <code>Delete button</code> of the problem type he wants to remove from the algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Problem_Type.PNG" title="Unlink Problem Type" /></p>
+<h3 id="reference-other-algorithms">Reference other Algorithms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference other algorithms, the user has to be in the <code>Related Algorithms Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To reference some other algorithm in the current one, the user has to click on the <code>Plus button</code> in the <code>Related Algorithms Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_1.PNG" title="Click on '+' in 'Related Algorithms'-Tab" /></p>
+<p>A dialog will open that contains multiple fields that need to be filled by the user to create a relation to some algorithm.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_2.PNG" title="Structure of dialog" /></p>
+<p>In the first step, the user has to describe the relation by entering a description of the relation.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_3.PNG" title="Enter description of relation" /></p>
+<p>Then, the other algorithm that should be referenced needs to be selected. For that he can use the input field to find available algorithms by name. The auto-complete of the system will filter available algorithms and display them in a drop-down. The user can pick an algorithm by clicking on it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an algorithm and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_4.PNG" title="Choose algorithm to link" /></p>
+<p>At last, the type of the relation of the two algorithms needs to be selected. While typing in a relation type, the auto-complete of the system will filter existing relation types while giving the user to ability to create a new one. The user can select an existing relation type or create a new by just by clicking on it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select a relation type and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_5.PNG" title="Select relation type" /></p>
+<p>After all input data has been filled, the user can confirm the creation of a reference between the two algorithms by clicking on the <code>OK Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_6.PNG" title="Confirm the reference to the selected algorithm" /></p>
+<p>After the other algorithm was successfully referenced, it will appear in the <code>Related Algorithms</code> tab of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Other_Algorithm_-_Step_7.PNG" title="Verify reference to other algorithm" /></p>
+<h3 id="update-algorithm-relation">Update Algorithm Relation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update an existing algorithm relation, the user has to be in the <code>Related Algorithms Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating an algorithm relation is done by clicking on the "Edit" button of a related algorithm in the <code>Related Algorithms</code> tab.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Link_Other_Algorithm_-_Step_1.PNG" title="Open update relation dialog" /></p>
+<p>This will open a dialog where the user can adjust the information of the relation. Here, the user can change the description and the type of the relation, before confirming the changes by clicking the <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Same as with the <code>Creation Dialog</code>, the <code>Relation Type</code> field has auto-complete functionality. The system will filter existing relation types while giving the user the ability to create a new one. The user can select an existing relation type or create a new by just by clicking on it or by using the arrow keys on the keyboard in combination with the <code>Enter</code> key.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Link_Other_Algorithm_-_Step_2.PNG" title="Adjust algorithm relation in dialog and confirm" /></p>
+<h3 id="dereference-other-algorithms">Dereference other Algorithms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete existing references to other algorithms, the user has to be in the <code>Related Algorithms Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on a compute resource in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To remove a reference, the user can to simply click on the <code>Delete Button</code> of a related algorithm in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Other_Algorithm_-_Step_1.1.PNG" title="Dereference single algorithm" /></p>
+<p>Alternatively, use the check-boxes to select multiple algorithms and then click on the <code>Master Delete button</code> to unlink all of them at once.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Other_Algorithm_-_Step_1.2.PNG" title="Dereference multiple algorithms" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete button</code> will only appear if at least one related algorithm is selected.</p>
+</div>
+<p>If a <code>Delete</code> button is pressed, a confirmation dialog will appear listing all related algorithms that will be unlinked. To confirm the deletion of the relations to all displayed algorithms, the user has to click on the <code>YES Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Other_Algorithm_-_Step_2.PNG" title="Confirm deletion of the references" /></p>
+<h3 id="reference-publications">Reference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference publications in an algorithm, the user has to be in the <code>Publications Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To initiate the linking of a publication, the user has to click on the <code>Plus Button</code> in the <code>Publications Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_1.PNG" title="Click on '+' in 'Publications'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_2.PNG" title="Link Publication" /></p>
+<p>To reference a publication simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_3.1.PNG" title="Link Publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Publication_-_Step_3.2.PNG" title="Link Publication" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced publications(s) will now be visible in the <code>Publications Tab</code> of the <code>Algorithm View</code>.</p>
+</div>
+<h3 id="dereference-publications">Dereference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference publications, the user has to be in the <code>Publications Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To remove a reference from a publication, the user has to simply click on the <code>Delete Button</code> of a publication in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Publication_-_Step_1.1.PNG" title="Dereference single publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Publication_-_Step_1.2.PNG" title="Dereference multiple publications" /></p>
+<h3 id="add-tags">Add Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To add tags to an algorithm, the user has to be in the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>In the <code>Header</code> of the <code>Algorithm View</code>, the user has to click on the <code>Plus Button</code> which is used to add tags.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_1.PNG" title="Click '+' button in 'Algorithm View' header" /></p>
+<p>A <code>Add Tag Dialog</code> will open which contains fields for <code>Tag Category</code> and <code>Tag Value</code> that need to be defined for creating a new tag.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_2.PNG" title="Structure of 'Add Tag Dialog'" /></p>
+<p>The <code>Tag Value Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag value and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_3.PNG" title="Enter Tag Value" /></p>
+<p>The <code>Tag Category Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing categories to the user. The user can then either pick one of the existing categories by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag category.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag category and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_4.PNG" title="Enter Tag Category" /></p>
+<p>To finally add a new tag to the algorithm, the user has to confirm his selection by clicking on the <code>OK Button</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_5.PNG" title="Confirm addition of a new tag" /></p>
+<p>If the tag was added successfully, it will appear in the <code>Header</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_6.PNG" title="Verify if tag was created" /></p>
+<h3 id="remove-tags">Remove Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove tags from an algorithm, the user has to be in the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Removing tags is done by clicking on their <code>Delete Buttons</code>, which are located in the <code>Header</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Remove_Tag.PNG" title="Remove Tag" /></p>
+<h3 id="reference-patterns">Reference Patterns</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference patterns in an algorithm, the user has to be in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>To initiate the linking of a pattern, the user has to click on the <code>Plus Button</code> in the <code>Related Patterns Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_1.PNG" title="Click on '+' button" /></p>
+<p>This will open a new dialog containing multiple steps that need to be performed.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_2.PNG" title="Structure of dialog for referencing patterns" /></p>
+<p>In the first step, a pattern language needs to be selected by simply clicking on it. To filter specific pattern languages, the user can use the input field to filter them by their name.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>By clicking on the small button at the bottom of a specific pattern language, a new browser window will open and all patterns of the selected pattern language are presented in the Pattern Atlas.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_3.PNG" title="Select Pattern Language" /></p>
+<p>After a specific pattern language has been selected, the user can move the the next step by either clicking on the <code>Next Button</code> or by clicking on the second step.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_4.PNG" title="Move to second step" /></p>
+<p>In the second step, the user has to pick a pattern he wants to reference by clicking on it. Like in the first step, he can use the input field to filter the patterns by their names and he also can use the scrollbar to scroll through all patterns.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>By clicking on the small button at the bottom of a specific pattern, a new browser window will open and the selected pattern with its properties is presented in the Pattern Atlas.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_5.PNG" title="Select Pattern" /></p>
+<p>After a specific pattern has been selected, the user can move to the next step by either clicking on the <code>Next Button</code> or by clicking on the third step.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_6.PNG" title="Move to third step" /></p>
+<p>In the third step, the user has to describe the relation between the selected pattern and the algorithm. To do that, he has to specify a <code>Relation Type</code> and add a <code>Description</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_7.PNG" title="Structure of dialog's third step" /></p>
+<p>The input field for the relation type has auto-complete functionality. It will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting <code>Enter</code>. </p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_8.PNG" title="Select Relation Type" /></p>
+<p>At last, the user has to add a description by using the existing input field. After that, the user can proceed to the last step by clicking on the <code>Next Button</code> or by clicking directly on the step itself.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_9.PNG" title="Add Description and move to last step" /></p>
+<p>The last step is used for verifying all the important selections from the previous steps. To finally reference the pattern in the algorithm, the user can press the <code>Confirm Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_10.PNG" title="Verify all inputs" /></p>
+<p>After the pattern was successfully referenced, it will appear in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Link_Pattern_-_Step_11.PNG" title="Verify if reference was successful" /></p>
+<h3 id="update-pattern-relation">Update Pattern Relation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the relation to a pattern, the user has to be in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Updating a pattern relation is done by clicking on it's <code>Edit Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_1.PNG" title="Click 'Edit' button" /></p>
+<p>This will open a dialog containing two steps that need to be performed to successfully update the relation.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_2.PNG" title="Structure of update dialog" /></p>
+<p>In the first step, the user can adjust the <code>Relation Type</code> and the <code>Description</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_3.PNG" title="Structure of first step" /></p>
+<p>To adjust the <code>Relation Type</code>, the user simply has to use the existing input field to change the current type. The auto-complete functionality of the system will filter all existing relation types while still providing the user the option to create a new one. To confirm a relation type, the user has to simply click on it. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the arrow keys of the keyboard can be used to navigate through all the options. Selecting a relation type can be done by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_4.PNG" title="Update Relation Type" /></p>
+<p>To adjust the <code>Description</code>, the user can use the existing input field. After that, the user can proceed to the second step by clicking on the <code>Next Button</code> or by clicking directly on the step itself.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_5.PNG" title="Update Description and move to last step" /></p>
+<p>The second and last step is used for verifying all the important selections from the first step. To finally adjust the reference between the pattern and the algorithm, the user has to click on the <code>Confirm Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Pattern_Link_-_Step_6.PNG" title="Confirm update of reference" /></p>
+<h3 id="dereference-patterns">Dereference Patterns</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove a reference to a pattern, the user has to be in the <code>Related Patterns Tab</code> of the <code>Algorithm View</code>, which can be reached by clicking on an algorithm in the <code>Algorithm List View</code>.</p>
+</div>
+<p>Dereferencing a pattern is done by clicking on it's <code>Delete Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Pattern_-_Step_1.1.PNG" title="Dereference single pattern" /></p>
+<p>Alternatively, the user can use the check-boxes of the first column of the table to select all pattern relation he wants to remove before clicking on the <code>Master Delete Button</code>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one related pattern is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Pattern_-_Step_1.2.PNG" title="Dereference multiple patterns" /></p>
+<p>If a <code>Delete Button</code> is pressed, a confirmation dialog will appear listing all pattern references that will be removed. To confirm their deletion, the user has to click on the <code>YES Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Unlink_Pattern_-_Step_2.PNG" title="Confirm the removal of the references" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

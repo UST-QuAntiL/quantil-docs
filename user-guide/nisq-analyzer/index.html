@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>NISQ Analyzer - QuAntiL</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "NISQ Analyzer";
+        var mkdocs_page_input_path = "user-guide/nisq-analyzer.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/docker/">Quickstart</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../qc-atlas/">QC Atlas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">NISQ Analyzer</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#starting-point-and-prerequisites">Starting Point and Prerequisites</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#execution-environments-qpus-and-cloud-services">Execution Environments: QPUs and Cloud Services</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#algorithms">Algorithms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementations">Implementations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-implementation-properties">Required Implementation Properties</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#prerequisites-of-implementations">Prerequisites of Implementations</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-nisq-analyzer-for-qpu-selection">Running the NISQ Analyzer for QPU Selection</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview-of-analysis-jobs">Overview of Analysis Jobs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#new-analysis">New Analysis</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#analysis-result">Analysis Result</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#prioritization">Prioritization</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#execution">Execution</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-nisq-analyzer-for-compiler-comparison">Running the NISQ Analyzer for Compiler Comparison</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#start-new-compilation">Start new Compilation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#execute-a-compiled-circuit">Execute a Compiled Circuit</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-nisq-analyzer-for-implementation-and-qpu-selection">Running the NISQ Analyzer for Implementation and QPU Selection</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#new-analysis_1">New Analysis</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#analysis-result_1">Analysis Result</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#execution-result">Execution Result</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#historical-data-about-implementation-and-qpu-selection">Historical data about Implementation and QPU Selection</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#accessing-the-planqk-platform">Accessing the PlanQK Platform</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>User Guide &raquo;</li>
+      <li>NISQ Analyzer</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/nisq-analyzer.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="nisq-analyzer-user-guide">NISQ Analyzer User Guide</h1>
+<p>The <a href="https://github.com/UST-QuAntiL/nisq-analyzer">NISQ Analyzer</a> is a research prototype based on the work by <a href="https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5">Salm et al.</a>. 
+It automatically analyzes implementations of quantum algorithms and recommends compilation results for suitable Quantum Processing Units (QPUs). 
+Thereby, the analysis and selection of suitable QPUs can be initiated for a specific implementation, see <a href="#running-the-nisq-analyzer-for-qpu-selection">here</a>.
+Based on the work by <a href="https://link.springer.com/chapter/10.1007/978-3-030-87568-8_4">Salm et al.</a>, the NISQ Analyzer also enables the automated comparison of available quantum compilers for a specific QPU to support the selection of the most suitable compilation result, see <a href="#running-the-nisq-analyzer-for-compiler-comparison">below</a>.
+Besides the selection of compilation results and QPUs, it also enables the selection of suitable quantum algorithm implementations based on a given problem instance, see <a href="#running-the-nisq-analyzer-for-implementation-and-qpu-selection">here</a>.
+Furthermore, the content of the PlanQK platform can be accessed to apply the NISQ Analyzer, see <a href="#accessing-the-planqk-platform">below</a>.</p>
+<p>An overview about the NISQ Analyzer and its used components can be viewed in the <a href="../../">Home Section</a>.</p>
+<h2 id="starting-point-and-prerequisites">Starting Point and Prerequisites</h2>
+<p>When the docker-compose is up and running, open a browser window under <a href="http://localhost:80">http://localhost:80</a>.
+The following screen should be presented showing a sample list of quantum algorithms.
+A docker-compose only containing components required by the NISQ Anlyzer can be viewed <a href="https://github.com/UST-QuAntiL/nisq-analyzer-content/tree/paper/pre-selection/pre-selection/Docker">here</a>.
+Therefore, copy the file <a href="https://github.com/UST-QuAntiL/nisq-analyzer-content/blob/paper/pre-selection/pre-selection/Docker/_docker-compose.override.yml"><code>_docker-compose.override.yml</code></a> remove the <code>_</code> and insert you Qiskit token under <code>QPROV_IBMQ_TOKEN</code>.</p>
+<p><img alt="Algorithms" src="../images/nisq_analyzer/start-screen.png" /></p>
+<h3 id="execution-environments-qpus-and-cloud-services">Execution Environments: QPUs and Cloud Services</h3>
+<p>Available QPUs are automatically retrieved by <a href="https://github.com/UST-QuAntiL/qprov">QProv</a>, a provenance system for quantum computing by <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/qtc2.12012">Weder et al.</a>. 
+A description of how to view actual QPU data is presented under the <a href="../qprov/">QProv</a> section.
+Currently, only real QPUs of the cloud service <code>IBMQ</code> are supported.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If available, sample data is automatically added to the environment on start-up, thus, the cloud service <code>IBMQ</code> does not need to be added, and the following information can be ignored.</p>
+</div>
+<p><code>Cloud Services</code> (under <code>Execution Environments</code> in the menu on the left side), e.g. IBMQ, are required and need to be added to run the <a href="#running-the-nisq-analyzer-for-implementation-and-qpu-selection">Implementation and QPU Selection</a>, see the <a href="/user-guide/qc-atlas/#cloud-service">Cloud Service</a> section to add new cloud services. </p>
+<h3 id="algorithms">Algorithms</h3>
+<p>To add a new algorithm, see the <a href="/user-guide/qc-atlas/#algorithm">Algorithm</a> section. In short, click on the green add button in the top left corner of the starting screen (displayed above), select the type of the algorithm, and define its name.</p>
+<h3 id="implementations">Implementations</h3>
+<p>To add a new implementation, see the <a href="/user-guide/qc-atlas/#implementation">Implementation</a> section. In short, starting from the starting screen, select an algorithm and go to the <code>Implementations</code> tab. Click the green add button in the top left corner and define the name of the implementation. </p>
+<p><img alt="Implementations" src="../images/nisq_analyzer/implementations.png" /></p>
+<h3 id="required-implementation-properties">Required Implementation Properties</h3>
+<p>In the following the required information and conditions of implementations for the recommendation via the NISQ Analyzer are presented.</p>
+<h4 id="prerequisites-of-implementations"><strong>Prerequisites of Implementations</strong></h4>
+<p>To support the insertion of various input parameters for the <a href="#running-the-nisq-analyzer-for-implementation-and-qpu-selection">implementation and QPU selection</a>, the Python source code, i.e., Qiskit code of the defined implementation requires a <code>get_circuit</code> method, see this <a href="https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Shor/shor-general-qiskit.py">example</a>.<br />
+Such general implementations are currently not supported by the <a href="#running-the-nisq-analyzer-for-compiler-comparison">automated compiler comparison</a> and <a href="#running-the-nisq-analyzer-for-qpu-selection">QPU selection</a>. Therefore, concrete circuits are required, see this <a href="https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qasm.qasm">example</a>. In case of Qiskit code, the implementation should either also define a <code>get_circuit</code> method, see this <a href="https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/example-implementations/Grover-SAT/grover-fix-sat-qiskit.py">example</a>, or be called <code>qc</code>, as shown <a href="https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-qiskit.py">here</a>. Implementations in PyQuil for the Forest SDK should define the Program as <code>p</code>, see this <a href="https://raw.githubusercontent.com/UST-QuAntiL/nisq-analyzer-content/master/compiler-selection/Shor/shor-fix-15-pyquil.py">example</a>.</p>
+<p>Implementation properties specific to the NISQ Analyzer are inside the <code>Selection Criteria</code> tab of a selected implementation.</p>
+<p><img alt="Selection Criteria" src="../images/nisq_analyzer/selection-criteria.png" /></p>
+<p>Define the <code>File Location</code> as URL where the raw implementation is placed.
+Select (or add) the <code>SDK</code> and select the <code>Language</code> of the implementation. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Input Parameters</code> and <code>Selection Rule</code> are only required for the <a href="#running-the-nisq-analyzer-for-implementation-and-qpu-selection">Implementation and QPU Selection</a> to define constraints about processable input values of the related implementation. Based on the <a href="/user-guide/qc-atlas/#settings">settings</a>, both fields are hidden.  </p>
+</div>
+<p>To add new input parameters, press the <code>+</code> button on the right side of <code>Input Parameters</code>. Afterwards, insert the necessary data into the fields of the created input parameter.
+To delete an input parameter, select the card on the left side and press the <code>-</code> button on the right, next to the heading <code>Input Parameters</code>.
+The Prolog Rule, i.e., <code>Selection Rule</code> can be changed as well. Make sure that the rules follow correct Prolog Syntax, examples can be viewed in the work of <a href="https://link.springer.com/chapter/10.1007/978-3-030-64846-6_5">Salm et al.</a>.</p>
+<p>To save all changes, press the round "+" button on the right side.</p>
+<h2 id="running-the-nisq-analyzer-for-qpu-selection">Running the NISQ Analyzer for QPU Selection</h2>
+<p>To receive recommendations for compilation results and related QPUs based on a specific implementation, go to the <code>NISQ Analyzer</code> tab in context of an implementation.<br />
+A demo video can be viewed <a href="https://vimeo.com/773722924">here</a>.
+Currently, the SDKs and compilers <a href="https://github.com/CQCL/pytket">t|ket&gt;</a>, <a href="https://github.com/rigetti/quilc">Quilc</a>, and <a href="https://github.com/Qiskit">Qiskit Transpiler</a> are supported wrapped by Compilation &amp; Execution Services <a href="https://github.com/UST-QuAntiL/pytket-service">pytket-service</a>, <a href="https://github.com/UST-QuAntiL/forest-service">forest-service</a>, and <a href="https://github.com/UST-QuAntiL/qiskit-service">qiskit-service</a>.
+To support SDKs not supporting the initial programming language of the given quantum circuit, the backend of the <a href="../circuit-transformer/">Circuit Transformer</a> is used to translate the circuit into the required language.
+The <a href="https://github.com/UST-QuAntiL/nisq-analyzer-prio-service">Predict &amp; Prio Service</a> enables the pre-selection and prioritization of compilation results.</p>
+<h3 id="overview-of-analysis-jobs">Overview of Analysis Jobs</h3>
+<p>Initially, an overview about previous analysis jobs for the specific implementation is given.</p>
+<p><img alt="Analysis jobs" src="../images/nisq_analyzer/qpu-selection-analysis-jobs.png" /></p>
+<h3 id="new-analysis">New Analysis</h3>
+<p>To start a new analysis, click the <code>New Analysis</code> button.
+Then, select <code>IBMQ</code> and insert your Qiskit token for authentication purposes of the IBMQ service.
+In addition, pre-defined preferences about the execution can be defined, such as short waiting times or precise/stable execution results. If stable execution results are selected, advanced settings are shown up, enabling the selection of Machine Learning methods estimating the precision of future execution results. Based on case studies, the best performing method is selected as default. If stable execution results and short waiting times are selected, the importance ratio can be defined.
+Furthermore, the maximum number of compilation results can be selected and the SDK to be considered for compilation can be chosen.</p>
+<p><img alt="Pre-Selection" src="../images/nisq_analyzer/pre-selection.png" /></p>
+<h3 id="analysis-result">Analysis Result</h3>
+<p>The analysis job is finished if the <code>Show analysis</code> button occurs on the right side.
+When clicking on it, pre-selected compilation results with their related QPUs (and simulators), properties, QPU characteristics, and used compilers are listed.</p>
+<p><img alt="Analysis Results" src="../images/nisq_analyzer/qpu-selection-analysis-results.png" /></p>
+<h3 id="prioritization">Prioritization</h3>
+<p>The list of compilation results can be ranked, based on the work of <a href="https://ieeexplore.ieee.org/document/9825780">Salm et al.</a> and <a href="https://link.springer.com/chapter/10.1007/978-3-031-18304-1_9">Salm et al.</a> by clicking the <code>Prioritize</code> button.
+Again, pre-defined preferences can be selected. When selected, advanced settings are shown up, enabling the selection of a given MCDA method calculating the ranking. Additionally, when stable execution results are desired, a weight learning method, i.e., optimizer can be selected, that calculates the importance, i.e., weights of the individual compilation result and QPU properties for future precise execution results. Based on case studies, the best performing optimizer is selected as default. If both preferences are selected, the importance ratio can be defined.</p>
+<p><img alt="Prioritization Pop-Up" src="../images/nisq_analyzer/prioritization-pop-up.png" /></p>
+<p>Alternatively, own weights can be defined by clicking <code>Or define individual metric weights</code>.</p>
+<p><img alt="Prioritization Own Weights" src="../images/nisq_analyzer/prioritization-own-weights.png" /></p>
+<p>The pop-up enables to select an available MCDA method that calculates the ranking and to adjust the importance of the individual properties, i.e., metrics used for prioritization.</p>
+<p>In case, stable results are desired, after clicking <code>Ok</code>, the weights are first learned.</p>
+<p><img alt="Prioritization Weight Learning" src="../images/nisq_analyzer/learning-weights.png" /></p>
+<p>As soon as the learning process is completed, the weights can be viewed, adapted, and the ranking can be calculated. The weights are normalized with a sum of 1. Thus, a weight close to 1 is high, i.e., the metric has high importance, whereas a weight close to 0 is small, i.e., the metric has less importance.</p>
+<p><img alt="Prioritization Learned Weights" src="../images/nisq_analyzer/learned-weights.png" /></p>
+<p>After the prioritization process completes, the table is sorted by the resulting rank.</p>
+<p><img alt="Prioritization ranked list" src="../images/nisq_analyzer/ranked-list.png" /></p>
+<p>Furthermore, the sensitivity of the calculated ranking can be analyzed by clicking the <code>Analyze Rank Sensitivity</code> button. Thereby, the weights of the individual metrics are slightly adapted by a specified range of factors, and it is checked, if the ranking has changed.</p>
+<p><img alt="Sensitivity Analysis Pop-Up" src="../images/nisq_analyzer/sens-analysis-popup.png" /></p>
+<p>As soon as the sensitivity analysis is finished, a <code>Sensitivity Analysis Results</code> button occurs.
+When clicking it, a new tab opens presenting two diagrams. Points in the diagram show if for the adaption of a specific metric a change in the ranking was observed. When hovering over these points, the changed ranking can be seen. Significant changes, thus, order changes in the first half of the original ranking are marked with a star.</p>
+<p><img alt="Sensitivity Analysis Results" src="../images/nisq_analyzer/sens-analysis-results.png" /></p>
+<h3 id="execution">Execution</h3>
+<p>In the overview of analysis results, scroll to the right of the table and press the button <code>Execute</code> to run a compilation result on the selected QPU.</p>
+<p>By clicking <code>Show result</code> the result of the executed compilation result on the selected QPU is shown.</p>
+<p><img alt="Execution results" src="../images/nisq_analyzer/execution-results.png" /></p>
+<h2 id="running-the-nisq-analyzer-for-compiler-comparison">Running the NISQ Analyzer for Compiler Comparison</h2>
+<p>To compare the compilation results of several compilers for a specific QPU, go to the <code>Execution</code> tab of a specific implementation (next to <code>Selection Criteria</code>). 
+A video demonstrating the compiler comparison process can be found <a href="https://www.youtube.com/watch?v=I5l8vaA-zO8&amp;feature=youtu.be">here</a>.
+Currently, the quantum compilers <a href="https://github.com/CQCL/pytket">t|ket&gt;</a>, <a href="https://github.com/rigetti/quilc">Quilc</a>, and <a href="https://github.com/Qiskit">Qiskit Transpiler</a> are supported.
+To support quantum compilers not supporting the initial programming language of the given quantum circuit, the backend of the <a href="../circuit-transformer/">Circuit Transformer</a> is used to translate the circuit into the required language.</p>
+<h3 id="start-new-compilation">Start new Compilation</h3>
+<p>To start a new compilation, click the <code>New Compilation</code> button and insert the vendor name, qpu name, and your token.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, only real quantum computers of <code>IBMQ</code> are supported, thus, in this case, your IBMQ token is required.<br />
+For using the simulator of Forest (e.g. QPU = <code>9q-qvm</code>), insert anything else as token.</p>
+</div>
+<p><img alt="Start New Compilation" src="../images/nisq_analyzer/compiler-comparison-pop-up.png" /></p>
+<p>As soon as the compilation processes are finished, the list of compilation results, the related QPU, and their properties are presented.</p>
+<p><img alt="Compiler Comparison Results" src="../images/nisq_analyzer/compiler-comparison.png" /></p>
+<h3 id="execute-a-compiled-circuit">Execute a Compiled Circuit</h3>
+<p>Click the <code>Execute</code> button of the desired compilation result scrolling to the right side of the table to start the execution. <br />
+Click the <code>Show result</code> button on the chosen compilation result and click on it to display the execution result.</p>
+<h2 id="running-the-nisq-analyzer-for-implementation-and-qpu-selection">Running the NISQ Analyzer for Implementation and QPU Selection</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>The cloud service <code>IBMQ</code> exists</li>
+<li>The algorithm contains at least one implementation</li>
+</ul>
+<p>To enable the recommendation of implementations and QPUs based on given input data and a selected quantum algorithm, go to the <code>NISQ Analyzer</code> tab of an algorithm.</p>
+<h3 id="new-analysis_1">New Analysis</h3>
+<p>Initially, an overview about previous analysis jobs is given. Click the <code>New Analysis</code> button to start a new analysis. Define the input value to be processed, select <code>IBMQ</code> as cloud service in the dropdown menu and insert your Qiskit token for authentication purposes of the IBMQ service. </p>
+<p><img alt="New Analysis" src="../images/nisq_analyzer/start-impl-qpu-selection-analysis.png" /></p>
+<p>If the analysis is finished, a <code>Show analysis</code> button appears, that can be clicked to see the analysis results.</p>
+<h3 id="analysis-result_1">Analysis Result</h3>
+<p>After clicking <code>Show analysis</code>, all results of the specific analysis are shown. 
+Furthermore, the compilation result and properties of the suitable simulators and QPUs are shown.
+Press the button <code>Execute</code> to run the selected QPU/implementation combination.
+All analysis results are stored and can also be viewed on the <code>NISQ Results</code> tab.</p>
+<p><img alt="Analysis Results" src="../images/nisq_analyzer/impl-qpu-selection-analysis-results.png" /></p>
+<p>Additionally, it is checked if the QPUs were re-calibrated after the analysis (marked as <code>OUTDATED</code>), changing their error rates and, thus, the compilation results might be outdated as well, such that a new analysis is recommended for execution.</p>
+<h3 id="execution-result">Execution Result</h3>
+<p>Click the <code>Execute</code> button of the desired compilation result of a recommended implementation scrolling to the right side of the table to start the execution. <br />
+Click the <code>Show result</code> button on the chosen compilation result and click on it to display the execution result.
+Keep in mind that the execution itself can take quite long time.</p>
+<h3 id="historical-data-about-implementation-and-qpu-selection">Historical data about Implementation and QPU Selection</h3>
+<p>Previous analysis and execution results can be found on the <code>NISQ Results</code> tab.</p>
+<p><img alt="Historical Results" src="../images/nisq_analyzer/historical-results.png" /></p>
+<p>If the respective analysis result has been executed, the outcome of said execution can be viewed as well.</p>
+<h2 id="accessing-the-planqk-platform">Accessing the PlanQK Platform</h2>
+<p>Algorithms and implementations available via the PlanQK platform, can be accessed for the QC Atlas and NISQ Analyzer by clicking the login button in the top right corner of the UI. Insert your PlanQK platform username and password.</p>
+<p><img alt="PlanQK Login" src="../images/nisq_analyzer/planqk-login.png" /></p>
+<p>As soon as the platform content is available, the NISQ Analyzer can be applied to implementations fulfilling the required conditions, as described above.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../circuit-transformer/" class="btn btn-neutral float-left" title="Circuit Transformer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../quantme/" class="btn btn-neutral float-right" title="QuantME">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../circuit-transformer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../quantme/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

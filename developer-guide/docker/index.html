@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Quickstart - QuAntiL</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Quickstart";
+        var mkdocs_page_input_path = "developer-guide/docker.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Quickstart</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-defined-feature-sets-are-namely">The defined feature sets are namely:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-quantil-components-supported-by-the-qc-atlas-ui">Running the QuAntiL components supported by the QC Atlas UI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#running-the-base-components">Running the base components</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running-certain-feature-sets">Running certain feature sets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running-only-selected-services">Running only selected services</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#import-example-data">Import Example Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-do-i-make-sure-that-all-necessary-ports-are-free">How do I make sure that all necessary ports are free?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#why-is-the-example-data-not-imported">Why is the example data not imported?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-do-i-use-a-local-repository-and-build-the-image-myself">How do I use a local repository and build the image myself?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#where-do-i-get-a-ssh-private-key-file-with-the-correct-access-rights">Where do I get a ssh private key file with the correct access rights?</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/qc-atlas/">QC Atlas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/nisq-analyzer/">NISQ Analyzer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Quickstart</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/developer-guide/docker.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="quickstart-with-quantil-docker-setup">Quickstart with QuAntiL Docker setup</h1>
+<p>This section explains how to execute the QuAntiL components supported by the QC Atlas UI with docker-compose.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Docker Engine - <a href="https://docs.docker.com/engine/install/">install guide</a></li>
+<li>Docker Compose - <a href="https://docs.docker.com/compose/install/">install guide</a></li>
+<li>The <a href="https://github.com/UST-QuAntiL/quantil-docker">quantil-docker repository</a></li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>The following components are included in the docker-compose setup</p>
+<table>
+<thead>
+<tr>
+<th align="left">QuAntiL Component</th>
+<th align="left">URL</th>
+<th align="left">GitHub</th>
+<th align="left">Docker Hub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">QC-Atlas-UI</td>
+<td align="left"><a href="http://localhost:80">http://localhost:80</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/qc-atlas-ui">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/qc-atlas-ui">Link</a></td>
+</tr>
+<tr>
+<td align="left">QC-Atlas</td>
+<td align="left"><a href="http://localhost:6626/atlas">http://localhost:6626/atlas</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/qc-atlas">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/atlas">Link</a></td>
+</tr>
+<tr>
+<td align="left">Pattern-Atlas-API</td>
+<td align="left"><a href="http://localhost:1977/patternatlas">http://localhost:1977/patternatlas</a></td>
+<td align="left"><a href="https://github.com/PatternAtlas/pattern-atlas-api">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/patternatlas/pattern-atlas-api">Link</a></td>
+</tr>
+<tr>
+<td align="left">Pattern-Atlas-UI</td>
+<td align="left"><a href="http://localhost:1978">http://localhost:1978</a></td>
+<td align="left"><a href="https://github.com/PatternAtlas/pattern-atlas-ui">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/patternatlas/pattern-atlas-ui">Link</a></td>
+</tr>
+<tr>
+<td align="left">NISQ-Analyzer</td>
+<td align="left"><a href="http://localhost:5010/nisq-analyzer">http://localhost:5010/nisq-analyzer</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/nisq-analyzer">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/nisq-analyzer">Link</a></td>
+</tr>
+<tr>
+<td align="left">Quantum-Transpiler-Frontend</td>
+<td align="left"><a href="http://localhost:5011">http://localhost:5011</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/QuantumTranspiler">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/quantum-transpiler-frontend">Link</a></td>
+</tr>
+<tr>
+<td align="left">Quantum-Transpiler-Backend</td>
+<td align="left"><a href="http://localhost:5012">http://localhost:5012</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/QuantumTranspiler">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/quantum-transpiler-backend">Link</a></td>
+</tr>
+<tr>
+<td align="left">Qiskit-Service</td>
+<td align="left"><a href="http://localhost:5013">http://localhost:5013</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/qiskit-service">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/qiskit-service">Link</a></td>
+</tr>
+<tr>
+<td align="left">Forest-Service</td>
+<td align="left"><a href="http://localhost:5014">http://localhost:5014</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/forest-service">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/forest-service">Link</a></td>
+</tr>
+<tr>
+<td align="left">Pytket-Service</td>
+<td align="left"><a href="http://localhost:5015">http://localhost:5015</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/pytket-service">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/pytket-service">Link</a></td>
+</tr>
+<tr>
+<td align="left">Rigetti QVM</td>
+<td align="left"><a href="http://localhost:5016">http://localhost:5016</a></td>
+<td align="left"><a href="https://github.com/rigetti/qvm">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/rigetti/qvm">Link</a></td>
+</tr>
+<tr>
+<td align="left">Rigetti Quilc</td>
+<td align="left"><a href="http://localhost:5017">http://localhost:5017</a></td>
+<td align="left"><a href="https://github.com/rigetti/quilc">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/rigetti/quilc">Link</a></td>
+</tr>
+<tr>
+<td align="left">QProv</td>
+<td align="left"><a href="http://localhost:5020/qprov">http://localhost:5020/qprov</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/qprov">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/qprov">Link</a></td>
+</tr>
+<tr>
+<td align="left">QProv-Collector-IBM</td>
+<td align="left"><a href="http://localhost:5021">http://localhost:5021</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/qprov">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/planqk/qprov-collector">Link</a></td>
+</tr>
+<tr>
+<td align="left">Latex-Renderer</td>
+<td align="left"><a href="http://localhost:5030">http://localhost:5030</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/latex-renderer">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/repository/docker/planqk/latex-renderer">Link</a></td>
+</tr>
+<tr>
+<td align="left">Redis</td>
+<td align="left"><a href="http://localhost:5040">http://localhost:5040</a></td>
+<td align="left"><a href="https://github.com/redis/redis">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/_/redis">Link</a></td>
+</tr>
+<tr>
+<td align="left">Postgres-Multi DB</td>
+<td align="left"><tcp://localhost:5060></td>
+<td align="left"><a href="https://github.com/lmm-git/docker-postgres-multi">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/r/lmmdock/postgres-multi">Link</a></td>
+</tr>
+<tr>
+<td align="left">Config-Server</td>
+<td align="left"><a href="http://localhost:2379">http://localhost:2379</a></td>
+<td align="left"><a href="https://github.com/etcd-io/etcd">Link</a></td>
+<td align="left"><a href="https://quay.io/repository/coreos/etcd">Link</a></td>
+</tr>
+<tr>
+<td align="left">PlanQK Library</td>
+<td align="left"><a href="http://localhost:2903">http://localhost:2903</a></td>
+<td align="left"><a href="https://github.com/UST-QuAntiL/PlanQK-Library">Link</a></td>
+<td align="left"><a href="https://hub.docker.com/repository/docker/planqk/planqk-library">Link</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Make sure following ports in your environment are free in order to start the QuAntiL environment properly:</strong></p>
+<ul>
+<li><code>80</code></li>
+<li><code>1977</code></li>
+<li><code>1978</code></li>
+<li><code>2379</code></li>
+<li><code>2903</code></li>
+<li><code>5010</code>-<code>5017</code></li>
+<li><code>5020</code>-<code>5021</code></li>
+<li><code>5030</code></li>
+<li><code>5040</code></li>
+<li><code>5060</code></li>
+<li><code>6626</code></li>
+</ul>
+<p>Thereby, <a href="/user-guide/qc-atlas/">QC Atlas</a> builds the basic knowledge base. The different additional features of <a href="/user-guide/nisq-analyzer/">NISQ Analyzer</a>, <a href="/user-guide/qc-atlas/pattern-relation-type/">Pattern Atlas</a>, and <a href="/user-guide/qprov/">QProv</a> are supported on top of the QC Atlas and are defined as feature sets.  </p>
+<h5 id="the-defined-feature-sets-are-namely">The defined feature sets are namely:</h5>
+<ul>
+<li><code>all</code> (runs all features)  </li>
+<li><code>nisqAnalyzer</code>  </li>
+<li><code>nisqAnalyzerCompilerComparison</code>  </li>
+<li><code>patternAtlas</code>  </li>
+<li><code>qprov</code>  </li>
+</ul>
+<h2 id="running-the-quantil-components-supported-by-the-qc-atlas-ui">Running the QuAntiL components supported by the QC Atlas UI</h2>
+<p>Make sure all prerequisites above are met beforehand and that all necessary ports are free.
+Then, navigate inside the root directory of the <a href="https://github.com/UST-QuAntiL/quantil-docker">quantil-docker repository</a>.</p>
+<h3 id="running-the-base-components">Running the base components</h3>
+<p>The base components <a href="/user-guide/qc-atlas/">QC Atlas</a>, QC Atlas UI, <a href="/user-guide/qc-atlas/latex-renderer/">LaTeX Renderer</a>, Config-Server, and the databases without any of the named features run by default using:</p>
+<ol>
+<li>Execute <code>docker-compose pull</code> - pulls the most recent version of the images</li>
+<li>Execute <code>docker-compose build db</code></li>
+<li>Starting the DB first: <code>docker-compose up -d db</code></li>
+<li>Execute <code>docker-compose up -d</code> - starts all remaining services in the background</li>
+</ol>
+<p>To check if everything is running correctly use the command <code>docker ps -a</code> for a list of all running containers and their corresponding containerIds.</p>
+<p>The logs of each individual container can be viewed by executing <code>docker logs &lt;containerId&gt;</code>.</p>
+<p>To stop every service simply execute <code>docker-compose down -v</code>. 
+<code>-v</code> ensures that all volumes are removed (if example data is imported - see next section - this can be crucial)</p>
+<h3 id="running-certain-feature-sets">Running certain feature sets</h3>
+<p>For running certain <a href="#the-defined-feature-sets-are-namely">feature sets</a> on top of the base components, <a href="https://docs.docker.com/compose/profiles/">Profiles</a> are used.<br />
+To start a certain feature set run:<br />
+<code>docker-compose --profile &lt;name-of-feature-set&gt; pull</code><br />
+<code>docker-compose --profile &lt;name-of-feature-set&gt; up</code></p>
+<p>For running multiple feature sets, e.g. two sets, run:<br />
+<code>docker-compose --profile &lt;name-of-feature-set-1&gt; --profile &lt;name-of-feature-set-2&gt; pull</code><br />
+<code>docker-compose --profile &lt;name-of-feature-set-1&gt; --profile &lt;name-of-feature-set-2&gt; up</code></p>
+<p>For running all feature sets, choose <code>--profile all</code>.</p>
+<h3 id="running-only-selected-services">Running only selected services</h3>
+<p>Sometimes only a subset of the provided images is needed to save computing resources or for development purposes. E.g. the database is running inside the container but IntelliJ is executing qc-atlas.</p>
+<p>This is achieved by following the steps above, but instead of executing the command in step 3, use the command</p>
+<p><code>docker-compose up -d &lt;serviceName1&gt; &lt;serviceName2&gt; ... &lt;serviceNameN&gt;</code></p>
+<p>where each <code>&lt;serviceNameX&gt;</code> is replaced by the desired service names.</p>
+<p>E.g. <code>docker-compose up -d db qc-atlas</code> executes the database service and the <code>qc-atlas</code> backend. However, keep in mind that some services heavily depend on each other and may not work properly if dependent services are not running.</p>
+<h2 id="import-example-data">Import Example Data</h2>
+<p>Data from the <a href="https://github.com/PatternAtlas/pattern-atlas-content">pattern-atlas-content</a> repository will always be imported automatically.</p>
+<p>However, to import example data from the <a href="https://github.com/UST-QuAntiL/planqk-atlas-content">qc-atlas-content</a> and <a href="https://github.com/UST-QuAntiL/nisq-analyzer-content">nisq-analyzer-content</a> repositories make sure to follow these steps:</p>
+<ol>
+<li>Rename the <code>_docker-compose.override.yml</code> file inside the <a href="https://github.com/UST-QuAntiL/quantil-docker">quantil-docker repository</a> to <code>docker-compose.override.yml</code>.</li>
+<li>Provide a ssh private key file with correct access rights for the <a href="https://github.com/UST-QuAntiL/planqk-atlas-content">qc-atlas-content</a> repository. The file has to be called <code>ssh_secret</code> and is located in the root folder of the <a href="https://github.com/UST-QuAntiL/quantil-docker">quantil-docker repository</a>.</li>
+<li>It is required that the data directory is empty before starting the container to prevent the deletion of data, see <a href="https://github.com/docker-library/docs/tree/master/postgres#initialization-scripts">postgres-docker documentation</a>.</li>
+</ol>
+<h2 id="faq">FAQ</h2>
+<h5 id="how-do-i-make-sure-that-all-necessary-ports-are-free">How do I make sure that all necessary ports are free?</h5>
+<p>Windows: <code>netstat -anp | find ":&lt;portNumber&gt;"</code> - shows processes listening on <portNumber></p>
+<p>Linux: <code>sudo lsof -i -P -n | grep LISTEN</code> - shows all processes listening any port</p>
+<p>OSX: <code>netstat -anp tcp | grep LISTEN</code> for tcp and <code>netstat -anp udp | grep LISTEN for udp</code></p>
+<h5 id="why-is-the-example-data-not-imported">Why is the example data not imported?</h5>
+<ul>
+<li>
+<p>Are the line-endings configured correctly? 
+<code>/docker-entrypoint-initdb.d/setup-atlas.sh: line 2: cd: $'/var/qc-atlas/testdata\r': No such file or directory</code> in the db logs indicates that LF is not used as line-endings. In IntelliJ, you can override this setting via choosing File &gt; File Properties &gt; Line Separators &gt; LF </p>
+</li>
+<li>
+<p>Make sure you followed the instructions above. If you still experience problems follow these steps:</p>
+</li>
+<li>
+<p>Execute <code>docker-compose rm -vf</code> - <strong>this removes all containers and volumes</strong></p>
+</li>
+<li>Run <code>docker-compose pull</code> - pull all images</li>
+<li>Execute <code>docker-compose up --build -d</code> - this rebuilds all services and starts them</li>
+</ul>
+<h5 id="how-do-i-use-a-local-repository-and-build-the-image-myself">How do I use a local repository and build the image myself?</h5>
+<p>Depending on the service you want to build yourself from a local repository change the image name and add a new build context to the service inside the docker-compose file. E.g.</p>
+<pre><code>...
+&lt;serviceName&gt;:
+  build:
+    context: &lt;repoLocation&gt;
+  image: &lt;imageName&gt;
+...
+</code></pre>
+<p><code>&lt;serviceName&gt;</code> - represents the name of the service</p>
+<p><code>&lt;imageName&gt;</code> - represents the new name of the image.</p>
+<p><code>&lt;repoLocation&gt;</code> - represents the location of the repository relative to the directory of the <code>docker-compose.yml</code> file. The location has to contain the <code>Dockerfile</code> of the service.</p>
+<h5 id="where-do-i-get-a-ssh-private-key-file-with-the-correct-access-rights">Where do I get a ssh private key file with the correct access rights?</h5>
+<p>Follow the <a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh">documentation of Github</a> to generate and add the ssh key to your Github account. The generated private key is the file you need, do not share this file with anyone.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../user-guide/qc-atlas/" class="btn btn-neutral float-right" title="QC Atlas">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../user-guide/qc-atlas/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Overview - QuAntiL</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "user-guide/qc-atlas/overview.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Overview</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/overview.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="general-information-about-ui-components">General Information about UI-Components</h2>
+<p>The <a href="https://github.com/UST-QuAntiL/qc-atlas-ui">UI</a>  of the QC Atlas is built using <code>List Views</code> and <code>Object Views</code>.</p>
+<h3 id="list-view">List View</h3>
+<p><code>List Views</code> can be reached by using the <code>Navigation Bar</code> on the left side of the UI. </p>
+<p><img alt="alt text" src="/user-guide/images/overview/Navigation_Bar.PNG" title="Navigate between List Views" /></p>
+<p>Some <code>List Views</code> like the <code>Execution Environments</code> can contain more <code>List Views</code>. <code>Navigation Bar</code> items that contain more <code>List Views</code> have a <code>Arrow Symbol</code> and can be extended by a simple click.</p>
+<p><img alt="alt text" src="/user-guide/images/overview/Navigation_Bar_Extended.PNG" title="Extend navigation items" /></p>
+<h3 id="data-table">Data Table</h3>
+<p>The <code>List Views</code> contain <code>Data-Tables</code> which are responsible for displaying all available objects of a certain type. For every different object type there is a separate <code>List View</code>. The user can use the controls of the tables to <strong>filter</strong>, <strong>sort</strong> and <strong>browse</strong> existing objects of a certain type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>To filter the displayed objects, the user can use the <code>Search Field</code> to filter objects by their names, titles or other criteria.</li>
+<li>To sort the displayed objects, the user can click on the header of a certain column. A <code>Arrow Symbol</code> will appear that will indicate how the data is currently sorted (ASC/DESC).</li>
+<li>To browse the objects, the user can switch and configure the pages of the <code>Data Table</code> by using the <code>Pagination Controls</code> which are located at the footer of the table. The user can either change the amount of displayed elements per page or change pages.</li>
+</ul>
+<p>Note that all of these functionalities are optional and may not be available in every <code>List View</code></p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/overview/Example_List_View.PNG" title="Example of a List View: Algorithm List View" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The <code>Data Table</code> can also contain more means to manipulate the data:</p>
+<ul>
+<li>A <code>Create Button</code> or <code>Reference/Link Button</code> may be at the top of the <code>Data Table</code>, allowing the users to add new elements to the <code>List View</code>. </li>
+<li>In the <code>Actions Column</code> of the <code>Data Table</code> more buttons may be located allowing the user to <code>Edit</code> or <code>Delete/Dereference</code> existing objects and remove them from the <code>List View</code>.</li>
+<li>The first column of the <code>Data Table</code> may contain check-boxes which allow the user to select one or more elements of the current page of the <code>Data Table</code> to perform specific actions on multiple elements. One example would the the ability to <code>Delete</code> or <code>Dereference</code> multiple elements at once.</li>
+</ul>
+<p>In some cases, the elements of a <code>Data Table</code> are also click-able. Then, the <code>Mouse Cursor</code> will change to a <code>Pointer</code>. If some element is clicked, the user will be redirected to that element's <code>Object View</code>.</p>
+</div>
+<h3 id="object-view">Object View</h3>
+<p>As mentioned before, any <code>Object View</code> can be opened by clicking on any element of a <code>List View</code>. In the <code>Header</code> of any <code>Object View</code>, it's <code>Name</code> is displayed, as well as it's optional <code>Tags</code>.
+In addition, the <code>Header</code> may also contain information about any <code>Revision</code>of an object.</p>
+<p>All other information about the object is located in the <code>Body</code> of the <code>Object View</code>. The information is distributed across multiple <code>Tabs</code>. The <code>General Tab</code> usually contains the most basic information about the object. Other information is distributed across the other <code>Tabs</code>, which can differ from <code>Object View</code> to <code>Object View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/overview/Example_Object_View.PNG" title="Example of a Object View: Algorithm View" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The <code>Object View</code> is not only used to display information about an object. It is also used to:</p>
+<ul>
+<li><code>Update</code> all kinds of information of that object</li>
+<li><code>Reference</code> or <code>Dereference</code> other objects</li>
+<li>And more...</li>
+</ul>
+</div>
+<h4 id="revisions">Revisions</h4>
+<p>QC Atlas supports the use of revisions which are a sort of versions or snapshots of an object.
+When an object is saved, a revision is created automatically. This allows to browse and access older object data.
+When a revision is selected, the data is automatically loaded into the property fields of the <code>General Tab</code> and can then be viewed or edited. 
+Saving these properties will result in creating a new revision, which will be the latest version of the object.
+Currently, the creation of revisions is supported for algorithms as well as implementations and only includes basic properties available in the <code>General Tab</code>.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

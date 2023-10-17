@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Implementation - QuAntiL</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Implementation";
+        var mkdocs_page_input_path = "user-guide/qc-atlas/implementation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> QuAntiL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/docker/">Quickstart</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../">QC Atlas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qverview/">Qverview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qhana/">QHAna</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qhana-new/">QHAna (new)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../circuit-transformer/">Circuit Transformer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nisq-analyzer/">NISQ Analyzer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../quantme/">QuantME</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../qprov/">QProv</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../planqk-library/">PlanQK Library</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developer Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/intellij/">IntelliJ Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/openapi/">OpenAPI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/application-architecture/">Application Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../developer-guide/qc-atlas/db-migrations/">Database migrations</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">QuAntiL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Implementation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/UST-QuAntiL/quantil-docs/tree/master/docs/user-guide/qc-atlas/implementation.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="implementation">Implementation</h2>
+<h3 id="create-implementation">Create Implementation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create an implementation, the user has to be in the <code>Algorithm View</code> of a specific algorithm.</p>
+</div>
+<p>In the <code>Algorithm View</code> the user has to click on the <code>Implementation Tab</code>, which opens the <code>Implementation List View</code>.
+This view contains all implementations of that algorithm. Within this view, a new implementation will be created via the <code>Plus Button</code> which is located above the list.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Create_Implementation_-_Step_1.png" title="Open 'Creation Dialog'" /></p>
+<p>Clicking on the <code>Plus Button</code> will open the following dialog.
+In the dialog it is possible to give the new implementation a name.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a new implementation only a <code>name</code> is required.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Create_Implementation_-_Step_2.png" title="Fill input" /></p>
+<p>After all necessary fields have been filled in, the creation of the implementation can be confirmed by clicking on the <code>OK Button</code>. After a successful creation, the user will be navigated to the <code>Implementation View</code> of the new implementation.</p>
+<h3 id="delete-implementation">Delete Implementation</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete an implementation, the user has to be in the <code>Implementation Tab</code> of the <code>Algorithm View</code> of a specific algorithm.</p>
+</div>
+<p>To delete a specific implementation, the user has to simply click on the <code>Delete Button</code> in the <code>Action Column</code> of the data table.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Delete_Implementation_-_Step_1.png" title="Delete single implementation" /></p>
+<p>It is also possible to delete multiple implementations at once by selecting them one by one using the check-boxes within the table. When at least one implementation is selected, a <code>Master Delete Button</code> will show up above the table. To delete the selected implementations at once, this button must be pressed.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Delete_Implementation_-_Step_2.png" title="Delete multiple implementation" /></p>
+<p>Both ways of deleting implementations will lead to a confirmation dialog. This dialog will list all implementations that were selected to be deleted. To finally confirm the deletion, the <code>OK Button</code> at the bottom of the dialog has to be pressed. A successfully deleted implementation will disappear from the <code>Implementation List View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Delete_Implementation_-_Step_3.png" title="Confirm deletion" /></p>
+<h3 id="update-implementation-information">Update Implementation Information</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update the information of a implementation, the user has to be in the <code>Implementation View</code>.</p>
+</div>
+<p>Updating basic information is done in the <code>General Tab</code> of the <code>Implementation View</code>. To do that, the user has to simply use the <code>Input fields</code>, <code>Check-Boxes</code> or <code>Selection Drop-Downs</code> to add new values or adjust existing ones.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Update_Implementation_Properties_-_Step_1.png" title="General Tab' of the 'Implementation View" /></p>
+<p>If information is changed, a <code>Save Button</code> will be displayed next that specific input field. Also, a <code>Master Save Button</code> will appear at the right side of the screen. To save the changes of each input field individually, the user can click on the <code>Save Button</code> next to any updated input field. Alternatively the user can save all changes by clicking the <code>Master Save Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can also hit <code>Enter</code> on the keyboard to save the changes of a single field in most cases. In some cases, it may be necessary to focus the <code>Save Button</code> by hitting <code>TAB</code> on the keyboard and then confirming with <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Update_Implementation_Properties_-_Step_2.png" title="Saving the changes" /></p>
+<h3 id="load-implementation-revision">Load Implementation Revision</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To load a revision of an implementation, the user has to be in the <code>Implementation View</code> which can be reached by clicking on an implementation in the <code>Implementation List View</code>.
+Please see the <a href="../overview/#revisions">revision section</a> for further details about revisions.</p>
+</div>
+<p>Loading a revision is done by clicking on the revision selection field in the <code>Implementation View</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Load_Implementation_Revision_-_Step_1.PNG" title="Open Revision Selection" /></p>
+<p>This will open a dropdown menu with all available revisions sorted by their date with the latest revision at the top.
+By selecting an element from the dropdown menu, the data of a revision is loaded in the <code>Implementation View</code> and can be viewed and edited.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Load_Implementation_Revision_-_Step_2.PNG" title="Revision Selection Menu" /></p>
+<h3 id="create-compute-resource-properties">Create Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To create a compute resource property for the implementation, the user has to be in the <code>Implementation View</code> which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>Creating properties for a compute resource is done in the <code>General Tab</code> of the <code>Implementation View</code>.
+To do that, the user has to simply click on the <code>Plus Button</code> of the dedicated <code>Required Compute Resource Property Field</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_1.PNG" title="Open Property Dialog" /></p>
+<p>This will open a separate <code>Creation Dialog</code> where the user will have to enter all important information of about the property he wants to create.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. If the user clicks on an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been filled, the user can finally add the property by confirming the creation via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_3.PNG" title="Confirm creation" /></p>
+<p>After the property has been successfully created, it will appear in the the dedicated <code>Required Compute Resource Property Field</code> within the<code>General Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Compute_Resource_-_Step_4.PNG" title="Verify creation" /></p>
+<h3 id="update-compute-resource-properties">Update Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To update a compute resource property of an implementation, the user has to be in the <code>Implementation View</code>, which can be reached by clicking on an algorithm in the <code>Implementation List View</code>.</p>
+</div>
+<p>Updating existing compute resource properties of an implementation is done in the <code>General Tab</code> of the <code>Implementation View</code>. To do that, the user has to simply hover over an existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Edit Button</code>.   </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_1.PNG" title="Open update property dialog" /></p>
+<p>This will open a separate <code>Update Dialog</code> where the information of the property can be adjusted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Type Name</strong> field supports auto-completion functionality. While typing a type name, the system will suggest existing types with that name in a drop-down. On click of an existing type, all necessary fields will be filled automatically.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_2.PNG" title="Dialog structure" /></p>
+<p>After all fields have been adjusted, the user can finally update the property by confirming the update via the existing <code>OK Button</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Property Value</strong> needs to match the selected <strong>Data Type</strong>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Update_Compute_Resource_-_Step_3.PNG" title="Confirm update" /></p>
+<h3 id="delete-compute-resource-properties">Delete Compute Resource Properties</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To delete a property for an implementation, the user has to be in the <code>Implementation View</code> which can be reached by clicking on a compute resource in the <code>Implementation List View</code>.</p>
+</div>
+<p>Deleting compute resource properties of an implementation is done in the <code>General Tab</code> of the <code>Implementation View</code>.
+To do that, the user has to simply hover over a existing property in the dedicated <code>Required Compute Resource Property Field</code> and then click on the <code>Delete Button</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Delete_Compute_Resource.PNG" title="Delete Compute Resource" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A successfully deleted property should disappear from the dedicated <code>Required Compute Resource Property Field</code>.</p>
+</div>
+<h3 id="reference-publications">Reference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference publications in an implementation, the user has to be in the <code>Publications Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To initiate the linking of a publication, the user has to click on the <code>Plus Button</code> in the <code>Publications Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_1.png" title="Click on '+' in 'Publications'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available publications. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_2.png" title="Filter existing publications using table controls" /></p>
+<p>To reference a publication simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_3.1.png" title="Reference single publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Publication_-_Step_3.2.png" title="Reference multiple publications" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced publications(s) will now be visible in the <code>Publications Tab</code> of the <code>Implementation View</code>.</p>
+</div>
+<h3 id="dereference-publications">Dereference Publications</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference publications, the user has to be in the <code>Publications Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To remove a reference to a publication, the user has to simply click on the <code>Delete Button</code> of a publication in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Publication_-_Step_1.1.png" title="Dereference single publication" /></p>
+<p>Alternatively, use the check-boxes to select multiple publications and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one publication is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Publication_-_Step_1.2.png" title="Dereference multiple publications" /></p>
+<h3 id="reference-software-platforms">Reference Software Platforms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To reference software platforms in an implementation, the user has to be in the <code>Software Platforms Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To initiate the linking of a software platform, the user has to click on the <code>Plus Button</code> in the <code>Software Platforms Tab</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_1.png" title="Click on '+' in 'Software Platforms'-Tab" /></p>
+<p>This will open a new dialog containing a page-able table of available software platforms. This table can be searched or sorted using the given input fields and buttons.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_2.png" title="Filter existing software platforms using table controls" /></p>
+<p>To reference a software platform simply click on the <code>Link Button</code> in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_3.1.png" title="Reference single software platform" /></p>
+<p>Alternatively, use the check-boxes to select multiple software platforms and then click on the <code>Master Link Button</code> to link all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Link Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Link_Software_Platforms_-_Step_3.2.png" title="Reference multiple software platforms" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Successfully referenced software platform(s) will now be visible in the <code>Software Platforms Tab</code> of the <code>Implementation View</code>.</p>
+</div>
+<h3 id="dereference-software-platforms">Dereference Software Platforms</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To dereference software platforms, the user has to be in the <code>Software Platforms Tab</code> of the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>To remove a reference from a software platform, the user has to simply click on the <code>Delete Button</code> of a software platform in the <code>Actions Column</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Software_Platform_-_Step_1.1.png" title="Dereference single software platform" /></p>
+<p>Alternatively, use the check-boxes to select multiple software platforms and then click on the <code>Master Delete Button</code> to unlink all of them at once.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Master Delete Button</code> will only appear if at least one software platform is selected.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/implementation/Unlink_Software_Platform_-_Step_1.2.png" title="Dereference multiple software platforms" /></p>
+<h3 id="add-tags">Add Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To add tags to an implementation, the user has to be in the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>In the <code>Header</code> of the <code>Implementation View</code>, the user has to click on the <code>Plus Button</code> which is used to add tags.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Add_Tag_-_Step_1.png" title="Click '+' button in 'Implementation View' header" /></p>
+<p>A <code>Add Tag Dialog</code> will open that contains fields for <code>Tag Category</code> and <code>Tag Value</code> that need to be defined for creating a new tag.</p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_2.PNG" title="Structure of 'Add Tag Dialog'" /></p>
+<p>The <code>Tag Value Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing values to the user. The user can then either pick one of the existing values by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag value.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag value and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_3.PNG" title="Enter Tag Value" /></p>
+<p>The <code>Tag Category Field</code> is equipped auto-complete functionalities. While typing, it will recommend existing categories to the user. The user can then either pick one of the existing categories by clicking on it. Alternatively, the user can ignore the recommendations and fill the input field with a new tag category.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, the user can use the arrow buttons on the keyboard to select an existing tag category and then confirm it by hitting <code>Enter</code>.</p>
+</div>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_4.PNG" title="Enter Tag Category" /></p>
+<p>To finally add a new tag to the implementation, the user has to confirm his selection by clicking on the <code>OK Button</code>. </p>
+<p><img alt="alt text" src="/user-guide/images/algorithm/Add_Tag_-_Step_5.PNG" title="Confirm addition of a new tag" /></p>
+<p>If the tag was added successfully, it will appear in the <code>Header</code> of the <code>Implementation View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Add_Tag_-_Step_6.png" title="Verify if tag was created" /></p>
+<h3 id="remove-tags">Remove Tags</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To remove tags from an implementation, the user has to be in the <code>Implementation View</code>, which can be reached by clicking on an implementation in the <code>Implementation List View</code>.</p>
+</div>
+<p>Removing tags is done by clicking on their <code>Delete Buttons</code>, which are located in the <code>Header</code> of the <code>Implementation View</code>.</p>
+<p><img alt="alt text" src="/user-guide/images/implementation/Remove_Tag.png" title="Remove Tag" /></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/UST-QuAntiL/quantil-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
